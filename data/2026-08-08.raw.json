@@ -1,10 +1,10 @@
 {
   "date": "2026-08-08",
-  "generated_at": "2026-08-08T23:17:54.749167+08:00",
+  "generated_at": "2026-08-08T23:43:04.502364+08:00",
   "counts": {
     "papers": 41,
     "projects": 19,
-    "news": 127
+    "news": 137
   },
   "items": {
     "papers": [
@@ -788,7 +788,7 @@
         "title": "Sensitive Info Goes into 'No Reply' Emails Constantly. This Guy Sees It All",
         "url": "https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/",
         "normalized_url": "https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all",
-        "summary": "HN points: 11, comments: 2",
+        "summary": "HN points: 17, comments: 3",
         "source": "Hacker News",
         "published": "2026-08-08T14:07:06Z",
         "importance_hint": 3,
@@ -799,7 +799,7 @@
         "title": "Gentoo bugzilla closed due AI bot scraper overload",
         "url": "https://social.treehouse.systems/@mgorny/117058483039362779",
         "normalized_url": "https://social.treehouse.systems/@mgorny/117058483039362779",
-        "summary": "HN points: 37, comments: 8",
+        "summary": "HN points: 49, comments: 13",
         "source": "Hacker News",
         "published": "2026-08-08T13:55:42Z",
         "importance_hint": 3,
@@ -810,7 +810,7 @@
         "title": "A domain can now say it is for sale, in DNS",
         "url": "https://specification.website/spec/foundations/for-sale-dns/",
         "normalized_url": "https://specification.website/spec/foundations/for-sale-dns",
-        "summary": "HN points: 74, comments: 34",
+        "summary": "HN points: 92, comments: 46",
         "source": "Hacker News",
         "published": "2026-08-08T13:26:51Z",
         "importance_hint": 3,
@@ -832,7 +832,7 @@
         "title": "Auto Mode will be the default in Claude Code – because humans can't be trusted",
         "url": "https://thenewstack.io/claude-code-auto-mode/",
         "normalized_url": "https://thenewstack.io/claude-code-auto-mode",
-        "summary": "HN points: 11, comments: 1",
+        "summary": "HN points: 12, comments: 1",
         "source": "Hacker News",
         "published": "2026-08-08T11:35:06Z",
         "importance_hint": 3,
@@ -867,7 +867,7 @@
         "title": "New Amazon Data Center Is Set to Have the Most Polluting Power Plant in the U.S.",
         "url": "https://www.nytimes.com/2026/08/08/climate/amazon-data-center-texas-pollution.html",
         "normalized_url": "https://www.nytimes.com/2026/08/08/climate/amazon-data-center-texas-pollution.html",
-        "summary": "HN points: 168, comments: 195",
+        "summary": "HN points: 175, comments: 206",
         "source": "Hacker News",
         "published": "2026-08-08T10:07:06Z",
         "importance_hint": 3,
@@ -878,7 +878,7 @@
         "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
         "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
         "normalized_url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones",
-        "summary": "HN points: 195, comments: 58",
+        "summary": "HN points: 206, comments: 62",
         "source": "Hacker News, Google DeepMind",
         "published": "2026-08-08T09:18:50Z",
         "importance_hint": 5,
@@ -900,7 +900,7 @@
         "title": "Mythos social engineering AISI INC-2026-07-28-01",
         "url": "https://web.archive.org/web/20260731053721/http://github.com/ancaferro/myNetwork/pull/3",
         "normalized_url": "https://web.archive.org/web/20260731053721/http://github.com/ancaferro/myNetwork/pull/3",
-        "summary": "HN points: 74, comments: 19",
+        "summary": "HN points: 75, comments: 19",
         "source": "Hacker News",
         "published": "2026-08-08T03:41:56Z",
         "importance_hint": 3,
@@ -933,7 +933,7 @@
         "title": "U.S. Department of Energy Launches the Genesis Open Models Initiative",
         "url": "https://genesisopenmodels.anl.gov/",
         "normalized_url": "https://genesisopenmodels.anl.gov",
-        "summary": "HN points: 292, comments: 112",
+        "summary": "HN points: 297, comments: 114",
         "source": "Hacker News",
         "published": "2026-08-07T22:24:27Z",
         "importance_hint": 4,
@@ -1936,6 +1936,136 @@
         "importance_hint": 5,
         "metadata": {
           "feed_url": "https://the-decoder.com/feed/"
+        }
+      },
+      {
+        "category": "news",
+        "title": "Designing Scalable Interactive Visualizations with Reflex XY: Composition, Million-Point Rendering, Streaming, Custom Marks, and Export",
+        "url": "https://www.marktechpost.com/2026/08/08/designing-scalable-interactive-visualizations-with-reflex-xy-composition-million-point-rendering-streaming-custom-marks-and-export/",
+        "normalized_url": "https://www.marktechpost.com/2026/08/08/designing-scalable-interactive-visualizations-with-reflex-xy-composition-million-point-rendering-streaming-custom-marks-and-export",
+        "summary": "Dive into the advanced visualization capabilities of the Reflex XY Python library. This tutorial guides you through building high-performance, interactive charts—from handling million-point datasets and real-time streaming to creating custom mark plugins and exporting publication-ready visuals. The post Designing Scalable Interactive Visualizations with Reflex XY: Composition, Million-Point Rendering, Streaming, Custom Marks, and Export appeared first on MarkTechPost .",
+        "source": "MarkTechPost",
+        "published": "2026-08-08T09:42:18+00:00",
+        "importance_hint": 3,
+        "metadata": {
+          "feed_url": "https://www.marktechpost.com/feed/"
+        }
+      },
+      {
+        "category": "news",
+        "title": "Mistral AI Releases Shieldstral 1.0 3B: An Open-Weights Policy-Adaptive Multimodal Safety Classifier Matching Models 7× Its Size",
+        "url": "https://www.marktechpost.com/2026/08/07/mistral-ai-releases-shieldstral-1-0-3b/",
+        "normalized_url": "https://www.marktechpost.com/2026/08/07/mistral-ai-releases-shieldstral-1-0-3b",
+        "summary": "Mistral AI has released Shieldstral 1.0 3B, an open-weights, policy-adaptive multimodal safety classifier that frames content moderation as a single yes/no question instead of a fixed harm taxonomy. Operators supply the policy as a plain-language query at inference time and get back a calibrated safety score from one forward pass — no retraining required to re-target the model. Built on Ministral-3-3B-Base-2512 with a Pixtral vision encoder and trained on roughly 54.1M samples, it reports 84.9% ",
+        "source": "MarkTechPost",
+        "published": "2026-08-08T04:36:26+00:00",
+        "importance_hint": 4,
+        "metadata": {
+          "feed_url": "https://www.marktechpost.com/feed/"
+        }
+      },
+      {
+        "category": "news",
+        "title": "Tencent Cloud Open-Sources TencentDB Agent Memory v2.0: A Team-Level Memory Hub for AI Coding Agents",
+        "url": "https://www.marktechpost.com/2026/08/07/tencent-cloud-open-sources-tencentdb-agent-memory-v2-0/",
+        "normalized_url": "https://www.marktechpost.com/2026/08/07/tencent-cloud-open-sources-tencentdb-agent-memory-v2-0",
+        "summary": "Tencent Cloud has open-sourced TencentDB Agent Memory v2.0, a team-level memory hub that turns conversations, documents and code into four governed, reusable assets — Chat Memory, Skill, LLM-Wiki and Code-Graph. It is MIT-licensed, self-hosted via Docker, and integrates with Claude Code, OpenClaw, Hermes and CodeBuddy. The differentiator is not retrieval but governance: ACL-based visibility decides which agent gets which asset, and which version is valid. The post Tencent Cloud Open-Sources Tenc",
+        "source": "MarkTechPost",
+        "published": "2026-08-07T21:52:48+00:00",
+        "importance_hint": 4,
+        "metadata": {
+          "feed_url": "https://www.marktechpost.com/feed/"
+        }
+      },
+      {
+        "category": "news",
+        "title": "Building a Multimodal RAG Pipeline with NVIDIA NeMo Retriever, Hosted NIMs, LanceDB, Reranking, and Grounded Generation",
+        "url": "https://www.marktechpost.com/2026/08/07/building-a-multimodal-rag-pipeline-with-nvidia-nemo-retriever-hosted-nims-lancedb-reranking-and-grounded-generation/",
+        "normalized_url": "https://www.marktechpost.com/2026/08/07/building-a-multimodal-rag-pipeline-with-nvidia-nemo-retriever-hosted-nims-lancedb-reranking-and-grounded-generation",
+        "summary": "In this tutorial, we build an advanced multimodal retrieval-augmented generation pipeline with NVIDIA NeMo Retriever. We begin by configuring a Python 3.12 environment, installing the required packages, and performing offline PDF text extraction without relying on a GPU or external API key. We then extend the workflow with hosted NVIDIA NIM endpoints to detect page […] The post Building a Multimodal RAG Pipeline with NVIDIA NeMo Retriever, Hosted NIMs, LanceDB, Reranking, and Grounded Generation",
+        "source": "MarkTechPost",
+        "published": "2026-08-07T21:13:38+00:00",
+        "importance_hint": 5,
+        "metadata": {
+          "feed_url": "https://www.marktechpost.com/feed/"
+        }
+      },
+      {
+        "category": "news",
+        "title": "NVIDIA AI Releases NOOA: An Object-Oriented Python Framework That Turns an AI Agent Into a Single Python Class",
+        "url": "https://www.marktechpost.com/2026/08/07/nvidia-ai-releases-nooa-an-object-oriented-python-framework/",
+        "normalized_url": "https://www.marktechpost.com/2026/08/07/nvidia-ai-releases-nooa-an-object-oriented-python-framework",
+        "summary": "NVIDIA Labs has open-sourced NOOA (NVIDIA Object-Oriented Agents), a model-agnostic Python framework for building AI agents. Agent development today is split across prompt templates, tool schemas, callback code, and workflow graphs. NOOA collapses all of it into one Python class. Methods are the actions the model can take. Fields are agent state. Docstrings are prompts. […] The post NVIDIA AI Releases NOOA: An Object-Oriented Python Framework That Turns an AI Agent Into a Single Python Class app",
+        "source": "MarkTechPost",
+        "published": "2026-08-07T20:42:02+00:00",
+        "importance_hint": 5,
+        "metadata": {
+          "feed_url": "https://www.marktechpost.com/feed/"
+        }
+      },
+      {
+        "category": "news",
+        "title": "Microsoft Open Sources code-testing-generator: a Polyglot Unit-Test Agent That Hits 92.1% Task Completion Versus 78.9% for Stock Copilot",
+        "url": "https://www.marktechpost.com/2026/08/06/microsoft-open-sources-code-testing-generator/",
+        "normalized_url": "https://www.marktechpost.com/2026/08/06/microsoft-open-sources-code-testing-generator",
+        "summary": "Microsoft has open sourced code-testing-generator, a polyglot unit-test agent shipping in the MIT-licensed dotnet/skills repository. It reads a repository before writing anything — detecting the language, test framework, existing conventions, and the real build and test commands — then plans, writes, runs and validates the tests it produces. On Microsoft's internal 152-task benchmark it completed 140 tasks against 120 for stock GitHub Copilot on the same model, with the gain concentrated almost ",
+        "source": "MarkTechPost",
+        "published": "2026-08-07T05:42:45+00:00",
+        "importance_hint": 5,
+        "metadata": {
+          "feed_url": "https://www.marktechpost.com/feed/"
+        }
+      },
+      {
+        "category": "news",
+        "title": "Liquid AI Releases LFM2.5-2.6B: An On-Device Agentic Model With 128K Context, Tool Calling, And Open Weights",
+        "url": "https://www.marktechpost.com/2026/08/06/liquid-ai-lfm2-5-2-6b-on-device-agentic-model/",
+        "normalized_url": "https://www.marktechpost.com/2026/08/06/liquid-ai-lfm2-5-2-6b-on-device-agentic-model",
+        "summary": "Liquid AI released LFM2.5-2.6B, an agentic model that plans, calls tools, and completes multi-step tasks entirely on-device. The 2.69B parameter model pairs 22 double-gated short convolution blocks with 8 GQA blocks across 30 layers, handles 131,072 tokens of context, and decodes at 220 tokens/s on an M5 Max in under 2.5 GB. Open weights ship in GGUF, MLX, and ONNX. The post Liquid AI Releases LFM2.5-2.6B: An On-Device Agentic Model With 128K Context, Tool Calling, And Open Weights appeared firs",
+        "source": "MarkTechPost",
+        "published": "2026-08-07T03:42:27+00:00",
+        "importance_hint": 4,
+        "metadata": {
+          "feed_url": "https://www.marktechpost.com/feed/"
+        }
+      },
+      {
+        "category": "news",
+        "title": "Cloudflare Introduces Kitesurf: An Agent-First Web Browser That Runs Entirely in V8 Isolates on Cloudflare Workers",
+        "url": "https://www.marktechpost.com/2026/08/06/cloudflare-introduces-kitesurf-an-agent-first-web-browser-that-runs-entirely-in-v8-isolates-on-cloudflare-workers/",
+        "normalized_url": "https://www.marktechpost.com/2026/08/06/cloudflare-introduces-kitesurf-an-agent-first-web-browser-that-runs-entirely-in-v8-isolates-on-cloudflare-workers",
+        "summary": "Cloudflare has released Kitesurf, a stateless web browser built specifically for AI agents that runs entirely in V8 isolates on Cloudflare Workers, with no Chromium underneath. The browser drops human-facing features like tabs and extensions in favor of what agents need: machine-readable content, scalability, and isolation. Built in 12 weeks using Rust components like Blitz, Stylo, and Boa JS, it already passes 215,000+ Web Platform Tests. Benchmarks show 3.1–3.8× less CPU and 4.7–7.0× less memo",
+        "source": "MarkTechPost",
+        "published": "2026-08-06T19:35:32+00:00",
+        "importance_hint": 4,
+        "metadata": {
+          "feed_url": "https://www.marktechpost.com/feed/"
+        }
+      },
+      {
+        "category": "news",
+        "title": "Adaptive Experimentation with Meta’s Ax: A Practical Coding Guide",
+        "url": "https://www.marktechpost.com/2026/08/06/adaptive-experimentation-with-metas-ax-a-practical-coding-guide/",
+        "normalized_url": "https://www.marktechpost.com/2026/08/06/adaptive-experimentation-with-metas-ax-a-practical-coding-guide",
+        "summary": "In this tutorial, we explore adaptive experimentation using Meta’s Ax with the modern Client API. We work through a complete workflow where we tune a RandomForest model on a synthetic classification dataset while balancing predictive accuracy against model footprint. We begin by defining a mixed search space with integer, float, log-scaled, and categorical parameters, then […] The post Adaptive Experimentation with Meta’s Ax: A Practical Coding Guide appeared first on MarkTechPost .",
+        "source": "MarkTechPost",
+        "published": "2026-08-06T17:17:52+00:00",
+        "importance_hint": 5,
+        "metadata": {
+          "feed_url": "https://www.marktechpost.com/feed/"
+        }
+      },
+      {
+        "category": "news",
+        "title": "Prime Intellect Releases Prime Agent: An Open-Source RLM Harness Where Sub-Agents Are Function Calls Inside Persistent IPython Kernel",
+        "url": "https://www.marktechpost.com/2026/08/06/prime-intellect-releases-prime-agent/",
+        "normalized_url": "https://www.marktechpost.com/2026/08/06/prime-intellect-releases-prime-agent",
+        "summary": "Prime Intellect has open-sourced Prime Agent, a coding and research harness built on two abstractions: the Recursive Language Model, which turns sub-agent calls into functions inside a persistent IPython kernel, and the Continual Harness, which lets the agent edit its own prompts, skills, memory, and sub-agent specs mid-run. With Opus 5 it reports 95.5% RHAE Best@1 on ARC-AGI-3, above the reported human expert baseline of 95.4%. The post Prime Intellect Releases Prime Agent: An Open-Source RLM H",
+        "source": "MarkTechPost",
+        "published": "2026-08-06T09:00:08+00:00",
+        "importance_hint": 4,
+        "metadata": {
+          "feed_url": "https://www.marktechpost.com/feed/"
         }
       },
       {
