@@ -11,13 +11,52 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 import feedparser
 import requests
 
+# === 原版AI关键词 === #
+# AI_KEYWORDS = [
+#    "ai", "ml", "llm", "gpt", "transformer", "neural", "deep-learning",
+#    "machine-learning", "nlp", "diffusion", "agent", "rag", "embedding",
+#    "model", "inference", "fine-tun", "lora", "vision", "multimodal",
+#    "chatbot", "langchain", "openai", "anthropic", "gemini", "claude",
+# ]
 
 AI_KEYWORDS = [
+    # === 原有通用 AI 关键词 ===
     "ai", "ml", "llm", "gpt", "transformer", "neural", "deep-learning",
     "machine-learning", "nlp", "diffusion", "agent", "rag", "embedding",
     "model", "inference", "fine-tun", "lora", "vision", "multimodal",
     "chatbot", "langchain", "openai", "anthropic", "gemini", "claude",
+    
+    # === 新增：AI4Energy ===
+    "energy", "power", "grid", "smart grid", "renewable", "solar", "wind",
+    "battery", "storage", "demand response", "load forecasting",
+    "electricity", "power system", "distribution network",
+    "microgrid", "energy management",
+    
+    # === 新增：Reinforcement Learning ===
+    "reinforcement learning", "rl", "deep reinforcement learning",
+    "drl", "multi-agent rl", "marl", "policy gradient", "ppo", "sac",
+    "dqn", "q-learning", "actor-critic", "td3",
+    
+    # === 新增：AI4PDE ===
+    "pde", "partial differential equation", "physics-informed",
+    "pinn", "neural operator", "fourier neural operator", "deeponet",
+    "solver", "numerical", "simulation", "fluid", "thermal",
+    
+    # === 新增：Convex Optimization ===
+    "convex", "optimization", "convex optimization", "linear programming",
+    "quadratic programming", "sdp", "semidefinite", "dual",
+    "lagrangian", "kkt", "optimal control", "model predictive control",
+    "mpc",
 ]
+
+# === 原版高价值词 === #
+# HIGH_SIGNAL_KEYWORDS = [
+#    "release", "launch", "open source", "benchmark", "state-of-the-art",
+#    "sota", "reasoning", "inference", "agent", "multimodal", "model",
+#    "api", "eval", "safety", "chip", "funding", "acquisition",
+#    "发布", "开源", "融资", "收购", "基准", "推理", "模型", "智能体",
+#    "多模态", "安全", "芯片",
+# ]
 
 HIGH_SIGNAL_KEYWORDS = [
     "release", "launch", "open source", "benchmark", "state-of-the-art",
@@ -25,6 +64,11 @@ HIGH_SIGNAL_KEYWORDS = [
     "api", "eval", "safety", "chip", "funding", "acquisition",
     "发布", "开源", "融资", "收购", "基准", "推理", "模型", "智能体",
     "多模态", "安全", "芯片",
+    
+    # === 新增：能源 + 优化相关的高信号词 ===
+    "grid optimization", "power dispatch", "energy scheduling",
+    "load forecasting", "renewable integration", "storage control",
+    "convergence", "solver", "optimality", "feasibility",
 ]
 
 TRACKING_PARAMS = {"utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"}
@@ -276,10 +320,17 @@ def fetch_arxiv(max_items=12, cutoff_days=2):
     have a chance to surface."""
     items = []
     try:
+        # === 原版query === #
+        # query = (
+        #    "http://export.arxiv.org/api/query?"
+        #    "search_query=cat:cs.CV+OR+cat:cs.CL+OR+cat:cs.LG+OR+cat:cs.AI"
+        #    "&sortBy=submittedDate&sortOrder=descending&max_results=40"
+        # )
         query = (
             "http://export.arxiv.org/api/query?"
             "search_query=cat:cs.CV+OR+cat:cs.CL+OR+cat:cs.LG+OR+cat:cs.AI"
-            "&sortBy=submittedDate&sortOrder=descending&max_results=40"
+            "+OR+cat:cs.SY+OR+cat:eess.SY+OR+cat:physics.comp-ph+OR+cat:math.OC"
+            "&sortBy=submittedDate&sortOrder=descending&max_results=50"
         )
         resp = requests.get(query, headers=BROWSER_HEADERS, timeout=30)
         resp.raise_for_status()
@@ -400,6 +451,16 @@ RSS_SOURCES = [
     # ── AI 研究者 Newsletter（更新较疏，回溯 14 天）──────────────────────────
     ("https://www.oneusefulthing.org/feed",   "One Useful Thing (Mollick)", 5, 14),
     ("https://www.lennysnewsletter.com/feed", "Lenny's Newsletter",         5, 14),
+
+    # ── 🆕 新增：AI4Energy 学术源 ──
+    ("https://www.sciencedirect.com/rss/journal/applied-energy",        "Applied Energy",         8, 7),
+    ("https://www.sciencedirect.com/rss/journal/ieee-transactions-on-power-systems", "IEEE Trans Power Systems", 8, 7),
+    ("https://www.sciencedirect.com/rss/journal/energy",               "Energy",                 8, 7),
+    ("https://www.sciencedirect.com/rss/journal/renewable-energy",     "Renewable Energy",       8, 7),
+    ("https://rss.neurips.cc/",                                        "NeurIPS",                6, 14),
+    ("https://icml.cc/Conferences/2024/rss",                          "ICML",                   6, 14),
+    ("https://energy.mit.edu/feed/",                                  "MIT Energy",             5, 14),
+    ("https://energy.stanford.edu/rss.xml",                           "Stanford Energy",        5, 14),
 ]
 
 
