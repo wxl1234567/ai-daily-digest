@@ -15,6 +15,33 @@
     <image><url>https://jimmuji.github.io/ai-daily-digest/podcast-cover.png</url><title>AI 每日简报</title><link>https://jimmuji.github.io/ai-daily-digest/</link></image>
     <itunes:owner><itunes:name>AI Daily Digest</itunes:name></itunes:owner>
     <item>
+      <title>AI 每日简报 · 2026-08-13 周四</title>
+      <description>早上好，今天是2026年8月13号，星期四。欢迎收听AI Daily，我是你的主播。今天这期节目信息量不小，从气象AI的突破到微型模型的新玩法，咱们一个个聊。
+先来说今天最重磅的一条，Google DeepMind的WeatherNext模型在气旋预报上取得了突破性进展。这可不是一般的天气预报，它直接关系到新能源功率预测和电网的韧性。你想啊，风电场、光伏电站的出力，很大程度上取决于极端天气，如果气旋这类事件能提前精准预报，那风光出力的风险评估就能上一个台阶，电网调度也能更从容。这个方向，对做能源AI的朋友来说，是直接能落地的价值。
+接下来看一个工具类的发布，HuggingFace上出了一个叫TSDS-Toolbox的东西，专门用来衡量时间序列数据集的相似度。听起来有点学术，但实际用途很实在——做负荷预测或者风电功率预测的时候，最头疼的就是选数据集，这个工具箱能帮你找到最合适的数据源，还能辅助迁移学习，省时省力。
+再聊聊算力和能源的耦合。量子位有篇文章讲一家新能源大厂怎么撑起了全球最大的AI算力超级单体。这个标题就很吸引人，背后其实是在揭示AI算力和能源供给之间那种互相依赖的关系。数据中心要电，电网要AI来优化，怎么协同，这是个越来越重要的话题。
+好，咱们转到强化学习这块。今天有几篇论文值得留意。一篇是VidForensics-M1，用元检测强化学习来做AI生成视频的取证。虽然场景是视频，但它的方法框架是可以迁移到能源异常检测上的，比如电网视频巡检，这个思路挺有意思。另一篇是测试时自进化的GUI视觉定位框架，简单说就是让智能体在运行中不断自我调整，这个方法用在能源管理系统的在线控制上，潜力不小。
+AI4PDE这边也有两个方向。一个是Surgical WAM，世界模型用在手术机器人学习上，但同样的建模思路可以搬到能源系统的动力学建模里。另一个是行星探测机器人的风险感知运动规划，听着很科幻，但它的不确定性感知规划方法，用在能源设施巡检无人机上，是顺理成章的事。
+凸优化那边，有个关于Grothendieck常数上下界改进的研究。这个数学味很浓，但它跟能源系统鲁棒优化是有关联的，尤其是最优潮流问题，懂的人自然懂。
+最后聊两个开源项目。一个是Kronos，金融市场的时序基础模型，虽然它做的是股价预测，但这类方法迁移到电力市场价格预测，几乎是现成的。另一个是cactus-compute出的needle，一个只有14MB的微型基础模型，小到可以塞进智能电表或者边缘设备里，做负荷预测和设备状态监测，这打开了边缘智能在能源场景的落地空间。
+今日观察。今天最值得关注的信号，我觉得是气象AI在极端天气预测上的突破，这对新能源功率预测和电网韧性研究是直接的价值。另一个趋势是微型基础模型的兴起，14MB级别的模型，意味着AI能力可以真正下沉到终端设备，边缘智能的落地会越来越快。再加上金融时序模型Kronos的出现，提醒我们电力市场预测完全可以借鉴金融领域的先进方法。好，今天的内容就到这里，我是你的主播，咱们明天见。</description>
+      <itunes:summary>早上好，今天是2026年8月13号，星期四。欢迎收听AI Daily，我是你的主播。今天这期节目信息量不小，从气象AI的突破到微型模型的新玩法，咱们一个个聊。
+先来说今天最重磅的一条，Google DeepMind的WeatherNext模型在气旋预报上取得了突破性进展。这可不是一般的天气预报，它直接关系到新能源功率预测和电网的韧性。你想啊，风电场、光伏电站的出力，很大程度上取决于极端天气，如果气旋这类事件能提前精准预报，那风光出力的风险评估就能上一个台阶，电网调度也能更从容。这个方向，对做能源AI的朋友来说，是直接能落地的价值。
+接下来看一个工具类的发布，HuggingFace上出了一个叫TSDS-Toolbox的东西，专门用来衡量时间序列数据集的相似度。听起来有点学术，但实际用途很实在——做负荷预测或者风电功率预测的时候，最头疼的就是选数据集，这个工具箱能帮你找到最合适的数据源，还能辅助迁移学习，省时省力。
+再聊聊算力和能源的耦合。量子位有篇文章讲一家新能源大厂怎么撑起了全球最大的AI算力超级单体。这个标题就很吸引人，背后其实是在揭示AI算力和能源供给之间那种互相依赖的关系。数据中心要电，电网要AI来优化，怎么协同，这是个越来越重要的话题。
+好，咱们转到强化学习这块。今天有几篇论文值得留意。一篇是VidForensics-M1，用元检测强化学习来做AI生成视频的取证。虽然场景是视频，但它的方法框架是可以迁移到能源异常检测上的，比如电网视频巡检，这个思路挺有意思。另一篇是测试时自进化的GUI视觉定位框架，简单说就是让智能体在运行中不断自我调整，这个方法用在能源管理系统的在线控制上，潜力不小。
+AI4PDE这边也有两个方向。一个是Surgical WAM，世界模型用在手术机器人学习上，但同样的建模思路可以搬到能源系统的动力学建模里。另一个是行星探测机器人的风险感知运动规划，听着很科幻，但它的不确定性感知规划方法，用在能源设施巡检无人机上，是顺理成章的事。
+凸优化那边，有个关于Grothendieck常数上下界改进的研究。这个数学味很浓，但它跟能源系统鲁棒优化是有关联的，尤其是最优潮流问题，懂的人自然懂。
+最后聊两个开源项目。一个是Kronos，金融市场的时序基础模型，虽然它做的是股价预测，但这类方法迁移到电力市场价格预测，几乎是现成的。另一个是cactus-compute出的needle，一个只有14MB的微型基础模型，小到可以塞进智能电表或者边缘设备里，做负荷预测和设备状态监测，这打开了边缘智能在能源场景的落地空间。
+今日观察。今天最值得关注的信号，我觉得是气象AI在极端天气预测上的突破，这对新能源功率预测和电网韧性研究是直接的价值。另一个趋势是微型基础模型的兴起，14MB级别的模型，意味着AI能力可以真正下沉到终端设备，边缘智能的落地会越来越快。再加上金融时序模型Kronos的出现，提醒我们电力市场预测完全可以借鉴金融领域的先进方法。好，今天的内容就到这里，我是你的主播，咱们明天见。</itunes:summary>
+      <enclosure url="https://jimmuji.github.io/ai-daily-digest/audio/2026-08-13.mp3" length="1399248" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-08-13.mp3</guid>
+      <pubDate>Thu, 13 Aug 2026 08:00:00 +0800</pubDate>
+      <itunes:duration>03:53</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
+    </item>
+    <item>
       <title>AI 每日简报 · 2026-08-12 周三</title>
       <description>各位听众朋友，早上好！今天是2026年8月12号，星期三。欢迎收听今天的AI行业播报。
 今天这期节目，咱们要聊的话题非常聚焦——算力和电力，这对CP是彻底锁死了。从英伟达的融资大招，到AI公司租下比特币矿场，再到新能源巨头撑起超级算力中心，你会发现，AI这场竞赛的牌桌上，电力才是真正的底牌。当然，学术前沿也有硬货，一个统一搞定电网分析的神经求解器，还有让AI学会物理规律的新范式，都值得竖起耳朵听。
@@ -401,33 +428,6 @@ Google 今天也有两个大新闻，一好一坏。坏的是，Google Earth 新
       <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-07-30.mp3</guid>
       <pubDate>Thu, 30 Jul 2026 08:00:00 +0800</pubDate>
       <itunes:duration>04:08</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
-    </item>
-    <item>
-      <title>AI 每日简报 · 2026-07-29 周三</title>
-      <description>各位听众朋友早上好，今天是2026年7月29号，欢迎收听今天的AI行业播报。今天的内容非常密集，核心看点有三个：一是AI智能体的企业级部署正在加速落地，二是AI安全治理从口号走向工程化，三是开源与闭源的路线之争继续升温。好，我们直接进入正题。
-先说智能体企业部署这条线。今天最重磅的消息是MCP协议迎来了有史以来最大的一次更新，由Linux基金会下属的Agentic AI Foundation管理，这次是架构级的重写，正式支持企业级生产部署。这意味着AI智能体和软件之间的连接标准走向成熟，企业可以直接拿来用了。紧接着，Snowflake发布了Cortex AI Gateway，专门用来集中管控AI智能体的访问，首批集成了1Password、SailPoint这些身份供应商。这两个消息放在一起看，智能体从实验室走向企业的通道正在被标准化和产品化。
-另一边，微软也发布了MAI-Cyber-1-Flash，一个137B总参数量、5B激活参数的稀疏MoE网络安全专用模型，在CyberGym基准上达到了95.95%的准确率，成本降低了50%。不过有意思的是，微软自己承认，最复杂的任务还是得依赖OpenAI。同时，Visa用Claude Mythos在自家支付网络里发现了一连串可被利用的漏洞，并且把测试工具开源了。这算是AI在真实金融基础设施安全审计中的里程碑应用。
-说到安全，今天有一个重要的联盟成立。Nvidia和微软牵头成立了开放AI安全联盟，创始成员包括SpaceX、IBM等，但注意，OpenAI、Google和Anthropic都缺席了。这个联盟的目标是构建开源AI安全工具来防御前沿模型攻击。AI安全阵营正在出现分化，开源安全工具链迎来了一股新力量。
-再来看模型和算力方面的消息。Nvidia向Ilya Sutskever的Safe Superintelligence投入了巨额资金，帮助它从Google TPU转向Nvidia GPU集群。顶级AI研究实验室的算力格局正在发生重大转变。另外，台湾检方拘留了一名Nvidia员工，涉嫌向中国非法出口Super Micro AI服务器，芯片出口管制执法正在升级。
-Google今天也有大动作，一口气发布了Gemini 3.6 Flash、3.5 Flash-Lite和3.5 Flash Cyber三个新模型，覆盖不同性能层级，Cyber版本专门为安全场景优化。同时，Gemini API推出了Managed Agents，支持3.6 Flash、Hooks和Triggers，为开发者提供了托管智能体框架。Amazon那边则据报缩减了Nova AI模型的投入，转而押注一个新的前沿研究团队。
-开源模型这边，Moonshot AI发布了Kimi K3的技术报告，2.8T参数、104B激活参数的MoE模型，采用了一系列创新架构，开源模型首次接近闭源前沿模型的性能。另外，Black Forest Labs发布了FLUX 3，一个统一的多模态流模型，能同时处理图像、视频、音频和机器人动作预测。还有Induction Labs的Photon-1，106B参数的稀疏MoE，仅通过无动作标签的原始视频预训练就能模拟桌面操作、下棋和物理建模。
-开源项目方面，今天有几个特别值得关注。微软开源的agent-governance-toolkit，覆盖策略执行、零信任身份、执行沙箱和可靠性工程，是企业级Agent治理的官方方案。Hugging Face官方出品的speech-to-speech项目，用开源模型构建本地语音Agent，降低了开发门槛。阿里开源的open-code-review，混合架构结合确定性管道和LLM Agent，内置了NPE、线程安全、XSS、SQL注入等规则集。还有一个叫colibri的项目，能在25GB RAM的消费级机器上运行744B参数的GLM-5.2模型，纯C实现，零依赖，大幅降低了部署门槛。
-最后说说行业热议。Anthropic CEO Dario Amodei关于开源权重模型的言论在Reddit引发了激烈争论。他警告开源模型的风险，但坚称从未要求全面禁止。社区反弹很强烈，有用户直接反问：闭源、秘密训练的模型难道不比开源权重模型更危险？另外，Simon Willison深度分析了OpenAI对Hu</description>
-      <itunes:summary>各位听众朋友早上好，今天是2026年7月29号，欢迎收听今天的AI行业播报。今天的内容非常密集，核心看点有三个：一是AI智能体的企业级部署正在加速落地，二是AI安全治理从口号走向工程化，三是开源与闭源的路线之争继续升温。好，我们直接进入正题。
-先说智能体企业部署这条线。今天最重磅的消息是MCP协议迎来了有史以来最大的一次更新，由Linux基金会下属的Agentic AI Foundation管理，这次是架构级的重写，正式支持企业级生产部署。这意味着AI智能体和软件之间的连接标准走向成熟，企业可以直接拿来用了。紧接着，Snowflake发布了Cortex AI Gateway，专门用来集中管控AI智能体的访问，首批集成了1Password、SailPoint这些身份供应商。这两个消息放在一起看，智能体从实验室走向企业的通道正在被标准化和产品化。
-另一边，微软也发布了MAI-Cyber-1-Flash，一个137B总参数量、5B激活参数的稀疏MoE网络安全专用模型，在CyberGym基准上达到了95.95%的准确率，成本降低了50%。不过有意思的是，微软自己承认，最复杂的任务还是得依赖OpenAI。同时，Visa用Claude Mythos在自家支付网络里发现了一连串可被利用的漏洞，并且把测试工具开源了。这算是AI在真实金融基础设施安全审计中的里程碑应用。
-说到安全，今天有一个重要的联盟成立。Nvidia和微软牵头成立了开放AI安全联盟，创始成员包括SpaceX、IBM等，但注意，OpenAI、Google和Anthropic都缺席了。这个联盟的目标是构建开源AI安全工具来防御前沿模型攻击。AI安全阵营正在出现分化，开源安全工具链迎来了一股新力量。
-再来看模型和算力方面的消息。Nvidia向Ilya Sutskever的Safe Superintelligence投入了巨额资金，帮助它从Google TPU转向Nvidia GPU集群。顶级AI研究实验室的算力格局正在发生重大转变。另外，台湾检方拘留了一名Nvidia员工，涉嫌向中国非法出口Super Micro AI服务器，芯片出口管制执法正在升级。
-Google今天也有大动作，一口气发布了Gemini 3.6 Flash、3.5 Flash-Lite和3.5 Flash Cyber三个新模型，覆盖不同性能层级，Cyber版本专门为安全场景优化。同时，Gemini API推出了Managed Agents，支持3.6 Flash、Hooks和Triggers，为开发者提供了托管智能体框架。Amazon那边则据报缩减了Nova AI模型的投入，转而押注一个新的前沿研究团队。
-开源模型这边，Moonshot AI发布了Kimi K3的技术报告，2.8T参数、104B激活参数的MoE模型，采用了一系列创新架构，开源模型首次接近闭源前沿模型的性能。另外，Black Forest Labs发布了FLUX 3，一个统一的多模态流模型，能同时处理图像、视频、音频和机器人动作预测。还有Induction Labs的Photon-1，106B参数的稀疏MoE，仅通过无动作标签的原始视频预训练就能模拟桌面操作、下棋和物理建模。
-开源项目方面，今天有几个特别值得关注。微软开源的agent-governance-toolkit，覆盖策略执行、零信任身份、执行沙箱和可靠性工程，是企业级Agent治理的官方方案。Hugging Face官方出品的speech-to-speech项目，用开源模型构建本地语音Agent，降低了开发门槛。阿里开源的open-code-review，混合架构结合确定性管道和LLM Agent，内置了NPE、线程安全、XSS、SQL注入等规则集。还有一个叫colibri的项目，能在25GB RAM的消费级机器上运行744B参数的GLM-5.2模型，纯C实现，零依赖，大幅降低了部署门槛。
-最后说说行业热议。Anthropic CEO Dario Amodei关于开源权重模型的言论在Reddit引发了激烈争论。他警告开源模型的风险，但坚称从未要求全面禁止。社区反弹很强烈，有用户直接反问：闭源、秘密训练的模型难道不比开源权重模型更危险？另外，Simon Willison深度分析了OpenAI对Hu</itunes:summary>
-      <enclosure url="https://jimmuji.github.io/ai-daily-digest/audio/2026-07-29.mp3" length="2162304" type="audio/mpeg"/>
-      <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-07-29.mp3</guid>
-      <pubDate>Wed, 29 Jul 2026 08:00:00 +0800</pubDate>
-      <itunes:duration>06:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
     </item>
