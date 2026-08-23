@@ -36,6 +36,48 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-08-24">AI 每日简报 · 2026-08-24 周一</span>
+    <button class="cbtn" data-copy="t-2026-08-24">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-08-24.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-08-24.mp3" download="2026-08-24.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-08-24">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-08-24">AI 每日简报 · 2026-08-24 周一
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· TinyCast: 仅 14.6 万参数的零样本概率预测器，通过计算周期结构替代学习：TinyCast 提出一种无需注意力机制的超轻量零样本预测模型，用零参数谱检测器提取主周期，在 GIFT-Eval 榜单上以最小体积实现 SOTA 级预测性能。
+  来源：https://huggingface.co/papers/2608.15767
+· 英伟达 AI 服务器因内存短缺将涨价约 15%，1GW 数据中心成本激增 50 亿美元：DRAM 供应紧张推高 Vera Rubin 与 Grace Blackwell 服务器价格，直接影响云厂商 AI 基础设施投入，也波及能源密集的数据中心运营成本。
+  来源：https://the-decoder.com/memory-shortage-reportedly-drives-nvidia-ai-server-prices-up-about-15-percent/
+· Wired：内蒙古小城因廉价能源与土地成为中国 AI 数据中心枢纽：廉价电力、充足土地和靠近北京的地理位置，使内蒙古某城市成为数据中心关键枢纽，凸显能源资源在 AI 基础设施布局中的核心地位。
+  来源：https://www.wired.com/story/the-unlikely-place-at-the-center-of-chinas-ai-boom/
+
+🧠 强化学习前沿 (RL for Energy)
+· VA-Judger: 基于人类偏好反馈的奖励建模，用于视频-音频联合生成：提出从人类偏好中学习奖励信号以强化学习后训练多模态生成模型，解决多维度指标无法捕捉整体语义与时间一致性的问题。
+  来源：https://huggingface.co/papers/2608.18607
+
+📐 AI4PDE 最新进展
+· τ₀-VLA: 世界模型引导的测试时计算分层机器人基础模型：将高层子任务生成建模为可扩展计算问题，通过世界模型引导在测试时分配更多计算给困难决策，实现长时程操作任务。
+  来源：https://huggingface.co/papers/2608.16885
+
+💻 开源项目与代码
+· cactus-compute/needle: 14MB 基础模型，面向手机、可穿戴、智能家居与机器人等微型设备：极小的基础模型可在资源受限的终端设备上运行，为边缘侧能源管理 AI 提供新可能。
+  来源：https://github.com/cactus-compute/needle
+· JustVugg/colibri: 纯 C 实现、零依赖的 MoE 推理引擎，从磁盘流式加载专家：在自有硬件上运行前沿 MoE 模型，专家从磁盘流式加载，极大降低大模型推理的硬件门槛。
+  来源：https://github.com/JustVugg/colibri
+
+💡 今日观察
+今日与 AI4Energy 四类核心方向直接相关的高质量内容稀缺，多数资讯集中在通用 AI 产品、具身智能与 Agent 生态。值得注意的两个信号：一是 TinyCast 这类超轻量零样本预测模型的出现，暗示时序预测正走向&quot;计算周期结构而非学习&quot;的新范式，这对电力负荷/新能源出力预测具有直接参考价值；二是英伟达服务器涨价与内蒙古数据中心枢纽的报道共同指向一个趋势——能源正成为 AI 算力扩张的核心约束，能源-算力协同优化有望成为 AI4Energy 的新兴交叉方向。建议关注后续是否有将世界模型/测试时计算范式引入能源系统仿真的工作出现。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-08-23">AI 每日简报 · 2026-08-23 周日</span>
     <button class="cbtn" data-copy="t-2026-08-23">📋 复制标题</button>
   </div>
@@ -636,54 +678,6 @@
 
 💡 今日观察
 今日最值得关注的信号是 **AI 算力扩张与能源基础设施的深度耦合**——Nvidia 和 Amazon 数十亿美元级电力投资表明，AI 已成为电力需求增长的核心驱动力，这为 AI4Energy 研究者提供了极强的现实研究动机。同时，**DeepMind WeatherNext 的开源**为能源气象预测提供了可直接使用的最先进基线，值得立即跟进。在 RL 方向，**长时程信用分配（AgentOPSD）与环境动力学内化（EnvACE）** 两项工作对解决能源调度中稀疏奖励和模拟器依赖问题具有直接借鉴价值。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-08-09">AI 每日简报 · 2026-08-09 周日</span>
-    <button class="cbtn" data-copy="t-2026-08-09">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-08-09.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-08-09.mp3" download="2026-08-09.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-08-09">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-08-09">AI 每日简报 · 2026-08-09 周日
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 美国能源部启动 Genesis 开放模型计划，发布首个科学模型 Genesis-Science-1：DOE 联合 Arcee 推出面向科学研究的首个开放权重模型。
-  来源：https://www.reddit.com/r/LocalLLaMA/comments/1vijp8y/us_department_of_energy_launches_the_genesis_open/
-· DeepMind WeatherNext 突破性预测气旋，将开源：AI 模型能用更低分辨率数据准确预测风暴路径和强度。
-  来源：https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/
-· AI Agent 能耗约为简单对话提示的 600 倍：气候科学家追踪 Claude Code 八周用量，揭示 agent 化 AI 的真实能耗。
-  来源：https://the-decoder.com/ai-agents-use-roughly-600-times-more-energy-than-a-simple-chat-prompt/
-· 亚马逊新数据中心配套电厂或成美国最大污染源：为得州数据中心供电的自建电厂将成为全美最大温室气体排放源之一。
-  来源：https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/
-· 现代希腊语检索适配研究覆盖能源领域：Nemotron 检索栈适配现代希腊语，涉及法律、能源、金融、医疗 RAG 应用。
-  来源：https://huggingface.co/papers/2608.05138
-
-🧠 强化学习前沿 (RL for Energy)
-· EnvACE：通过世界预演内化环境动态的智能体强化学习：用世界预演替代外部环境交互，降低长程工具使用智能体训练成本。
-  来源：https://huggingface.co/papers/2608.06197
-· AgentOPSD：递归自蒸馏用于智能体强化学习的回合级信用分配：无评论家的递归方法，解决长程多轮任务中关键决策的信用分配。
-  来源：https://huggingface.co/papers/2608.05987
-
-📐 AI4PDE 最新进展
-· FactorJEPA：分解整体未来为布局-智能体-交互通道：JEPA 架构应用于拥挤混乱的全球南方城市环境预测。
-  来源：https://huggingface.co/papers/2608.01049
-
-💻 开源项目与代码
-· TradingAgents：多智能体金融交易框架：基于 LLM 的多智能体金融交易框架，支持多角色协作决策。
-  来源：https://github.com/TauricResearch/TradingAgents
-· TencentDB Agent Memory v2.0：团队级 AI Agent 记忆中心：腾讯云开源，将对话、文档、代码转化为四种可治理的复用资产。
-  来源：https://github.com/TencentCloud/TencentDB-Agent-Memory
-
-💡 今日观察
-今天最值得关注的信号是 AI 能耗问题从学术讨论走向公共视野：AI Agent 能耗量化数据（600倍于对话）与亚马逊数据中心污染争议同日出现，这为 AI4Energy 研究者提供了极强的现实论证——能源效率优化不再只是理论课题，而是产业刚需。另一方面，美国能源部推出 Genesis 科学模型计划，标志着能源AI进入国家级基础设施时代，值得密切关注其后续开放模型的能力与适用场景。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
