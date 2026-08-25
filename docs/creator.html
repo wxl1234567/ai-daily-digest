@@ -36,6 +36,50 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-08-26">AI 每日简报 · 2026-08-26 周三</span>
+    <button class="cbtn" data-copy="t-2026-08-26">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-08-26.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-08-26.mp3" download="2026-08-26.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-08-26">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-08-26">AI 每日简报 · 2026-08-26 周三
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 工业控制系统异常检测的鲁棒性研究：评估了11种异构异常检测管线在训练数据污染下的表现，使用SWaT基准测试。
+  来源：https://arxiv.org/abs/2608.23547v1
+· 数据中心用水风险报告：Ceres发布报告揭示数据中心电力消耗背后的水资源风险。
+  来源：https://www.ceres.org/resources/reports/water-behind-the-watts-the-hidden-risk-of-powering-data-centers
+
+🧠 强化学习前沿 (RL for Energy)
+· Beyond the Stability-Exploration Dilemma: 环境正则化用于LLM策略优化：提出将正则化从动作侧移至输入侧以打破稳定性-探索困境。
+  来源：https://huggingface.co/papers/2608.23311
+· How to Train a Critic Stably and Efficiently：提出BPCO（最佳实践评论家优化）方法，结合DPPO与价值预测边界，实现稳定高效的critic训练。
+  来源：https://arxiv.org/abs/2608.23566v1
+· ARC: 开放世界交互中的公平相对优势比较：针对开放式交互中行为不可比问题，提出公平相对优势比较方法。
+  来源：https://huggingface.co/papers/2608.13622
+
+📐 AI4PDE 最新进展
+· 惯性流形神经算子用于耗散PDE：提出IMNO，显式利用耗散系统的低维结构提升长时间自回归预测的精度与稳定性。
+  来源：https://arxiv.org/abs/2608.23546v1
+
+💻 开源项目与代码
+· TradingAgents: 多智能体LLM金融交易框架：基于多智能体LLM的金融交易框架，支持能源期货与碳交易等场景。
+  来源：https://github.com/TauricResearch/TradingAgents
+· Worldmodels101: 世界模型交互式课程：免费交互式世界模型课程，涵盖预测、潜在动力学、规划、JEPA与视频模型。
+  来源：https://github.com/NiluK/worldmodels101
+
+💡 今日观察
+今日最值得关注的信号是**工业控制系统的AI安全**成为焦点——训练数据污染下的异常检测鲁棒性研究直接关系到电力、水务等关键基础设施的AI部署安全。同时，**惯性流形神经算子**为耗散PDE（如热传导、流体）提供了一种兼具可解释性与长时程稳定性的新范式，值得能源仿真领域研究者跟进。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-08-25">AI 每日简报 · 2026-08-25 周二</span>
     <button class="cbtn" data-copy="t-2026-08-25">📋 复制标题</button>
   </div>
@@ -625,50 +669,6 @@
 
 💡 今日观察
 今日最值得关注的信号是**算力-电力深度耦合**成为主流叙事：Nvidia的GPU金融化、Anthropic租用比特币矿场数据中心、新能源大厂支撑AI算力超级单体，这三条新闻共同指向一个趋势——AI基础设施的竞争本质上是能源基础设施的竞争。对AI4Energy研究者而言，这意味着**能源系统与AI算力调度的联合优化**将成为极具价值的研究方向。此外，GENCO在电力系统稳态分析中统一PF/OPF/SE的神经求解器思路值得密切关注，它代表了物理约束深度学习在电力领域的工程化落地趋势。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-08-11">AI 每日简报 · 2026-08-11 周二</span>
-    <button class="cbtn" data-copy="t-2026-08-11">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-08-11.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-08-11.mp3" download="2026-08-11.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-08-11">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-08-11">AI 每日简报 · 2026-08-11 周二
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Google DeepMind WeatherNext 突破性预测气旋轨迹与强度：DeepMind 新一代天气 AI 模型可同时预测热带气旋路径与强度，领先主流业务模型约一天，代码与权重已在 GitHub 开源。
-  来源：https://the-decoder.com/google-deepminds-weathernext-predicts-cyclone-tracks-and-intensity-at-the-same-time/
-· Amazon 投资天然气电厂或成美国最大气候污染源：为支撑西德克萨斯数据中心供电，Amazon 投资新建天然气电厂，可能成为美国最大温室气体排放源之一，与其 2040 碳中和承诺相悖。
-  来源：https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/
-
-🧠 强化学习前沿 (RL for Energy)
-· SFT 冲突，RL 共存：多任务 LLM 训练的理论与实证分析：研究发现 SFT 在多阶段训练中遭受严重的任务冲突，而 RL 能在不同任务间实现稳定共存，参数层面表现为稀疏且近似正交的更新。
-  来源：https://huggingface.co/papers/2608.03573
-· Reinforcement Learning with Evolving Rubrics as Rewards for Audio Reasoning：提出用动态演化的评分标准作为奖励信号进行音频推理强化学习，解决固定奖励标准难以适应不同问题的局限。
-  来源：https://huggingface.co/papers/2608.02831
-
-📐 AI4PDE 最新进展
-· Round-Trip Consistency: 双向扩散模型可自预测 rollout 误差：训练单一条件潜扩散模型通过方向标志前向/后向推进动力系统，利用往返差异作为无测量误差信号，为长时程动力学预测提供自监督误差估计。
-  来源：https://huggingface.co/papers/2608.00675
-· Complementary Matrix-Gated QKAN Fast-Weight Programmers for Quantum Dynamics Forecasting：提出基于量子启发的 Kolmogorov-Arnold 网络的矩阵门控快速权重编程器，解决量子动力学序列建模中长上下文计算成本高的问题。
-  来源：https://huggingface.co/papers/2607.27945
-
-💻 开源项目与代码
-· TradingAgents: 多智能体 LLM 金融交易框架：开源多智能体 LLM 金融交易框架，支持多角色协作进行交易决策分析。
-  来源：https://github.com/TauricResearch/TradingAgents
-· WeatherNext 开源代码与权重：DeepMind 天气预测模型代码与模型权重已在 GitHub 开源，可直接用于气旋预测相关研究。
-  来源：https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/
-
-💡 今日观察
-今日最值得关注的信号是 **AI 算力扩张与能源碳排放之间的张力**成为主流媒体报道焦点——Amazon 投资天然气电厂的事件同时出现在 TechCrunch、The Verge 等多个科技媒体，提示 AI4Energy 研究者应关注数据中心能耗优化与碳核算这一交叉领域。其次，**WeatherNext 的开源**为新能源功率预测研究提供了可直接复用的 SOTA 基线模型，建议尽快评估其在风电场级预测上的迁移效果。最后，**RL 在多任务学习中的优势**获得理论层面确认（SFT 冲突 vs. RL 共存），这对多目标能源调度问题的奖励设计具有直接指导意义。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
