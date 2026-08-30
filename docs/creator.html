@@ -36,6 +36,54 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-08-30">AI 每日简报 · 2026-08-30 周日</span>
+    <button class="cbtn" data-copy="t-2026-08-30">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-08-30.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-08-30.mp3" download="2026-08-30.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-08-30">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-08-30">AI 每日简报 · 2026-08-30 周日
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Pushing the Limits of High-Resolution Weather Forecasting through Data Scaling：提出 BaguanHR 框架，通过数据缩放策略突破 0.1° 高分辨率全球天气预报的训练数据瓶颈。
+  来源：https://huggingface.co/papers/2608.14652
+· PAWBench: How Far Are We from Probabilistically Aligned World Modeling?：提出概率对齐基准，评估视频生成模型能否复现同一初始条件下多种物理过程的分布。
+  来源：https://huggingface.co/papers/2608.27345
+· LAION 发布大规模开放视频数据集 Big Video Dataset (BVD)：包含 8000 万视频、1000 万小时时长，为 AI 研究提供最大规模开放视频数据。
+  来源：https://the-decoder.com/laion-drops-massive-open-video-dataset-with-10-million-hours-of-footage-for-ai-research/
+· Trump's EPA 拟允许数据中心隐藏空气污染数据：美国 EPA 计划废除要求数据中心公开污染信息并接受公众评议的联邦规则。
+  来源：https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit
+
+🧠 强化学习前沿 (RL for Energy)
+· TTPO: Test-Time Policy Optimization：提出测试时策略优化方法，利用多数投票伪标签替代真实标签，实现无需真实标签的强化学习后训练。
+  来源：https://huggingface.co/papers/2608.27448
+· Understanding Evolution Strategies for LLM Reasoning: Broader Reasoning Coverage than GRPO：系统研究进化策略（ES）在 LLM 推理中的优化行为，证明 ES 比 GRPO 具有更广的推理覆盖范围。
+  来源：https://huggingface.co/papers/2608.27351
+· PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents：提出实时自我改进框架，让长时程智能体在执行过程中即时利用经验调整策略并更新持久化知识。
+  来源：https://huggingface.co/papers/2608.26530
+
+📐 AI4PDE 最新进展
+· Agentic Game Development as a Verifiable Trajectory Data Engine for Scaling World Models：提出用可验证的游戏开发作为轨迹数据引擎，为世界模型提供类似代码编译器的奖励信号。
+  来源：https://huggingface.co/papers/2608.25518
+
+💻 开源项目与代码
+· K-Dense-AI/scientific-agent-skills：包含 165 个经过验证的科学技能和 100+ 科学数据库的 Agent Skills 库，兼容主流 AI 编码助手。
+  来源：https://github.com/K-Dense-AI/scientific-agent-skills
+· JetBrains/go-modern-guidelines：帮助 AI 编码代理编写现代 Go 代码的指南项目。
+  来源：https://github.com/JetBrains/go-modern-guidelines
+
+💡 今日观察
+今日值得关注的是高分辨率气象预报的数据缩放突破（BaguanHR），这对新能源功率预测的精度上限提升具有直接意义。同时，进化策略（ES）在 LLM 推理中展现出比 GRPO 更广的覆盖能力，这种特性对能源系统中高维连续控制问题可能带来新的求解思路。此外，LAION 大规模开放视频数据集的发布，为电力设施视觉巡检等应用提供了前所未有的训练数据基础。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-08-29">AI 每日简报 · 2026-08-29 周六</span>
     <button class="cbtn" data-copy="t-2026-08-29">📋 复制标题</button>
   </div>
@@ -604,56 +652,6 @@
 
 💡 今日观察
 今日资讯中与AI4Energy四个核心方向直接相关的高质量内容较少，多数为通用AI产业动态（模型发布、Agent框架、企业人事变动等）。值得注意的信号是：**DeepMind WeatherNext的突破表明，AI气象预报正在从研究走向实用，这对新能源出力预测（风、光）和电网运行调度具有直接的方法论借鉴意义**。另一个趋势是**微型化、低资源化模型（如needle 14MB模型、Soup层流训练）的兴起，预示着AI4Energy研究可以更便捷地在边缘设备和资源受限环境中部署**，这将加速智能电网、分布式能源管理的落地。建议关注未来几天arXiv上是否有将上述方法（尤其是气旋预测模型架构）迁移至能源场景的新工作。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-08-15">AI 每日简报 · 2026-08-15 周六</span>
-    <button class="cbtn" data-copy="t-2026-08-15">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-08-15.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-08-15.mp3" download="2026-08-15.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-08-15">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-08-15">AI 每日简报 · 2026-08-15 周六
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· DeepMind WeatherNext：AI模型在气旋预报中取得突破：DeepMind发布WeatherNext，宣称在热带气旋路径与强度预报上实现突破性进展，这是AI4PDE/天气预测在能源气象领域的直接应用。
-  来源：https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/
-· TailBooster：面向极端值增强的双层生成框架，具备运行有效性约束：针对航空运输中的极端延误等稀有事件，提出生成式数据增强方法，强制保证生成样本的运行可行性。
-  来源：https://huggingface.co/papers/2608.11951
-· Defensive Boosting for Online Probabilistic Forecasting：研究在线概率预测的防御性提升方法，针对自适应对抗者选择的二元结果，结合弱假设类的在线学习。
-  来源：https://arxiv.org/abs/2608.13554v1
-
-🧠 强化学习前沿 (RL for Energy)
-· SKILLER：小语言模型中可复用技能提取的语言级强化学习：提出语言级RL方法，让小模型从智能体轨迹中提取可复用技能，降低部署成本。
-  来源：https://huggingface.co/papers/2608.10538
-· Knowing When to Quit：诊断并训练LLM放弃徒劳推理：系统分析LLM在超出能力任务上的&quot;徒劳推理&quot;现象，提出训练方法让模型学会适时放弃，避免产生看似合理但错误的推导。
-  来源：https://huggingface.co/papers/2607.29211
-
-📐 AI4PDE 最新进展
-· Full-bandwidth transformer：提出全带宽Transformer，通过潜在反馈拓宽解码步骤间的垂直反馈通道，提升自回归生成的信息传递效率。
-  来源：https://huggingface.co/papers/2608.08888
-· V-RAE：重新思考视频生成的视频潜空间：提出视频表征自编码器，构建具有高层语义组织的紧凑生成潜空间，弥补重建最优潜空间对生成建模的不足。
-  来源：https://arxiv.org/abs/2608.13556v1
-
-🔧 凸优化与能源系统
-· Exponential Convex Calibration Dimension for the Multi-Label Jaccard Measure：证明多标签Jaccard分数的损失矩阵非奇异并具有仿射维度2^s-1，结合有限MinHash Gram表示与布尔Möbius反演。
-  来源：https://arxiv.org/abs/2608.13549v1
-
-💻 开源项目与代码
-· RAGFlow：领先的开源RAG引擎，融合RAG与Agent能力，为LLM构建上下文层。
-  来源：https://github.com/infiniflow/ragflow
-· Unsloth：本地UI运行和训练LLM与扩散模型，支持Qwen3.8、DeepSeek-V4等最新模型。
-  来源：https://github.com/unslothai/unsloth
-
-💡 今日观察
-今日与AI4Energy直接相关的高质量内容较为稀缺，但DeepMind WeatherNext的气旋预报突破值得重点关注——AI气象预测正在从论文走向业务化，其对新能源功率预测和电网防灾调度的潜在影响巨大。此外，TailBooster提出的&quot;运行有效性约束&quot;生成框架，为能源领域常见的极端事件样本不足问题提供了可借鉴的方法论。建议关注AI4PDE方向的新架构（如Full-bandwidth transformer）在物理场建模中的潜在迁移价值。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
