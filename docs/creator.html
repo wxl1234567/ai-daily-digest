@@ -36,6 +36,64 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-05">AI 每日简报 · 2026-09-05 周六</span>
+    <button class="cbtn" data-copy="t-2026-09-05">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-05.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-05.mp3" download="2026-09-05.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-05">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-05">AI 每日简报 · 2026-09-05 周六
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google DeepMind WeatherNext 3：5km 全球天气预报，每小时刷新：DeepMind 发布 WeatherNext 3，直接训练于气象站观测数据，输出 5km 分辨率全球预报，已集成至 Search、Gemini 与 Maps。
+  来源：https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/
+· IBM 时间序列模型 × Confluent 实时推理：IBM Research 发布博客，展示其时间序列模型在 Confluent 平台上实现实时智能推理的集成方案。
+  来源：https://huggingface.co/blog/ibm-research/real-time-intelligence
+· TimesFM 登 GitHub Trending：Google Research 的时间序列基础模型 TimesFM 今日获得 340+ star，持续受到开发者关注。
+  来源：https://github.com/google-research/timesfm
+
+🧠 强化学习前沿 (RL for Energy)
+· SmoothRL：异步在线强化学习框架：星尘智能发布 SmoothRL，让在线 RL 能够跟上大模型的异步推理速度，专为机器人/具身场景设计。
+  来源：https://www.qbitai.com/2026/09/484437.html
+· Miles：企业级 LLM/VLM 后训练 RL 框架：radixark 开源 Miles，一个面向企业的强化学习后训练框架，从 slime 分叉并持续演进。
+  来源：https://github.com/radixark/miles
+· RLVR 对解空间的收缩效应：论文分析 RL with Verifiable Rewards 如何提升 pass@1 但同时收缩策略的解空间，损害 test-time scaling 收益。
+  来源：https://huggingface.co/papers/2608.29188
+· DRACO：长时程 Agent 的细粒度信用分配：提出 DRACO 框架，通过动态评分规则将单轨迹奖励分解为细粒度信用信号，用于无结果标注的长时程任务训练。
+  来源：https://huggingface.co/papers/2609.04094
+· 并发随机博弈的鲁棒 PAC 学习：首次提出一般和并发随机博弈（CSG）在转移不确定性下的 PAC 学习框架，求解社会福利最优的 ε-Nash 均衡。
+  来源：https://arxiv.org/abs/2609.04189v1
+
+📐 AI4PDE 最新进展
+· VeriPhy：世界模型的智能体物理推理验证：提出可审计的物理验证系统，文本规划器将提示编译为类型化物理义务和执行计划，再调用冻结的底层物理专家进行验证。
+  来源：https://huggingface.co/papers/2609.03153
+· Principia：视频模型的相对物理测试基准：提出基于同场景双物体运动关系的物理推理基准，不依赖帧率、尺度、相机标定等绝对测量。
+  来源：https://huggingface.co/papers/2609.04200
+· Puffin-World：原生 3D 世界状态的多模态模型：提出统一多模态架构，联合建模物理（重力场/纬度）、几何（深度）和外观（图像）三种原生世界状态。
+  来源：https://huggingface.co/papers/2609.04196
+
+🔧 凸优化与能源系统
+· 单调变分不等式强解的计算：基于累积正则化框架，研究带 Lipschitz 连续算子的单调变分不等式（VI）强解计算，给出随机设定下的样本复杂度。
+  来源：https://arxiv.org/abs/2609.04188v1
+
+💻 开源项目与代码
+· anthropics/skills：Agent Skills 官方仓库：Anthropic 正式开源 Agent Skills 公共仓库，今日获得 512+ star。
+  来源：https://github.com/anthropics/skills
+· google-research/timesfm：时间序列基础模型：Google Research 的 TimesFM 持续获得关注，为时序预测提供预训练基础模型。
+  来源：https://github.com/google-research/timesfm
+
+💡 今日观察
+今日值得关注的信号：一是 **Google WeatherNext 3** 将 AI 气象预报推向 5km/小时级的新高度，这类物理-数据混合方法对风电功率预测和极端天气下的电网韧性研究有直接借鉴价值；二是 **TimesFM** 持续走热，说明时序基础模型正成为 AI4Energy 研究者手中的通用工具；三是 RL 领域多篇论文（SmoothRL、DRACO、鲁棒 CSG）共同指向**长时程、多智能体、异步训练**等更具挑战性的决策场景，这些正是能源系统调度与控制的核心痛点。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-04">AI 每日简报 · 2026-09-04 周五</span>
     <button class="cbtn" data-copy="t-2026-09-04">📋 复制标题</button>
   </div>
@@ -620,56 +678,6 @@
 
 💡 今日观察
 今日资讯中直接针对能源领域的研究较少，但**TinyCast**和**Agentic数据收集**两项工作值得关注。前者代表了在算力受限的边缘侧部署预测模型的趋势，这对分布式能源管理和智能电表数据分析具有直接价值。后者则显示了LLM智能体在能源需求侧管理中的潜力，可能成为连接用户行为与电网互动的桥梁。此外，**VA-Judger**的奖励建模方法虽然是生成模型领域的工作，但其核心思想对解决能源系统中普遍存在的多目标冲突问题具有方法论上的借鉴意义。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-08-21">AI 每日简报 · 2026-08-21 周五</span>
-    <button class="cbtn" data-copy="t-2026-08-21">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-08-21.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-08-21.mp3" download="2026-08-21.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-08-21">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-08-21">AI 每日简报 · 2026-08-21 周五
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 可解释AI预测2026年夏季华中干旱异常：深度学习模型将动力环流预测转化为降水估计，提前数月一致预测出中国中部夏季干旱。
-  来源：https://arxiv.org/abs/2608.19163v1
-· 西班牙纳米材料实现无电降温12.9°C：新型纳米材料可在无需电力的情况下将表面温度降低最高12.9°C，具备建筑节能应用潜力。
-  来源：https://www.euronews.com/next/2026/08/17/new-spanish-nanomaterial-cools-surfaces-by-up-to-129c-without-electricity
-· 约束minmax密度输运用于线性抛物型PDE：从数值最优控制视角研究带约束的minmax密度控制问题，适用于带噪声热方程等线性抛物型PDE。
-  来源：https://arxiv.org/abs/2608.19170v1
-
-🧠 强化学习前沿 (RL for Energy)
-· Co-RL：多智能体RL中从多样群体涌现无监督推理：通过多样智能体群体间的协同，无需地面真值奖励即可涌现推理能力，降低了对可验证奖励的依赖。
-  来源：https://huggingface.co/papers/2608.17253
-· ADEPT：通过预训练与后训练加速灵巧操作：大规模RL框架，通过预训练灵巧策略作为先验，实现从原始视觉-触觉感知直接学习长时程任务。
-  来源：https://arxiv.org/abs/2608.19182v1
-· LEGO-RL：面向编码智能体的Harness原生强化学习：弥合agent harness原生执行环境与策略梯度训练之间的错配，解决环境崩溃与奖励黑客问题。
-  来源：https://huggingface.co/papers/2608.17393
-
-📐 AI4PDE 最新进展
-· Gromov-Wasserstein梯度流的概率表示与收敛性：首次建立内积Gromov-Wasserstein梯度流与演化PDE及扩散过程之间的深层联系。
-  来源：https://arxiv.org/abs/2608.19198v1
-· 约束minmax密度输运用于线性抛物型PDE：数值最优控制框架求解带凸路径约束的密度输运问题，适用于带噪声热方程。
-  来源：https://arxiv.org/abs/2608.19170v1
-
-🔧 凸优化与能源系统
-· 约束minmax密度输运的数值最优控制视角：将minmax密度控制问题转化为数值最优控制框架，处理带噪声线性抛物型PDE（如热方程）的约束输运。
-  来源：https://arxiv.org/abs/2608.19170v1
-
-💻 开源项目与代码
-· Tencent/AI-Infra-Guard：腾讯开源的AI红队全栈平台，覆盖Agent扫描、技能扫描、MCP扫描、AI基础设施扫描与LLM越狱评估。
-  来源：https://github.com/Tencent/AI-Infra-Guard
-
-💡 今日观察
-今日值得关注的信号是 **AI季节性气候预测** 与 **被动冷却材料** 的同时出现——前者直接服务于能源需求的提前预判，后者则从终端降低制冷负荷，两者共同指向AI在能源系统&quot;需求侧管理&quot;中的深度渗透。另一个重要趋势是 **Gromov-Wasserstein梯度流与PDE的交叉理论工作** 的出现，这类最优输运理论进展有望为能源网络中的资源再分配与多能互补优化提供新的数学工具。整体来看，AI4Energy的研究正从单一预测任务向&quot;预测-控制-优化&quot;闭环演进。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
