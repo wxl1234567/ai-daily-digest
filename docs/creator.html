@@ -36,6 +36,56 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-07">AI 每日简报 · 2026-09-07 周一</span>
+    <button class="cbtn" data-copy="t-2026-09-07">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-07.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-07.mp3" download="2026-09-07.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-07">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-07">AI 每日简报 · 2026-09-07 周一
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google DeepMind 发布 WeatherNext 3：抛弃物理模拟，直接从实时卫星数据学习天气：WeatherNext 3 直接基于实时卫星观测训练，提供每小时刷新、5 公里分辨率（较前代精细 5 倍）的全球天气预报，对非洲、拉美和亚太地区预测精度提升最为显著。
+  来源：https://the-decoder.com/googles-weathernext-3-ditches-physics-simulations-and-learns-weather-directly-from-live-satellite-data/ / https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/ / https://www.marktechpost.com/2026/09/03/google-deepminds-weathernext-3-trains-on-weather-station-observations-to-deliver-5-km-global-forecasts-refreshed-every-hour/
+· Alberta（加拿大）对太阳能电池板征收惩罚性税：阿尔伯塔省 UCP 政府对太阳能电池板征收惩罚性税收，在可再生能源战线上开辟新战场，引发关于能源政策与市场信号的广泛讨论。
+  来源：https://albertapolitics.ca/2026/09/ucp-slaps-punitive-tax-on-solar-panels-opening-new-front-in-its-war-on-renewable-energy/
+
+📐 AI4PDE 最新进展
+· Principia：视频模型的物理关系测试基准：Principia 提出不依赖帧率、物体尺度和相机标定的物理推理评估方法——当同一场景中两个物体遵循相同物理定律时，其运动满足与标定无关的可预测关系，该基准专门评估视频模型对牛顿物理学的理解。
+  来源：https://huggingface.co/papers/2609.04200
+· VeriPhy：世界模型的智能体物理推理评估与修正系统：VeriPhy 通过文本规划器将提示编译为类型化物理义务和静态验证的执行计划，在生成视频时用冻结的底层专家模型进行门控和范围限定的物理验证，实现可审计的物理可靠性检查。
+  来源：https://huggingface.co/papers/2609.03153
+
+🧠 强化学习前沿 (RL for Energy)
+· DRACO：面向长时程智能体训练的细粒度奖励分配框架：DRACO 针对没有程序化检查器的长时程任务，通过动态生成多准则量规并沿轨迹分布奖励，解决传统 RLVR 在结果不可观测场景下单一标量奖励无法提供有效学习信号的问题。
+  来源：https://huggingface.co/papers/2609.04094
+· RLVR 的&quot;入口锁定、内部开放&quot;现象：解耦解空间的访问与执行：研究发现 RLVR 在提升 pass@1 的同时收缩策略解空间，损害测试时扩展收益；通过在 Countdown 任务上解耦解空间的&quot;访问&quot;与&quot;执行&quot;，揭示策略丧失多样性的具体位置。
+  来源：https://huggingface.co/papers/2608.29188
+· 星尘智能发布 SmoothRL：异步在线强化学习框架：星尘智能基座模型团队发布 SmoothRL，让在线强化学习跟上大模型的异步推理速度，解决机器人&quot;不能停下来等模型&quot;的实时性瓶颈。
+  来源：https://www.qbitai.com/2026/09/484437.html
+
+🔧 凸优化与能源系统
+· Percolation Dynamics in Optimization: Variance Cascades and Discrete Scale Invariance：将随机梯度流建模为渗流过程，架构对称性迫使子网络以离散同步块而非逐个方式合并，这些结构转变表现为方差尖峰，揭示优化动态中的离散尺度不变性。
+  来源：https://huggingface.co/papers/2609.02373
+
+💻 开源项目与代码
+· AutoHedge：用 AI 智能体群构建自主对冲基金：The Swarm Corporation 开源 AutoHedge，利用群体智能与 AI 智能体自动化市场分析、风险管理和交易执行，数分钟内即可搭建自主对冲基金。
+  来源：https://github.com/The-Swarm-Corporation/AutoHedge
+· aipoch/open-science：开源 AI 科研工作台：AIPOCH 发布开源的本地优先、模型无关 AI 研究平台，支持 macOS/Windows/Linux，集成科学智能体、Python/R 笔记本、数据连接器和可复现溯源。
+  来源：https://github.com/aipoch/open-science
+
+💡 今日观察
+今日最值得关注的信号是 **Google WeatherNext 3 彻底抛弃物理模拟、直接从卫星数据学习的范式转变**——这对 AI4Energy 研究者是一个重要提示：纯数据驱动的预测模型正在逼近甚至超越传统物理建模路线，风电/光伏功率预测领域可能迎来类似拐点。其次，**RLVR 解空间收缩研究**揭示了强化学习在提升单次精度的同时牺牲策略多样性的机制性代价，这对能源调度策略的鲁棒性和探索-利用平衡设计具有直接参考价值。最后，**Alberta 对光伏征收惩罚性税**提醒我们：能源 AI 研究必须将政策变化作为外生冲击纳入建模框架，否则市场与调度模型将面临严重的分布偏移风险。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-06">AI 每日简报 · 2026-09-06 周日</span>
     <button class="cbtn" data-copy="t-2026-09-06">📋 复制标题</button>
   </div>
@@ -666,32 +716,6 @@
 
 💡 今日观察
 今日与 AI4Energy 四类核心方向直接相关的高质量内容稀缺，多数资讯集中在通用 AI 产品、具身智能与 Agent 生态。值得注意的两个信号：一是 TinyCast 这类超轻量零样本预测模型的出现，暗示时序预测正走向&quot;计算周期结构而非学习&quot;的新范式，这对电力负荷/新能源出力预测具有直接参考价值；二是英伟达服务器涨价与内蒙古数据中心枢纽的报道共同指向一个趋势——能源正成为 AI 算力扩张的核心约束，能源-算力协同优化有望成为 AI4Energy 的新兴交叉方向。建议关注后续是否有将世界模型/测试时计算范式引入能源系统仿真的工作出现。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-08-23">AI 每日简报 · 2026-08-23 周日</span>
-    <button class="cbtn" data-copy="t-2026-08-23">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-08-23.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-08-23.mp3" download="2026-08-23.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-08-23">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-08-23">AI 每日简报 · 2026-08-23 周日
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Wired AI] 内蒙古小城成为中国AI繁荣的关键枢纽：廉价能源与土地驱动数据中心扩张
-  来源：https://www.wired.com/story/the-unlikely-place-at-the-center-of-chinas-ai-boom/
-· The Decoder] 数据中心反对率一年内从42%飙升至75%
-  来源：https://the-decoder.com/data-center-opposition-surged-from-42-to-75-percent-in-just-one-year-survey-finds/
-
-💡 今日观察
-今日资讯以通用AI新闻、产品发布和具身智能报道为主，与AI4Energy四个核心方向直接相关的高质量内容极为稀缺。值得注意的是，数据中心能源消耗与社会接受度问题连续出现在多个来源中，这提示能源系统研究者应关注AI基础设施的电力需求侧建模——这可能是AI4Energy交叉研究的一个新兴热点。建议关注arXiv和能源顶刊的独立更新，而非依赖综合新闻源。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
