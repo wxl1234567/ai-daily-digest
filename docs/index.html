@@ -535,7 +535,7 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
         <h1>AI Daily Digest</h1>
         <p><span data-lang-content="zh">每天 5 分钟 · 掌握 AI 领域最新动态 · 全自动采集 · 智能筛选</span><span data-lang-content="en">5 minutes a day · stay on top of AI · auto-collected · smartly curated</span></p>
         <div class="stats">
-          <div class="stat"><div class="num">147</div><div class="lbl"><span data-lang-content="zh">期日报</span><span data-lang-content="en">issues</span></div></div>
+          <div class="stat"><div class="num">148</div><div class="lbl"><span data-lang-content="zh">期日报</span><span data-lang-content="en">issues</span></div></div>
           <div class="stat"><div class="num">12+</div><div class="lbl"><span data-lang-content="zh">数据源</span><span data-lang-content="en">sources</span></div></div>
           <div class="stat"><div class="num"><span data-lang-content="zh">每日</span><span data-lang-content="en">Daily</span></div><div class="lbl"><span data-lang-content="zh">自动更新</span><span data-lang-content="en">auto-updated</span></div></div>
         </div>
@@ -557,14 +557,14 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
     </div>
       </div>
       
-      <div class="section-title"><span data-lang-content="zh">📅 最新一期 · 2026-09-12 周六</span><span data-lang-content="en">📅 Latest · 2026-09-12 Saturday</span></div>
+      <div class="section-title"><span data-lang-content="zh">📅 最新一期 · 2026-09-13 周日</span><span data-lang-content="en">📅 Latest · 2026-09-13 Sunday</span></div>
       
     <div class="audio-player">
       <div class="ap-text">
         <span class="ap-label">🎧 <span data-lang-content="zh">语音播报</span><span data-lang-content="en">Listen</span></span>
         <span class="ap-sub"><span data-lang-content="zh">通勤路上用耳朵看简报</span><span data-lang-content="en">Catch the digest on your commute</span></span>
       </div>
-      <audio controls preload="none" src="audio/2026-09-12.mp3" data-date="2026-09-12"></audio>
+      <audio controls preload="none" src="audio/2026-09-13.mp3" data-date="2026-09-13"></audio>
     </div>
       <div data-lang-content="zh">
     <div class="digest-scope">
@@ -581,8 +581,17 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           </div>
           
     <div class="item-card" data-stars="0">
+      <div class="item-title">Google TimesFM-3：单次前向填充预测，时序基础模型迈入"事件感知"阶段</div>
+      <div class='item-desc'>Google Research 发布 330M 参数的 TimesFM-3，可同时分析时序数据与已知未来事件（促销、天气），一次前向传播填出全部未来时间点，降低累积误差与计算开销。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://the-decoder.com/googles-new-ai-model-predicts-the-future-from-sales-data-weather-and-discount-schedules/" target="_blank">The Decoder</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
       <div class="item-title">Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型</div>
-      <div class='item-desc'>DeepMind 推出其迄今最先进、最准确的全球天气预测 AI 模型 WeatherNext 3。</div>
+      <div class='item-desc'>号称迄今最先进、最准确的全球气象 AI 模型，直接面向中期与短期全球天气预报。</div>
       <div class="item-meta">
         
         
@@ -590,8 +599,8 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
       </div>
     </div>
     <div class="item-card" data-stars="0">
-      <div class="item-title">IBM 发布 SOTA 时序基础模型 Granite Time Series PatchTST-FM-r2（商用友好许可）</div>
-      <div class='item-desc'>IBM Research 在 Hugging Face 发布新一代时序预测基础模型，采用商业友好许可证。</div>
+      <div class="item-title">IBM 发布 Granite Time Series PatchTST-FM-r2，商用友好许可</div>
+      <div class='item-desc'>IBM Research 放出 SOTA 级时序 PatchTST 基础模型，采用商业友好许可证。</div>
       <div class="item-meta">
         
         
@@ -599,8 +608,8 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
       </div>
     </div>
     <div class="item-card" data-stars="0">
-      <div class="item-title">MetroLLM-Bench：将语言模型作为轨道交通服务终端运行时进行评估</div>
-      <div class='item-desc'>提出 955 个案例的基准，覆盖 6 个真实地铁系统（37–414 站），测试 LLM 在路由、票价计算、中断处置、无障碍与对抗输入下的工具调用能力。</div>
+      <div class="item-title">MetroLLM-Bench：把 LLM 当作轨道交通票务终端运行时来评测</div>
+      <div class='item-desc'>955 个测试用例覆盖 6 个真实地铁系统（37–414 站）、11 类任务（路径规划、票价计算、中断应对、无障碍、对抗输入），要求模型调用结构化工具并输出机器可渲染的终态。</div>
       <div class="item-meta">
         
         
@@ -615,17 +624,8 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           </div>
           
     <div class="item-card" data-stars="0">
-      <div class="item-title">DRG-MAPPO：面向协同空战的分层动态角色图多智能体强化学习</div>
-      <div class='item-desc'>提出分层动态角色图 MARL 框架，通过结构化关系建模捕捉战场实体的时变交互，解决战术协同难题。</div>
-      <div class="item-meta">
-        
-        
-        <div class="item-sources"><a href="https://huggingface.co/papers/2609.11155" target="_blank">HuggingFace Papers</a></div>
-      </div>
-    </div>
-    <div class="item-card" data-stars="0">
-      <div class="item-title">T1：面向长时程任务的终端智能体强化学习</div>
-      <div class='item-desc'>122B MoE 模型，通过 RL 训练在云沙箱中操作真实 shell，单任务支持 300+ 工具调用轮次，由任务自带验证器提供奖励。</div>
+      <div class="item-title">T1：面向长时程任务的终端 Agent 强化学习，122B MoE 模型</div>
+      <div class='item-desc'>T1 在云沙箱中操作真实 shell，单任务支持 300+ 轮工具调用，以任务自带 verifier 执行结果作为奖励，并给出热启动 + 稠密过程奖励的完整训练配方。</div>
       <div class="item-meta">
         
         
@@ -633,8 +633,17 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
       </div>
     </div>
     <div class="item-card" data-stars="0">
+      <div class="item-title">DRG-MAPPO：分层动态角色图多智能体强化学习用于协同空战</div>
+      <div class='item-desc'>通过结构化关系建模捕捉战场实体间复杂时变交互，解决 MARL 在战术协同中的关系建模缺失问题。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://huggingface.co/papers/2609.11155" target="_blank">HuggingFace Papers</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
       <div class="item-title">Scaling Automatic Research Agents via World Models</div>
-      <div class='item-desc'>识别出 AutoResearch 智能体 RL 扩展中的根本张力——智能体生成与环境执行之间的耦合，并提出世界模型解法。</div>
+      <div class='item-desc'>指出 AutoResearch Agent 在 RL 扩展时的根本张力——agent 生成与环境执行两部分耦合导致训练低效，提出用世界模型解耦。</div>
       <div class="item-meta">
         
         
@@ -649,12 +658,37 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           </div>
           
     <div class="item-card" data-stars="0">
-      <div class="item-title">FreeFlow：无偏置分层 Transformer 用于光流估计</div>
-      <div class='item-desc'>完全去除相关体、特征 warp、迭代精化等任务特定归纳偏置，仅用单一前馈编码器-解码器分层 Transformer 达到高精度。</div>
+      <div class="item-title">FreeFlow：无归纳偏置的分层 Transformer 光流估计</div>
+      <div class='item-desc'>完全去除相关体积、特征 warp、迭代精化等任务特定归纳偏置，仅用单一前馈 encoder-decoder 达到高精度。</div>
       <div class="item-meta">
         
         
         <div class="item-sources"><a href="https://huggingface.co/papers/2609.11486" target="_blank">HuggingFace Papers</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">NCP-ArchPreview：通过 Next Concept Prediction 走向潜空间语言模型</div>
+      <div class='item-desc'>在标准 NTP 之外引入跨多 token 的离散概念级预测目标，构建乘积量化的概念词表。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://huggingface.co/papers/2609.10715" target="_blank">HuggingFace Papers</a></div>
+      </div>
+    </div>
+        </div>
+        <div class="category" data-cat="project">
+          <div class="category-header">
+            <h2>🔧 凸优化与能源系统</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">Beyond Solver Verdicts：面向自动形式化的生成式奖励模型（VPU 失效模式）</div>
+      <div class='item-desc'>形式化证明求解器无法判断形式翻译是否与被指定形式化严格等价，作者形式化定义了"判据保持的不忠实性"（VPU），并从理论上证明仅凭结构性判据的验证启发式在数学上是受限的。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://huggingface.co/papers/2609.11085" target="_blank">HuggingFace Papers</a></div>
       </div>
     </div>
         </div>
@@ -665,30 +699,30 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           </div>
           
     <div class="item-card" data-stars="0">
-      <div class="item-title">alphaXiv/OpenResearch：用任意模型运行并行研究智能体</div>
-      <div class='item-desc'>支持并行研究智能体编排的开源框架，可搭配任意 LLM 后端。</div>
+      <div class="item-title">MathModelAgent：自动完成数学建模并生成可提交论文的 Agent</div>
+      <div class='item-desc'>专为数学建模竞赛设计，自动完成建模全流程并输出完整论文。</div>
       <div class="item-meta">
         
         
-        <div class="item-sources"><a href="https://github.com/alphaXiv/OpenResearch" target="_blank">GitHub Trending</a></div>
+        <div class="item-sources"><a href="https://github.com/jihe520/MathModelAgent" target="_blank">GitHub Trending</a></div>
       </div>
     </div>
     <div class="item-card" data-stars="0">
-      <div class="item-title">obra/superpowers：可用的智能体技能框架与软件开发方法论</div>
-      <div class='item-desc'>今日 +729 star，提供一套经过验证的 agentic skills 框架。</div>
+      <div class="item-title">CloddsBot：跨 1000+ 市场的自主 AI 交易 Agent</div>
+      <div class='item-desc'>覆盖 Polymarket、Kalshi、Binance、Hyperliquid、Solana DEX 及 5 条 EVM 链，自主扫描 edge、即时执行、风险托管，内置机器间支付协议，自托管，基于 Claude。</div>
       <div class="item-meta">
         
         
-        <div class="item-sources"><a href="https://github.com/obra/superpowers" target="_blank">GitHub Trending</a></div>
+        <div class="item-sources"><a href="https://github.com/alsk1992/CloddsBot" target="_blank">GitHub Trending</a></div>
       </div>
     </div>
     <div class="item-card" data-stars="0">
-      <div class="item-title">nashsu/llm_wiki：把文档自动转化为持久化互联知识库的跨平台桌面应用</div>
-      <div class='item-desc'>区别于传统 RAG 每次从零检索，LLM 增量构建并维护持久 wiki。</div>
+      <div class="item-title">Adaptive Bridge：缓解 ROS 2 中 DDS 背压的代理式解耦层</div>
+      <div class='item-desc'>解决单一网络受损订阅者导致 RELIABLE topic 全链路吞吐与延迟退化的问题，将关键订阅者与降级订阅者解耦。</div>
       <div class="item-meta">
         
         
-        <div class="item-sources"><a href="https://github.com/nashsu/llm_wiki" target="_blank">GitHub Trending</a></div>
+        <div class="item-sources"><a href="https://huggingface.co/papers/2608.15380" target="_blank">HuggingFace Papers</a></div>
       </div>
     </div>
         </div>
@@ -696,14 +730,14 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
       
         <div class="observation">
           <h2>💡 今日观察</h2>
-          <p>今日最值得 AI4Energy 研究者关注的是 **IBM Granite Time Series PatchTST-FM-r2 以商用友好许可发布 SOTA 时序基础模型**——这直接降低了负荷/电价/新能源出力预测的迁移门槛，意味着时序基础模型正在从"论文可用"走向"产品可商用"。其次是 DeepMind WeatherNext 3 的发布，气象预报精度的提升会沿着"气象→功率预测→调度"链条向下游传导，值得跟踪其在新能量化预测中的落地。RL 侧则出现分层图 MARL（DRG-MAPPO）与长时程终端智能体（T1）两条值得迁移到多微网协同与长周期调度的技术路线。</p>
-          <button class="speak-btn" data-label="🔊 朗读今日观察" data-stop="⏹ 停止" data-speak-lang="zh-CN" data-text="今日最值得 AI4Energy 研究者关注的是 **IBM Granite Time Series PatchTST-FM-r2 以商用友好许可发布 SOTA 时序基础模型**——这直接降低了负荷/电价/新能源出力预测的迁移门槛，意味着时序基础模型正在从&quot;论文可用&quot;走向&quot;产品可商用&quot;。其次是 DeepMind WeatherNext 3 的发布，气象预报精度的提升会沿着&quot;气象→功率预测→调度&quot;链条向下游传导，值得跟踪其在新能量化预测中的落地。RL 侧则出现分层图 MARL（DRG-MAPPO）与长时程终端智能体（T1）两条值得迁移到多微网协同与长周期调度的技术路线。">🔊 朗读今日观察</button>
+          <p>今天最明确的信号来自**时序基础模型的双线推进**：Google TimesFM-3 用"单次前向填充 + 已知未来事件条件化"重构了预测范式，而 DeepMind WeatherNext 3 与 IBM Granite 时序模型分别从气象驱动和商用许可两端降低了能源预测的落地门槛——三者叠加，意味着负荷/新能源功率预测的技术栈可能在短期内被整体替换。RL 侧则出现从"短程控制"向"长时程工具调用 Agent"（T1）与"世界模型加速训练"（AutoResearch）迁移的趋势，这正是电网调度 Agent 化所需的两块拼图。</p>
+          <button class="speak-btn" data-label="🔊 朗读今日观察" data-stop="⏹ 停止" data-speak-lang="zh-CN" data-text="今天最明确的信号来自**时序基础模型的双线推进**：Google TimesFM-3 用&quot;单次前向填充 + 已知未来事件条件化&quot;重构了预测范式，而 DeepMind WeatherNext 3 与 IBM Granite 时序模型分别从气象驱动和商用许可两端降低了能源预测的落地门槛——三者叠加，意味着负荷/新能源功率预测的技术栈可能在短期内被整体替换。RL 侧则出现从&quot;短程控制&quot;向&quot;长时程工具调用 Agent&quot;（T1）与&quot;世界模型加速训练&quot;（AutoResearch）迁移的趋势，这正是电网调度 Agent 化所需的两块拼图。">🔊 朗读今日观察</button>
         </div>
     </div></div><div data-lang-content="en">
     <div class="digest-scope">
       
     <div class="filter-bar">
-      <span class="tab active" data-cat="all">All</span>
+      <span class="tab active" data-cat="all">All</span><span class="tab" data-cat="project">Projects</span>
       <span class="star-toggle">★ Top picks (4+)</span>
     </div>
       
@@ -714,8 +748,17 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           </div>
           
     <div class="item-card" data-stars="0">
+      <div class="item-title">Google TimesFM-3: Single-Pass Forecasting Fills the Entire Horizon, Time-Series Foundation Models Enter the "Event-Aware" Era</div>
+      <div class='item-desc'>Google Research released TimesFM-3, a 330M-parameter model that jointly analyzes time series alongside known future events (promotions, weather) and fills in all future time points in a single forward pass, cutting compounding errors and compute.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
       <div class="item-title">Google DeepMind Releases WeatherNext 3 Global Weather AI Model</div>
-      <div class='item-desc'>DeepMind introduces WeatherNext 3, its most advanced and accurate global weather forecasting AI model to date.</div>
+      <div class='item-desc'>Described as its most advanced and accurate global weather AI model to date, targeting medium- and short-range global weather prediction.</div>
       <div class="item-meta">
         
         
@@ -723,8 +766,8 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
       </div>
     </div>
     <div class="item-card" data-stars="0">
-      <div class="item-title">IBM Releases SOTA Granite Time Series PatchTST-FM-r2 with Commercial-Friendly License</div>
-      <div class='item-desc'>IBM Research publishes a next-generation time-series forecasting foundation model on Hugging Face under a commercially friendly license.</div>
+      <div class="item-title">IBM Releases Granite Time Series PatchTST-FM-r2 with Commercial-Friendly License</div>
+      <div class='item-desc'>IBM Research published a state-of-the-art PatchTST time-series foundation model under a commercially friendly license.</div>
       <div class="item-meta">
         
         
@@ -732,8 +775,8 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
       </div>
     </div>
     <div class="item-card" data-stars="0">
-      <div class="item-title">MetroLLM-Bench: Evaluating Language Models as Transit Kiosk Runtimes</div>
-      <div class='item-desc'>A 955-case benchmark across 6 real metro systems (37–414 stations) testing LLMs on routing, fare calculation, disruptions, accessibility, and adversarial inputs via structured tool calls.</div>
+      <div class="item-title">MetroLLM-Bench: Evaluating LLMs as Transit Kiosk Runtimes</div>
+      <div class='item-desc'>A 955-case benchmark covering six real metro systems (37–414 stations) and eleven task categories (routing, fare calculation, disruptions, accessibility, adversarial input), requiring models to call structured tools and emit a machine-renderable terminal state.</div>
       <div class="item-meta">
         
         
@@ -748,8 +791,8 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           </div>
           
     <div class="item-card" data-stars="0">
-      <div class="item-title">DRG-MAPPO: Hierarchical Dynamic Role-Graph MARL for Cooperative Air Combat</div>
-      <div class='item-desc'>A hierarchical dynamic role-graph MARL framework using structured relational modeling to capture time-varying interactions among battlefield entities for tactical coordination.</div>
+      <div class="item-title">T1: Terminal Agent Reinforcement Learning for Long-Horizon Tasks, a 122B MoE Model</div>
+      <div class='item-desc'>T1 operates a real shell in a cloud sandbox with up to 300+ tool-call turns per task, rewarded by each task's own verifier, and provides a full recipe of aggressive warm-start plus dense process rewards.</div>
       <div class="item-meta">
         
         
@@ -757,8 +800,8 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
       </div>
     </div>
     <div class="item-card" data-stars="0">
-      <div class="item-title">T1: Terminal Agent Reinforcement Learning for Long-Horizon Tasks</div>
-      <div class='item-desc'>A 122B MoE model trained with RL to operate a real shell in a cloud sandbox, supporting 300+ tool-call turns per task with task-native verifier rewards.</div>
+      <div class="item-title">DRG-MAPPO: Hierarchical Dynamic Role-Graph Multi-Agent RL for Cooperative Air Combat</div>
+      <div class='item-desc'>Uses structured relational modeling to capture complex time-varying interactions among battlefield entities, addressing the lack of relational modeling in MARL tactical coordination.</div>
       <div class="item-meta">
         
         
@@ -767,7 +810,7 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
     </div>
     <div class="item-card" data-stars="0">
       <div class="item-title">Scaling Automatic Research Agents via World Models</div>
-      <div class='item-desc'>Identifies a fundamental tension when scaling RL for AutoResearch agents — the coupling between agent generation and environment execution — and proposes a world-model solution.</div>
+      <div class='item-desc'>Identifies a fundamental tension when scaling RL for AutoResearch agents—the coupling between agent generation and environment execution—and proposes decoupling via world models.</div>
       <div class="item-meta">
         
         
@@ -783,7 +826,32 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           
     <div class="item-card" data-stars="0">
       <div class="item-title">FreeFlow: A Bias-free Hierarchical Transformer for Optical Flow Estimation</div>
-      <div class='item-desc'>Removes correlation volumes, feature warping, and iterative refinement entirely, using a single feed-forward hierarchical encoder-decoder Transformer to reach high accuracy.</div>
+      <div class='item-desc'>Removes all task-specific inductive biases (correlation volumes, feature warping, iterative refinement) and reaches high accuracy with a single feed-forward encoder-decoder.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">NCP-ArchPreview: Moving towards Latent Space Language Models through Next Concept Prediction</div>
+      <div class='item-desc'>Introduces a discrete concept-level prediction objective spanning multiple tokens alongside standard NTP, building a product-quantized concept vocabulary.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+        </div>
+        <div class="category" data-cat="project">
+          <div class="category-header">
+            <h2>🔧 Convex Opt</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">Beyond Solver Verdicts: Generative Reward Models for Autoformalization (the VPU Failure Mode)</div>
+      <div class='item-desc'>Formal solvers cannot judge whether a formal translation maintains strict reference-equivalence to a designated formalization; the authors formalize this as Verdict-Preserving-Unfaithfulness (VPU) and prove that structural, verdict-only verification heuristics are mathematically bounded.</div>
       <div class="item-meta">
         
         
@@ -798,8 +866,8 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           </div>
           
     <div class="item-card" data-stars="0">
-      <div class="item-title">alphaXiv/OpenResearch: Run Parallel Research Agents with Any Model</div>
-      <div class='item-desc'>An open-source framework for orchestrating parallel research agents with any LLM backend.</div>
+      <div class="item-title">MathModelAgent: An Agent That Automatically Completes Mathematical Modeling and Generates a Submittable Paper</div>
+      <div class='item-desc'>Designed for mathematical modeling competitions, it automates the full modeling pipeline and outputs a complete paper.</div>
       <div class="item-meta">
         
         
@@ -807,8 +875,8 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
       </div>
     </div>
     <div class="item-card" data-stars="0">
-      <div class="item-title">obra/superpowers: An Agentic Skills Framework and Software Development Methodology That Works</div>
-      <div class='item-desc'>+729 stars today, offering a battle-tested agentic skills framework.</div>
+      <div class="item-title">CloddsBot: Autonomous AI Trading Agent Across 1000+ Markets</div>
+      <div class='item-desc'>Covers Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, and 5 EVM chains, autonomously scanning for edge, executing instantly, and managing risk, with a machine-to-machine payment protocol, self-hosted, built on Claude.</div>
       <div class="item-meta">
         
         
@@ -816,8 +884,8 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
       </div>
     </div>
     <div class="item-card" data-stars="0">
-      <div class="item-title">nashsu/llm_wiki: A Cross-Platform Desktop App That Turns Documents into a Persistent Interlinked Knowledge Base</div>
-      <div class='item-desc'>Unlike traditional RAG that retrieves from scratch each time, the LLM incrementally builds and maintains a persistent wiki.</div>
+      <div class="item-title">Adaptive Bridge: A Proxy-Based Decoupling Layer for Mitigating DDS Backpressure in ROS 2</div>
+      <div class='item-desc'>Solves the problem where a single network-impaired subscriber on a RELIABLE topic degrades throughput and latency across the entire link, decoupling critical subscribers from degraded ones.</div>
       <div class="item-meta">
         
         
@@ -829,16 +897,21 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
       
         <div class="observation">
           <h2>💡 Today's Take</h2>
-          <p>The most notable item for AI4Energy researchers today is **IBM's Granite Time Series PatchTST-FM-r2 released under a commercial-friendly license** — this directly lowers the transfer barrier for load/price/renewable forecasting, signaling that time-series foundation models are moving from "paper-usable" to "product-commercializable." Second is DeepMind's WeatherNext 3, whose improved forecast accuracy will propagate down the chain from "weather → power prediction → dispatch" and is worth tracking for deployment in renewable quantile forecasting. On the RL side, two technical routes worth transferring emerge: hierarchical graph MARL (DRG-MAPPO) for multi-microgrid coordination, and long-horizon terminal agents (T1) for long-cycle dispatch.</p>
-          <button class="speak-btn" data-label="🔊 Read aloud" data-stop="⏹ Stop" data-speak-lang="en-US" data-text="The most notable item for AI4Energy researchers today is **IBM's Granite Time Series PatchTST-FM-r2 released under a commercial-friendly license** — this directly lowers the transfer barrier for load/price/renewable forecasting, signaling that time-series foundation models are moving from &quot;paper-usable&quot; to &quot;product-commercializable.&quot; Second is DeepMind's WeatherNext 3, whose improved forecast accuracy will propagate down the chain from &quot;weather → power prediction → dispatch&quot; and is worth tracking for deployment in renewable quantile forecasting. On the RL side, two technical routes worth transferring emerge: hierarchical graph MARL (DRG-MAPPO) for multi-microgrid coordination, and long-horizon terminal agents (T1) for long-cycle dispatch.">🔊 Read aloud</button>
+          <p>The clearest signal today comes from a **two-pronged advance in time-series foundation models**: Google TimesFM-3 reframes forecasting via "single-pass filling + conditioning on known future events," while DeepMind WeatherNext 3 and IBM's Granite time-series model lower deployment barriers from the meteorological-driver and commercial-licensing ends respectively—together suggesting the load/renewable forecasting stack could be wholesale replaced in the near term. On the RL side, there is a shift from "short-horizon control" toward "long-horizon tool-calling agents" (T1) and "world models to accelerate training" (AutoResearch)—precisely the two pieces needed for agentifying grid dispatch.</p>
+          <button class="speak-btn" data-label="🔊 Read aloud" data-stop="⏹ Stop" data-speak-lang="en-US" data-text="The clearest signal today comes from a **two-pronged advance in time-series foundation models**: Google TimesFM-3 reframes forecasting via &quot;single-pass filling + conditioning on known future events,&quot; while DeepMind WeatherNext 3 and IBM's Granite time-series model lower deployment barriers from the meteorological-driver and commercial-licensing ends respectively—together suggesting the load/renewable forecasting stack could be wholesale replaced in the near term. On the RL side, there is a shift from &quot;short-horizon control&quot; toward &quot;long-horizon tool-calling agents&quot; (T1) and &quot;world models to accelerate training&quot; (AutoResearch)—precisely the two pieces needed for agentifying grid dispatch.">🔊 Read aloud</button>
         </div>
     </div></div>
       <div class="section-title"><span data-lang-content="zh">🗂 历史归档</span><span data-lang-content="en">🗂 Archive</span></div>
       <div class="date-grid">
+        <a class="date-card" href="daily/2026-09-13.html">
+          <div class="date-label">2026-09-13<span class="audio-badge" title="有语音播报">🎧</span></div>
+          <div class="weekday"><span data-lang-content="zh">周日</span><span data-lang-content="en">Sunday</span></div>
+          <div class="latest-badge"><span data-lang-content="zh">最新</span><span data-lang-content="en">Latest</span></div>
+        </a>
         <a class="date-card" href="daily/2026-09-12.html">
           <div class="date-label">2026-09-12<span class="audio-badge" title="有语音播报">🎧</span></div>
           <div class="weekday"><span data-lang-content="zh">周六</span><span data-lang-content="en">Saturday</span></div>
-          <div class="latest-badge"><span data-lang-content="zh">最新</span><span data-lang-content="en">Latest</span></div>
+          
         </a>
         <a class="date-card" href="daily/2026-09-11.html">
           <div class="date-label">2026-09-11<span class="audio-badge" title="有语音播报">🎧</span></div>
@@ -906,7 +979,7 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           
         </a>
         <a class="date-card" href="daily/2026-08-29.html">
-          <div class="date-label">2026-08-29<span class="audio-badge" title="有语音播报">🎧</span></div>
+          <div class="date-label">2026-08-29</div>
           <div class="weekday"><span data-lang-content="zh">周六</span><span data-lang-content="en">Saturday</span></div>
           
         </a>
@@ -1576,7 +1649,7 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           <h2><span data-lang-content="zh">🔥 近 7 天热点</span><span data-lang-content="en">🔥 Hot picks · last 7 days</span></h2>
           <span class="sub"><span data-lang-content="zh">近期高频出现的模型 / 产品 / 项目 · 点击搜索</span><span data-lang-content="en">Models / products mentioned most · click to search</span></span>
         </div>
-        <div class="trend-tags"><span class="trend-tag s3" data-term="WeatherNext 3">WeatherNext 3<span class="cnt">5</span></span><span class="trend-tag s2" data-term="Granite Time">Granite Time<span class="cnt">3</span></span><span class="trend-tag s2" data-term="Hugging Face">Hugging Face<span class="cnt">2</span></span><span class="trend-tag s1" data-term="Google TimesFM-3">Google TimesFM-3<span class="cnt">1</span></span><span class="trend-tag s1" data-term="Lean 4">Lean 4<span class="cnt">1</span></span></div>
+        <div class="trend-tags"><span class="trend-tag s3" data-term="WeatherNext 3">WeatherNext 3<span class="cnt">5</span></span><span class="trend-tag s3" data-term="Granite Time">Granite Time<span class="cnt">4</span></span><span class="trend-tag s2" data-term="Google TimesFM-3">Google TimesFM-3<span class="cnt">3</span></span><span class="trend-tag s2" data-term="Scaling Automatic">Scaling Automatic<span class="cnt">2</span></span><span class="trend-tag s2" data-term="Research Agents">Research Agents<span class="cnt">2</span></span><span class="trend-tag s1" data-term="Lean 4">Lean 4<span class="cnt">1</span></span><span class="trend-tag s1" data-term="ROS 2">ROS 2<span class="cnt">1</span></span></div>
       </div>
     </div>
   
@@ -1586,7 +1659,7 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
   <span data-lang-content="en">© AI Daily Digest · Auto-collected · Curated by DeepSeek · Updated daily</span>
 </footer>
 
-  <script>window.SITE_BASE="";window.AVAILABLE_DATES=["2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-18", "2026-04-19", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24", "2026-04-25", "2026-04-26", "2026-04-27", "2026-04-28", "2026-04-29", "2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-18", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-27", "2026-06-28", "2026-06-29", "2026-06-30", "2026-07-01", "2026-07-02", "2026-07-03", "2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-11", "2026-07-12", "2026-07-13", "2026-07-14", "2026-07-15", "2026-07-16", "2026-07-17", "2026-07-18", "2026-07-19", "2026-07-20", "2026-07-21", "2026-07-22", "2026-07-23", "2026-07-24", "2026-07-27", "2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31", "2026-08-01", "2026-08-02", "2026-08-03", "2026-08-04", "2026-08-05", "2026-08-06", "2026-08-07", "2026-08-08", "2026-08-09", "2026-08-10", "2026-08-11", "2026-08-12", "2026-08-13", "2026-08-14", "2026-08-15", "2026-08-16", "2026-08-17", "2026-08-18", "2026-08-19", "2026-08-20", "2026-08-21", "2026-08-22", "2026-08-23", "2026-08-24", "2026-08-25", "2026-08-26", "2026-08-27", "2026-08-28", "2026-08-29", "2026-08-30", "2026-08-31", "2026-09-01", "2026-09-02", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-06", "2026-09-07", "2026-09-08", "2026-09-09", "2026-09-10", "2026-09-11", "2026-09-12"];window.CURRENT_DATE="2026-09-12";</script>
+  <script>window.SITE_BASE="";window.AVAILABLE_DATES=["2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-18", "2026-04-19", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24", "2026-04-25", "2026-04-26", "2026-04-27", "2026-04-28", "2026-04-29", "2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-18", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-27", "2026-06-28", "2026-06-29", "2026-06-30", "2026-07-01", "2026-07-02", "2026-07-03", "2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-11", "2026-07-12", "2026-07-13", "2026-07-14", "2026-07-15", "2026-07-16", "2026-07-17", "2026-07-18", "2026-07-19", "2026-07-20", "2026-07-21", "2026-07-22", "2026-07-23", "2026-07-24", "2026-07-27", "2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31", "2026-08-01", "2026-08-02", "2026-08-03", "2026-08-04", "2026-08-05", "2026-08-06", "2026-08-07", "2026-08-08", "2026-08-09", "2026-08-10", "2026-08-11", "2026-08-12", "2026-08-13", "2026-08-14", "2026-08-15", "2026-08-16", "2026-08-17", "2026-08-18", "2026-08-19", "2026-08-20", "2026-08-21", "2026-08-22", "2026-08-23", "2026-08-24", "2026-08-25", "2026-08-26", "2026-08-27", "2026-08-28", "2026-08-29", "2026-08-30", "2026-08-31", "2026-09-01", "2026-09-02", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-06", "2026-09-07", "2026-09-08", "2026-09-09", "2026-09-10", "2026-09-11", "2026-09-12", "2026-09-13"];window.CURRENT_DATE="2026-09-13";</script>
   <script>
 (function () {
   var BASE = window.SITE_BASE || "";

@@ -36,6 +36,62 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-13">AI 每日简报 · 2026-09-13 周日</span>
+    <button class="cbtn" data-copy="t-2026-09-13">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-13.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-13.mp3" download="2026-09-13.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-13">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-13">AI 每日简报 · 2026-09-13 周日
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google TimesFM-3：单次前向填充预测，时序基础模型迈入&quot;事件感知&quot;阶段：Google Research 发布 330M 参数的 TimesFM-3，可同时分析时序数据与已知未来事件（促销、天气），一次前向传播填出全部未来时间点，降低累积误差与计算开销。
+  来源：https://the-decoder.com/googles-new-ai-model-predicts-the-future-from-sales-data-weather-and-discount-schedules/
+· Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型：号称迄今最先进、最准确的全球气象 AI 模型，直接面向中期与短期全球天气预报。
+  来源：https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/
+· IBM 发布 Granite Time Series PatchTST-FM-r2，商用友好许可：IBM Research 放出 SOTA 级时序 PatchTST 基础模型，采用商业友好许可证。
+  来源：https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series
+· MetroLLM-Bench：把 LLM 当作轨道交通票务终端运行时来评测：955 个测试用例覆盖 6 个真实地铁系统（37–414 站）、11 类任务（路径规划、票价计算、中断应对、无障碍、对抗输入），要求模型调用结构化工具并输出机器可渲染的终态。
+  来源：https://huggingface.co/papers/2609.10016
+
+🧠 强化学习前沿 (RL for Energy)
+· T1：面向长时程任务的终端 Agent 强化学习，122B MoE 模型：T1 在云沙箱中操作真实 shell，单任务支持 300+ 轮工具调用，以任务自带 verifier 执行结果作为奖励，并给出热启动 + 稠密过程奖励的完整训练配方。
+  来源：https://huggingface.co/papers/2609.11042
+· DRG-MAPPO：分层动态角色图多智能体强化学习用于协同空战：通过结构化关系建模捕捉战场实体间复杂时变交互，解决 MARL 在战术协同中的关系建模缺失问题。
+  来源：https://huggingface.co/papers/2609.11155
+· Scaling Automatic Research Agents via World Models：指出 AutoResearch Agent 在 RL 扩展时的根本张力——agent 生成与环境执行两部分耦合导致训练低效，提出用世界模型解耦。
+  来源：https://huggingface.co/papers/2608.12564
+
+📐 AI4PDE 最新进展
+· FreeFlow：无归纳偏置的分层 Transformer 光流估计：完全去除相关体积、特征 warp、迭代精化等任务特定归纳偏置，仅用单一前馈 encoder-decoder 达到高精度。
+  来源：https://huggingface.co/papers/2609.11486
+· NCP-ArchPreview：通过 Next Concept Prediction 走向潜空间语言模型：在标准 NTP 之外引入跨多 token 的离散概念级预测目标，构建乘积量化的概念词表。
+  来源：https://huggingface.co/papers/2609.10715
+
+🔧 凸优化与能源系统
+· Beyond Solver Verdicts：面向自动形式化的生成式奖励模型（VPU 失效模式）：形式化证明求解器无法判断形式翻译是否与被指定形式化严格等价，作者形式化定义了&quot;判据保持的不忠实性&quot;（VPU），并从理论上证明仅凭结构性判据的验证启发式在数学上是受限的。
+  来源：https://huggingface.co/papers/2609.11085
+
+💻 开源项目与代码
+· MathModelAgent：自动完成数学建模并生成可提交论文的 Agent：专为数学建模竞赛设计，自动完成建模全流程并输出完整论文。
+  来源：https://github.com/jihe520/MathModelAgent
+· CloddsBot：跨 1000+ 市场的自主 AI 交易 Agent：覆盖 Polymarket、Kalshi、Binance、Hyperliquid、Solana DEX 及 5 条 EVM 链，自主扫描 edge、即时执行、风险托管，内置机器间支付协议，自托管，基于 Claude。
+  来源：https://github.com/alsk1992/CloddsBot
+· Adaptive Bridge：缓解 ROS 2 中 DDS 背压的代理式解耦层：解决单一网络受损订阅者导致 RELIABLE topic 全链路吞吐与延迟退化的问题，将关键订阅者与降级订阅者解耦。
+  来源：https://huggingface.co/papers/2608.15380
+
+💡 今日观察
+今天最明确的信号来自**时序基础模型的双线推进**：Google TimesFM-3 用&quot;单次前向填充 + 已知未来事件条件化&quot;重构了预测范式，而 DeepMind WeatherNext 3 与 IBM Granite 时序模型分别从气象驱动和商用许可两端降低了能源预测的落地门槛——三者叠加，意味着负荷/新能源功率预测的技术栈可能在短期内被整体替换。RL 侧则出现从&quot;短程控制&quot;向&quot;长时程工具调用 Agent&quot;（T1）与&quot;世界模型加速训练&quot;（AutoResearch）迁移的趋势，这正是电网调度 Agent 化所需的两块拼图。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-12">AI 每日简报 · 2026-09-12 周六</span>
     <button class="cbtn" data-copy="t-2026-09-12">📋 复制标题</button>
   </div>
@@ -678,40 +734,6 @@
 
 💡 今日观察
 今日值得关注的是高分辨率气象预报的数据缩放突破（BaguanHR），这对新能源功率预测的精度上限提升具有直接意义。同时，进化策略（ES）在 LLM 推理中展现出比 GRPO 更广的覆盖能力，这种特性对能源系统中高维连续控制问题可能带来新的求解思路。此外，LAION 大规模开放视频数据集的发布，为电力设施视觉巡检等应用提供了前所未有的训练数据基础。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-08-29">AI 每日简报 · 2026-08-29 周六</span>
-    <button class="cbtn" data-copy="t-2026-08-29">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-08-29.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-08-29.mp3" download="2026-08-29.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-08-29">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-08-29">AI 每日简报 · 2026-08-29 周六
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Pushing the Limits of High-Resolution Weather Forecasting through Data Scaling：提出 BaguanHR 框架，通过数据缩放突破 0.1° 高分辨率全球天气预报的瓶颈。
-  来源：https://huggingface.co/papers/2608.14652
-
-📐 AI4PDE 最新进展
-· Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation：提出 MAELLE 框架，将化学反应预测建模为电子占据向量上的离散流匹配，而非传统的分子拓扑编辑。
-  来源：https://arxiv.org/abs/2608.27429v1
-
-💻 开源项目与代码
-· K-Dense-AI/scientific-agent-skills：将任意 AI Agent 变为 AI 科学家的技能库，含 163 个验证技能和 100+ 科学数据库，被全球 175,000+ 科学家使用。
-  来源：https://github.com/K-Dense-AI/scientific-agent-skills
-· marin-community/marin：开源基础模型研究与开发框架。
-  来源：https://github.com/marin-community/marin
-
-💡 今日观察
-今日能源交叉领域的高质量内容较为稀缺，但高分辨率气象预报的 Scaling 工作值得重点关注——这直接关系到风电、光伏功率预测的精度上限。此外，科学 Agent 技能库的兴起预示着 AI4Energy 研究可能从&quot;训练专用模型&quot;转向&quot;组合通用技能&quot;的新范式，值得持续跟踪。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
