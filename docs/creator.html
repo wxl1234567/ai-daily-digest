@@ -36,6 +36,54 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-12">AI 每日简报 · 2026-09-12 周六</span>
+    <button class="cbtn" data-copy="t-2026-09-12">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-12.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-12.mp3" download="2026-09-12.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-12">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-12">AI 每日简报 · 2026-09-12 周六
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型：DeepMind 推出其迄今最先进、最准确的全球天气预测 AI 模型 WeatherNext 3。
+  来源：https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/
+· IBM 发布 SOTA 时序基础模型 Granite Time Series PatchTST-FM-r2（商用友好许可）：IBM Research 在 Hugging Face 发布新一代时序预测基础模型，采用商业友好许可证。
+  来源：https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series
+· MetroLLM-Bench：将语言模型作为轨道交通服务终端运行时进行评估：提出 955 个案例的基准，覆盖 6 个真实地铁系统（37–414 站），测试 LLM 在路由、票价计算、中断处置、无障碍与对抗输入下的工具调用能力。
+  来源：https://huggingface.co/papers/2609.10016
+
+🧠 强化学习前沿 (RL for Energy)
+· DRG-MAPPO：面向协同空战的分层动态角色图多智能体强化学习：提出分层动态角色图 MARL 框架，通过结构化关系建模捕捉战场实体的时变交互，解决战术协同难题。
+  来源：https://huggingface.co/papers/2609.11155
+· T1：面向长时程任务的终端智能体强化学习：122B MoE 模型，通过 RL 训练在云沙箱中操作真实 shell，单任务支持 300+ 工具调用轮次，由任务自带验证器提供奖励。
+  来源：https://huggingface.co/papers/2609.11042
+· Scaling Automatic Research Agents via World Models：识别出 AutoResearch 智能体 RL 扩展中的根本张力——智能体生成与环境执行之间的耦合，并提出世界模型解法。
+  来源：https://huggingface.co/papers/2608.12564
+
+📐 AI4PDE 最新进展
+· FreeFlow：无偏置分层 Transformer 用于光流估计：完全去除相关体、特征 warp、迭代精化等任务特定归纳偏置，仅用单一前馈编码器-解码器分层 Transformer 达到高精度。
+  来源：https://huggingface.co/papers/2609.11486
+
+💻 开源项目与代码
+· alphaXiv/OpenResearch：用任意模型运行并行研究智能体：支持并行研究智能体编排的开源框架，可搭配任意 LLM 后端。
+  来源：https://github.com/alphaXiv/OpenResearch
+· obra/superpowers：可用的智能体技能框架与软件开发方法论：今日 +729 star，提供一套经过验证的 agentic skills 框架。
+  来源：https://github.com/obra/superpowers
+· nashsu/llm_wiki：把文档自动转化为持久化互联知识库的跨平台桌面应用：区别于传统 RAG 每次从零检索，LLM 增量构建并维护持久 wiki。
+  来源：https://github.com/nashsu/llm_wiki
+
+💡 今日观察
+今日最值得 AI4Energy 研究者关注的是 **IBM Granite Time Series PatchTST-FM-r2 以商用友好许可发布 SOTA 时序基础模型**——这直接降低了负荷/电价/新能源出力预测的迁移门槛，意味着时序基础模型正在从&quot;论文可用&quot;走向&quot;产品可商用&quot;。其次是 DeepMind WeatherNext 3 的发布，气象预报精度的提升会沿着&quot;气象→功率预测→调度&quot;链条向下游传导，值得跟踪其在新能量化预测中的落地。RL 侧则出现分层图 MARL（DRG-MAPPO）与长时程终端智能体（T1）两条值得迁移到多微网协同与长周期调度的技术路线。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-11">AI 每日简报 · 2026-09-11 周五</span>
     <button class="cbtn" data-copy="t-2026-09-11">📋 复制标题</button>
   </div>
@@ -664,52 +712,6 @@
 
 💡 今日观察
 今日能源交叉领域的高质量内容较为稀缺，但高分辨率气象预报的 Scaling 工作值得重点关注——这直接关系到风电、光伏功率预测的精度上限。此外，科学 Agent 技能库的兴起预示着 AI4Energy 研究可能从&quot;训练专用模型&quot;转向&quot;组合通用技能&quot;的新范式，值得持续跟踪。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-08-28">AI 每日简报 · 2026-08-28 周五</span>
-    <button class="cbtn" data-copy="t-2026-08-28">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-08-28.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-08-28.mp3" download="2026-08-28.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-08-28">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-08-28">AI 每日简报 · 2026-08-28 周五
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Pushing the Limits of High-Resolution Weather Forecasting through Data Scaling：提出 BaguanHR 框架，通过数据缩放突破 0.1° 高分辨率全球天气预报的瓶颈，解决粗分辨率重分析数据不可逆信息损失问题。
-  来源：https://huggingface.co/papers/2608.14652
-· The UK Power Grid Has a Phantom Data Center Problem：英国能源监管机构正采取多种手段阻止投机性数据中心项目接入电网，AI 算力扩张与电网容量之间的矛盾日益尖锐。
-  来源：https://www.wired.com/story/uk-data-centers-logjam-ofgem-regulations/
-
-🧠 强化学习前沿 (RL for Energy)
-· TTPO: Test-Time Policy Optimization：提出测试时策略优化方法，用多数投票伪标签替代地面真值标签，解决 RL 后训练无法在测试时继续学习的问题。
-  来源：https://huggingface.co/papers/2608.27448
-· Understanding Evolution Strategies for LLM Reasoning: Broader Reasoning Coverage than GRPO：系统研究进化策略（ES）在 LLM 推理后训练中的优化行为，理论与实证表明 ES 比 GRPO 具有更广的推理覆盖范围。
-  来源：https://huggingface.co/papers/2608.27351
-· GameWAM: A World Action Model for Video Games：提出 World-Action Model（WAM）统一世界模型与任务策略，在视频游戏环境中探索感知-预测-决策一体化架构。
-  来源：https://huggingface.co/papers/2608.26200
-· PILOT in the Loop: Live Self-Improvement for Long-Horizon Agents：提出长时程智能体的在线自改进方法，在执行过程中实时利用经验改进当前任务和未来表现，而非事后处理。
-  来源：https://huggingface.co/papers/2608.26530
-
-📐 AI4PDE 最新进展
-· PAWBench: How Far Are We from Probabilistically Aligned World Modeling?：提出概率对齐评估基准，检验视频生成/世界模型是否不仅能生成合理轨迹，还能复现相同初始条件下的行为分布。
-  来源：https://huggingface.co/papers/2608.27345
-
-💻 开源项目与代码
-· TauricResearch/TradingAgents：多智能体 LLM 金融交易框架，展示了大语言模型智能体在金融决策中的应用范式。
-  来源：https://github.com/TauricResearch/TradingAgents
-· K-Dense-AI/scientific-agent-skills：面向科学研究的 Agent Skills 库，包含 163 个验证技能和 100+ 科学数据库，兼容 Cursor、Claude Code、Codex 等主流工具。
-  来源：https://github.com/K-Dense-AI/scientific-agent-skills
-
-💡 今日观察
-今日资讯中与 AI4Energy 直接相关的高质量内容相对稀缺，但高分辨率气象预测的 BaguanHR 框架值得重点关注——它直接服务于新能源功率预测的精度提升。另外值得注意的趋势是，世界模型（World-Action Model）和概率对齐评估（PAWBench）等通用 AI 方法正在向物理世界建模延伸，这可能为能源系统的数字孪生与不确定性量化提供新的方法论基础。建议持续关注这些通用方法在能源场景的迁移应用。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
