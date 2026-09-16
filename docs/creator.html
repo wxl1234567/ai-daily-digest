@@ -36,6 +36,56 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-16">AI 每日简报 · 2026-09-16 周三</span>
+    <button class="cbtn" data-copy="t-2026-09-16">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-16.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-16.mp3" download="2026-09-16.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-16">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-16">AI 每日简报 · 2026-09-16 周三
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 美国数据中心2035年天然气消耗量或超德日总和：AI算力扩张推动美国数据中心成为全球最大天然气消费主体之一。
+  来源：https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/
+· AI数据中心建设遭遇工业创伤城市抵制：费城等曾受炼油厂影响社区反对新建数据中心，民调显示61%选民反对。
+  来源：https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september
+· OpenAI用自家LLM设计Jalapeño芯片：OpenAI首款AI加速器芯片实现13.4 petaflops 4-bit算力，端到端延迟较GB300降低3.6倍。
+  来源：https://spectrum.ieee.org/llms-for-chip-design
+
+🧠 强化学习前沿 (RL for Energy)
+· Bellman Policy Optimization (BPO)：从Policy Mirror Descent推导的无critic RL方法，利用Bellman方程将PMD重构为轨迹级目标，避免中间状态值估计。
+  来源：https://arxiv.org/abs/2609.15987v1
+· RL for LLMs中的马太效应：研究发现RL训练在简单问题上提升显著，在困难问题上提升有限，归因于现代RL方法的探索机制限制。
+  来源：https://huggingface.co/papers/2609.13443
+· MoE强化学习中的专家空间探索：通过扰动专家选择增加rollout多样性，将专家路由作为RL探索的额外来源。
+  来源：https://huggingface.co/papers/2609.13058
+
+📐 AI4PDE 最新进展
+· Navier-Stokes千禧年问题据称已被解决：Clay数学研究所表示该问题&quot;显然已被解决&quot;，正在启动正式审查。
+  来源：https://the-decoder.com/clay-mathematics-institute-says-the-navier-stokes-millennium-prize-problem-has-apparently-been-settled/
+· 对LLM在Navier-Stokes问题上能力的质疑：作者在Navier-Stokes被AI辅助解决后仍对LLM持悲观态度，讨论AI在数学发现中的真实边界。
+  来源：https://dank.systems/posts/2026-09-15-ai-bear.html
+
+💻 开源项目与代码
+· alphaXiv/OpenResearch：将编码Agent转化为科研Agent，支持自动化研究流程。
+  来源：https://github.com/alphaXiv/OpenResearch
+· earendil-works/pi：统一LLM API、Agent循环、TUI和编码Agent CLI的AI Agent工具包。
+  来源：https://github.com/earendil-works/pi
+· JustVugg/colibri：纯C实现、零依赖，支持从磁盘流式加载专家权重的MoE推理引擎。
+  来源：https://github.com/JustVugg/colibri
+
+💡 今日观察
+今日最值得关注的信号是数据中心能源消耗问题持续升温——从天然气消耗预测到选址社会阻力，AI算力扩张正成为能源系统规划中不可忽视的新变量。与此同时，Navier-Stokes千禧年问题据称被解决（待正式审查），若确认将对AI4PDE领域产生深远影响，能源领域的流体仿真方法论可能面临重构。RL方法论方面，BPO的无critic架构和MoE专家空间探索为能源调度中的高效RL训练提供了新思路。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-15">AI 每日简报 · 2026-09-15 周二</span>
     <button class="cbtn" data-copy="t-2026-09-15">📋 复制标题</button>
   </div>
@@ -702,56 +752,6 @@
 
 💡 今日观察
 今日值得关注的信号是 **AI for Science 基础设施的快速成熟**：scientific-agent-skills 的爆发增长和清华 OpenMAIC 的多智能体教学框架，表明科学智能体的通用技能库正在成为标准化的&quot;操作系统&quot;，能源研究者可直接复用这些技能库来加速电池材料筛选、电网故障诊断等任务。另一方面，**一般博弈中常数个体遗憾的理论突破**（ECHO-OFTRL）为电力市场多智能体竞价提供了前所未有的理论保证，值得密切关注其向能源市场均衡分析的迁移。最后，Google TimesFM-3 的发布（330M参数多变量时序基础模型）虽未单独列出，但其零样本多变量预测能力对负荷预测和新能源出力预测具有直接应用价值，建议关注其权重开放进展。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-01">AI 每日简报 · 2026-09-01 周二</span>
-    <button class="cbtn" data-copy="t-2026-09-01">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-01.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-01.mp3" download="2026-09-01.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-01">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-01">AI 每日简报 · 2026-09-01 周二
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· arXiv] Reciprocal-Manifold Annealed KKT Flows for Constrained Optimization: Application to the Nonconvex AC Optimal Power Flow
-  来源：https://arxiv.org/abs/2608.29628v1
-· arXiv] LLMODE: Aligning ODEs with LLMs via Gated Token Injection for Irregular Spatio-Temporal Forecasting
-  来源：https://arxiv.org/abs/2608.29640v1
-· The Decoder] AI sentiment is turning sour as employee reviews reveal growing frustration across the workforce
-  来源：https://the-decoder.com/ai-sentiment-is-turning-sour-as-employee-reviews-reveal-growing-frustration-across-the-workforce/
-
-🧠 强化学习前沿 (RL for Energy)
-· GitHub] pollen-robotics/microduck_rl
-  来源：https://github.com/pollen-robotics/microduck_rl
-· HuggingFace Papers] Rubric-to-Code Credit Assignment for Reinforcement Learning
-  来源：https://huggingface.co/papers/2608.27906
-
-📐 AI4PDE 最新进展
-· arXiv] On the Number of Observation Nodes in Recurrent Neural Networks with Linear Threshold and ReLU Functions
-  来源：https://arxiv.org/abs/2608.29650v1
-· HuggingFace Papers] Training, learning and inference: unified dynamics of neural systems
-  来源：https://huggingface.co/papers/2608.20965
-
-🔧 凸优化与能源系统
-· arXiv] Unsupervised Multi-Scale Gromov-Wasserstein Hypergraph Alignment
-  来源：https://arxiv.org/abs/2608.29635v1
-
-💻 开源项目与代码
-· GitHub] K-Dense-AI/scientific-agent-skills
-  来源：https://github.com/K-Dense-AI/scientific-agent-skills
-· GitHub] THU-MAIC/OpenMAIC
-  来源：https://github.com/THU-MAIC/OpenMAIC
-
-💡 今日观察
-今日最值得关注的是 **arXiv 上 Reciprocal-Manifold Annealed KKT Flows 直接面向非凸 AC 最优潮流**，这是 AI4Energy 与凸优化交叉的典型代表，说明连续时间优化正在成为实时电力系统运行的新工具。其次，**LLMODE 将 ODE 与 LLM 结合处理不规则时空预测**，为新能源出力预测提供了新范式，值得关注其在风电/光伏场景的迁移潜力。最后，**科学 Agent Skills 库的快速崛起**（日增近 2000 star）表明 AI for Science 的工具化趋势正在加速，能源领域研究者应关注此类基础设施。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
