@@ -36,6 +36,64 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-17">AI 每日简报 · 2026-09-17 周四</span>
+    <button class="cbtn" data-copy="t-2026-09-17">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-17.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-17.mp3" download="2026-09-17.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-17">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-17">AI 每日简报 · 2026-09-17 周四
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 美联储时隔三年多加息25个基点以应对能源价格上涨：美联储宣布加息25个基点，明确将能源价格上涨列为通胀压力来源之一，这是三年多来首次加息。
+  来源：https://www.36kr.com/p/3986735004892164
+· AI数据中心电子废弃物问题被严重低估：新报告警告AI数据中心产生的电子废弃物远超此前估计，到2050年可装满2300万个集装箱。
+  来源：https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban
+· AI与数据中心在各项民调中极不受欢迎：NYT/Siena民调显示61%受访选民反对为AI技术建设数据中心，公众抵触情绪显著。
+  来源：https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september
+
+🧠 强化学习前沿 (RL for Energy)
+· Xiaomi Mimo 2.6 实时后训练仪表盘：小米公开了Mimo 2.6模型的强化学习后训练实时监控面板，可观察训练动态。
+  来源：https://mimo.xiaomi.com/rl/
+· Reward AI 发布 OM-1：仅用人类演示训练的机器人策略：OM-1是通用操作策略，完全基于7自由度可穿戴手套采集的人类演示训练，无需遥操作或机器人数据，配合RL训练的控制层运行。
+  来源：https://www.marktechpost.com/2026/09/14/reward-ai-releases-om-1-a-robot-policy-trained-on-human-demonstrations-only-with-no-teleoperation-or-on-robot-data/
+· LLM强化学习中的马太效应：永不放弃地学习解决难题：研究发现RL训练对简单问题提升大、对难题提升小，提出&quot;马太效应&quot;概念并分析现代RL方法的结构性局限。
+  来源：https://huggingface.co/papers/2609.13443
+· 广义智能体迭代：迭代策略改进与递归自我改进的统一形式框架：提出统一框架描述递归自我改进（RSI）与经典迭代策略改进（GPI）的关系，填补理论空白。
+  来源：https://huggingface.co/papers/2609.13406
+
+📐 AI4PDE 最新进展
+· 前沿模型在物理学上表现如何？：arXiv论文系统评估前沿大模型在物理问题上的能力，HN讨论热度较高。
+  来源：https://arxiv.org/abs/2609.13009
+· PhysStream：带结构化场景记忆与细粒度运动控制的流式物理视频生成：提出自回归模型，实现物理基础的图像到视频合成，支持结构化场景记忆和细粒度运动控制。
+  来源：https://huggingface.co/papers/2609.17521
+
+🔧 凸优化与能源系统
+· 异构异步优化与同构异步优化之间的鸿沟出乎意料地难以弥合：理论分析表明同构与异构异步随机梯度优化之间存在显著复杂度差距，挑战现有理论认知。
+  来源：https://arxiv.org/abs/2609.17483v1
+
+💻 开源项目与代码
+· Tencent/WeKnora — 开源LLM知识平台：腾讯开源的知识平台，将原始文档转化为可查询RAG、自主推理智能体和自维护Wiki，今日+1197 star。
+  来源：https://github.com/Tencent/WeKnora
+· JustVugg/colibri — 纯C实现的MoE推理引擎：零依赖、纯C实现的前沿MoE模型推理引擎，专家从磁盘流式加载，可在自有硬件上运行大模型，今日+1546 star。
+  来源：https://github.com/JustVugg/colibri
+· Nums AI 发布 Causilo：登顶TabArena的表格基础模型：Causilo是预训练表格基础模型，支持分类与回归，提供scikit-learn接口，在TabArena单模型Elo排名第一，代码Apache-2.0开源。
+  来源：https://www.marktechpost.com/2026/09/15/nums-ai-releases-causilo-a-tabular-foundation-model-that-tops-tabarena-among-single-models/
+· Prior Labs 发布 TabPFN-3.5：默认设置即击败Otto Kaggle冠军方案：仅用合成数据预训练的表格基础模型，默认设置下超越Kaggle竞赛获胜方案。
+  来源：https://www.marktechpost.com/2026/09/15/prior-labs-releases-tabpfn-3-5-a-tabular-foundation-model-that-beats-the-winning-otto-kaggle-solution-with-default-settings/
+
+💡 今日观察
+今日最值得关注的信号是**能源与AI的张力正在从技术层面向政策与市场层面扩散**：美联储因能源价格上涨加息、AI数据中心遭遇公众强烈抵触、电子废弃物问题被严重低估，三者共同指向AI4Energy研究需要更系统地纳入经济-社会约束。与此同时，Causilo和TabPFN-3.5等表格基础模型的密集发布，为能源领域负荷预测、电价预测等经典任务提供了开箱即用的新工具，值得尽快在真实能源数据集上验证其泛化能力。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-16">AI 每日简报 · 2026-09-16 周三</span>
     <button class="cbtn" data-copy="t-2026-09-16">📋 复制标题</button>
   </div>
@@ -702,56 +760,6 @@
 
 💡 今日观察
 今日 AI4Energy 四个核心方向的高质量内容整体偏少，但值得注意两个信号：一是时序基础模型（TimesFM）及其实时流式集成方案（IBM × Confluent）持续升温，预示&quot;预训练时序模型+流式部署&quot;正在成为能源预测的新范式；二是 Verbal RL 综述的提出，为能源系统中融合自然语言反馈的调度优化打开了新的方法论窗口。建议关注近期 NeurIPS/ICLR 投稿中是否有将上述技术应用于电力市场的实证研究。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-02">AI 每日简报 · 2026-09-02 周三</span>
-    <button class="cbtn" data-copy="t-2026-09-02">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-02.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-02.mp3" download="2026-09-02.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-02">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-02">AI 每日简报 · 2026-09-02 周三
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 不确定性感知的端到端AI天气预报：Aardvark Weather模型通过附加随机机制实现概率化预测，同时解耦观测与模型的不确定性贡献。
-  来源：https://huggingface.co/papers/2608.30795
-· BRF-GS：基于3D高斯泼溅的高光谱双向反射因子建模：利用3DGS实现地表多角度高光谱反射率影像的高效生成，替代计算密集的辐射传输模型。
-  来源：https://arxiv.org/abs/2608.31159v1
-
-🧠 强化学习前沿 (RL for Energy)
-· 一般博弈中的常数个体遗憾：提出ECHO-OFTRL算法，在完全信息反馈下首次实现有限N人正规博弈中个体遗憾与时间步长无关的常数界。
-  来源：https://arxiv.org/abs/2608.31166v1
-· SUN：语言引导的持久程序实现控制到学习的策略统一：将模型预测控制与学习策略通过类型化可执行程序统一，保持任务语义一致性。
-  来源：https://arxiv.org/abs/2608.31167v1
-· NavMCP：将基础模型搭建为物理世界智能体：通过MCP协议集成VLM与导航基础模型，实现长时域物理世界导航任务的推理与执行统一。
-  来源：https://huggingface.co/papers/2608.30396
-
-📐 AI4PDE 最新进展
-· 神经网络的仿射潜参数化下的尖锐逼近率：证明低维潜参数生成大网络参数的参数高效方法具备尖锐的逼近率理论保证。
-  来源：https://arxiv.org/abs/2608.31157v1
-· Code-as-World：将真实视频重写为可执行的MuJoCo物理程序：智能体循环将真实视频转化为可编辑的MuJoCo场景代码，并用验证过的世界训练物理推理。
-  来源：https://www.marktechpost.com/2026/08/29/mirros-code-as-world-executable-world-representations/
-
-🔧 凸优化与能源系统
-· 时变集总半线性系统的可控性：证明在线性系统可控且非线性项满足有界性条件时，半线性扰动系统近似可控。
-  来源：https://arxiv.org/abs/2608.31131v1
-
-💻 开源项目与代码
-· OpenMAIC：开源多智能体交互课堂：清华MAIC团队开源的一键式多智能体沉浸式学习环境，今日新增3,122星。
-  来源：https://github.com/THU-MAIC/OpenMAIC
-· scientific-agent-skills：AI科学家技能库：包含165个经过验证的科学技能和100+科学数据库，覆盖生物、化学、医学和药物发现，已服务190,000+科学家。
-  来源：https://github.com/K-Dense-AI/scientific-agent-skills
-
-💡 今日观察
-今日值得关注的信号是 **AI for Science 基础设施的快速成熟**：scientific-agent-skills 的爆发增长和清华 OpenMAIC 的多智能体教学框架，表明科学智能体的通用技能库正在成为标准化的&quot;操作系统&quot;，能源研究者可直接复用这些技能库来加速电池材料筛选、电网故障诊断等任务。另一方面，**一般博弈中常数个体遗憾的理论突破**（ECHO-OFTRL）为电力市场多智能体竞价提供了前所未有的理论保证，值得密切关注其向能源市场均衡分析的迁移。最后，Google TimesFM-3 的发布（330M参数多变量时序基础模型）虽未单独列出，但其零样本多变量预测能力对负荷预测和新能源出力预测具有直接应用价值，建议关注其权重开放进展。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
