@@ -36,6 +36,64 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-21">AI 每日简报 · 2026-09-21 周一</span>
+    <button class="cbtn" data-copy="t-2026-09-21">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-21.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-21.mp3" download="2026-09-21.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-21">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-21">AI 每日简报 · 2026-09-21 周一
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 人类而非失控AI仍是能源系统最大网络安全风险：The Verge 报道指出，在近期高调黑客事件引发&quot;AI 可能杀死全人类&quot;恐慌之前，能源系统早已对网络攻击高度脆弱，且风险正在增长。
+  来源：https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure
+· 美国撤销发电厂气候污染限制：人权观察报道美国撤销了对发电厂气候污染的限制，HN 热度 205 分、206 条评论。
+  来源：https://text.hrw.org/news/2026/09/17/us-revokes-limits-on-power-plants-climate-pollution
+· 弗吉尼亚州长设立 AI 工作组并限制数据中心：州长 Abigail Spanberger 签署行政令，禁止行政 branch 官员签署保密协议，赋予地方政府对数据中心开发更大话语权，放缓审批。
+  来源：https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force
+· 中国新能源汽车&quot;过剩&quot;论的三本账：36Kr 分析指出关税不会对滞销品开火，中国新能源汽车产能问题可能被误算。
+  来源：https://www.36kr.com/p/3991695333971592
+
+🧠 强化学习前沿 (RL for Energy)
+· Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL：论文提出 ActObs，在 SFT 阶段同时监督环境观测 token，改变 RL 下智能体的探索行为。
+  来源：https://huggingface.co/papers/2609.20715
+· RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning：提出自退出的 on-policy 蒸馏方法，为多轮 RL 智能体提供密集 token 级监督，解决特权信息教师不可靠与阶段依赖问题。
+  来源：https://huggingface.co/papers/2609.20784
+· Fingers as Legs: Learning Self-Supported Locomotion and Manipulation with an Anthropomorphic Hand：用 RL 让拟人手用同一组手指完成移动、支撑体重和操作，仿真中校准硬件参数。
+  来源：https://huggingface.co/papers/2609.17172
+
+📐 AI4PDE 最新进展
+· JEPA-Anything: Learning Predictive Models across Different Worlds：提出基于正交预测分解（OPF）的领域无关世界模型框架，扩展 JEPA 架构，将潜在目标分解为互补因子。
+  来源：https://huggingface.co/papers/2609.20800
+· Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation：结合局部 Softmax 注意力与双向线性记忆，解决视频扩散模型注意力计算瓶颈。
+  来源：https://huggingface.co/papers/2609.20744
+
+🔧 凸优化与能源系统
+· Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling：研究发现相同候选预算下，批处理与顺序调用的执行方式显著影响推理能耗与性能。
+  来源：https://huggingface.co/papers/2609.19499
+
+💻 开源项目与代码
+· cloudflare/security-audit-skill：Cloudflare 开源编码智能体技能，用于多阶段安全审计，产出可独立验证的机器可读发现。今日 +2,428 star。
+  来源：https://github.com/cloudflare/security-audit-skill
+· trycua/cua：开源计算机使用驱动、跨操作系统集群及训练/评估/数据生成基准。今日 +1,018 star。
+  来源：https://github.com/trycua/cua
+· higgsfield-ai/higgsfield：容错、高可扩展的 GPU 编排与机器学习框架，面向数十亿到数万亿参数模型训练。今日 +465 star。
+  来源：https://github.com/higgsfield-ai/higgsfield
+· affaan-m/ECC：智能体 harness 性能优化系统，涵盖技能、直觉、记忆、安全与研究优先开发，支持 Claude Code、Codex、Opencode、Cursor 等。今日 +826 star。
+  来源：https://github.com/affaan-m/ECC
+
+💡 今日观察
+今日最值得关注的信号是能源系统网络安全被提升到与 AI 安全同等重要的位置——The Verge 明确指出人类而非失控 AI 才是能源系统最大威胁，这提示 AI4Energy 研究者在部署智能体时必须将安全审计作为一等公民。同时，RL 领域两篇关于观测监督与自退出蒸馏的论文，为能源多智能体调度提供了更高效的训练范式。数据中心能耗监管（弗吉尼亚州）与新能源汽车产能讨论，则从政策与市场两端持续塑造能源 AI 的应用边界。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-20">AI 每日简报 · 2026-09-20 周日</span>
     <button class="cbtn" data-copy="t-2026-09-20">📋 复制标题</button>
   </div>
@@ -738,50 +796,6 @@
 
 💡 今日观察
 今日最值得关注的信号是 **Google WeatherNext 3 彻底抛弃物理模拟、直接从卫星数据学习的范式转变**——这对 AI4Energy 研究者是一个重要提示：纯数据驱动的预测模型正在逼近甚至超越传统物理建模路线，风电/光伏功率预测领域可能迎来类似拐点。其次，**RLVR 解空间收缩研究**揭示了强化学习在提升单次精度的同时牺牲策略多样性的机制性代价，这对能源调度策略的鲁棒性和探索-利用平衡设计具有直接参考价值。最后，**Alberta 对光伏征收惩罚性税**提醒我们：能源 AI 研究必须将政策变化作为外生冲击纳入建模框架，否则市场与调度模型将面临严重的分布偏移风险。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-06">AI 每日简报 · 2026-09-06 周日</span>
-    <button class="cbtn" data-copy="t-2026-09-06">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-06.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-06.mp3" download="2026-09-06.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-06">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-06">AI 每日简报 · 2026-09-06 周日
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Google DeepMind 发布 WeatherNext 3：基于气象站观测训练的 5km 全球天气预报模型，每小时刷新：WeatherNext 3 融合实时静止卫星拼图数据，每小时更新，在 Search、Gemini、Maps 中输出 5km 分辨率全球预报。
-  来源：https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/
-· IBM 时间序列模型与 Confluent 集成实现实时智能：Hugging Face 博客介绍了 IBM Research 的时间序列模型在 Confluent 流数据处理平台上的实时推理应用。
-  来源：https://huggingface.co/blog/ibm-research/real-time-intelligence
-· Principia：视频模型的牛顿物理关系测试基准：当同一场景中两个物体遵循相同物理定律时，其运动必须满足与标定无关的可预测关系，Principia 基于此提出新的物理推理评估基准。
-  来源：https://huggingface.co/papers/2609.04200
-
-🧠 强化学习前沿 (RL for Energy)
-· DRACO：面向长时程 Agent 训练的细粒度动态 Rubric 信用分配：在无结果标签的设定下，DRACO 动态生成多准则 rubrics 并沿轨迹分布优势信号，解决长时程任务中单一标量奖励信号不足的问题。
-  来源：https://huggingface.co/papers/2609.04094
-· Locked at the Entrance, Open Inside: RLVR 如何收窄解空间：研究发现 RLVR 虽提升单样本准确率，但导致策略解空间收缩，削弱测试时扩展收益；在 Countdown 任务上分离了&quot;访问有效解族&quot;与&quot;执行计算&quot;两个环节。
-  来源：https://huggingface.co/papers/2608.29188
-
-📐 AI4PDE 最新进展
-· VeriPhy：面向世界模型的 Agentic 物理推理验证与修正系统：VeriPhy 通过文本规划器将提示编译为类型化物理义务与静态验证执行计划，在帧观测前即完成约束声明，仅调用冻结的低层专家进行观测门控验证。
-  来源：https://huggingface.co/papers/2609.03153
-· 有限时间爆破：三维平均化 Navier-Stokes 方程：陶哲轩 2014 年的经典博客文章重新引发讨论，关于三维平均化 Navier-Stokes 方程的有限时间爆破现象。
-  来源：https://terrytao.wordpress.com/2014/02/04/finite-time-blowup-for-an-averaged-three-dimensional-navier-stokes-equation/
-
-💻 开源项目与代码
-· NVIDIA 发布 Personal AI Router (PAIR)：开源虚拟推理路由器：PAIR 将本地 AI 请求分发至家庭网络中的 RTX、DGX Spark 和 Mac 节点，代理现有 Ollama 和 LM Studio 端点，按就绪状态、引擎状态、模型存在性、任务负载和 GPU 利用率调度。
-  来源：https://www.marktechpost.com/2026/09/04/nvidia-releases-personal-ai-router-pair-an-open-source-virtual-inference-router-that-distributes-local-ai-requests-across-rtx-dgx-spark-and-mac-nodes/
-
-💡 今日观察
-今日最值得关注的信号是 Google DeepMind WeatherNext 3 的发布——AI 气象预报正在从&quot;模型创新&quot;转向&quot;数据同化与刷新频率&quot;的工程化竞争，这对风电功率预测和新能源并网研究意味着新的基线工具。同时，DRACO 与 RLVR 解空间研究揭示了长时程 RL 训练中信用分配与策略多样性的深层矛盾，这对储能调度、虚拟电厂等真实能源 RL 场景的算法设计有直接启示。AI4PDE 方向虽无重大突破性发布，但 VeriPhy 的物理验证思路值得关注——将物理约束编译为可审计的验证计划，与 PDE 代理模型的误差控制需求高度契合。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
