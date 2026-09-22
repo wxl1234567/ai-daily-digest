@@ -36,6 +36,62 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-22">AI 每日简报 · 2026-09-22 周二</span>
+    <button class="cbtn" data-copy="t-2026-09-22">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-22.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-22.mp3" download="2026-09-22.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-22">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-22">AI 每日简报 · 2026-09-22 周二
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 加州签署七项法案，收紧 AI 数据中心能耗与水耗监管：纽森州长签署的一揽子法案要求加州公共事业委员会为数据中心设立新的费率类别，并强制其自行承担电网升级成本，防止公用事业费用转嫁给居民用户。
+  来源：https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills
+· 能源系统最大网络安全风险仍是&quot;人&quot;，而非失控 AI：报道指出能源基础设施长期处于高度可攻击状态，当前威胁主要来自人为因素与供应链漏洞，AI 反而可能加剧漏洞发现速度（&quot;漏洞爆炸&quot;已在发生）。
+  来源：https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure
+
+🧠 强化学习前沿 (RL for Energy)
+· PARTS：面向长时域操作的子任务级 RL 微调框架：针对预训练机器人策略在少数关键子任务上反复失败的问题，提出仅用稀疏奖励、在子任务层面做 RL 微调，避免重复采集完整任务演示。
+  来源：https://huggingface.co/papers/2609.21788
+· MintAct：统一数字环境的视觉智能体（含可扩展 RL 基础设施）：发布 2B/4B/8B 三档视觉语言模型，统一 UI grounding、跨端多步导航与视觉工具使用，并配套可扩展的环境与 RL 训练基础设施。
+  来源：https://huggingface.co/papers/2609.22083
+· CodeMidas：从代码本身扩展智能体编程 RL 环境：以现有代码库中已实现的功能为源头，自动构建可执行的 RL 训练环境，摆脱对 issue/commit 等开发痕迹的依赖。
+  来源：https://huggingface.co/papers/2609.22068
+· 小米 MiMo-V2.6-Flash-RL 开源权重发布：小米 MiMo 团队发布 Flash-RL 版本模型权重，社区关注其 RL 后训练路线。
+  来源：https://www.reddit.com/r/LocalLLaMA/comments/1wmnw89/xiaomimimomimov26flashrl_hugging_face/
+
+📐 AI4PDE 最新进展
+· DeformSmith：物理约束引导的可形变资产分层生成：面向机器人操作场景，联合生成可形变物体的几何、外观与物理属性，用交互证据引导构建与细化，解决文本/图像对形变响应信息不足的问题。
+  来源：https://huggingface.co/papers/2609.18620
+
+🔧 凸优化与能源系统
+· 将 LLM 剪枝建模为 Ising 优化问题：HuggingFace 博客提出把 LLM 的 block removal 剪枝形式化为 Ising 优化问题，用物理退火类方法求解组合优化。
+  来源：https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an
+
+💻 开源项目与代码
+· trycua/cua：开源 computer-use 驱动与跨 OS 集群基准：提供开源驱动、跨操作系统机群管理与训练/评估/数据生成基准，用于规模化 computer-use 2.0。
+  来源：https://github.com/trycua/cua
+· BuilderIO/agent-native：构建智能体应用的框架：单日 +607 star，提供构建 agentic app 的框架层抽象。
+  来源：https://github.com/BuilderIO/agent-native
+· akitaonrails/ai-memory：智能体编码 CLI 的长期记忆方案：解决 agent coding CLI 的长期记忆与跨厂商 agent 交接问题。
+  来源：https://github.com/akitaonrails/ai-memory
+· coder/coder：面向开发者及其智能体的安全环境：单日 +460 star，为开发者与 AI agent 提供安全隔离的开发环境。
+  来源：https://github.com/coder/coder
+· Linkup SPARSEUP：149M 参数开源稀疏嵌入模型：基于 ModernBERT 骨干，BEIR-13 上 56.4 nDCG@10，配合 Seismic 索引可在约 380 微秒内达到 97%+ 召回，Apache 2.0 许可。
+  来源：https://www.marktechpost.com/2026/09/19/linkup-research-releases-sparseup/
+
+💡 今日观察
+今天最明确的能源信号来自监管侧：加州正式为 AI 数据中心设立独立费率类别并强制其承担电网升级成本，这意味着数据中心的负荷建模、电价分摊与容量规划将从&quot;工程问题&quot;升级为&quot;监管+市场&quot;双重约束下的优化问题，值得 AI4Energy 研究者提前布局。方法论层面，RL 环境自动生成（CodeMidas）、子任务级稀疏奖励微调（PARTS）与长期记忆机制（ai-memory）三条线索共同指向&quot;长时域智能体&quot;，这与储能调度、微网分层控制等能源长周期决策场景高度同构。此外，将 LLM 剪枝建模为 Ising 优化问题的工作，提示组合优化与能源机组组合之间可能存在可复用的求解器迁移路径。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-21">AI 每日简报 · 2026-09-21 周一</span>
     <button class="cbtn" data-copy="t-2026-09-21">📋 复制标题</button>
   </div>
@@ -746,56 +802,6 @@
 
 💡 今日观察
 今日能源AI领域最值得关注的信号来自两个方向：一是Google DeepMind的WeatherNext 3发布，表明全球天气AI模型的前沿精度仍在快速推进，这对依赖气象数据的风电/光伏功率预测具有直接价值；二是德国电网设施破坏事件再次凸显关键能源基础设施的安全脆弱性，AI驱动的异常检测与防御系统或将成为能源AI的重要增长点。值得注意的是，今日RL方向的高质量论文主要集中在RLVR机制理解和多智能体安全约束设计上，这些基础研究进展将间接赋能能源调度中的RL应用。AI4PDE方向今日直接相关的产出较少，但VeriPhy的物理验证框架思路对能源数字孪生系统的可信度评估有借鉴意义。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-07">AI 每日简报 · 2026-09-07 周一</span>
-    <button class="cbtn" data-copy="t-2026-09-07">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-07.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-07.mp3" download="2026-09-07.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-07">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-07">AI 每日简报 · 2026-09-07 周一
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Google DeepMind 发布 WeatherNext 3：抛弃物理模拟，直接从实时卫星数据学习天气：WeatherNext 3 直接基于实时卫星观测训练，提供每小时刷新、5 公里分辨率（较前代精细 5 倍）的全球天气预报，对非洲、拉美和亚太地区预测精度提升最为显著。
-  来源：https://the-decoder.com/googles-weathernext-3-ditches-physics-simulations-and-learns-weather-directly-from-live-satellite-data/ / https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/ / https://www.marktechpost.com/2026/09/03/google-deepminds-weathernext-3-trains-on-weather-station-observations-to-deliver-5-km-global-forecasts-refreshed-every-hour/
-· Alberta（加拿大）对太阳能电池板征收惩罚性税：阿尔伯塔省 UCP 政府对太阳能电池板征收惩罚性税收，在可再生能源战线上开辟新战场，引发关于能源政策与市场信号的广泛讨论。
-  来源：https://albertapolitics.ca/2026/09/ucp-slaps-punitive-tax-on-solar-panels-opening-new-front-in-its-war-on-renewable-energy/
-
-📐 AI4PDE 最新进展
-· Principia：视频模型的物理关系测试基准：Principia 提出不依赖帧率、物体尺度和相机标定的物理推理评估方法——当同一场景中两个物体遵循相同物理定律时，其运动满足与标定无关的可预测关系，该基准专门评估视频模型对牛顿物理学的理解。
-  来源：https://huggingface.co/papers/2609.04200
-· VeriPhy：世界模型的智能体物理推理评估与修正系统：VeriPhy 通过文本规划器将提示编译为类型化物理义务和静态验证的执行计划，在生成视频时用冻结的底层专家模型进行门控和范围限定的物理验证，实现可审计的物理可靠性检查。
-  来源：https://huggingface.co/papers/2609.03153
-
-🧠 强化学习前沿 (RL for Energy)
-· DRACO：面向长时程智能体训练的细粒度奖励分配框架：DRACO 针对没有程序化检查器的长时程任务，通过动态生成多准则量规并沿轨迹分布奖励，解决传统 RLVR 在结果不可观测场景下单一标量奖励无法提供有效学习信号的问题。
-  来源：https://huggingface.co/papers/2609.04094
-· RLVR 的&quot;入口锁定、内部开放&quot;现象：解耦解空间的访问与执行：研究发现 RLVR 在提升 pass@1 的同时收缩策略解空间，损害测试时扩展收益；通过在 Countdown 任务上解耦解空间的&quot;访问&quot;与&quot;执行&quot;，揭示策略丧失多样性的具体位置。
-  来源：https://huggingface.co/papers/2608.29188
-· 星尘智能发布 SmoothRL：异步在线强化学习框架：星尘智能基座模型团队发布 SmoothRL，让在线强化学习跟上大模型的异步推理速度，解决机器人&quot;不能停下来等模型&quot;的实时性瓶颈。
-  来源：https://www.qbitai.com/2026/09/484437.html
-
-🔧 凸优化与能源系统
-· Percolation Dynamics in Optimization: Variance Cascades and Discrete Scale Invariance：将随机梯度流建模为渗流过程，架构对称性迫使子网络以离散同步块而非逐个方式合并，这些结构转变表现为方差尖峰，揭示优化动态中的离散尺度不变性。
-  来源：https://huggingface.co/papers/2609.02373
-
-💻 开源项目与代码
-· AutoHedge：用 AI 智能体群构建自主对冲基金：The Swarm Corporation 开源 AutoHedge，利用群体智能与 AI 智能体自动化市场分析、风险管理和交易执行，数分钟内即可搭建自主对冲基金。
-  来源：https://github.com/The-Swarm-Corporation/AutoHedge
-· aipoch/open-science：开源 AI 科研工作台：AIPOCH 发布开源的本地优先、模型无关 AI 研究平台，支持 macOS/Windows/Linux，集成科学智能体、Python/R 笔记本、数据连接器和可复现溯源。
-  来源：https://github.com/aipoch/open-science
-
-💡 今日观察
-今日最值得关注的信号是 **Google WeatherNext 3 彻底抛弃物理模拟、直接从卫星数据学习的范式转变**——这对 AI4Energy 研究者是一个重要提示：纯数据驱动的预测模型正在逼近甚至超越传统物理建模路线，风电/光伏功率预测领域可能迎来类似拐点。其次，**RLVR 解空间收缩研究**揭示了强化学习在提升单次精度的同时牺牲策略多样性的机制性代价，这对能源调度策略的鲁棒性和探索-利用平衡设计具有直接参考价值。最后，**Alberta 对光伏征收惩罚性税**提醒我们：能源 AI 研究必须将政策变化作为外生冲击纳入建模框架，否则市场与调度模型将面临严重的分布偏移风险。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
