@@ -36,6 +36,52 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-23">AI 每日简报 · 2026-09-23 周三</span>
+    <button class="cbtn" data-copy="t-2026-09-23">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-23.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-23.mp3" download="2026-09-23.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-23">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-23">AI 每日简报 · 2026-09-23 周三
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 加州签署七项法案，收紧 AI 数据中心能耗与水耗监管：纽森签署的一揽子法案要求 CPUC 为数据中心设立新费率类别，并强制其自行承担电网升级成本，防止公用事业费用转嫁给居民。
+  来源：https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills
+· Fanless 液冷 AI 服务器实现 100% 热量捕获：CoolIT 提出在超过 250kW/机架的密度下，液冷承担几乎全部热负荷（风冷占比低于 1%），使服务器可无风扇运行。
+  来源：https://spectrum.ieee.org/fanless-liquid-cooled-ai-servers-coolit
+
+🧠 强化学习前沿 (RL for Energy)
+· 小米 MiMo-V2.6-Pro 登顶开源模型榜，RL 训练成本 262 万美元：通过大规模强化学习训练，小米以显著低于竞品的价格登顶开源模型榜首；Anthropic 同时指控其蒸馏 Claude 训练数据。
+  来源：https://the-decoder.com/xiaomis-affordable-flagship-ai-leads-the-open-models-and-anthropic-says-claude-helped-get-it-there/
+· Critical-State RL：诊断多轮工具调用中的可训练状态：该工作指出仅靠奖励方差无法识别哪些模型调用值得训练，提出通过评估局部奖励是否反映动作真实效果来定位&quot;可训练状态&quot;。
+  来源：https://arxiv.org/abs/2609.24985v1
+· Rare Event Estimation via Iterative Unalignment：稀有事件概率估计：针对自主 agent 随机轨迹中的极端稀有事件，提出迭代去对齐方法在组合爆炸的轨迹空间中高效搜索并估计概率。
+  来源：https://arxiv.org/abs/2609.24969v1
+
+🔧 凸优化与能源系统
+· HuggingFace 博文：将 LLM 剪枝视为 Ising 优化问题：Multiverse Computing 提出把 LLM 的 block removal 剪枝问题重formulate 为 Ising 优化问题，用物理启发的组合优化方法求解。
+  来源：https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an
+
+💻 开源项目与代码
+· google/ax：Google 开源 Agentic 编排运行时：（今日 +2,305 star）：Google 发布的开放 agent 编排 runtime，用于构建和调度多智能体工作流。
+  来源：https://github.com/google/ax
+· anthropics/financial-services：（今日 +438 star）：Anthropic 开源的金融服务 agent 工具集，展示 Claude 在结构化行业任务中的部署范式。
+  来源：https://github.com/anthropics/financial-services
+· agent-substrate/substrate：（今日 +245 star）：Agent Substrate 核心系统，提供 agent 运行的基础设施层。
+  来源：https://github.com/agent-substrate/substrate
+
+💡 今日观察
+今天没有任何直接的 AI4Energy 论文或能源顶刊内容，但两条信号值得注意：一是加州对 AI 数据中心能耗与水耗的立法监管，标志着算力负荷正成为电力系统规划中不可忽视的变量，相关负荷预测与电价分摊建模需求将上升；二是 RL 领域出现的&quot;可训练状态诊断&quot;（Critical-State RL）与&quot;稀有事件概率估计&quot;两项工作，其方法论与电力系统序贯调度中的信用分配、极端风险评估高度同构，值得能源 RL 研究者直接借鉴迁移。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-22">AI 每日简报 · 2026-09-22 周二</span>
     <button class="cbtn" data-copy="t-2026-09-22">📋 复制标题</button>
   </div>
@@ -760,48 +806,6 @@
 
 💡 今日观察
 今日最重磅的信号是OpenAI宣称攻克Navier-Stokes问题——无论最终归属如何，这都标志着AI求解PDE进入了&quot;发现级&quot;能力阶段，对AI4Energy中流体、热传导、电磁场等方向的长期影响不可低估。能源侧的真实瓶颈正在浮出水面：算力订单排到100亿却在等变压器，说明AI的物理能耗约束正在成为算力扩张的核心矛盾，这为能源系统优化研究提供了新的需求驱动。WeatherNext 3的发布进一步强化了&quot;AI气象→新能源预测→电网调度&quot;的技术链条，值得密切关注其开放接口与下游应用。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-08">AI 每日简报 · 2026-09-08 周二</span>
-    <button class="cbtn" data-copy="t-2026-09-08">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-08.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-08.mp3" download="2026-09-08.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-08">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-08">AI 每日简报 · 2026-09-08 周二
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 德国电网遭破坏：Weisweiler电厂附近发现发射装置：德国警方在RWE旗下Weisweiler燃煤电厂附近发现疑似破坏用发射装置，欧洲关键能源基础设施安全风险上升。
-  来源：https://cedarnews.net/newstasks/970710/germany-power-grid-sabotage-launch-devices-found/
-· Google DeepMind发布WeatherNext 3：DeepMind推出其最先进、最准确的全球天气AI模型WeatherNext 3，较前代在精度上有显著提升。
-  来源：https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/
-· IBM时间序列模型集成Confluent实现实时智能：IBM Research发布基于时间序列模型与Confluent平台集成的实时智能方案，支持流式数据的在线预测与异常检测。
-  来源：https://huggingface.co/blog/ibm-research/real-time-intelligence
-
-🧠 强化学习前沿 (RL for Energy)
-· HarvestBench：衡量LLM智能体是否愿意为不杀生而付费：首个将副作用规避成本量化的强化学习基准——LLM子智能体操作两台拖拉机协作收割玉米，动物出现在田间时需决策是否牺牲效率避让。
-  来源：https://huggingface.co/papers/2609.04444
-· RLVR收敛机制研究：策略解空间收缩发生在入口处：研究发现RLVR虽提升单次采样准确率，但收缩策略解空间，削弱测试时扩展收益——瓶颈在&quot;无法进入有效解族&quot;而非&quot;无法执行已启动的计算&quot;。
-  来源：https://huggingface.co/papers/2608.29188
-
-📐 AI4PDE 最新进展
-· VeriPhy：智能体物理推理用于世界模型评估与改进：文本规划器将提示编译为类型化物理义务和静态验证执行计划，观测仅门控调用冻结的低层物理专家，使视频生成的物理验证可审计。
-  来源：https://huggingface.co/papers/2609.03153
-
-💻 开源项目与代码
-· deer-flow：字节跳动开源长周期SuperAgent框架：集成沙箱、记忆、工具、技能、子智能体与消息网关，可处理耗时数分钟到数小时的复杂任务。
-  来源：https://github.com/bytedance/deer-flow
-
-💡 今日观察
-今日能源AI领域最值得关注的信号来自两个方向：一是Google DeepMind的WeatherNext 3发布，表明全球天气AI模型的前沿精度仍在快速推进，这对依赖气象数据的风电/光伏功率预测具有直接价值；二是德国电网设施破坏事件再次凸显关键能源基础设施的安全脆弱性，AI驱动的异常检测与防御系统或将成为能源AI的重要增长点。值得注意的是，今日RL方向的高质量论文主要集中在RLVR机制理解和多智能体安全约束设计上，这些基础研究进展将间接赋能能源调度中的RL应用。AI4PDE方向今日直接相关的产出较少，但VeriPhy的物理验证框架思路对能源数字孪生系统的可信度评估有借鉴意义。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
