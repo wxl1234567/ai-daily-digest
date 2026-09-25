@@ -36,6 +36,62 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-25">AI 每日简报 · 2026-09-25 周五</span>
+    <button class="cbtn" data-copy="t-2026-09-25">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-25.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-25.mp3" download="2026-09-25.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-25">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-25">AI 每日简报 · 2026-09-25 周五
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google Project Suncatcher：把 AI 数据中心送入轨道，以太阳能供电：Google 计划于 10 月 1 日通过 SpaceX Falcon 9 发射一颗搭载 Tensor AI 处理器的冰箱大小实验卫星，测试太空 AI 计算的可行性，终极目标是建立轨道数据中心。
+  来源：https://the-decoder.com/googles-suncatcher-project-aims-to-put-ai-data-centers-in-orbit-powered-by-solar-energy/
+· Jensen Huang 谈 AI 与气候变化：先承受巨大痛苦才能对抗气候变化：Nvidia CEO 在 Ezra Klein 播客中表示，AI 可以帮助对抗气候变化，但前提是先造成&quot;巨大的痛苦和磨难&quot;，引发对 AI 能耗与气候影响的讨论。
+  来源：https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain
+· Oracle 对新墨西哥 Stargate 数据中心发出不可抗力通知：Oracle 表示若该设施未能在 2028 年上线，将延迟付款，反映出 AI 基础设施建设的能源与供应链挑战。
+  来源：https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/
+
+🧠 强化学习前沿 (RL for Energy)
+· Kyutai 发布 Voice of Reason：用强化学习解决语音数学问题：基于 GLM-4-Voice-9B 的两个开源语音到语音模型，通过 SFT 和 RL 将口语 GSM8K 准确率从 27.3% 提升至 77.1%，无需转录步骤或文本 LLM。
+  来源：https://www.marktechpost.com/2026/09/22/kyutai-releases-voice-of-reason-a-speech-native-model-that-solves-spoken-math-with-reinforcement-learning/
+· PACT：从信用分配到 Critic 对齐——LLM 后训练中 Token 级信用的数学刻画：提出完整性、前缀一致性、中立性三个正则条件，证明它们唯一确定 token 级信用，为 RL 后训练算法提供统一理论基础。
+  来源：https://huggingface.co/papers/2609.26355
+· Verifiable Hidden Dynamics Play：从已解机制生成 Agentic RL 环境：通过先采样并求解数学机制再构建环境，反转传统&quot;先建环境后定义奖励&quot;的流程，为 RL Agent 训练提供可验证的动态环境。
+  来源：https://huggingface.co/papers/2609.27321
+· RewardVerse：面向视频奖励建模的评分引导策略优化：针对视频生成 RL 中奖励模型标量漂移问题，提出基于评分标准（rubric）的奖励建模方法，提升 RL 训练信号可靠性。
+  来源：https://huggingface.co/papers/2609.22947
+
+📐 AI4PDE 最新进展
+· GRADSOLVE：GPU 上大规模可微分天体物理 ODE 求解：JAX 库 GRADSOLVE 将 ODE 集合求解与微分计算移至 GPU，支持 Hamiltonian Monte Carlo 等梯度方法，可高效求解数千至数百万参数集的 ODE 系统。
+  来源：https://arxiv.org/abs/2609.28458v1
+
+🔧 凸优化与能源系统
+· Khachiyan 椭球猜想的光谱证明：证明了对于凸体 K 的最大体积内接椭球，过椭球中心的任意半空间 H 满足 w(K∩H) ≤ (√e/2)·w(K)，常数在所有维度上一致最优，解决了 Khachiyan 猜想。
+  来源：https://arxiv.org/abs/2609.28447v1
+· 动态定价中的跨期价格约束：价格单调性与促销疲劳下的性能保证：研究有限资源下含跨期约束的动态定价问题，涵盖价格单调性和促销疲劳两类约束，提供性能保证。
+  来源：https://arxiv.org/abs/2609.28451v1
+
+💻 开源项目与代码
+· NVIDIA/Model-Optimizer：统一的 SOTA 模型优化库，涵盖量化、蒸馏、剪枝、NAS、投机解码等技术，支持 TensorRT-LLM、vLLM 等部署框架。
+  来源：https://github.com/NVIDIA/Model-Optimizer
+· google/ax：Google 开源的 Agentic 编排运行时，今日 +1,373 star。
+  来源：https://github.com/google/ax
+· vectorize-io/hindsight：Agent 记忆学习框架，今日 +1,668 star，支持 Agent 从经验中学习记忆。
+  来源：https://github.com/vectorize-io/hindsight
+
+💡 今日观察
+今天最值得关注的信号是 **Google Project Suncatcher 将 AI 数据中心送入太空**——这标志着 AI 能源供给正从地面电网向轨道太阳能跨越，对能源系统研究者而言，太空-地面能源协同优化可能成为新兴交叉方向。与此同时，RL 领域出现了 PACT 信用分配理论统一框架和 RewardVerse 奖励建模稳定性方法，这些 RL 基础设施层面的进展将直接惠及能源调度与控制的 RL 应用。凸优化方向 Khachiyan 猜想的证明虽为纯理论突破，但其对椭球方法和内点法的影响值得能源系统优化研究者持续关注。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-24">AI 每日简报 · 2026-09-24 周四</span>
     <button class="cbtn" data-copy="t-2026-09-24">📋 复制标题</button>
   </div>
@@ -780,46 +836,6 @@
 
 💡 今日观察
 今日最值得能源交叉研究者关注的信号是 **AI 在 PDE 理论层面的突破**：OpenAI 的 Navier-Stokes 成果附带 Lean 4 形式化证明，标志着 AI 正从数值求解走向对 PDE 理论的严格推导。这对能源领域的流体、传热、电磁场建模具有范式意义。与此同时，德国百万户阳台光伏的规模化落地，为分布式能源的负荷预测与配网调度研究提供了真实的工程背景。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-10">AI 每日简报 · 2026-09-10 周四</span>
-    <button class="cbtn" data-copy="t-2026-09-10">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-10.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-10.mp3" download="2026-09-10.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-10">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-10">AI 每日简报 · 2026-09-10 周四
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 深度智控获宁德时代、沙特阿美战投加码，加速打造物理AI时代算力与能源底座：物理AI企业深度智控（DeepCtrls）完成B+轮数亿元融资，获宁德时代、沙特阿美等产业资本加持，聚焦AI驱动的工业能源优化。
-  来源：https://www.qbitai.com/2026/09/485784.html
-· IBM 发布 SOTA Granite Time Series PatchTST-FM-r2 时序基础模型：IBM Research 发布新一代 Granite 时间序列基础模型 PatchTST-FM-r2，采用商用友好许可证，在时序预测任务上达到 SOTA。
-  来源：https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series
-· Google DeepMind 发布 WeatherNext 3 全球天气预报AI模型：DeepMind 推出其最先进、最准确的全球天气预报 AI 模型 WeatherNext 3，为极端天气与可再生能源预测提供更强工具。
-  来源：https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/
-· Cadence：基于时序基础模型的误差有界有损压缩：论文提出 Cadence，将 330M 参数的 Google TimesFM-3 时序基础模型与自适应算术编码器结合，实现误差有界的数值时间序列有损压缩，逐样本保证误差不超过 τ。
-  来源：https://huggingface.co/papers/2609.06008
-
-📐 AI4PDE 最新进展
-· OpenAI 宣称解决 Navier-Stokes 千禧年问题，学术争议发酵：OpenAI 宣布使用未发布模型解决了 Navier-Stokes 存在性与光滑性问题（七大千禧年问题之一），但 NYU 数学教授 Tristan Buckmaster 指控 OpenAI 存在学术不端行为，陶哲轩警告此类事件可能&quot;逆转开放科学的数百年传统&quot;。
-  来源：https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution / https://www.wired.com/story/openai-navier-stokes-math-discovery-academics/
-
-💻 开源项目与代码
-· TradingAgents：多智能体 LLM 金融交易框架：TauricResearch 开源 TradingAgents，一个基于多智能体 LLM 的金融交易框架，支持多智能体协作决策。
-  来源：https://github.com/TauricResearch/TradingAgents
-· text-to-cad：CAD/CAE/CAM 智能体技能库：earthtojake 开源 text-to-cad，提供面向 CAD、CAE 和 CAM 的 agent skills 库，支持自然语言驱动工程设计。
-  来源：https://github.com/earthtojake/text-to-cad
-
-💡 今日观察
-今日能源AI领域最值得关注的信号来自气象与流体力学方向：DeepMind WeatherNext 3 的发布与 OpenAI 宣称解决 Navier-Stokes 方程（尽管伴随争议）共同指向 AI 对物理世界建模能力的加速突破，这将直接赋能新能源出力预测与能源系统仿真。另一方面，产业资本（宁德时代、沙特阿美）重注物理AI能源优化企业，说明 AI4Energy 正从学术研究走向真实工业落地。建议关注 TimesFM 类时序基础模型在电力负荷/新能源预测中的迁移应用，以及 NS 方程求解争议后续对 AI4Science 可信度的影响。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
