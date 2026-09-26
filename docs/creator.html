@@ -36,6 +36,60 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-26">AI 每日简报 · 2026-09-26 周六</span>
+    <button class="cbtn" data-copy="t-2026-09-26">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-26.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-26.mp3" download="2026-09-26.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-26">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-26">AI 每日简报 · 2026-09-26 周六
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Crusoe 放弃 12.5 亿美元 Boom 涡轮机 AI 数据中心供电计划：Crusoe 终止了在 AI 数据中心部署 Boom Supersonic 新型固定式发电涡轮机的计划，Boom CEO 称该方案已不在 Crusoe 近期规划中。
+  来源：https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/
+· 黄仁勋谈 AI 与气候变化：先承受巨大痛苦才能对抗气候变化：Nvidia CEO 在 Ezra Klein 播客中表示 AI 可以帮助对抗气候变化，但前提是先造成&quot;巨大的痛苦和折磨&quot;，涉及 AI 能耗与气候影响的权衡。
+  来源：https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain
+· xAI 拟买断 Southaven 居民以规避电厂噪音诉讼：xAI 向同意不起诉其电厂噪音问题的 Southaven 居民提出买断方案，反映 AI 数据中心配套电力设施对周边社区的影响。
+  来源：https://www.mississippifreepress.org/xai-moves-to-buy-out-southaven-residents-who-agree-not-to-sue-it-over-power-plant-noise-letter-shows/
+
+🧠 强化学习前沿 (RL for Energy)
+· AD-WM：面向反事实模型预测控制的动作判别世界模型：提出动作判别联合嵌入世界模型 AD-WM，结合残差隐动力学与预测器级动作恢复正则化，解决 MPC 中事实预测误差低但候选动作区分能力差的问题。
+  来源：https://arxiv.org/abs/2609.30264v1
+· Temporal Gradient Inversion：具身强化学习中的私有轨迹重建攻击：提出 TRACE 攻击方法，从分布式 RL 的逐步策略梯度中自回归重建私有观测-动作轨迹序列，揭示时序结构放大隐私泄漏的风险。
+  来源：https://arxiv.org/abs/2609.30258v1
+· AV-GRPO：面向音视频联合生成的模态锚定解耦扩散强化学习：提出 AV-GRPO，通过模态锚定解耦解决异构多模态奖励纠缠与信用分配问题，用于联合音视频生成。
+  来源：https://huggingface.co/papers/2609.29816
+
+📐 AI4PDE 最新进展
+· NVIDIA Warp 与 MjWarp 加速机器人仿真与学习工作流：HuggingFace 博客介绍如何使用 NVIDIA Warp 和 MjWarp 加速机器人仿真与学习工作流，涉及可微分物理仿真。
+  来源：https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp
+· Training Object Permanence in World Models（WROP）：提出 WROP 数据集基础设施，训练视频生成世界模型获得客体永久性与固体性认知先验，探索世界模型的物理推理能力。
+  来源：https://huggingface.co/papers/2609.28654
+
+🔧 凸优化与能源系统
+· 加权平方 ℓ₂,∞ 范数的近端算子及其应用：推导了加权平方 ℓ₂,∞ 范数及其弱凸变体的近端算子闭式解，通过求解辅助问题的 KKT 乘子与临界点获得显式解。
+  来源：https://arxiv.org/abs/2609.30237v1
+
+💻 开源项目与代码
+· NVIDIA/Model-Optimizer：NVIDIA 发布统一模型优化库，集成量化、蒸馏、剪枝、NAS、投机解码等 SOTA 技术，支持 TensorRT-LLM、vLLM 等部署框架。
+  来源：https://github.com/NVIDIA/Model-Optimizer
+· dream-num/univer：面向 AI Agent 的 Office 运行时：开源项目 Univer 提供电子表格、文档、幻灯片、画布、关系表与 PDF 的统一 AI Agent 运行时。
+  来源：https://github.com/dream-num/univer
+· shy3130/tick-stock-panel：LLM 驱动的 A 股量化工作台：自托管零运维的 A 股选股+监控+回测量化平台，支持 LLM 驱动策略定制、个股分析与复盘，可自由接入第三方数据源。
+  来源：https://github.com/shy3130/tick-stock-panel
+
+💡 今日观察
+今天最值得能源交叉研究者关注的信号有两个：一是 AI 数据中心的能源基础设施问题持续发酵——Crusoe 放弃 Boom 涡轮机供电、xAI 电厂噪音买断、黄仁勋的气候言论，共同指向 AI 算力扩张与电力系统规划之间日益紧张的关系，这为 AI4Energy 提供了真实且紧迫的研究场景。二是 AD-WM 将动作判别性引入世界模型 MPC，这一思路对能源系统（尤其是储能调度与微网控制）中&quot;预测误差低但决策区分度差&quot;的经典痛点具有直接的方法论迁移价值。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-25">AI 每日简报 · 2026-09-25 周五</span>
     <button class="cbtn" data-copy="t-2026-09-25">📋 复制标题</button>
   </div>
@@ -796,46 +850,6 @@
 
 💡 今日观察
 今日最值得 AI4Energy 研究者关注的是 **IBM Granite Time Series PatchTST-FM-r2 以商用友好许可发布 SOTA 时序基础模型**——这直接降低了负荷/电价/新能源出力预测的迁移门槛，意味着时序基础模型正在从&quot;论文可用&quot;走向&quot;产品可商用&quot;。其次是 DeepMind WeatherNext 3 的发布，气象预报精度的提升会沿着&quot;气象→功率预测→调度&quot;链条向下游传导，值得跟踪其在新能量化预测中的落地。RL 侧则出现分层图 MARL（DRG-MAPPO）与长时程终端智能体（T1）两条值得迁移到多微网协同与长周期调度的技术路线。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-11">AI 每日简报 · 2026-09-11 周五</span>
-    <button class="cbtn" data-copy="t-2026-09-11">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-11.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-11.mp3" download="2026-09-11.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-11">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-11">AI 每日简报 · 2026-09-11 周五
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 德国超百万家庭在阳台安装即插即用光伏：超过 100 万户德国家庭将太阳能板挂在阳台栏杆上并插入墙壁插座，法律将每户功率上限设为 800 瓦。
-  来源：https://spacedaily.com/b-more-than-a-million-german-households-have-hung-solar-panels-off-their-balcony-railings-and-plugged-them-into-a-wall-socket-and-the-law-caps-each-at-800-watts-a-fridge-and-a-laptop/
-· IBM 发布 SOTA 时序基础模型 Granite Time Series PatchTST-FM-r2：采用商业友好许可，面向通用时间序列预测任务。
-  来源：https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series
-
-📐 AI4PDE 最新进展
-· OpenAI 的 Navier-Stokes 发布包含 Lean 4 形式化证明：OpenAI 关于 Navier-Stokes 存在性与光滑性问题的成果附带了 Lean 4 形式化证明，引发学术界对 AI 数学发现的广泛讨论。
-  来源：https://www.johndcook.com/blog/2026/09/09/formal-method-revolution/
-· OpenAI 称在另一千禧年数学难题上取得实质性进展：继 Navier-Stokes 之后，OpenAI 表示在另一个千禧年问题上有重大推进，但数学界对其训练数据来源提出质疑。
-  来源：https://www.nytimes.com/2026/09/10/science/tristan-buckmaster-openai-math-navier-stokes.html
-· OpenAI 的数学突破在学术界引发寒蝉效应：Terence Tao 指出，优质开放问题的集合正被&quot;非可再生&quot;地开采，甚至关于某人正在研究某问题的传闻都会触发大量 AI 驱动的攻关。
-  来源：https://simonwillison.net/2026/Sep/9/terence-tao/
-
-💻 开源项目与代码
-· JustVugg/colibri：纯 C、零依赖的推理引擎，可将专家权重从磁盘流式加载，在本机硬件上运行前沿 MoE 模型。
-  来源：https://github.com/JustVugg/colibri
-· diegosouzapw/OmniRoute：免费 MIT 授权的 AI 网关，单端点接入 352 家供应商、1200+ 模型，支持配额感知自动回退与 token 压缩。
-  来源：https://github.com/diegosouzapw/OmniRoute
-
-💡 今日观察
-今日最值得能源交叉研究者关注的信号是 **AI 在 PDE 理论层面的突破**：OpenAI 的 Navier-Stokes 成果附带 Lean 4 形式化证明，标志着 AI 正从数值求解走向对 PDE 理论的严格推导。这对能源领域的流体、传热、电磁场建模具有范式意义。与此同时，德国百万户阳台光伏的规模化落地，为分布式能源的负荷预测与配网调度研究提供了真实的工程背景。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
