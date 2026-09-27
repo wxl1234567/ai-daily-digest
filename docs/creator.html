@@ -36,6 +36,66 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-27">AI 每日简报 · 2026-09-27 周日</span>
+    <button class="cbtn" data-copy="t-2026-09-27">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-27.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-27.mp3" download="2026-09-27.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-27">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-27">AI 每日简报 · 2026-09-27 周日
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· NVIDIA Warp 与 MjWarp 加速机器人仿真与学习工作流：NVIDIA 发布教程，介绍如何用 Warp 和 MjWarp 加速机器人仿真与学习工作流，支持可微分物理仿真。
+  来源：https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp
+· Crusoe 放弃 12.5 亿美元 Boom 涡轮机数据中心计划：Crusoe 放弃在 AI 数据中心使用 Boom Supersonic 涡轮机的 12.5 亿美元计划，Boom CEO 确认其固定式发电厂不再在 Crusoe 近期规划中。
+  来源：https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/
+· 黄仁勋谈 AI 与气候变化：先承受痛苦再拯救地球：Nvidia CEO 黄仁勋在 Ezra Klein 播客中表示，AI 可以帮助应对气候变化，但前提是先造成&quot;巨大的痛苦和折磨&quot;，讨论聚焦 AI 能耗与地球影响。
+  来源：https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain
+
+🧠 强化学习前沿 (RL for Energy)
+· AV-GRPO：模态锚定解耦扩散强化学习用于联合音视频生成：提出 AV-GRPO，通过模态锚定解耦策略解决联合音视频生成中异构多模态奖励纠缠问题，实现更优的跨模态同步。
+  来源：https://huggingface.co/papers/2609.29816
+· Just Ask Jev：基于 RL 校准决策的零样本 AI 对齐失败检测器：Jev 模型通过 RL 校准决策训练，单次调用即可对输入回答多个类型化问题并给出校准概率，用于检测 AI 对齐失败。
+  来源：https://huggingface.co/papers/2609.29429
+· Rufus-Air：开放 LLM 后训练配方：在 GLM-4.5-Air-Base 上构建八阶段串行后训练流程，涵盖 SFT、推理 RL、编码 RL、指令遵循 RL、通用 Agent、编码 Agent、搜索 Agent 和 RLHF。
+  来源：https://huggingface.co/papers/2609.29421
+· 自组织 Agent 团队学会共同推理：提出 SAT 框架，固定团队规模的 AI Agent 通过经验学习如何组织推理分工，而非依赖固定协议或显式任务分解。
+  来源：https://huggingface.co/papers/2609.22682
+
+📐 AI4PDE 最新进展
+· 训练世界模型中的物体 permanence：提出 WROP 数据基础设施，研究视频生成模型是否具备物体 permanence 和 solidity 认知先验，并探索用核心认知启发的数据集训练模型。
+  来源：https://huggingface.co/papers/2609.28654
+· DeltaWAM：双臂操作的 Delta 世界动作模型：提出 DeltaWAM，通过仅预测帧间变化而非密集未来帧，解决世界动作模型中重复建模不变内容和外观噪声耦合的问题。
+  来源：https://huggingface.co/papers/2609.28811
+
+🔧 凸优化与能源系统
+· Neural Spectral Capacity：从网络规范度量与设计架构：提出 NSC 闭式标量，基于权重矩阵奇异值谱衡量架构容量，替代传统 #Params 和 #FLOPs 指标，可区分参数量相同但结构不同的架构。
+  来源：https://huggingface.co/papers/2609.23087
+· GeoPair：几何保持的跨层因子分解用于免训练 Transformer 压缩：提出免训练框架，顺序优化跨层权重配对和共享字典因子分解，保持各层激活几何特性。
+  来源：https://huggingface.co/papers/2609.25963
+
+💻 开源项目与代码
+· NVIDIA/Model-Optimizer：NVIDIA 发布统一模型优化库，集成量化、蒸馏、剪枝、NAS、推测解码等 SOTA 技术，支持 TensorRT-LLM、vLLM 等部署框架。
+  来源：https://github.com/NVIDIA/Model-Optimizer
+· paperclipai/paperclip：开源 Agent 管理工作平台，单日新增 2,608 star，用于在工作中管理多个 AI Agent。
+  来源：https://github.com/paperclipai/paperclip
+· vectorize-io/hindsight：Agent 记忆学习框架，单日新增 2,147 star，实现可学习的 Agent 记忆机制。
+  来源：https://github.com/vectorize-io/hindsight
+· dream-num/univer：AI Agent 办公套件运行时，集成电子表格、文档、幻灯片、画布、关系表和 PDF 于统一运行时。
+  来源：https://github.com/dream-num/univer
+
+💡 今日观察
+今天最值得能源 AI 研究者关注的信号是：NVIDIA 同时发布了 Warp/MjWarp 可微分物理仿真教程和 Model-Optimizer 统一优化库，前者为能源系统的可微分物理建模提供了基础设施，后者为能源边缘设备上的模型部署提供了完整工具链。此外，多篇 HuggingFace 论文聚焦 RL 后训练配方（Rufus-Air）和多 Agent 自组织协作（SAT），这些方法论对分布式能源调度和多智能体能源管理系统的设计具有直接参考价值。AI 数据中心的能源供应问题（Crusoe 放弃涡轮机计划、黄仁勋谈 AI 能耗）持续发酵，提示能源系统规划需要将 AI 算力负荷作为新的关键变量纳入建模。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-26">AI 每日简报 · 2026-09-26 周六</span>
     <button class="cbtn" data-copy="t-2026-09-26">📋 复制标题</button>
   </div>
@@ -802,54 +862,6 @@
 
 💡 今日观察
 今天最明确的信号来自**时序基础模型的双线推进**：Google TimesFM-3 用&quot;单次前向填充 + 已知未来事件条件化&quot;重构了预测范式，而 DeepMind WeatherNext 3 与 IBM Granite 时序模型分别从气象驱动和商用许可两端降低了能源预测的落地门槛——三者叠加，意味着负荷/新能源功率预测的技术栈可能在短期内被整体替换。RL 侧则出现从&quot;短程控制&quot;向&quot;长时程工具调用 Agent&quot;（T1）与&quot;世界模型加速训练&quot;（AutoResearch）迁移的趋势，这正是电网调度 Agent 化所需的两块拼图。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-12">AI 每日简报 · 2026-09-12 周六</span>
-    <button class="cbtn" data-copy="t-2026-09-12">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-12.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-12.mp3" download="2026-09-12.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-12">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-12">AI 每日简报 · 2026-09-12 周六
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型：DeepMind 推出其迄今最先进、最准确的全球天气预测 AI 模型 WeatherNext 3。
-  来源：https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/
-· IBM 发布 SOTA 时序基础模型 Granite Time Series PatchTST-FM-r2（商用友好许可）：IBM Research 在 Hugging Face 发布新一代时序预测基础模型，采用商业友好许可证。
-  来源：https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series
-· MetroLLM-Bench：将语言模型作为轨道交通服务终端运行时进行评估：提出 955 个案例的基准，覆盖 6 个真实地铁系统（37–414 站），测试 LLM 在路由、票价计算、中断处置、无障碍与对抗输入下的工具调用能力。
-  来源：https://huggingface.co/papers/2609.10016
-
-🧠 强化学习前沿 (RL for Energy)
-· DRG-MAPPO：面向协同空战的分层动态角色图多智能体强化学习：提出分层动态角色图 MARL 框架，通过结构化关系建模捕捉战场实体的时变交互，解决战术协同难题。
-  来源：https://huggingface.co/papers/2609.11155
-· T1：面向长时程任务的终端智能体强化学习：122B MoE 模型，通过 RL 训练在云沙箱中操作真实 shell，单任务支持 300+ 工具调用轮次，由任务自带验证器提供奖励。
-  来源：https://huggingface.co/papers/2609.11042
-· Scaling Automatic Research Agents via World Models：识别出 AutoResearch 智能体 RL 扩展中的根本张力——智能体生成与环境执行之间的耦合，并提出世界模型解法。
-  来源：https://huggingface.co/papers/2608.12564
-
-📐 AI4PDE 最新进展
-· FreeFlow：无偏置分层 Transformer 用于光流估计：完全去除相关体、特征 warp、迭代精化等任务特定归纳偏置，仅用单一前馈编码器-解码器分层 Transformer 达到高精度。
-  来源：https://huggingface.co/papers/2609.11486
-
-💻 开源项目与代码
-· alphaXiv/OpenResearch：用任意模型运行并行研究智能体：支持并行研究智能体编排的开源框架，可搭配任意 LLM 后端。
-  来源：https://github.com/alphaXiv/OpenResearch
-· obra/superpowers：可用的智能体技能框架与软件开发方法论：今日 +729 star，提供一套经过验证的 agentic skills 框架。
-  来源：https://github.com/obra/superpowers
-· nashsu/llm_wiki：把文档自动转化为持久化互联知识库的跨平台桌面应用：区别于传统 RAG 每次从零检索，LLM 增量构建并维护持久 wiki。
-  来源：https://github.com/nashsu/llm_wiki
-
-💡 今日观察
-今日最值得 AI4Energy 研究者关注的是 **IBM Granite Time Series PatchTST-FM-r2 以商用友好许可发布 SOTA 时序基础模型**——这直接降低了负荷/电价/新能源出力预测的迁移门槛，意味着时序基础模型正在从&quot;论文可用&quot;走向&quot;产品可商用&quot;。其次是 DeepMind WeatherNext 3 的发布，气象预报精度的提升会沿着&quot;气象→功率预测→调度&quot;链条向下游传导，值得跟踪其在新能量化预测中的落地。RL 侧则出现分层图 MARL（DRG-MAPPO）与长时程终端智能体（T1）两条值得迁移到多微网协同与长周期调度的技术路线。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
