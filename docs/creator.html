@@ -36,6 +36,54 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-09-28">AI 每日简报 · 2026-09-28 周一</span>
+    <button class="cbtn" data-copy="t-2026-09-28">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-09-28.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-09-28.mp3" download="2026-09-28.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-09-28">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-28">AI 每日简报 · 2026-09-28 周一
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 中国 8 月用电量突破 1 万亿度，单月超东盟十国全年总和：数据显示经济增长动能已从房地产切换至新制造/新基建，用电结构发生实质性变化。
+  来源：https://www.36kr.com/p/4001120535908489
+· Goldman Sachs：预计 2027 年 Big Tech AI 基础设施支出达 1.2 万亿美元：Amazon、Alphabet、Microsoft、Oracle、Meta 合计投入将超今年 50% 以上，报告明确指出**电力、人力与内存芯片**是三大瓶颈。
+  来源：https://the-decoder.com/goldman-sachs-expects-big-tech-to-spend-1-2-trillion-on-ai-infrastructure-by-2027-dwarfing-wall-street-estimates/
+· Crusoe 放弃 12.5 亿美元 Boom 涡轮机供电 AI 数据中心计划：Boom Supersonic CEO 确认其新型固定式发电装置已不在 Crusoe 近期规划中，AI 数据中心供电方案出现重大调整。
+  来源：https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/
+
+🧠 强化学习前沿 (RL for Energy)
+· AV-GRPO：模态锚定解耦扩散强化学习用于音视频联合生成：针对多模态奖励纠缠与信用分配难题，提出解耦式 RL 后训练框架，缓解跨模态同步弱的问题。
+  来源：https://huggingface.co/papers/2609.29816
+· Just Ask Jev：基于 RLCD 的校准决策模型作为 AI 对齐失效的零样本检测器：单次调用即可对同一输入回答多个带校准概率的类型化问题，替代逐准则解码的生成式判别器。
+  来源：https://huggingface.co/papers/2609.29429
+
+📐 AI4PDE 最新进展
+· NVIDIA Warp 与 MjWarp：加速机器人仿真与学习工作流教程：Hugging Face 官方博客发布基于 NVIDIA Warp 的 GPU 加速物理仿真与可微仿真实践指南。
+  来源：https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp
+
+🔧 凸优化与能源系统
+· Pruning LLMs Like a Physicist：将 Block Removal 建模为 Ising 优化问题：把 LLM 结构化剪枝转化为伊辛模型优化，用物理启发式方法求解组合优化问题。
+  来源：https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an
+
+💻 开源项目与代码
+· madeira (willfaust/Madeira)：通过 FEX-Emu + Wine + DXMT 在受限 iOS 上运行 x86-64 Windows 游戏，展示跨架构仿真栈的工程组合能力。
+  来源：https://github.com/willfaust/Madeira
+· openrig (mvschwarz/openrig)：多智能体 harness，将 Claude Code 与 Codex 作为统一系统协同运行。
+  来源：https://github.com/mvschwarz/openrig
+
+💡 今日观察
+今日资讯几乎被 Agent 安全事件（OpenAI 暂停最强模型训练、Agent 越狱入侵 UN/Hugging Face/美国政府站点）与通用 LLM 工程话题占据，**AI4Energy 方向的直接研究产出为零**，这是需要警惕的信号——能源 AI 的高质量日更内容仍高度依赖 arXiv 与能源顶刊，而非主流 AI 媒体。唯一与能源强相关的信号来自产业侧：Goldman Sachs 的 1.2 万亿 AI 基建预测明确将&quot;电力&quot;列为瓶颈，叠加 Crusoe 放弃燃气轮机供电计划，**&quot;算力-电力耦合约束&quot;正在从学术议题变成产业级硬约束**，这可能是未来 12 个月 AI4Energy 最具现实牵引力的研究方向。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-27">AI 每日简报 · 2026-09-27 周日</span>
     <button class="cbtn" data-copy="t-2026-09-27">📋 复制标题</button>
   </div>
@@ -806,62 +854,6 @@
 
 💡 今日观察
 今日资讯几乎被 AI 产业安全叙事（OpenAI IPO、Amodei &quot;减速&quot;呼吁、Claude 滥用事件）与 Agent 工程占据，**AI4Energy 直接相关内容稀缺**，仅 IBM Granite 时序基础模型与数据中心电力/排放两条具备真实能源研究价值。值得注意的是，RL 方向出现了多个&quot;长时程 + 可验证奖励 + 世界模型加速&quot;的工作（T1、AutoResearch World Models），这一范式与能源系统调度中&quot;仿真昂贵、奖励可验证&quot;的结构高度同构，是当前最值得追踪的方法论迁移信号。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-13">AI 每日简报 · 2026-09-13 周日</span>
-    <button class="cbtn" data-copy="t-2026-09-13">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-13.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-13.mp3" download="2026-09-13.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-13">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-13">AI 每日简报 · 2026-09-13 周日
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Google TimesFM-3：单次前向填充预测，时序基础模型迈入&quot;事件感知&quot;阶段：Google Research 发布 330M 参数的 TimesFM-3，可同时分析时序数据与已知未来事件（促销、天气），一次前向传播填出全部未来时间点，降低累积误差与计算开销。
-  来源：https://the-decoder.com/googles-new-ai-model-predicts-the-future-from-sales-data-weather-and-discount-schedules/
-· Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型：号称迄今最先进、最准确的全球气象 AI 模型，直接面向中期与短期全球天气预报。
-  来源：https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/
-· IBM 发布 Granite Time Series PatchTST-FM-r2，商用友好许可：IBM Research 放出 SOTA 级时序 PatchTST 基础模型，采用商业友好许可证。
-  来源：https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series
-· MetroLLM-Bench：把 LLM 当作轨道交通票务终端运行时来评测：955 个测试用例覆盖 6 个真实地铁系统（37–414 站）、11 类任务（路径规划、票价计算、中断应对、无障碍、对抗输入），要求模型调用结构化工具并输出机器可渲染的终态。
-  来源：https://huggingface.co/papers/2609.10016
-
-🧠 强化学习前沿 (RL for Energy)
-· T1：面向长时程任务的终端 Agent 强化学习，122B MoE 模型：T1 在云沙箱中操作真实 shell，单任务支持 300+ 轮工具调用，以任务自带 verifier 执行结果作为奖励，并给出热启动 + 稠密过程奖励的完整训练配方。
-  来源：https://huggingface.co/papers/2609.11042
-· DRG-MAPPO：分层动态角色图多智能体强化学习用于协同空战：通过结构化关系建模捕捉战场实体间复杂时变交互，解决 MARL 在战术协同中的关系建模缺失问题。
-  来源：https://huggingface.co/papers/2609.11155
-· Scaling Automatic Research Agents via World Models：指出 AutoResearch Agent 在 RL 扩展时的根本张力——agent 生成与环境执行两部分耦合导致训练低效，提出用世界模型解耦。
-  来源：https://huggingface.co/papers/2608.12564
-
-📐 AI4PDE 最新进展
-· FreeFlow：无归纳偏置的分层 Transformer 光流估计：完全去除相关体积、特征 warp、迭代精化等任务特定归纳偏置，仅用单一前馈 encoder-decoder 达到高精度。
-  来源：https://huggingface.co/papers/2609.11486
-· NCP-ArchPreview：通过 Next Concept Prediction 走向潜空间语言模型：在标准 NTP 之外引入跨多 token 的离散概念级预测目标，构建乘积量化的概念词表。
-  来源：https://huggingface.co/papers/2609.10715
-
-🔧 凸优化与能源系统
-· Beyond Solver Verdicts：面向自动形式化的生成式奖励模型（VPU 失效模式）：形式化证明求解器无法判断形式翻译是否与被指定形式化严格等价，作者形式化定义了&quot;判据保持的不忠实性&quot;（VPU），并从理论上证明仅凭结构性判据的验证启发式在数学上是受限的。
-  来源：https://huggingface.co/papers/2609.11085
-
-💻 开源项目与代码
-· MathModelAgent：自动完成数学建模并生成可提交论文的 Agent：专为数学建模竞赛设计，自动完成建模全流程并输出完整论文。
-  来源：https://github.com/jihe520/MathModelAgent
-· CloddsBot：跨 1000+ 市场的自主 AI 交易 Agent：覆盖 Polymarket、Kalshi、Binance、Hyperliquid、Solana DEX 及 5 条 EVM 链，自主扫描 edge、即时执行、风险托管，内置机器间支付协议，自托管，基于 Claude。
-  来源：https://github.com/alsk1992/CloddsBot
-· Adaptive Bridge：缓解 ROS 2 中 DDS 背压的代理式解耦层：解决单一网络受损订阅者导致 RELIABLE topic 全链路吞吐与延迟退化的问题，将关键订阅者与降级订阅者解耦。
-  来源：https://huggingface.co/papers/2608.15380
-
-💡 今日观察
-今天最明确的信号来自**时序基础模型的双线推进**：Google TimesFM-3 用&quot;单次前向填充 + 已知未来事件条件化&quot;重构了预测范式，而 DeepMind WeatherNext 3 与 IBM Granite 时序模型分别从气象驱动和商用许可两端降低了能源预测的落地门槛——三者叠加，意味着负荷/新能源功率预测的技术栈可能在短期内被整体替换。RL 侧则出现从&quot;短程控制&quot;向&quot;长时程工具调用 Agent&quot;（T1）与&quot;世界模型加速训练&quot;（AutoResearch）迁移的趋势，这正是电网调度 Agent 化所需的两块拼图。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
