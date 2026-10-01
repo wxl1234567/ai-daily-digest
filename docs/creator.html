@@ -36,6 +36,48 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-01">AI 每日简报 · 2026-10-01 周四</span>
+    <button class="cbtn" data-copy="t-2026-10-01">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-01.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-01.mp3" download="2026-10-01.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-01">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-01">AI 每日简报 · 2026-10-01 周四
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+🧠 强化学习前沿 (RL for Energy)
+· Scaling Properties of Same-Family On-Policy Distillation：研究 on-policy distillation (OPD) 在弱到强、同基座、强到弱三种师生设置下的 scaling 规律，发现早期训练统一呈现&quot;有效迁移&quot;阶段。
+  来源：https://huggingface.co/papers/2609.32722
+· Scaffolding Minds: Optimizing Latent Visual Target Representations for Multimodal Reasoning：指出 latent reasoning 两阶段训练范式的局限，提出优化隐空间视觉目标表征以提升多模态推理。
+  来源：https://huggingface.co/papers/2608.19669
+
+📐 AI4PDE 最新进展
+· A Variance-Decomposition Formula for Direct and Adjoint Monte Carlo Particle Transport Problems：为蒙特卡洛粒子输运问题建立方差分解公式，将模拟方差表达为粒子输运过程中的&quot;方差贡献&quot;之和。
+  来源：https://arxiv.org/abs/2609.39210v1
+
+🔧 凸优化与能源系统
+· Minimax Additive Regression under Unknown Dependent Designs：研究 $[0,1]^d$ 上非乘积随机设计下的加性回归极小极大率，允许维度随样本量增长，建立与维度无关的相容性界。
+  来源：https://arxiv.org/abs/2609.39212v1
+
+💻 开源项目与代码
+· NVIDIA/OpenShell：NVIDIA 开源面向自主 AI Agent 的安全私有运行时环境。
+  来源：https://github.com/NVIDIA/OpenShell
+· mvschwarz/openrig：多 Agent 编排框架，将 Claude Code 与 Codex 作为统一系统协同运行。
+  来源：https://github.com/mvschwarz/openrig
+· colbymchenry/codegraph：预索引代码知识图谱，代码变更时自动同步，支持 Claude Code、Codex、Gemini 等，100% 本地运行。
+  来源：https://github.com/colbymchenry/codegraph
+
+💡 今日观察
+今日 AI 资讯以通用大模型发布（Gemini 4 Argon、GPT-6.1 Sol）和 Agent 安全为主，与 AI4Energy、AI4PDE、能源凸优化直接相关的内容极为稀缺。值得注意的信号是：on-policy distillation 的 scaling 规律研究（HuggingFace Papers）和粒子输运方差分解（arXiv）分别从 RL 训练策略和 PDE 数值方法两个方向提供了可迁移至能源领域的方法论工具。建议能源 AI 研究者关注 OPD 跨规模迁移规律，这可能对多区域能源调度 Agent 的蒸馏训练有直接借鉴意义。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-09-30">AI 每日简报 · 2026-09-30 周三</span>
     <button class="cbtn" data-copy="t-2026-09-30">📋 复制标题</button>
   </div>
@@ -814,56 +856,6 @@
 
 💡 今日观察
 今日最值得关注的信号是**能源与AI的张力正在从技术层面向政策与市场层面扩散**：美联储因能源价格上涨加息、AI数据中心遭遇公众强烈抵触、电子废弃物问题被严重低估，三者共同指向AI4Energy研究需要更系统地纳入经济-社会约束。与此同时，Causilo和TabPFN-3.5等表格基础模型的密集发布，为能源领域负荷预测、电价预测等经典任务提供了开箱即用的新工具，值得尽快在真实能源数据集上验证其泛化能力。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-16">AI 每日简报 · 2026-09-16 周三</span>
-    <button class="cbtn" data-copy="t-2026-09-16">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-16.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-16.mp3" download="2026-09-16.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-16">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-16">AI 每日简报 · 2026-09-16 周三
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 美国数据中心2035年天然气消耗量或超德日总和：AI算力扩张推动美国数据中心成为全球最大天然气消费主体之一。
-  来源：https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/
-· AI数据中心建设遭遇工业创伤城市抵制：费城等曾受炼油厂影响社区反对新建数据中心，民调显示61%选民反对。
-  来源：https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september
-· OpenAI用自家LLM设计Jalapeño芯片：OpenAI首款AI加速器芯片实现13.4 petaflops 4-bit算力，端到端延迟较GB300降低3.6倍。
-  来源：https://spectrum.ieee.org/llms-for-chip-design
-
-🧠 强化学习前沿 (RL for Energy)
-· Bellman Policy Optimization (BPO)：从Policy Mirror Descent推导的无critic RL方法，利用Bellman方程将PMD重构为轨迹级目标，避免中间状态值估计。
-  来源：https://arxiv.org/abs/2609.15987v1
-· RL for LLMs中的马太效应：研究发现RL训练在简单问题上提升显著，在困难问题上提升有限，归因于现代RL方法的探索机制限制。
-  来源：https://huggingface.co/papers/2609.13443
-· MoE强化学习中的专家空间探索：通过扰动专家选择增加rollout多样性，将专家路由作为RL探索的额外来源。
-  来源：https://huggingface.co/papers/2609.13058
-
-📐 AI4PDE 最新进展
-· Navier-Stokes千禧年问题据称已被解决：Clay数学研究所表示该问题&quot;显然已被解决&quot;，正在启动正式审查。
-  来源：https://the-decoder.com/clay-mathematics-institute-says-the-navier-stokes-millennium-prize-problem-has-apparently-been-settled/
-· 对LLM在Navier-Stokes问题上能力的质疑：作者在Navier-Stokes被AI辅助解决后仍对LLM持悲观态度，讨论AI在数学发现中的真实边界。
-  来源：https://dank.systems/posts/2026-09-15-ai-bear.html
-
-💻 开源项目与代码
-· alphaXiv/OpenResearch：将编码Agent转化为科研Agent，支持自动化研究流程。
-  来源：https://github.com/alphaXiv/OpenResearch
-· earendil-works/pi：统一LLM API、Agent循环、TUI和编码Agent CLI的AI Agent工具包。
-  来源：https://github.com/earendil-works/pi
-· JustVugg/colibri：纯C实现、零依赖，支持从磁盘流式加载专家权重的MoE推理引擎。
-  来源：https://github.com/JustVugg/colibri
-
-💡 今日观察
-今日最值得关注的信号是数据中心能源消耗问题持续升温——从天然气消耗预测到选址社会阻力，AI算力扩张正成为能源系统规划中不可忽视的新变量。与此同时，Navier-Stokes千禧年问题据称被解决（待正式审查），若确认将对AI4PDE领域产生深远影响，能源领域的流体仿真方法论可能面临重构。RL方法论方面，BPO的无critic架构和MoE专家空间探索为能源调度中的高效RL训练提供了新思路。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
