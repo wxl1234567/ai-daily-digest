@@ -36,6 +36,70 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-02">AI 每日简报 · 2026-10-02 周五</span>
+    <button class="cbtn" data-copy="t-2026-10-02">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-02.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-02.mp3" download="2026-10-02.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-02">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-02">AI 每日简报 · 2026-10-02 周五
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google首颗先进芯片入轨，太空数据中心路线图曝光：Google将自研AI芯片送入轨道，并测算SpaceX Starship需发射约1800次才能让太空数据中心具备可行性。
+  来源：https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/
+· OpenAI与Synopsys联合打造芯片设计专用模型GPT-Synopsys：该模型目标是像资深工程师一样操作EDA工具并自主优化芯片设计，已与半导体客户开展早期测试。
+  来源：https://the-decoder.com/openai-and-synopsys-team-up-to-build-an-ai-model-that-designs-chips-like-a-seasoned-engineer/
+· Meta将AI数据中心归类为&quot;试验性项目&quot;规避数十亿美元联邦税：2025年一年即节省39亿美元，其自家会计师也认为该策略存在法律风险。
+  来源：https://the-decoder.com/meta-dodges-billions-in-us-taxes-by-calling-its-ai-data-centers-experiments/
+· Kevin O'Leary犹他州9GW AI数据中心项目调查：The Verge深度调查其40000英亩、9GW级AI园区计划引发的社区反弹。
+  来源：https://www.theverge.com/podcast/1002851/utah-ai-data-center-stratos-kevin-oleary-investigation-backlash
+
+🧠 强化学习前沿 (RL for Energy)
+· Cloudflare发布Clef与Clef-flash开放权重决策模型：返回类型化概率而非文本，兼容Jev-API，支持图像输入，在Workers AI上中位延迟分别为209.3ms与38.8ms。
+  来源：https://www.marktechpost.com/2026/10/01/cloudflare-releases-clef-and-clef-flash/ / https://blog.cloudflare.com/clef-decision-models/
+· 亚马逊Strand Labs发布Strands Decider 2B决策模型：决策模型赛道持续升温，AWS加入Jev类模型的竞争。
+  来源：https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/
+· TERRA：地形感知的肌肉骨骼运动重定向与控制：端到端流水线用RL实现复杂地形上的肌肉驱动运动控制，突破此前仅限平地的限制。
+  来源：https://huggingface.co/papers/2609.38653
+· Rubric Rewards from Item Response Theory：用项目反应理论将评分准则的判定组合为标量奖励，替代简单加和，使RL奖励信号更能区分rollout质量。
+  来源：https://huggingface.co/papers/2609.35646
+· Label-free Steering：将测试时强化学习压缩到仅偏置子空间：仅优化约10万偏置参数，用多数投票伪标签作为奖励，实现无标签测试时自适应。
+  来源：https://huggingface.co/papers/2609.18587
+
+📐 AI4PDE 最新进展
+· Learning Chaos Without Seeing Chaos：自回归Transformer的全局动力学外推：仅用局部观测训练的小型自回归Transformer，能恢复非线性动力系统的全局组织行为。
+  来源：https://huggingface.co/papers/2609.38814
+· NVIDIA Physis-Lang：自演化物理语言让Cosmos 3在物理基准上超越Veo 3.1：NVIDIA、MIT与牛津团队提出将物理语言作为可优化的共享表示，修正视频世界模型中的物理违规。
+  来源：https://www.marktechpost.com/2026/09/30/nvidia-researchers-introduce-physis-lang-self-evolving-physical-language-that-lifts-cosmos-3-past-veo-3-1-on-physics-benchmarks/
+· Google DeepMind发布SynthID Bio：AI生成蛋白质水印：在保持生物功能的前提下对AI生成蛋白质进行水印标记的概念验证。
+  来源：https://deepmind.google/blog/introducing-synthid-bio/
+
+🔧 凸优化与能源系统
+· NVIDIA Kumo Tabular：开放表格基础模型，单次前向传播预测新行：无需训练、无需调参、无需特征工程，直接以标注行为上下文预测新样本。
+  来源：https://www.marktechpost.com/2026/09/30/nvidia-releases-kumo-tabular/ / https://huggingface.co/blog/nvidia/kumo-tabular
+· OpenAI与Synopsys合作推进芯片设计自动化：GPT-Synopsys旨在自主优化芯片设计流程，凸优化在EDA布局布线中的核心地位使其与能源芯片设计直接相关。
+  来源：https://the-decoder.com/openai-and-synopsys-team-up-to-build-an-ai-model-that-designs-chips-like-a-seasoned-engineer/
+
+💻 开源项目与代码
+· NVIDIA/OpenShell：面向自主AI agent的安全私有运行时，今日+2456 star。
+  来源：https://github.com/NVIDIA/OpenShell
+· tile-ai/tilelang：面向高性能GPU/CPU/加速器kernel开发的领域特定语言，今日+163 star。
+  来源：https://github.com/tile-ai/tilelang
+· Google Research Kauldron：JAX训练库编码指南：konfig将实验转为纯字典、kontext通过字符串路径连接组件、ktyping强制运行时形状检查。
+  来源：https://www.marktechpost.com/2026/10/01/a-coding-guide-to-google-researchs-kauldron-configs-that-are-plain-data-components-wired-by-string-and-a-jax-trainer-you-can-read-end-to-end/
+
+💡 今日观察
+今日最值得能源交叉研究者关注的信号是**决策模型（Decision Model）的密集发布**：Cloudflare Clef、AWS Strands Decider 2B、以及r/LocalLLaMA上Jeff-Qwen3.5-0.8B等轻量决策模型，都在将LLM从&quot;生成文本&quot;推向&quot;返回类型化概率&quot;。这一范式与能源系统中的调度决策、储能充放电策略、电力市场竞价等场景高度契合——能源决策本质上就是在不确定性下输出概率化动作。此外，NVIDIA Kumo Tabular的零训练表格预测能力值得负荷预测与电价预测研究者立即测试，其&quot;单次前向传播预测新行&quot;的特性可能显著降低能源时序预测的工程门槛。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-01">AI 每日简报 · 2026-10-01 周四</span>
     <button class="cbtn" data-copy="t-2026-10-01">📋 复制标题</button>
   </div>
@@ -798,64 +862,6 @@
 
 💡 今日观察
 今天最值得能源 AI 研究者关注的信号有两个：一是 IB-Flows 开源多 GPU FSI 求解器的发布，为风机叶片、海洋能装置等流固耦合仿真提供了高质量开源工具，有望与神经算子方法结合形成 AI4PDE 新范式；二是 PPO critic 价值平坦化问题的系统揭示，直接关系到强化学习在电力调度中的策略质量，值得能源 RL 研究者深入跟进。此外，三元量化模型在浏览器端运行的能力，为能源边缘设备的本地 AI 推理开辟了新路径。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-17">AI 每日简报 · 2026-09-17 周四</span>
-    <button class="cbtn" data-copy="t-2026-09-17">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-17.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-17.mp3" download="2026-09-17.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-17">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-17">AI 每日简报 · 2026-09-17 周四
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 美联储时隔三年多加息25个基点以应对能源价格上涨：美联储宣布加息25个基点，明确将能源价格上涨列为通胀压力来源之一，这是三年多来首次加息。
-  来源：https://www.36kr.com/p/3986735004892164
-· AI数据中心电子废弃物问题被严重低估：新报告警告AI数据中心产生的电子废弃物远超此前估计，到2050年可装满2300万个集装箱。
-  来源：https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban
-· AI与数据中心在各项民调中极不受欢迎：NYT/Siena民调显示61%受访选民反对为AI技术建设数据中心，公众抵触情绪显著。
-  来源：https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september
-
-🧠 强化学习前沿 (RL for Energy)
-· Xiaomi Mimo 2.6 实时后训练仪表盘：小米公开了Mimo 2.6模型的强化学习后训练实时监控面板，可观察训练动态。
-  来源：https://mimo.xiaomi.com/rl/
-· Reward AI 发布 OM-1：仅用人类演示训练的机器人策略：OM-1是通用操作策略，完全基于7自由度可穿戴手套采集的人类演示训练，无需遥操作或机器人数据，配合RL训练的控制层运行。
-  来源：https://www.marktechpost.com/2026/09/14/reward-ai-releases-om-1-a-robot-policy-trained-on-human-demonstrations-only-with-no-teleoperation-or-on-robot-data/
-· LLM强化学习中的马太效应：永不放弃地学习解决难题：研究发现RL训练对简单问题提升大、对难题提升小，提出&quot;马太效应&quot;概念并分析现代RL方法的结构性局限。
-  来源：https://huggingface.co/papers/2609.13443
-· 广义智能体迭代：迭代策略改进与递归自我改进的统一形式框架：提出统一框架描述递归自我改进（RSI）与经典迭代策略改进（GPI）的关系，填补理论空白。
-  来源：https://huggingface.co/papers/2609.13406
-
-📐 AI4PDE 最新进展
-· 前沿模型在物理学上表现如何？：arXiv论文系统评估前沿大模型在物理问题上的能力，HN讨论热度较高。
-  来源：https://arxiv.org/abs/2609.13009
-· PhysStream：带结构化场景记忆与细粒度运动控制的流式物理视频生成：提出自回归模型，实现物理基础的图像到视频合成，支持结构化场景记忆和细粒度运动控制。
-  来源：https://huggingface.co/papers/2609.17521
-
-🔧 凸优化与能源系统
-· 异构异步优化与同构异步优化之间的鸿沟出乎意料地难以弥合：理论分析表明同构与异构异步随机梯度优化之间存在显著复杂度差距，挑战现有理论认知。
-  来源：https://arxiv.org/abs/2609.17483v1
-
-💻 开源项目与代码
-· Tencent/WeKnora — 开源LLM知识平台：腾讯开源的知识平台，将原始文档转化为可查询RAG、自主推理智能体和自维护Wiki，今日+1197 star。
-  来源：https://github.com/Tencent/WeKnora
-· JustVugg/colibri — 纯C实现的MoE推理引擎：零依赖、纯C实现的前沿MoE模型推理引擎，专家从磁盘流式加载，可在自有硬件上运行大模型，今日+1546 star。
-  来源：https://github.com/JustVugg/colibri
-· Nums AI 发布 Causilo：登顶TabArena的表格基础模型：Causilo是预训练表格基础模型，支持分类与回归，提供scikit-learn接口，在TabArena单模型Elo排名第一，代码Apache-2.0开源。
-  来源：https://www.marktechpost.com/2026/09/15/nums-ai-releases-causilo-a-tabular-foundation-model-that-tops-tabarena-among-single-models/
-· Prior Labs 发布 TabPFN-3.5：默认设置即击败Otto Kaggle冠军方案：仅用合成数据预训练的表格基础模型，默认设置下超越Kaggle竞赛获胜方案。
-  来源：https://www.marktechpost.com/2026/09/15/prior-labs-releases-tabpfn-3-5-a-tabular-foundation-model-that-beats-the-winning-otto-kaggle-solution-with-default-settings/
-
-💡 今日观察
-今日最值得关注的信号是**能源与AI的张力正在从技术层面向政策与市场层面扩散**：美联储因能源价格上涨加息、AI数据中心遭遇公众强烈抵触、电子废弃物问题被严重低估，三者共同指向AI4Energy研究需要更系统地纳入经济-社会约束。与此同时，Causilo和TabPFN-3.5等表格基础模型的密集发布，为能源领域负荷预测、电价预测等经典任务提供了开箱即用的新工具，值得尽快在真实能源数据集上验证其泛化能力。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
