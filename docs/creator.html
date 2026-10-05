@@ -36,6 +36,64 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-05">AI 每日简报 · 2026-10-05 周一</span>
+    <button class="cbtn" data-copy="t-2026-10-05">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-05.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-05.mp3" download="2026-10-05.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-05">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-05">AI 每日简报 · 2026-10-05 周一
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 谷歌数据中心水电消耗因脱敏不当被曝光：林肯市谷歌数据中心的用水与用电数据因文件脱敏处理失误而被公开，引发社区对数据中心资源消耗的广泛讨论（HN 217 分、324 条评论）。
+  来源：https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/
+· 美国农村数据中心获联邦重大税收减免：根据 One Big Beautiful Bill Act，农村地区数据中心项目自明年起可享受大幅税收优惠，但部分超大规模厂商似乎并不急于申领。
+  来源：https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/
+· NASA 与 IBM 发布开源月球基础模型：基于 17 年月球勘测轨道器数据（近 200 万个 tile bundle）训练，显著降低极地冰沉积预测误差，是首批面向月球科学的开源 AI 模型之一。
+  来源：https://the-decoder.com/nasa-and-ibms-open-source-lunar-model-turns-17-years-of-orbiter-data-into-a-foundation-for-lunar-science/
+
+🧠 强化学习前沿 (RL for Energy)
+· CorrGRPO：多奖励学习中的相关性归一化 GRPO：针对 GRPO 在多奖励场景下奖励协方差影响优势估计的问题，提出相关性归一化的改进方法，理论分析了方差与优势的关系。
+  来源：https://huggingface.co/papers/2609.36820
+· X-Tree：为高效 Agent 泛化而 Token 化可复用经验：将多步 Agent 训练中反复出现的子过程从扁平动作流中提取为层级结构，使稀缺轨迹的利用更充分，提升泛化能力。
+  来源：https://huggingface.co/papers/2609.32993
+· JevSpawn：通过组合动作空间实现自适应 Agent 推理：将 Jev 风格快速概率预测与自然语言指令连接，构建组合策略，解决有限域需预先指定的限制，支持自主任务求解。
+  来源：https://huggingface.co/papers/2610.00437
+
+📐 AI4PDE 最新进展
+· LOCI：面向流式世界模型的空间线性记忆：提出混合空间记忆架构，同时保留键值缓存（视觉细节）与循环记忆（紧凑历史），解决视频世界模型中长时序场景一致性与检索问题。
+  来源：https://huggingface.co/papers/2609.40222
+· Latent-Foresight：端到端学习可预测表征用于隐世界模型：摒弃两阶段流水线（先压缩 VFM 特征再训练预测器），端到端学习可预测的隐空间表征，提升未来场景演化预测能力。
+  来源：https://huggingface.co/papers/2610.01942
+· Honeycomb：视频世界模型的常量尺寸场景记忆：提出 HexMemory 低秩表示，用固定大小的六个空间与时空平面存储场景特征，解决长时序生成中空间记忆随生成过程累积膨胀的问题。
+  来源：https://huggingface.co/papers/2609.37690
+
+🔧 凸优化与能源系统
+· BootLoops 开源工具支持 AI 模型执行精确科学计算：哈佛物理学家 Matthew Schwartz 使用该工具配合 Claude，三个月内跨 18 个领域产出 36 篇手稿，但结果往往需人类专家介入才具科学价值。
+  来源：https://the-decoder.com/open-source-bootloops-harness-supports-ai-models-in-performing-precise-scientific-calculations/
+· 决策 AI 模型解析：TypeSafe Jev 与开源竞品对比：决策 AI 模型以校准概率回答类型化问题而非生成文本，Jev 每百万输入 token 仅 $0.042，响应时间 70-500ms，并与 Fastino GLiDE、GLiNER2.5-Decide 等开源方案对比。
+  来源：https://www.marktechpost.com/2026/10/02/decision-ai-models-explained-typesafe-jev-vs-fastino-glide-gliner2-5-decide-and-open-source-competitors/
+
+💻 开源项目与代码
+· antirez/ds4 — DeepSeek 4 Flash 与 PRO 本地推理引擎：支持 Metal、CUDA 和 ROCm 的 DeepSeek 4 本地推理引擎，由 Redis 作者 antirez 开发（今日 +211 star）。
+  来源：https://github.com/antirez/ds4
+· thedotmack/claude-mem — 跨会话持久化上下文：捕获 Agent 会话中的所有操作，用 AI 压缩后注入未来会话，支持 Claude Code、Codex、Gemini 等多种 Agent（今日 +628 star）。
+  来源：https://github.com/thedotmack/claude-mem
+· earthtojake/text-to-cad — 为 Agent 赋予 CAD 超能力：让 AI Agent 能够通过文本生成 CAD 模型（今日 +83 star）。
+  来源：https://github.com/earthtojake/text-to-cad
+
+💡 今日观察
+今天最值得关注的信号是**数据中心能源约束正在从技术问题升级为政策与公众议题**——谷歌数据中心水电数据泄露、农村数据中心税收减免、Nvidia Shield TV 因 AI 内存需求涨价 100 美元，三条新闻共同指向一个趋势：AI 算力扩张的能源与硬件成本正在成为行业硬约束。此外，HuggingFace 上涌现的多个世界模型记忆架构论文（LOCI、Honeycomb、Latent-Foresight）值得 AI4PDE 方向的研究者关注，其时空表征方法有望迁移至物理场预测与仿真加速。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-04">AI 每日简报 · 2026-10-04 周日</span>
     <button class="cbtn" data-copy="t-2026-10-04">📋 复制标题</button>
   </div>
@@ -778,54 +836,6 @@
 
 💡 今日观察
 今日最值得关注的信号是能源系统网络安全被提升到与 AI 安全同等重要的位置——The Verge 明确指出人类而非失控 AI 才是能源系统最大威胁，这提示 AI4Energy 研究者在部署智能体时必须将安全审计作为一等公民。同时，RL 领域两篇关于观测监督与自退出蒸馏的论文，为能源多智能体调度提供了更高效的训练范式。数据中心能耗监管（弗吉尼亚州）与新能源汽车产能讨论，则从政策与市场两端持续塑造能源 AI 的应用边界。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-20">AI 每日简报 · 2026-09-20 周日</span>
-    <button class="cbtn" data-copy="t-2026-09-20">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-20.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-20.mp3" download="2026-09-20.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-20">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-20">AI 每日简报 · 2026-09-20 周日
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 达卯科技算电协同2.0平台入选2026国际数字能源展重大成果发布：该平台是成果中唯一聚焦&quot;算电协同全链路运营&quot;的AI技术产品，将AI算力调度与电力系统运行深度耦合。
-  来源：https://www.qbitai.com/2026/09/492421.html
-
-🧠 强化学习前沿 (RL for Energy)
-· Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL：提出 ActObs 方法，在SFT阶段额外监督环境观测token，发现这一改动显著改变了后续RL训练中的探索行为，为RL智能体初始化提供了新思路。
-  来源：https://huggingface.co/papers/2609.20715
-· RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning：提出自退休在线策略蒸馏方法，解决多轮RL智能体训练中教师监督阶段依赖性问题，在智能体任务中实现更高效的策略学习。
-  来源：https://huggingface.co/papers/2609.20784
-· Google DeepMind's Dream-RSI helps AI agents improve by &quot;dreaming&quot; about past attempts：Dream-RSI让AI智能体通过&quot; dreaming&quot;回放过去的搜索轨迹来测试新策略，无需昂贵重计算，迭代次数减少最高2.43倍，且仅调整搜索策略不改变底层模型。
-  来源：https://the-decoder.com/google-deepminds-dream-rsi-helps-ai-agents-improve-by-dreaming-about-past-attempts/
-
-📐 AI4PDE 最新进展
-· JEPA-Anything: Learning Predictive Models across Different Worlds：提出基于正交预测分解（OPF）的领域无关世界模型框架，扩展JEPA架构，将潜在目标分解为互补因子，在多种物理系统上验证了跨域预测建模能力。
-  来源：https://huggingface.co/papers/2609.20800
-
-🔧 凸优化与能源系统
-· Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling：研究发现LLM测试时扩展中，候选生成策略（批量vs.序列）对推理能耗和性能有显著影响，相同候选数量N下不同执行方式导致不同能效表现。
-  来源：https://huggingface.co/papers/2609.19499
-
-💻 开源项目与代码
-· cactus-compute/needle：面向微型设备的自动化基础模型，2-bit量化、仅8-29MB，支持工具调用、结构化提取和嵌入，可运行在手机、可穿戴设备、智能家居、机器人、汽车和微控制器上。
-  来源：https://github.com/cactus-compute/needle
-· higgsfield-ai/higgsfield：容错、高可扩展的GPU编排与机器学习框架，专为训练数十亿至数万亿参数模型设计。
-  来源：https://github.com/higgsfield-ai/higgsfield
-· PrismML Releases Ternary Bonsai 2 27B: A 5.9 GB Apache 2.0 Model Retaining 98.2% of Qwen3.8 27B Performance：三值权重版本的Qwen3.8 27B，仅5.93GB（FP16为53.80GB），保留98.2%性能，支持262K上下文，Apache 2.0开源。
-  来源：https://www.marktechpost.com/2026/09/18/prismml-releases-ternary-bonsai-2-27b-a-5-9-gb-apache-2-0-model-retaining-98-2-of-qwen3-8-27b-performance/
-
-💡 今日观察
-今天最值得能源AI研究者关注的信号来自RL训练方法论的两个进展：ActObs揭示了观测监督对RL探索行为的根本性影响，Dream-RSI则提供了低成本策略迭代的新范式——这两者都可直接迁移至能源系统的序贯决策问题（如储能调度、需求响应）。此外，needle和Ternary Bonsai 2展示了模型极致压缩的趋势，意味着在智能电表、分布式传感器等边缘能源设备上部署AI推理正变得越来越可行。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>

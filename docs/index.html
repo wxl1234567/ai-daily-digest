@@ -535,7 +535,7 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
         <h1>AI Daily Digest</h1>
         <p><span data-lang-content="zh">每天 5 分钟 · 掌握 AI 领域最新动态 · 全自动采集 · 智能筛选</span><span data-lang-content="en">5 minutes a day · stay on top of AI · auto-collected · smartly curated</span></p>
         <div class="stats">
-          <div class="stat"><div class="num">169</div><div class="lbl"><span data-lang-content="zh">期日报</span><span data-lang-content="en">issues</span></div></div>
+          <div class="stat"><div class="num">170</div><div class="lbl"><span data-lang-content="zh">期日报</span><span data-lang-content="en">issues</span></div></div>
           <div class="stat"><div class="num">12+</div><div class="lbl"><span data-lang-content="zh">数据源</span><span data-lang-content="en">sources</span></div></div>
           <div class="stat"><div class="num"><span data-lang-content="zh">每日</span><span data-lang-content="en">Daily</span></div><div class="lbl"><span data-lang-content="zh">自动更新</span><span data-lang-content="en">auto-updated</span></div></div>
         </div>
@@ -557,52 +557,379 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
     </div>
       </div>
       
-      <div class="section-title"><span data-lang-content="zh">📅 最新一期 · 2026-10-04 周日</span><span data-lang-content="en">📅 Latest · 2026-10-04 Sunday</span></div>
+      <div class="section-title"><span data-lang-content="zh">📅 最新一期 · 2026-10-05 周一</span><span data-lang-content="en">📅 Latest · 2026-10-05 Monday</span></div>
       
     <div class="audio-player">
       <div class="ap-text">
         <span class="ap-label">🎧 <span data-lang-content="zh">语音播报</span><span data-lang-content="en">Listen</span></span>
         <span class="ap-sub"><span data-lang-content="zh">通勤路上用耳朵看简报</span><span data-lang-content="en">Catch the digest on your commute</span></span>
       </div>
-      <audio controls preload="none" src="audio/2026-10-04.mp3" data-date="2026-10-04"></audio>
+      <audio controls preload="none" src="audio/2026-10-05.mp3" data-date="2026-10-05"></audio>
     </div>
       <div data-lang-content="zh">
     <div class="digest-scope">
       
     <div class="filter-bar">
-      <span class="tab active" data-cat="all">全部</span>
+      <span class="tab active" data-cat="all">全部</span><span class="tab" data-cat="paper">论文</span><span class="tab" data-cat="project">项目</span>
       <span class="star-toggle">★ 只看重点 (4+)</span>
     </div>
       
+        <div class="category" data-cat="paper">
+          <div class="category-header">
+            <h2>⚡ AI4Energy 核心论文与新闻</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">谷歌数据中心水电消耗因脱敏不当被曝光</div>
+      <div class='item-desc'>林肯市谷歌数据中心的用水与用电数据因文件脱敏处理失误而被公开，引发社区对数据中心资源消耗的广泛讨论（HN 217 分、324 条评论）。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/" target="_blank">Hacker News</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">美国农村数据中心获联邦重大税收减免</div>
+      <div class='item-desc'>根据 One Big Beautiful Bill Act，农村地区数据中心项目自明年起可享受大幅税收优惠，但部分超大规模厂商似乎并不急于申领。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/" target="_blank">Wired AI</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">NASA 与 IBM 发布开源月球基础模型</div>
+      <div class='item-desc'>基于 17 年月球勘测轨道器数据（近 200 万个 tile bundle）训练，显著降低极地冰沉积预测误差，是首批面向月球科学的开源 AI 模型之一。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://the-decoder.com/nasa-and-ibms-open-source-lunar-model-turns-17-years-of-orbiter-data-into-a-foundation-for-lunar-science/" target="_blank">The Decoder</a></div>
+      </div>
+    </div>
+        </div>
+        <div class="category" data-cat="other">
+          <div class="category-header">
+            <h2>🧠 强化学习前沿 (RL for Energy)</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">CorrGRPO：多奖励学习中的相关性归一化 GRPO</div>
+      <div class='item-desc'>针对 GRPO 在多奖励场景下奖励协方差影响优势估计的问题，提出相关性归一化的改进方法，理论分析了方差与优势的关系。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://huggingface.co/papers/2609.36820" target="_blank">HuggingFace Papers</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">X-Tree：为高效 Agent 泛化而 Token 化可复用经验</div>
+      <div class='item-desc'>将多步 Agent 训练中反复出现的子过程从扁平动作流中提取为层级结构，使稀缺轨迹的利用更充分，提升泛化能力。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://huggingface.co/papers/2609.32993" target="_blank">HuggingFace Papers</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">JevSpawn：通过组合动作空间实现自适应 Agent 推理</div>
+      <div class='item-desc'>将 Jev 风格快速概率预测与自然语言指令连接，构建组合策略，解决有限域需预先指定的限制，支持自主任务求解。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://huggingface.co/papers/2610.00437" target="_blank">HuggingFace Papers</a></div>
+      </div>
+    </div>
+        </div>
+        <div class="category" data-cat="other">
+          <div class="category-header">
+            <h2>📐 AI4PDE 最新进展</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">LOCI：面向流式世界模型的空间线性记忆</div>
+      <div class='item-desc'>提出混合空间记忆架构，同时保留键值缓存（视觉细节）与循环记忆（紧凑历史），解决视频世界模型中长时序场景一致性与检索问题。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://huggingface.co/papers/2609.40222" target="_blank">HuggingFace Papers</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">Latent-Foresight：端到端学习可预测表征用于隐世界模型</div>
+      <div class='item-desc'>摒弃两阶段流水线（先压缩 VFM 特征再训练预测器），端到端学习可预测的隐空间表征，提升未来场景演化预测能力。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://huggingface.co/papers/2610.01942" target="_blank">HuggingFace Papers</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">Honeycomb：视频世界模型的常量尺寸场景记忆</div>
+      <div class='item-desc'>提出 HexMemory 低秩表示，用固定大小的六个空间与时空平面存储场景特征，解决长时序生成中空间记忆随生成过程累积膨胀的问题。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://huggingface.co/papers/2609.37690" target="_blank">HuggingFace Papers</a></div>
+      </div>
+    </div>
+        </div>
+        <div class="category" data-cat="project">
+          <div class="category-header">
+            <h2>🔧 凸优化与能源系统</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">BootLoops 开源工具支持 AI 模型执行精确科学计算</div>
+      <div class='item-desc'>哈佛物理学家 Matthew Schwartz 使用该工具配合 Claude，三个月内跨 18 个领域产出 36 篇手稿，但结果往往需人类专家介入才具科学价值。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://the-decoder.com/open-source-bootloops-harness-supports-ai-models-in-performing-precise-scientific-calculations/" target="_blank">The Decoder</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">决策 AI 模型解析：TypeSafe Jev 与开源竞品对比</div>
+      <div class='item-desc'>决策 AI 模型以校准概率回答类型化问题而非生成文本，Jev 每百万输入 token 仅 $0.042，响应时间 70-500ms，并与 Fastino GLiDE、GLiNER2.5-Decide 等开源方案对比。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://www.marktechpost.com/2026/10/02/decision-ai-models-explained-typesafe-jev-vs-fastino-glide-gliner2-5-decide-and-open-source-competitors/" target="_blank">MarkTechPost</a></div>
+      </div>
+    </div>
+        </div>
+        <div class="category" data-cat="project">
+          <div class="category-header">
+            <h2>💻 开源项目与代码</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">antirez/ds4 — DeepSeek 4 Flash 与 PRO 本地推理引擎</div>
+      <div class='item-desc'>支持 Metal、CUDA 和 ROCm 的 DeepSeek 4 本地推理引擎，由 Redis 作者 antirez 开发（今日 +211 star）。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://github.com/antirez/ds4" target="_blank">GitHub Trending</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">thedotmack/claude-mem — 跨会话持久化上下文</div>
+      <div class='item-desc'>捕获 Agent 会话中的所有操作，用 AI 压缩后注入未来会话，支持 Claude Code、Codex、Gemini 等多种 Agent（今日 +628 star）。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://github.com/thedotmack/claude-mem" target="_blank">GitHub Trending</a></div>
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">earthtojake/text-to-cad — 为 Agent 赋予 CAD 超能力</div>
+      <div class='item-desc'>让 AI Agent 能够通过文本生成 CAD 模型（今日 +83 star）。</div>
+      <div class="item-meta">
+        
+        
+        <div class="item-sources"><a href="https://github.com/earthtojake/text-to-cad" target="_blank">GitHub Trending</a></div>
+      </div>
+    </div>
+        </div>
       <div class="empty-filter">该筛选条件下没有内容。</div>
       
         <div class="observation">
           <h2>💡 今日观察</h2>
-          <p>今日收集到的全部资讯均集中在通用 AI 领域（OpenAI 安全团队离职、Meta Muse 开源硬件、Gemini 4 发布、Agent 框架与编码工具等），未出现与 AI4Energy、强化学习能源调度、AI 求解 PDE 或凸优化能源系统直接相关的高质量内容。对于能源交叉研究者而言，今日无值得追踪的新信号，建议关注后续 arXiv 能源专题及 NeurIPS/ICML 能源相关 workshop 的更新。</p>
-          <button class="speak-btn" data-label="🔊 朗读今日观察" data-stop="⏹ 停止" data-speak-lang="zh-CN" data-text="今日收集到的全部资讯均集中在通用 AI 领域（OpenAI 安全团队离职、Meta Muse 开源硬件、Gemini 4 发布、Agent 框架与编码工具等），未出现与 AI4Energy、强化学习能源调度、AI 求解 PDE 或凸优化能源系统直接相关的高质量内容。对于能源交叉研究者而言，今日无值得追踪的新信号，建议关注后续 arXiv 能源专题及 NeurIPS/ICML 能源相关 workshop 的更新。">🔊 朗读今日观察</button>
+          <p>今天最值得关注的信号是**数据中心能源约束正在从技术问题升级为政策与公众议题**——谷歌数据中心水电数据泄露、农村数据中心税收减免、Nvidia Shield TV 因 AI 内存需求涨价 100 美元，三条新闻共同指向一个趋势：AI 算力扩张的能源与硬件成本正在成为行业硬约束。此外，HuggingFace 上涌现的多个世界模型记忆架构论文（LOCI、Honeycomb、Latent-Foresight）值得 AI4PDE 方向的研究者关注，其时空表征方法有望迁移至物理场预测与仿真加速。</p>
+          <button class="speak-btn" data-label="🔊 朗读今日观察" data-stop="⏹ 停止" data-speak-lang="zh-CN" data-text="今天最值得关注的信号是**数据中心能源约束正在从技术问题升级为政策与公众议题**——谷歌数据中心水电数据泄露、农村数据中心税收减免、Nvidia Shield TV 因 AI 内存需求涨价 100 美元，三条新闻共同指向一个趋势：AI 算力扩张的能源与硬件成本正在成为行业硬约束。此外，HuggingFace 上涌现的多个世界模型记忆架构论文（LOCI、Honeycomb、Latent-Foresight）值得 AI4PDE 方向的研究者关注，其时空表征方法有望迁移至物理场预测与仿真加速。">🔊 朗读今日观察</button>
         </div>
     </div></div><div data-lang-content="en">
     <div class="digest-scope">
       
     <div class="filter-bar">
-      <span class="tab active" data-cat="all">All</span>
+      <span class="tab active" data-cat="all">All</span><span class="tab" data-cat="project">Projects</span>
       <span class="star-toggle">★ Top picks (4+)</span>
     </div>
       
+        <div class="category" data-cat="other">
+          <div class="category-header">
+            <h2>⚡ AI4Energy Papers</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">Google Data Center Water and Electricity Usage Revealed via Improper Redaction</div>
+      <div class='item-desc'>Water and electricity usage data for Google's Lincoln data center was exposed due to a redaction failure, sparking widespread community discussion on data center resource consumption (HN 217 points, 324 comments).</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">Rural Data Centers Get Major Federal Tax Break</div>
+      <div class='item-desc'>Under the One Big Beautiful Bill Act, rural data center projects could qualify for significant tax benefits starting next year, though some hyperscalers seem reluctant to claim them.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">NASA and IBM Release Open-Source Lunar Foundation Model</div>
+      <div class='item-desc'>Trained on 17 years of Lunar Reconnaissance Orbiter data (~2 million tile bundles), significantly reducing prediction error for polar ice deposits; one of the first open-source AI models for lunar science.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+        </div>
+        <div class="category" data-cat="other">
+          <div class="category-header">
+            <h2>🧠 RL for Energy</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">CorrGRPO: Correlation-Normalized GRPO for Multi-Reward Learning</div>
+      <div class='item-desc'>Addresses how reward covariance affects advantage estimation in GRPO under multi-reward settings, proposing a correlation-normalized improvement with theoretical analysis of variance-advantage relationships.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">X-Tree: Tokenizing Reusable Experience for Efficient Agent Generalization</div>
+      <div class='item-desc'>Extracts recurring sub-procedures from flat action streams into hierarchical structures, enabling more complete use of scarce trajectories and improving generalization.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">JevSpawn: Adaptive Agentic Inference through Compositional Action Spaces</div>
+      <div class='item-desc'>Connects Jev-style fast probabilistic predictions with natural language instructions to build compositional policies, removing the need for pre-specified finite fields and supporting autonomous task solving.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+        </div>
+        <div class="category" data-cat="other">
+          <div class="category-header">
+            <h2>📐 AI4PDE</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">LOCI: Spatial Linear Memory for Streaming World Models</div>
+      <div class='item-desc'>Proposes a hybrid spatial memory architecture retaining both key-value caches (visual detail) and recurrent memory (compact history), solving long-horizon scene consistency and retrieval in video world models.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">Latent-Foresight: End-to-End Learning Predictable Representations for Latent World Models</div>
+      <div class='item-desc'>Abandons the two-stage pipeline (compress VFM features then train predictor) in favor of end-to-end learning of predictable latent representations, improving future scene evolution prediction.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">Honeycomb: Constant-Size Scene Memory Representation for Video World Models</div>
+      <div class='item-desc'>Introduces HexMemory, a low-rank representation storing scene features in a fixed-size memory with six spatial and spatiotemporal planes, solving memory growth during long-horizon generation.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+        </div>
+        <div class="category" data-cat="project">
+          <div class="category-header">
+            <h2>🔧 Convex Opt</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">Open-Source BootLoops Harness Supports AI Models in Precise Scientific Calculations</div>
+      <div class='item-desc'>Harvard physicist Matthew Schwartz used the tool with Claude to produce 36 manuscripts across 18 fields in three months, though results often required human expert intervention for scientific value.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">Decision AI Models Explained: TypeSafe Jev vs Open-Source Competitors</div>
+      <div class='item-desc'>Decision AI models answer typed questions with calibrated probabilities instead of generated text; Jev costs $0.042 per million input tokens with 70-500ms response time, compared against Fastino GLiDE, GLiNER2.5-Decide and open-source rivals.</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+        </div>
+        <div class="category" data-cat="other">
+          <div class="category-header">
+            <h2>💻 Open Source</h2>
+            <div class="cat-line"></div>
+          </div>
+          
+    <div class="item-card" data-stars="0">
+      <div class="item-title">antirez/ds4 — DeepSeek 4 Flash and PRO Local Inference Engine</div>
+      <div class='item-desc'>A local inference engine for DeepSeek 4 supporting Metal, CUDA, and ROCm, developed by Redis creator antirez (+211 stars today).</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">thedotmack/claude-mem — Persistent Context Across Sessions</div>
+      <div class='item-desc'>Captures everything an agent does during sessions, compresses it with AI, and injects relevant context into future sessions; works with Claude Code, Codex, Gemini and more (+628 stars today).</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+    <div class="item-card" data-stars="0">
+      <div class="item-title">earthtojake/text-to-cad — Give Your Agent CAD Superpowers</div>
+      <div class='item-desc'>Enables AI agents to generate CAD models from text (+83 stars today).</div>
+      <div class="item-meta">
+        
+        
+        
+      </div>
+    </div>
+        </div>
       <div class="empty-filter">No items match this filter.</div>
       
         <div class="observation">
           <h2>💡 Today's Take</h2>
-          <p>All collected items today centered on general AI topics (OpenAI safety departures, Meta Muse open-source hardware, Gemini 4 launch, agent frameworks and coding tools), with no high-quality content directly related to AI4Energy, RL for energy scheduling, AI for PDEs, or convex optimization in energy systems. For energy cross-disciplinary researchers, there are no new signals worth tracking today; recommend monitoring upcoming arXiv energy sections and NeurIPS/ICML energy-related workshops.</p>
-          <button class="speak-btn" data-label="🔊 Read aloud" data-stop="⏹ Stop" data-speak-lang="en-US" data-text="All collected items today centered on general AI topics (OpenAI safety departures, Meta Muse open-source hardware, Gemini 4 launch, agent frameworks and coding tools), with no high-quality content directly related to AI4Energy, RL for energy scheduling, AI for PDEs, or convex optimization in energy systems. For energy cross-disciplinary researchers, there are no new signals worth tracking today; recommend monitoring upcoming arXiv energy sections and NeurIPS/ICML energy-related workshops.">🔊 Read aloud</button>
+          <p>The most notable signal today is that **data center energy constraints are escalating from a technical issue to a policy and public concern**—Google's data center water/electricity data leak, rural data center tax breaks, and Nvidia Shield TV's $100 price hike due to AI memory demand all point to one trend: the energy and hardware costs of AI compute expansion are becoming hard industry constraints. Additionally, the surge of world model memory architecture papers on HuggingFace (LOCI, Honeycomb, Latent-Foresight) deserves attention from AI4PDE researchers, as their spatiotemporal representation methods may transfer to physical field prediction and simulation acceleration.</p>
+          <button class="speak-btn" data-label="🔊 Read aloud" data-stop="⏹ Stop" data-speak-lang="en-US" data-text="The most notable signal today is that **data center energy constraints are escalating from a technical issue to a policy and public concern**—Google's data center water/electricity data leak, rural data center tax breaks, and Nvidia Shield TV's $100 price hike due to AI memory demand all point to one trend: the energy and hardware costs of AI compute expansion are becoming hard industry constraints. Additionally, the surge of world model memory architecture papers on HuggingFace (LOCI, Honeycomb, Latent-Foresight) deserves attention from AI4PDE researchers, as their spatiotemporal representation methods may transfer to physical field prediction and simulation acceleration.">🔊 Read aloud</button>
         </div>
     </div></div>
       <div class="section-title"><span data-lang-content="zh">🗂 历史归档</span><span data-lang-content="en">🗂 Archive</span></div>
       <div class="date-grid">
+        <a class="date-card" href="daily/2026-10-05.html">
+          <div class="date-label">2026-10-05<span class="audio-badge" title="有语音播报">🎧</span></div>
+          <div class="weekday"><span data-lang-content="zh">周一</span><span data-lang-content="en">Monday</span></div>
+          <div class="latest-badge"><span data-lang-content="zh">最新</span><span data-lang-content="en">Latest</span></div>
+        </a>
         <a class="date-card" href="daily/2026-10-04.html">
           <div class="date-label">2026-10-04<span class="audio-badge" title="有语音播报">🎧</span></div>
           <div class="weekday"><span data-lang-content="zh">周日</span><span data-lang-content="en">Sunday</span></div>
-          <div class="latest-badge"><span data-lang-content="zh">最新</span><span data-lang-content="en">Latest</span></div>
+          
         </a>
         <a class="date-card" href="daily/2026-10-03.html">
           <div class="date-label">2026-10-03<span class="audio-badge" title="有语音播报">🎧</span></div>
@@ -670,7 +997,7 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           
         </a>
         <a class="date-card" href="daily/2026-09-20.html">
-          <div class="date-label">2026-09-20<span class="audio-badge" title="有语音播报">🎧</span></div>
+          <div class="date-label">2026-09-20</div>
           <div class="weekday"><span data-lang-content="zh">周日</span><span data-lang-content="en">Sunday</span></div>
           
         </a>
@@ -1450,7 +1777,7 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
           <h2><span data-lang-content="zh">🔥 近 7 天热点</span><span data-lang-content="en">🔥 Hot picks · last 7 days</span></h2>
           <span class="sub"><span data-lang-content="zh">近期高频出现的模型 / 产品 / 项目 · 点击搜索</span><span data-lang-content="en">Models / products mentioned most · click to search</span></span>
         </div>
-        <div class="trend-tags"><span class="trend-tag s3" data-term="Claude Code">Claude Code<span class="cnt">5</span></span><span class="trend-tag s2" data-term="Kumo Tabular">Kumo Tabular<span class="cnt">3</span></span><span class="trend-tag s2" data-term="Google Research">Google Research<span class="cnt">2</span></span><span class="trend-tag s1" data-term="GLM-5.3">GLM-5.3<span class="cnt">1</span></span><span class="trend-tag s1" data-term="RTX 3090">RTX 3090<span class="cnt">1</span></span><span class="trend-tag s1" data-term="Apache-2.0">Apache-2.0<span class="cnt">1</span></span></div>
+        <div class="trend-tags"><span class="trend-tag s3" data-term="Claude Code">Claude Code<span class="cnt">5</span></span><span class="trend-tag s2" data-term="Kumo Tabular">Kumo Tabular<span class="cnt">3</span></span><span class="trend-tag s2" data-term="Google Research">Google Research<span class="cnt">2</span></span><span class="trend-tag s1" data-term="GLM-5.3">GLM-5.3<span class="cnt">1</span></span><span class="trend-tag s1" data-term="RTX 3090">RTX 3090<span class="cnt">1</span></span><span class="trend-tag s1" data-term="Apache-2.0">Apache-2.0<span class="cnt">1</span></span><span class="trend-tag s1" data-term="HN 217">HN 217<span class="cnt">1</span></span><span class="trend-tag s1" data-term="GLiNER2.5">GLiNER2.5<span class="cnt">1</span></span><span class="trend-tag s1" data-term="DeepSeek 4">DeepSeek 4<span class="cnt">1</span></span></div>
       </div>
     </div>
   
@@ -1460,7 +1787,7 @@ html[data-lang="zh"] [data-lang-content="en"] { display: none; }
   <span data-lang-content="en">© AI Daily Digest · Auto-collected · Curated by DeepSeek · Updated daily</span>
 </footer>
 
-  <script>window.SITE_BASE="";window.AVAILABLE_DATES=["2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-18", "2026-04-19", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24", "2026-04-25", "2026-04-26", "2026-04-27", "2026-04-28", "2026-04-29", "2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-18", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-27", "2026-06-28", "2026-06-29", "2026-06-30", "2026-07-01", "2026-07-02", "2026-07-03", "2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-11", "2026-07-12", "2026-07-13", "2026-07-14", "2026-07-15", "2026-07-16", "2026-07-17", "2026-07-18", "2026-07-19", "2026-07-20", "2026-07-21", "2026-07-22", "2026-07-23", "2026-07-24", "2026-07-27", "2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31", "2026-08-01", "2026-08-02", "2026-08-03", "2026-08-04", "2026-08-05", "2026-08-06", "2026-08-07", "2026-08-08", "2026-08-09", "2026-08-10", "2026-08-11", "2026-08-12", "2026-08-13", "2026-08-14", "2026-08-15", "2026-08-16", "2026-08-17", "2026-08-18", "2026-08-19", "2026-08-20", "2026-08-21", "2026-08-22", "2026-08-23", "2026-08-24", "2026-08-25", "2026-08-26", "2026-08-27", "2026-08-28", "2026-08-29", "2026-08-30", "2026-08-31", "2026-09-01", "2026-09-02", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-06", "2026-09-07", "2026-09-08", "2026-09-09", "2026-09-10", "2026-09-11", "2026-09-12", "2026-09-13", "2026-09-14", "2026-09-15", "2026-09-16", "2026-09-17", "2026-09-18", "2026-09-19", "2026-09-20", "2026-09-21", "2026-09-22", "2026-09-23", "2026-09-24", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04"];window.CURRENT_DATE="2026-10-04";</script>
+  <script>window.SITE_BASE="";window.AVAILABLE_DATES=["2026-04-14", "2026-04-15", "2026-04-16", "2026-04-17", "2026-04-18", "2026-04-19", "2026-04-20", "2026-04-21", "2026-04-22", "2026-04-23", "2026-04-24", "2026-04-25", "2026-04-26", "2026-04-27", "2026-04-28", "2026-04-29", "2026-04-30", "2026-05-01", "2026-05-02", "2026-05-03", "2026-05-04", "2026-05-05", "2026-05-06", "2026-05-07", "2026-05-08", "2026-05-09", "2026-05-10", "2026-05-11", "2026-05-12", "2026-05-13", "2026-05-14", "2026-05-15", "2026-05-16", "2026-05-17", "2026-05-18", "2026-05-19", "2026-05-20", "2026-05-21", "2026-05-22", "2026-05-23", "2026-05-26", "2026-05-27", "2026-05-28", "2026-05-29", "2026-05-31", "2026-06-01", "2026-06-02", "2026-06-03", "2026-06-04", "2026-06-05", "2026-06-06", "2026-06-07", "2026-06-08", "2026-06-09", "2026-06-10", "2026-06-11", "2026-06-12", "2026-06-13", "2026-06-14", "2026-06-15", "2026-06-16", "2026-06-17", "2026-06-18", "2026-06-19", "2026-06-20", "2026-06-21", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-27", "2026-06-28", "2026-06-29", "2026-06-30", "2026-07-01", "2026-07-02", "2026-07-03", "2026-07-04", "2026-07-05", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-11", "2026-07-12", "2026-07-13", "2026-07-14", "2026-07-15", "2026-07-16", "2026-07-17", "2026-07-18", "2026-07-19", "2026-07-20", "2026-07-21", "2026-07-22", "2026-07-23", "2026-07-24", "2026-07-27", "2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31", "2026-08-01", "2026-08-02", "2026-08-03", "2026-08-04", "2026-08-05", "2026-08-06", "2026-08-07", "2026-08-08", "2026-08-09", "2026-08-10", "2026-08-11", "2026-08-12", "2026-08-13", "2026-08-14", "2026-08-15", "2026-08-16", "2026-08-17", "2026-08-18", "2026-08-19", "2026-08-20", "2026-08-21", "2026-08-22", "2026-08-23", "2026-08-24", "2026-08-25", "2026-08-26", "2026-08-27", "2026-08-28", "2026-08-29", "2026-08-30", "2026-08-31", "2026-09-01", "2026-09-02", "2026-09-03", "2026-09-04", "2026-09-05", "2026-09-06", "2026-09-07", "2026-09-08", "2026-09-09", "2026-09-10", "2026-09-11", "2026-09-12", "2026-09-13", "2026-09-14", "2026-09-15", "2026-09-16", "2026-09-17", "2026-09-18", "2026-09-19", "2026-09-20", "2026-09-21", "2026-09-22", "2026-09-23", "2026-09-24", "2026-09-25", "2026-09-26", "2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04", "2026-10-05"];window.CURRENT_DATE="2026-10-05";</script>
   <script>
 (function () {
   var BASE = window.SITE_BASE || "";
