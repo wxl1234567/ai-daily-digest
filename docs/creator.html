@@ -36,6 +36,54 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-06">AI 每日简报 · 2026-10-06 周二</span>
+    <button class="cbtn" data-copy="t-2026-10-06">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-06.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-06.mp3" download="2026-10-06.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-06">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-06">AI 每日简报 · 2026-10-06 周二
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Global Solar Atlas：全球光伏潜力可视化平台：World Bank 与 Solargis 联合维护的全球太阳能资源数据库，提供逐点 GHI/DNI/PVOUT 等栅格数据与交互式地图。
+  来源：https://globalsolaratlas.info/
+· Opus 5.5 智能体自主发现两种室温磁性半导体候选材料：AI agent 在材料筛选流程中自主完成候选生成与验证，找到两种室温磁性半导体。
+  来源：https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors
+
+🧠 强化学习前沿 (RL for Energy)
+· Tail-Influence Sampling for CVaR Policy Evaluation：提出 tail influence 指标，为可分别查询的条件分布分配固定评估预算，以最准确估计策略的 CVaR 下尾风险。
+  来源：https://huggingface.co/papers/2609.38096
+· Cantina 发布 apex-flash-1：面向漏洞研究的 RL 微调开源模型：基于 GLM-5.3-Flash 的强化学习微调，在 60 个 held-out bug 任务中解决 40 个，MIT 许可。
+  来源：https://www.marktechpost.com/2026/10/04/can-an-open-model-do-security-research-cantinas-apex-flash-1-solves-40-of-60-held-out-bug-tasks/
+· Google 提出 RRSI：防止自改进智能体记忆测试任务：通过正则化抑制自改进 agent 对测试任务的记忆，在未见基准上提升最多 4.7 分，token 用量减少约 30%。
+  来源：https://the-decoder.com/google-researchers-find-a-way-to-keep-self-improving-ai-agents-from-memorizing-their-tests/
+
+📐 AI4PDE 最新进展
+· MinkowskiPE：面向时空感知的 Minkowski 位置编码：提出结合灵活学习与显式时空耦合先验的位置编码方案，用于跨尺度物理智能建模。
+  来源：https://huggingface.co/papers/2609.33804
+· JEPA-TTT：潜空间世界模型的持续测试时训练：在测试时对预训练世界模型的潜动态预测器进行自监督在线适配，视觉编码器与奖励头保持冻结。
+  来源：https://huggingface.co/papers/2610.00722
+
+💻 开源项目与代码
+· llama.cpp v0.6.0：支持 Qwen4Exp 的 MTP 投机解码：llama.cpp 发布 v0.6.0，新增多 token 预测（MTP）投机解码等特性。
+  来源：https://www.reddit.com/r/LocalLLaMA/comments/1wyh03u/llamacpp_v060_released_with_mtp_speculative/
+· Agens Volundr 32B Preview：混合架构，仅 18/72 层保留 KV Cache：香港小团队 Blockway 发布自研混合架构模型，通过大幅缩减 KV Cache 层数降低长上下文显存占用，Apache-2.0 许可。
+  来源：https://www.reddit.com/r/LocalLLaMA/comments/1wy7wn0/agens_volundr_32b_preview_our_small_teams_first/
+· TinyDecide：10M 参数的微型决策模型：仅 10M 参数、约 6MB，可在浏览器、Node.js、Rust 甚至 ESP32 上运行。
+  来源：https://www.reddit.com/r/LocalLLaMA/comments/1wybi2y/smallest_jevlike_model/
+
+💡 今日观察
+今天最值得能源交叉研究者关注的信号是 **CVaR 策略评估与自改进 RL 泛化**两条线：Tail-Influence Sampling 为极端风险下的调度策略评估提供了预算最优的统计工具，而 Google 的 RRSI 直指自博弈策略在未见场景上的过拟合问题——这两者恰好是新能源高渗透率下电网调度最核心的两个痛点（尾部风险 + 分布外泛化）。此外，MinkowskiPE 与 JEPA-TTT 分别从位置编码和测试时适配两个角度强化了时空动力学建模，对风光出力预测与热传导仿真均有方法论参考价值。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-05">AI 每日简报 · 2026-10-05 周一</span>
     <button class="cbtn" data-copy="t-2026-10-05">📋 复制标题</button>
   </div>
@@ -778,64 +826,6 @@
 
 💡 今日观察
 今天最明确的能源信号来自监管侧：加州正式为 AI 数据中心设立独立费率类别并强制其承担电网升级成本，这意味着数据中心的负荷建模、电价分摊与容量规划将从&quot;工程问题&quot;升级为&quot;监管+市场&quot;双重约束下的优化问题，值得 AI4Energy 研究者提前布局。方法论层面，RL 环境自动生成（CodeMidas）、子任务级稀疏奖励微调（PARTS）与长期记忆机制（ai-memory）三条线索共同指向&quot;长时域智能体&quot;，这与储能调度、微网分层控制等能源长周期决策场景高度同构。此外，将 LLM 剪枝建模为 Ising 优化问题的工作，提示组合优化与能源机组组合之间可能存在可复用的求解器迁移路径。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-21">AI 每日简报 · 2026-09-21 周一</span>
-    <button class="cbtn" data-copy="t-2026-09-21">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-21.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-21.mp3" download="2026-09-21.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-21">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-21">AI 每日简报 · 2026-09-21 周一
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 人类而非失控AI仍是能源系统最大网络安全风险：The Verge 报道指出，在近期高调黑客事件引发&quot;AI 可能杀死全人类&quot;恐慌之前，能源系统早已对网络攻击高度脆弱，且风险正在增长。
-  来源：https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure
-· 美国撤销发电厂气候污染限制：人权观察报道美国撤销了对发电厂气候污染的限制，HN 热度 205 分、206 条评论。
-  来源：https://text.hrw.org/news/2026/09/17/us-revokes-limits-on-power-plants-climate-pollution
-· 弗吉尼亚州长设立 AI 工作组并限制数据中心：州长 Abigail Spanberger 签署行政令，禁止行政 branch 官员签署保密协议，赋予地方政府对数据中心开发更大话语权，放缓审批。
-  来源：https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force
-· 中国新能源汽车&quot;过剩&quot;论的三本账：36Kr 分析指出关税不会对滞销品开火，中国新能源汽车产能问题可能被误算。
-  来源：https://www.36kr.com/p/3991695333971592
-
-🧠 强化学习前沿 (RL for Energy)
-· Don't Mask the Environment: Observation Supervision Changes How Agents Explore Under RL：论文提出 ActObs，在 SFT 阶段同时监督环境观测 token，改变 RL 下智能体的探索行为。
-  来源：https://huggingface.co/papers/2609.20715
-· RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning：提出自退出的 on-policy 蒸馏方法，为多轮 RL 智能体提供密集 token 级监督，解决特权信息教师不可靠与阶段依赖问题。
-  来源：https://huggingface.co/papers/2609.20784
-· Fingers as Legs: Learning Self-Supported Locomotion and Manipulation with an Anthropomorphic Hand：用 RL 让拟人手用同一组手指完成移动、支撑体重和操作，仿真中校准硬件参数。
-  来源：https://huggingface.co/papers/2609.17172
-
-📐 AI4PDE 最新进展
-· JEPA-Anything: Learning Predictive Models across Different Worlds：提出基于正交预测分解（OPF）的领域无关世界模型框架，扩展 JEPA 架构，将潜在目标分解为互补因子。
-  来源：https://huggingface.co/papers/2609.20800
-· Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation：结合局部 Softmax 注意力与双向线性记忆，解决视频扩散模型注意力计算瓶颈。
-  来源：https://huggingface.co/papers/2609.20744
-
-🔧 凸优化与能源系统
-· Sample Count Is Not Enough: Candidate-Generation Strategy Shapes the Energy and Performance of LLM Test-Time Scaling：研究发现相同候选预算下，批处理与顺序调用的执行方式显著影响推理能耗与性能。
-  来源：https://huggingface.co/papers/2609.19499
-
-💻 开源项目与代码
-· cloudflare/security-audit-skill：Cloudflare 开源编码智能体技能，用于多阶段安全审计，产出可独立验证的机器可读发现。今日 +2,428 star。
-  来源：https://github.com/cloudflare/security-audit-skill
-· trycua/cua：开源计算机使用驱动、跨操作系统集群及训练/评估/数据生成基准。今日 +1,018 star。
-  来源：https://github.com/trycua/cua
-· higgsfield-ai/higgsfield：容错、高可扩展的 GPU 编排与机器学习框架，面向数十亿到数万亿参数模型训练。今日 +465 star。
-  来源：https://github.com/higgsfield-ai/higgsfield
-· affaan-m/ECC：智能体 harness 性能优化系统，涵盖技能、直觉、记忆、安全与研究优先开发，支持 Claude Code、Codex、Opencode、Cursor 等。今日 +826 star。
-  来源：https://github.com/affaan-m/ECC
-
-💡 今日观察
-今日最值得关注的信号是能源系统网络安全被提升到与 AI 安全同等重要的位置——The Verge 明确指出人类而非失控 AI 才是能源系统最大威胁，这提示 AI4Energy 研究者在部署智能体时必须将安全审计作为一等公民。同时，RL 领域两篇关于观测监督与自退出蒸馏的论文，为能源多智能体调度提供了更高效的训练范式。数据中心能耗监管（弗吉尼亚州）与新能源汽车产能讨论，则从政策与市场两端持续塑造能源 AI 的应用边界。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
