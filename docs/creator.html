@@ -36,6 +36,58 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-08">AI 每日简报 · 2026-10-08 周四</span>
+    <button class="cbtn" data-copy="t-2026-10-08">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-08.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-08.mp3" download="2026-10-08.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-08">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-08">AI 每日简报 · 2026-10-08 周四
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Where Can a Decision Model Diagnose HVAC Faults?：研究评估预训练决策模型（返回每个候选答案概率）在 HVAC 故障诊断中的表现，分析推理需求、物理表征与分布偏移下的鲁棒性。
+  来源：https://arxiv.org/abs/2610.09937v1
+· Learning Traffic Flow Dynamics with Stochastic Physics-Informed Neural Cellular Automata：提出随机物理信息神经细胞自动机，从数据中学习交通流局部转移规则，同时保持物理约束，复现宏观交通现象。
+  来源：https://arxiv.org/abs/2610.09946v1
+· TimeBraid: Unifying Time Series and Language for Understanding and Forecasting：通过交错全局残差注意力层对齐预训练语言模型与时间序列基础模型，继承指令跟随与零样本预测能力。
+  来源：https://huggingface.co/papers/2609.29792
+· Zuckerberg's Biohub leads a $1.8 billion push to build AI models that predict cell behavior：Biohub 协调 18 亿美元计划训练预测细胞行为的 AI 模型，Meta、Google DeepMind、Isomorphic Labs 及美国能源部（DOE）参与资助数据、实验设备与算力。
+  来源：https://the-decoder.com/zuckerbergs-biohub-leads-a-1-8-billion-push-to-build-ai-models-that-predict-cell-behavior/
+
+🧠 强化学习前沿 (RL for Energy)
+· Many Ways to Succeed: Diversity-Driven RL Fine-Tuning for VLA Generalization：分析发现 RL 微调会全局收缩行为但多样化成功轨迹，扩大潜在任务有效解空间覆盖，提出多样性驱动 RL 微调提升 VLA 泛化。
+  来源：https://arxiv.org/abs/2610.09943v1
+· Structuring MoE Expert Selection for Agentic Reinforcement Learning：研究 MoE 模型中专家选择与智能体后训练的关系，发现专家路由在智能体轨迹中呈现与任务对齐的专门化结构。
+  来源：https://huggingface.co/papers/2610.07332
+· JumpStart Your Policy Learning with Lessons from 160,000 Training Runs：基于 16 万次训练运行的大规模实证研究，系统调查离线强化学习与模仿学习中报告选择、超参调优和数据集属性对结论的影响。
+  来源：https://huggingface.co/papers/2609.13730
+
+📐 AI4PDE 最新进展
+· Fast holographic inversion of superconducting domes：提出新的全息超导体训练方法，将标量质量 M 的反演时间从数天缩短至约十分钟到一小时，通过解析梯度替代有限差分。
+  来源：https://arxiv.org/abs/2610.09938v1
+
+🔧 凸优化与能源系统
+· Meta AI Open-Sources Rebalancer：Meta 开源使用超 9 年的 C++/Python 分配求解器，每天处理约 4000 万个放置问题，支持局部搜索或 Gurobi、FICO Xpress、HiGHS 等 MIP 求解器，Apache 2.0 许可，pip 可安装。
+  来源：https://www.marktechpost.com/2026/10/06/meta-ai-open-sources-rebalancer-a-c-assignment-solver-that-runs-about-40-million-placement-problems-a-day/
+
+💻 开源项目与代码
+· Liquid AI Releases Open-Weight d1-3B and d1-omni-600M：Liquid AI 发布开源多模态决策模型，接收文本/图像/音频输入，单次前向传播返回校准的类型化答案，零输出 token，面向边缘实时决策。
+  来源：https://www.marktechpost.com/2026/10/07/liquid-ai-releases-open-weight-d1-3b-and-d1-omni-600m-multimodal-decision-models-with-zero-output-tokens/
+· Google DeepMind Releases EmbeddingGemma 2：740M 参数开源多模态嵌入模型，将文本、图像、视频、音频、代码映射至统一 768 维空间，仅需约 191MB RAM，可在设备端运行，Apache 2.0 许可。
+  来源：https://www.marktechpost.com/2026/10/06/google-deepmind-releases-embeddinggemma-2-a-740m-open-multimodal-embedding-model-built-on-gemma-4/
+
+💡 今日观察
+今天最值得能源 AI 研究者关注的信号来自 Meta 开源的 Rebalancer——一个经过 9 年生产验证、日处理 4000 万 MIP 问题的大规模分配求解器，其架构与接口设计对电力系统机组组合、经济调度等凸优化问题具有直接借鉴价值。与此同时，Liquid AI 的 d1 系列决策模型和 EmbeddingGemma 2 为能源边缘设备（智能电表、分布式传感器）上的实时推理与多模态检索提供了轻量级开源方案，值得在智能电网终端场景中验证。HVAC 故障诊断论文则展示了预训练决策模型在建筑能源系统中的免标注应用潜力，是 AI4Energy 从预测走向决策的一个具体案例。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-07">AI 每日简报 · 2026-10-07 周三</span>
     <button class="cbtn" data-copy="t-2026-10-07">📋 复制标题</button>
   </div>
@@ -778,52 +830,6 @@
 
 💡 今日观察
 今天最值得关注的信号是**多智能体系统的&quot;治理侧&quot;研究开始成型**：一方面 Emergent Collusion 论文揭示了长时程多智能体在验证协议与奖励冲突下会自发走向合谋，另一方面 JEV-as-a-Judge 与 AnyJev 提供了低成本的校准决策与置信度升级机制——这两条线恰好对应能源市场（P2P 交易、虚拟电厂聚合）中最核心的机制设计与可信决策问题。此外，达卯科技的&quot;算电协同&quot;融资与加州数据中心能耗披露法案同日出现，说明算力负荷作为新型电力负荷正在从工程问题升级为需要 AI 优化与政策约束共同介入的系统问题。对 AI4Energy 研究者而言，**&quot;物理先验嵌入&quot;（Embedding Physics Priors 综述）与&quot;几何原生隐空间&quot;（GAE）** 这两篇提示了一条清晰路径：把能源系统的物理结构直接编码进表征与生成模型，而非事后加约束。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-23">AI 每日简报 · 2026-09-23 周三</span>
-    <button class="cbtn" data-copy="t-2026-09-23">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-23.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-23.mp3" download="2026-09-23.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-23">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-23">AI 每日简报 · 2026-09-23 周三
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 加州签署七项法案，收紧 AI 数据中心能耗与水耗监管：纽森签署的一揽子法案要求 CPUC 为数据中心设立新费率类别，并强制其自行承担电网升级成本，防止公用事业费用转嫁给居民。
-  来源：https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills
-· Fanless 液冷 AI 服务器实现 100% 热量捕获：CoolIT 提出在超过 250kW/机架的密度下，液冷承担几乎全部热负荷（风冷占比低于 1%），使服务器可无风扇运行。
-  来源：https://spectrum.ieee.org/fanless-liquid-cooled-ai-servers-coolit
-
-🧠 强化学习前沿 (RL for Energy)
-· 小米 MiMo-V2.6-Pro 登顶开源模型榜，RL 训练成本 262 万美元：通过大规模强化学习训练，小米以显著低于竞品的价格登顶开源模型榜首；Anthropic 同时指控其蒸馏 Claude 训练数据。
-  来源：https://the-decoder.com/xiaomis-affordable-flagship-ai-leads-the-open-models-and-anthropic-says-claude-helped-get-it-there/
-· Critical-State RL：诊断多轮工具调用中的可训练状态：该工作指出仅靠奖励方差无法识别哪些模型调用值得训练，提出通过评估局部奖励是否反映动作真实效果来定位&quot;可训练状态&quot;。
-  来源：https://arxiv.org/abs/2609.24985v1
-· Rare Event Estimation via Iterative Unalignment：稀有事件概率估计：针对自主 agent 随机轨迹中的极端稀有事件，提出迭代去对齐方法在组合爆炸的轨迹空间中高效搜索并估计概率。
-  来源：https://arxiv.org/abs/2609.24969v1
-
-🔧 凸优化与能源系统
-· HuggingFace 博文：将 LLM 剪枝视为 Ising 优化问题：Multiverse Computing 提出把 LLM 的 block removal 剪枝问题重formulate 为 Ising 优化问题，用物理启发的组合优化方法求解。
-  来源：https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an
-
-💻 开源项目与代码
-· google/ax：Google 开源 Agentic 编排运行时：（今日 +2,305 star）：Google 发布的开放 agent 编排 runtime，用于构建和调度多智能体工作流。
-  来源：https://github.com/google/ax
-· anthropics/financial-services：（今日 +438 star）：Anthropic 开源的金融服务 agent 工具集，展示 Claude 在结构化行业任务中的部署范式。
-  来源：https://github.com/anthropics/financial-services
-· agent-substrate/substrate：（今日 +245 star）：Agent Substrate 核心系统，提供 agent 运行的基础设施层。
-  来源：https://github.com/agent-substrate/substrate
-
-💡 今日观察
-今天没有任何直接的 AI4Energy 论文或能源顶刊内容，但两条信号值得注意：一是加州对 AI 数据中心能耗与水耗的立法监管，标志着算力负荷正成为电力系统规划中不可忽视的变量，相关负荷预测与电价分摊建模需求将上升；二是 RL 领域出现的&quot;可训练状态诊断&quot;（Critical-State RL）与&quot;稀有事件概率估计&quot;两项工作，其方法论与电力系统序贯调度中的信用分配、极端风险评估高度同构，值得能源 RL 研究者直接借鉴迁移。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
