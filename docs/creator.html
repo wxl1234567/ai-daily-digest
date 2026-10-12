@@ -36,6 +36,60 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-12">AI 每日简报 · 2026-10-12 周一</span>
+    <button class="cbtn" data-copy="t-2026-10-12">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-12.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-12.mp3" download="2026-10-12.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-12">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-12">AI 每日简报 · 2026-10-12 周一
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google 全球数据中心布局公开：Google 上线数据中心全球分布页面，展示其算力基础设施的地理布局与扩张路径。
+  来源：https://datacenters.google/locations/
+· 德州要求数据中心排队等待接入：a16z 分析德州为何对数据中心并网设置等待机制，反映电网容量约束与审批瓶颈。
+  来源：https://a16z.com/why-texas-is-making-data-centers-wait/
+· Firmus 因 AI 估值担忧撤回 IPO：Nvidia 支持的数据中心公司 Firmus 在 AI 估值担忧加深背景下取消 IPO。
+  来源：https://www.bbc.com/news/articles/ck9dzpw4ll8po
+
+🧠 强化学习前沿 (RL for Energy)
+· GPU 并行异构多任务强化学习框架 Hebero：基于 Isaac Lab 的 GPU 并行基准，支持单一策略在 40 个异构机器人操作任务上联合训练与评估。
+  来源：https://huggingface.co/papers/2606.03335
+· RLVR 几何结构通过可训练向量揭示：研究用向量引导识别 RL 可验证奖励训练中激活空间的低维有效流形，揭示两个几何性质。
+  来源：https://huggingface.co/papers/2609.34344
+· 小米 MiMo-V2.6 规模化强化学习路线披露：单次 RL 后训练消耗 260 万美元、每步 37 亿 Token，展示大规模 RL 训练的成本结构。
+  来源：https://www.infoq.cn/article/gNdWoDM8ygkAjXfsLaBK
+
+📐 AI4PDE 最新进展
+· 物理注意力偏置预测线缆动力学：针对可变形线性物体（如线缆）的学习模拟器，引入物理注意力偏置处理自接触与地面接触，提升长时程稳定性。
+  来源：https://huggingface.co/papers/2610.11975
+· 扩散与自回归统一格架理论：研究提出扩散、AR 及混合模型的统一描述框架，可预测固定步数下解码调度性能。
+  来源：https://huggingface.co/papers/2610.11216
+
+🔧 凸优化与能源系统
+· 智能体黑箱优化基准 Agentic BBO：系统评估 LLM 智能体在昂贵目标函数黑箱优化中的表现，整合任务语义、计算工具与反馈决策。
+  来源：https://huggingface.co/papers/2610.12183
+
+💻 开源项目与代码
+· AirLLM：单张 4GB GPU 推理 70B 模型：通过分层推理技术实现大模型在极低显存下的推理，今日获 548 star。
+  来源：https://github.com/lyogavin/airllm
+· rea：智能体逆向工程工具：支持从应用行为到原生二进制的智能体逆向工程，单日新增 25,599 star。
+  来源：https://github.com/morluto/rea
+· diagram-design：面向代码智能体的图表设计工具：为 Claude Code、Codex 等提供 44 种图表类型的自包含 HTML+SVG 设计。
+  来源：https://github.com/cathrynlavery/diagram-design
+
+💡 今日观察
+今天最显著的信号是**数据中心能源约束正在成为 AI 产业的核心瓶颈**：德州要求数据中心排队并网、Firmus 撤回 IPO，均指向算力扩张与电网容量之间的结构性矛盾。与此同时，GPU 并行异构多任务 RL 框架（Hebero）和智能体黑箱优化基准（Agentic BBO）为能源系统调度与参数优化提供了可直接迁移的方法论工具。建议关注 AI 数据中心并网政策对能源市场定价与容量规划的连锁影响。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-11">AI 每日简报 · 2026-10-11 周日</span>
     <button class="cbtn" data-copy="t-2026-10-11">📋 复制标题</button>
   </div>
@@ -774,66 +828,6 @@
 
 💡 今日观察
 今日资讯几乎被 Agent 安全事件（OpenAI 暂停最强模型训练、Agent 越狱入侵 UN/Hugging Face/美国政府站点）与通用 LLM 工程话题占据，**AI4Energy 方向的直接研究产出为零**，这是需要警惕的信号——能源 AI 的高质量日更内容仍高度依赖 arXiv 与能源顶刊，而非主流 AI 媒体。唯一与能源强相关的信号来自产业侧：Goldman Sachs 的 1.2 万亿 AI 基建预测明确将&quot;电力&quot;列为瓶颈，叠加 Crusoe 放弃燃气轮机供电计划，**&quot;算力-电力耦合约束&quot;正在从学术议题变成产业级硬约束**，这可能是未来 12 个月 AI4Energy 最具现实牵引力的研究方向。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-27">AI 每日简报 · 2026-09-27 周日</span>
-    <button class="cbtn" data-copy="t-2026-09-27">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-27.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-27.mp3" download="2026-09-27.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-27">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-27">AI 每日简报 · 2026-09-27 周日
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· NVIDIA Warp 与 MjWarp 加速机器人仿真与学习工作流：NVIDIA 发布教程，介绍如何用 Warp 和 MjWarp 加速机器人仿真与学习工作流，支持可微分物理仿真。
-  来源：https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp
-· Crusoe 放弃 12.5 亿美元 Boom 涡轮机数据中心计划：Crusoe 放弃在 AI 数据中心使用 Boom Supersonic 涡轮机的 12.5 亿美元计划，Boom CEO 确认其固定式发电厂不再在 Crusoe 近期规划中。
-  来源：https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/
-· 黄仁勋谈 AI 与气候变化：先承受痛苦再拯救地球：Nvidia CEO 黄仁勋在 Ezra Klein 播客中表示，AI 可以帮助应对气候变化，但前提是先造成&quot;巨大的痛苦和折磨&quot;，讨论聚焦 AI 能耗与地球影响。
-  来源：https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain
-
-🧠 强化学习前沿 (RL for Energy)
-· AV-GRPO：模态锚定解耦扩散强化学习用于联合音视频生成：提出 AV-GRPO，通过模态锚定解耦策略解决联合音视频生成中异构多模态奖励纠缠问题，实现更优的跨模态同步。
-  来源：https://huggingface.co/papers/2609.29816
-· Just Ask Jev：基于 RL 校准决策的零样本 AI 对齐失败检测器：Jev 模型通过 RL 校准决策训练，单次调用即可对输入回答多个类型化问题并给出校准概率，用于检测 AI 对齐失败。
-  来源：https://huggingface.co/papers/2609.29429
-· Rufus-Air：开放 LLM 后训练配方：在 GLM-4.5-Air-Base 上构建八阶段串行后训练流程，涵盖 SFT、推理 RL、编码 RL、指令遵循 RL、通用 Agent、编码 Agent、搜索 Agent 和 RLHF。
-  来源：https://huggingface.co/papers/2609.29421
-· 自组织 Agent 团队学会共同推理：提出 SAT 框架，固定团队规模的 AI Agent 通过经验学习如何组织推理分工，而非依赖固定协议或显式任务分解。
-  来源：https://huggingface.co/papers/2609.22682
-
-📐 AI4PDE 最新进展
-· 训练世界模型中的物体 permanence：提出 WROP 数据基础设施，研究视频生成模型是否具备物体 permanence 和 solidity 认知先验，并探索用核心认知启发的数据集训练模型。
-  来源：https://huggingface.co/papers/2609.28654
-· DeltaWAM：双臂操作的 Delta 世界动作模型：提出 DeltaWAM，通过仅预测帧间变化而非密集未来帧，解决世界动作模型中重复建模不变内容和外观噪声耦合的问题。
-  来源：https://huggingface.co/papers/2609.28811
-
-🔧 凸优化与能源系统
-· Neural Spectral Capacity：从网络规范度量与设计架构：提出 NSC 闭式标量，基于权重矩阵奇异值谱衡量架构容量，替代传统 #Params 和 #FLOPs 指标，可区分参数量相同但结构不同的架构。
-  来源：https://huggingface.co/papers/2609.23087
-· GeoPair：几何保持的跨层因子分解用于免训练 Transformer 压缩：提出免训练框架，顺序优化跨层权重配对和共享字典因子分解，保持各层激活几何特性。
-  来源：https://huggingface.co/papers/2609.25963
-
-💻 开源项目与代码
-· NVIDIA/Model-Optimizer：NVIDIA 发布统一模型优化库，集成量化、蒸馏、剪枝、NAS、推测解码等 SOTA 技术，支持 TensorRT-LLM、vLLM 等部署框架。
-  来源：https://github.com/NVIDIA/Model-Optimizer
-· paperclipai/paperclip：开源 Agent 管理工作平台，单日新增 2,608 star，用于在工作中管理多个 AI Agent。
-  来源：https://github.com/paperclipai/paperclip
-· vectorize-io/hindsight：Agent 记忆学习框架，单日新增 2,147 star，实现可学习的 Agent 记忆机制。
-  来源：https://github.com/vectorize-io/hindsight
-· dream-num/univer：AI Agent 办公套件运行时，集成电子表格、文档、幻灯片、画布、关系表和 PDF 于统一运行时。
-  来源：https://github.com/dream-num/univer
-
-💡 今日观察
-今天最值得能源 AI 研究者关注的信号是：NVIDIA 同时发布了 Warp/MjWarp 可微分物理仿真教程和 Model-Optimizer 统一优化库，前者为能源系统的可微分物理建模提供了基础设施，后者为能源边缘设备上的模型部署提供了完整工具链。此外，多篇 HuggingFace 论文聚焦 RL 后训练配方（Rufus-Air）和多 Agent 自组织协作（SAT），这些方法论对分布式能源调度和多智能体能源管理系统的设计具有直接参考价值。AI 数据中心的能源供应问题（Crusoe 放弃涡轮机计划、黄仁勋谈 AI 能耗）持续发酵，提示能源系统规划需要将 AI 算力负荷作为新的关键变量纳入建模。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
