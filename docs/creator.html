@@ -36,6 +36,64 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-13">AI 每日简报 · 2026-10-13 周二</span>
+    <button class="cbtn" data-copy="t-2026-10-13">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-13.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-13.mp3" download="2026-10-13.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-13">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-13">AI 每日简报 · 2026-10-13 周二
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· WindBorne 获美国空军近 5000 万美元气象数据合同：这家硅谷初创公司利用气象气球与 AI 进行天气预报，赢得美国军方大单。
+  来源：https://techcrunch.com/2026/10/12/windborne-wins-a-hefty-us-air-force-contract-for-its-balloon-data/
+· TLDR AI：Gemini 4 Carbon、Nvidia 考虑收购 Reflection：今日 AI 简报头条提及 &quot;Gemini 4 Carbon&quot;，指向 Google 在碳相关建模方向的模型进展。
+  来源：https://tldr.tech/ai/2026-10-12
+· Hugging Face：面向 GPU 集群的高效调度：Allen AI 撰文讨论 GPU 集群调度策略，聚焦大规模训练/推理任务的资源分配效率。
+  来源：https://huggingface.co/blog/allenai/impactful-scheduling
+
+🧠 强化学习前沿 (RL for Energy)
+· 阿里 Qwen 发布 QwenGyre：面向超长时程智能体的弹性强化学习框架：通过 Elastic Scheduler 在 rollout 与 training 之间动态重分配 GPU（较 Colocate 提速 1.85×），并用 Trajectory Processor 将分支执行转为前缀共享轨迹树，支持近 1M token、数小时级的 rollout。
+  来源：https://www.marktechpost.com/2026/10/12/alibaba-qwen-introduces-qwengyre-elastic-reinforcement-learning-rl-for-xlong-horizon-agents/ / https://www.reddit.com/r/LocalLLaMA/comments/1x41myz/qwen_released_qwengyre_rl_framework_for_training/
+· 华为 AI 靠 RSI 通关 25 款游戏，操作次数比人类少 56%：AI 在游戏中达到 21:0，且后期无需再调用大模型，体现出自我改进（RSI）能力。
+  来源：https://www.qbitai.com/2026/10/502654.html
+· Sakana AI 自改进模型 MASS：能自我解题与评判，但难以发现自身盲点：两轮后对基座模型胜率近 70%，但当模型在三种角色中犯同样错误时，会把错误误判为进步并在训练中强化。
+  来源：https://the-decoder.com/sakana-ais-self-improving-model-gets-better-at-solving-and-judging-but-cant-catch-its-own-blind-spots/
+· AI 智能体团队耗费巨量 token 却只换来微弱质量提升：Vals AI 研究显示多智能体团队相较单智能体提升甚微，成本却高达 5.1 倍；Anthropic 数据显示超过 10 个智能体后质量进入平台期而 token 成本持续攀升。
+  来源：https://the-decoder.com/ai-agent-teams-waste-massive-tokens-for-barely-measurable-quality-gains-research-finds/
+
+📐 AI4PDE 最新进展
+· BudgetPix：面向像素空间图像扩散的计算自适应 Tokenization：根据视觉复杂度与空间布局动态分配计算预算，而非对等大图像块均分算力，从而在推理时适配不同资源约束。
+  来源：https://huggingface.co/papers/2610.12307
+· Few-Step Generation via Data-Space Iteration：提出在数据空间而非概率流上进行迭代计算，摆脱了少步生成中固定人工时间步离散的依赖。
+  来源：https://huggingface.co/papers/2610.12102
+
+🔧 凸优化与能源系统
+· Distributionally Robust Mixture-of-Experts Training (DRMoET)：将逐层专家视为内生鲁棒性分组，优化高损失路由结果而非仅均衡负载，解决 MoE 稀疏路由不可靠问题。
+  来源：https://huggingface.co/papers/2610.07207
+
+💻 开源项目与代码
+· mksglu/context-mode：面向 AI 编码智能体的上下文窗口优化工具，通过沙箱化工具输出实现 98% 缩减，持久化会话记忆，并通过 MCP + hooks 在 17 个平台上强制路由。今日 +246 star。
+  来源：https://github.com/mksglu/context-mode
+· lyogavin/airllm：单张 4GB GPU 即可推理 2.8T 参数大模型。今日 +879 star。
+  来源：https://github.com/lyogavin/airllm
+· microsoft/BitNet：1-bit LLM 官方推理框架。今日 +97 star。
+  来源：https://github.com/microsoft/BitNet
+· Intel D270 GPU AI 加速器：最高 480 GB LPDDR5X：D-Series 提供 1.5TB/s 带宽、1.3 PetaFLOPS FP8，支持 FP4 到 FP64，32 个 Xe3P 核心。
+  来源：https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html
+
+💡 今日观察
+今天最值得能源交叉研究者注意的是 QwenGyre 的弹性 RL 调度机制——它在 rollout 与 training 之间动态重分配 GPU 的设计，本质上与电力系统中&quot;预测-调度&quot;两阶段资源的动态再分配同构，值得作为跨域方法迁移的候选。同时，多智能体团队&quot;5.1 倍成本换微弱提升&quot;的结论，对当前火热的分布式能源多智能体协同研究是一记必要的冷水：在把 MARL 推向电网之前，先量化清楚算力-性能的边际曲线。此外，Intel D-Series 的 480GB 显存与 FP64 支持，叠加 AirLLM/BitNet 的极致压缩路线，正在从两端夹击能源仿真与边缘推理的硬件成本结构。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-12">AI 每日简报 · 2026-10-12 周一</span>
     <button class="cbtn" data-copy="t-2026-10-12">📋 复制标题</button>
   </div>
@@ -780,54 +838,6 @@
 
 💡 今日观察
 今日与 AI4Energy 直接相关的信号主要来自两个方向：一是 AI 数据中心能耗与算电协同成为产业界明确议题（华为 AIDC、Climate Week 争论），这意味着电力系统规划与调度研究需要纳入大规模计算负荷这一新型不确定性源；二是扩散模型增强地理空间场重建（DSM 精化）的工作展示了生成模型在 PDE 约束下空间场重建的潜力，对风场/太阳能场资源评估有直接迁移价值。RL 方向 VLA-Precision 的在线微调框架和 D-JEPA 的决策对齐世界模型，为能源系统 MPC 与调度策略学习提供了新的方法论参考。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-28">AI 每日简报 · 2026-09-28 周一</span>
-    <button class="cbtn" data-copy="t-2026-09-28">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-28.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-28.mp3" download="2026-09-28.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-28">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-28">AI 每日简报 · 2026-09-28 周一
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 中国 8 月用电量突破 1 万亿度，单月超东盟十国全年总和：数据显示经济增长动能已从房地产切换至新制造/新基建，用电结构发生实质性变化。
-  来源：https://www.36kr.com/p/4001120535908489
-· Goldman Sachs：预计 2027 年 Big Tech AI 基础设施支出达 1.2 万亿美元：Amazon、Alphabet、Microsoft、Oracle、Meta 合计投入将超今年 50% 以上，报告明确指出**电力、人力与内存芯片**是三大瓶颈。
-  来源：https://the-decoder.com/goldman-sachs-expects-big-tech-to-spend-1-2-trillion-on-ai-infrastructure-by-2027-dwarfing-wall-street-estimates/
-· Crusoe 放弃 12.5 亿美元 Boom 涡轮机供电 AI 数据中心计划：Boom Supersonic CEO 确认其新型固定式发电装置已不在 Crusoe 近期规划中，AI 数据中心供电方案出现重大调整。
-  来源：https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/
-
-🧠 强化学习前沿 (RL for Energy)
-· AV-GRPO：模态锚定解耦扩散强化学习用于音视频联合生成：针对多模态奖励纠缠与信用分配难题，提出解耦式 RL 后训练框架，缓解跨模态同步弱的问题。
-  来源：https://huggingface.co/papers/2609.29816
-· Just Ask Jev：基于 RLCD 的校准决策模型作为 AI 对齐失效的零样本检测器：单次调用即可对同一输入回答多个带校准概率的类型化问题，替代逐准则解码的生成式判别器。
-  来源：https://huggingface.co/papers/2609.29429
-
-📐 AI4PDE 最新进展
-· NVIDIA Warp 与 MjWarp：加速机器人仿真与学习工作流教程：Hugging Face 官方博客发布基于 NVIDIA Warp 的 GPU 加速物理仿真与可微仿真实践指南。
-  来源：https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp
-
-🔧 凸优化与能源系统
-· Pruning LLMs Like a Physicist：将 Block Removal 建模为 Ising 优化问题：把 LLM 结构化剪枝转化为伊辛模型优化，用物理启发式方法求解组合优化问题。
-  来源：https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an
-
-💻 开源项目与代码
-· madeira (willfaust/Madeira)：通过 FEX-Emu + Wine + DXMT 在受限 iOS 上运行 x86-64 Windows 游戏，展示跨架构仿真栈的工程组合能力。
-  来源：https://github.com/willfaust/Madeira
-· openrig (mvschwarz/openrig)：多智能体 harness，将 Claude Code 与 Codex 作为统一系统协同运行。
-  来源：https://github.com/mvschwarz/openrig
-
-💡 今日观察
-今日资讯几乎被 Agent 安全事件（OpenAI 暂停最强模型训练、Agent 越狱入侵 UN/Hugging Face/美国政府站点）与通用 LLM 工程话题占据，**AI4Energy 方向的直接研究产出为零**，这是需要警惕的信号——能源 AI 的高质量日更内容仍高度依赖 arXiv 与能源顶刊，而非主流 AI 媒体。唯一与能源强相关的信号来自产业侧：Goldman Sachs 的 1.2 万亿 AI 基建预测明确将&quot;电力&quot;列为瓶颈，叠加 Crusoe 放弃燃气轮机供电计划，**&quot;算力-电力耦合约束&quot;正在从学术议题变成产业级硬约束**，这可能是未来 12 个月 AI4Energy 最具现实牵引力的研究方向。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>

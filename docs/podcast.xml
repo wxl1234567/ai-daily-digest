@@ -15,6 +15,16 @@
     <image><url>https://jimmuji.github.io/ai-daily-digest/podcast-cover.png</url><title>AI 每日简报</title><link>https://jimmuji.github.io/ai-daily-digest/</link></image>
     <itunes:owner><itunes:name>AI Daily Digest</itunes:name></itunes:owner>
     <item>
+      <title>AI 每日简报 · 2026-10-13 周二</title>
+      <description>今天最值得能源交叉研究者注意的是 QwenGyre 的弹性 RL 调度机制——它在 rollout 与 training 之间动态重分配 GPU 的设计，本质上与电力系统中&quot;预测-调度&quot;两阶段资源的动态再分配同构，值得作为跨域方法迁移的候选。同时，多智能体团队&quot;5.1 倍成本换微弱提升&quot;的结论，对当前火热的分布式能源多智能体协同研究是一记必要的冷水：在把 MARL 推向电网之前，先量化清楚算力-性能的边际曲线。此外，Intel D-Series 的 480GB 显存与 FP64 支持，叠加 AirLLM/BitNet 的极致压缩路线，正在从两端夹击能源仿真与边缘推理的硬件成本结构。</description>
+      <itunes:summary>今天最值得能源交叉研究者注意的是 QwenGyre 的弹性 RL 调度机制——它在 rollout 与 training 之间动态重分配 GPU 的设计，本质上与电力系统中&quot;预测-调度&quot;两阶段资源的动态再分配同构，值得作为跨域方法迁移的候选。同时，多智能体团队&quot;5.1 倍成本换微弱提升&quot;的结论，对当前火热的分布式能源多智能体协同研究是一记必要的冷水：在把 MARL 推向电网之前，先量化清楚算力-性能的边际曲线。此外，Intel D-Series 的 480GB 显存与 FP64 支持，叠加 AirLLM/BitNet 的极致压缩路线，正在从两端夹击能源仿真与边缘推理的硬件成本结构。</itunes:summary>
+      <enclosure url="https://jimmuji.github.io/ai-daily-digest/audio/2026-10-13.mp3" length="0" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-10-13.mp3</guid>
+      <pubDate>Tue, 13 Oct 2026 08:00:00 +0800</pubDate>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
+    </item>
+    <item>
       <title>AI 每日简报 · 2026-10-12 周一</title>
       <description>早上好，今天是 2026 年 10 月 12 日，欢迎收听今天的 AI 每日简报。今天最值得关注的，是数据中心和能源之间越来越紧张的关系，另外强化学习和优化工具这边也有几个很有分量的新进展。咱们花几分钟，快速过一遍。
 先看算力和能源这条主线。Google 今天上线了一个数据中心全球分布页面，把它算力基础设施的地理布局和扩张路径都摆出来了。这件事为什么重要？因为算力放在哪儿，直接决定了能源负荷和电网压力的热点在哪儿。紧接着，德州那边传来消息，a16z 专门写了一篇分析，讲德州为什么要求数据中心排队等待并网。这背后其实是电网容量约束和审批瓶颈的问题，数据中心并网排队，已经成了能源和算力耦合的一个核心政策信号。还有一个更直接的信号，英伟达支持的数据中心公司 Firmus，因为市场对 AI 估值的担忧加深，撤回了 IPO。这说明 AI 数据中心的融资环境正在变化，而融资节奏一变，能源基础设施的投资节奏也会跟着受影响。
@@ -347,33 +357,6 @@ AI for PDE 方面，有一篇很有意思的工作，用只在局部观测上训
       <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-09-29.mp3</guid>
       <pubDate>Tue, 29 Sep 2026 08:00:00 +0800</pubDate>
       <itunes:duration>04:41</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
-    </item>
-    <item>
-      <title>AI 每日简报 · 2026-09-28 周一</title>
-      <description>早上好，今天是 2026 年 9 月 28 日，星期一。欢迎收听 AI4Energy 每日简报。今天的关键词是算力与电力的硬约束，以及一批方法层面值得迁移的新进展。整体来看，直接落在能源 AI 上的研究产出依然很少，但产业侧的信号相当强。
-先看能源与算力这条主线。第一件事，中国 8 月用电量突破了 1 万亿度，单月规模已经超过东盟十国全年总和。这个数字背后是增长动能的切换，从房地产转向新制造和新基建，用电结构正在发生实质性变化。对做负荷预测的人来说，这不是一个可以忽略的背景噪音，而是负荷侧结构性漂移的直接证据，中长期建模必须把这一层考虑进去。
-第二件事来自 Goldman Sachs。他们预计到 2027 年，Big Tech 在 AI 基础设施上的支出会达到 1.2 万亿美元，Amazon、Alphabet、Microsoft、Oracle、Meta 五家合计投入比今年还要高出五成以上。报告里明确点出三大瓶颈，电力、人力、内存芯片。请注意，电力排在第一位。这意味着数据中心的电力约束，正在成为 AI 扩张的硬边界，电力与算力的协同调度不再只是学术话题。
-紧接着第三件事，Crusoe 放弃了用 Boom 涡轮机为 AI 数据中心供电的 12.5 亿美元计划。Boom Supersonic 的 CEO 已经确认，这套新型固定式发电装置不在 Crusoe 的近期规划里了。这说明什么？AI 数据中心自备电源这条路径，不确定性正在上升。供电架构怎么选，分布式发电怎么和算力负荷匹配，这些问题现在都还没有稳定答案。
-接下来看方法层面，有几条值得迁移的思路。强化学习这边，AV-GRPO 提出用模态锚定的解耦扩散强化学习做音视频联合生成，核心是解决多模态奖励纠缠和信用分配的问题。这个解耦式 RL 后训练框架，思路可以迁移到多能互补系统的协同控制上。另一篇是 Just Ask Jev，用基于 RLCD 的校准决策模型做零样本检测，单次调用就能回答多个带校准概率的问题。这种校准决策的思路，对电力市场报价和风险决策建模是有参考价值的。
-AI4PDE 方向，Hugging Face 官方博客发了一篇 NVIDIA Warp 和 MjWarp 的教程，讲怎么用 GPU 加速物理仿真和可微仿真。可微物理仿真框架，可以直接用来加速能源领域的流体和传热求解器，这条路径比较直接。
-凸优化这边有一篇挺有意思，把 LLM 结构化剪枝建模成 Ising 优化问题，用物理启发式方法求解组合优化。这种建模思路可以迁移到机组组合和配电网重构上。
-开源项目方面提两个。madeira 通过 FEX-Emu 加 Wine 加 DXMT，在受限的 iOS 上跑 x86-64 的 Windows 游戏，展示的是跨架构仿真栈的工程组合能力，边缘能源控制器的异构部署可以参考。openrig 是一个多智能体 harness，把 Claude Code 和 Codex 作为统一系统协同运行，这种多智能体协同架构，可以复用到多微网、多能体的分布式调度里。
-最后是今日观察。今天的资讯几乎被 Agent 安全事件和通用 LLM 工程话题占据，AI4Energy 方向的直接研究产出是零，这是个需要警惕的信号。能源 AI 的高质量日更内容，仍然高度依赖 arXiv 和能源顶刊，而不是主流 AI 媒体。唯一和能源强相关的信号来自产业侧，Goldman Sachs 那份 1.2 万亿的预测把电力列为瓶颈，再加上 Crusoe 放弃燃气轮机供电，算力与电力的耦合约束，正在从学术议题变成产业级的硬约束。这可能是未来十二个月里，AI4Energy 最具现实牵引力的研究方向。好，今天就聊到这里，我们明天见。</description>
-      <itunes:summary>早上好，今天是 2026 年 9 月 28 日，星期一。欢迎收听 AI4Energy 每日简报。今天的关键词是算力与电力的硬约束，以及一批方法层面值得迁移的新进展。整体来看，直接落在能源 AI 上的研究产出依然很少，但产业侧的信号相当强。
-先看能源与算力这条主线。第一件事，中国 8 月用电量突破了 1 万亿度，单月规模已经超过东盟十国全年总和。这个数字背后是增长动能的切换，从房地产转向新制造和新基建，用电结构正在发生实质性变化。对做负荷预测的人来说，这不是一个可以忽略的背景噪音，而是负荷侧结构性漂移的直接证据，中长期建模必须把这一层考虑进去。
-第二件事来自 Goldman Sachs。他们预计到 2027 年，Big Tech 在 AI 基础设施上的支出会达到 1.2 万亿美元，Amazon、Alphabet、Microsoft、Oracle、Meta 五家合计投入比今年还要高出五成以上。报告里明确点出三大瓶颈，电力、人力、内存芯片。请注意，电力排在第一位。这意味着数据中心的电力约束，正在成为 AI 扩张的硬边界，电力与算力的协同调度不再只是学术话题。
-紧接着第三件事，Crusoe 放弃了用 Boom 涡轮机为 AI 数据中心供电的 12.5 亿美元计划。Boom Supersonic 的 CEO 已经确认，这套新型固定式发电装置不在 Crusoe 的近期规划里了。这说明什么？AI 数据中心自备电源这条路径，不确定性正在上升。供电架构怎么选，分布式发电怎么和算力负荷匹配，这些问题现在都还没有稳定答案。
-接下来看方法层面，有几条值得迁移的思路。强化学习这边，AV-GRPO 提出用模态锚定的解耦扩散强化学习做音视频联合生成，核心是解决多模态奖励纠缠和信用分配的问题。这个解耦式 RL 后训练框架，思路可以迁移到多能互补系统的协同控制上。另一篇是 Just Ask Jev，用基于 RLCD 的校准决策模型做零样本检测，单次调用就能回答多个带校准概率的问题。这种校准决策的思路，对电力市场报价和风险决策建模是有参考价值的。
-AI4PDE 方向，Hugging Face 官方博客发了一篇 NVIDIA Warp 和 MjWarp 的教程，讲怎么用 GPU 加速物理仿真和可微仿真。可微物理仿真框架，可以直接用来加速能源领域的流体和传热求解器，这条路径比较直接。
-凸优化这边有一篇挺有意思，把 LLM 结构化剪枝建模成 Ising 优化问题，用物理启发式方法求解组合优化。这种建模思路可以迁移到机组组合和配电网重构上。
-开源项目方面提两个。madeira 通过 FEX-Emu 加 Wine 加 DXMT，在受限的 iOS 上跑 x86-64 的 Windows 游戏，展示的是跨架构仿真栈的工程组合能力，边缘能源控制器的异构部署可以参考。openrig 是一个多智能体 harness，把 Claude Code 和 Codex 作为统一系统协同运行，这种多智能体协同架构，可以复用到多微网、多能体的分布式调度里。
-最后是今日观察。今天的资讯几乎被 Agent 安全事件和通用 LLM 工程话题占据，AI4Energy 方向的直接研究产出是零，这是个需要警惕的信号。能源 AI 的高质量日更内容，仍然高度依赖 arXiv 和能源顶刊，而不是主流 AI 媒体。唯一和能源强相关的信号来自产业侧，Goldman Sachs 那份 1.2 万亿的预测把电力列为瓶颈，再加上 Crusoe 放弃燃气轮机供电，算力与电力的耦合约束，正在从学术议题变成产业级的硬约束。这可能是未来十二个月里，AI4Energy 最具现实牵引力的研究方向。好，今天就聊到这里，我们明天见。</itunes:summary>
-      <enclosure url="https://jimmuji.github.io/ai-daily-digest/audio/2026-09-28.mp3" length="1569312" type="audio/mpeg"/>
-      <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-09-28.mp3</guid>
-      <pubDate>Mon, 28 Sep 2026 08:00:00 +0800</pubDate>
-      <itunes:duration>04:21</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
     </item>
