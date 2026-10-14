@@ -36,6 +36,46 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-14">AI 每日简报 · 2026-10-14 周三</span>
+    <button class="cbtn" data-copy="t-2026-10-14">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-14.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-14.mp3" download="2026-10-14.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-14">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-14">AI 每日简报 · 2026-10-14 周三
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+🧠 强化学习前沿 (RL for Energy)
+· QwenGyre: Elastic RL for XLong-Horizon Agents：阿里巴巴 Qwen 团队提出 QwenGyre，一种弹性强化学习框架，专为极长时程 agent 训练设计，支持单次 rollout 运行数小时、处理近 100 万 token。
+  来源：https://www.marktechpost.com/2026/10/12/alibaba-qwen-introduces-qwengyre-elastic-reinforcement-learning-rl-for-xlong-horizon-agents/
+· PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic RL：提出特权表征在线策略自蒸馏方法，解决 RL agent 训练中技能信号传播不足的问题，在 WebShop 上将成功率从 42.2% 提升至 56.2%。
+  来源：https://huggingface.co/papers/2609.36642
+· Prospective Hindsight: Self-Calibrating RL via Prediction-Reality Gaps：提出&quot;前瞻性后见&quot;训练原则，利用 agent 行动前预测与行动后评估之间的差距作为自校准信号，增强长时程 RL 训练。
+  来源：https://huggingface.co/papers/2610.02740
+
+🔧 凸优化与能源系统
+· Meta Rebalancer: 任务放置与优化求解器：Meta 开源 Rebalancer 分配求解器，提供 C++ 核心与 Python 绑定，支持数据中心构建、跨机架任务放置、约束与目标优先级管理，并可与 HiGHS 精确求解器对比。
+  来源：https://www.marktechpost.com/2026/10/13/how-to-use-metas-rebalancer-for-task-placement-optimization/
+
+💻 开源项目与代码
+· AirLLM：支持在单张 4GB GPU 上推理 2.8T 参数大模型，通过分层加载实现极低显存推理。
+  来源：https://github.com/lyogavin/airllm
+· LFM2.5-24B-A2B：LiquidAI 发布 24B 参数推理模型，仅 2B 活跃参数，专为设备端快速私有 agent 设计，在 agent 与工具使用任务上可媲美 Qwen3.6-35B-A3B。
+  来源：https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b
+· context-mode：面向 AI 编码 agent 的上下文窗口优化工具，通过沙箱化工具输出实现 98% 缩减，持久化会话记忆，并通过 MCP + hooks 在 17 个平台上执行路由。
+  来源：https://github.com/mksglu/context-mode
+
+💡 今日观察
+今天 AI 领域被 Gemini 4 Argon 和 Meta Muse Wonder 两大前沿模型发布占据，但与能源交叉方向直接相关的内容极为稀少。唯一值得能源研究者注意的是 Meta Rebalancer 求解器——其任务分配优化框架与经济调度问题在数学结构上高度同构，值得深入借鉴。此外，QwenGyre 的弹性 RL 长时程训练框架和 PR-OPD 的 on-policy 自蒸馏方法，为能源系统中的多时段决策与策略学习提供了可迁移的方法论工具。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-13">AI 每日简报 · 2026-10-13 周二</span>
     <button class="cbtn" data-copy="t-2026-10-13">📋 复制标题</button>
   </div>
@@ -784,60 +824,6 @@
 
 💡 今日观察
 今天最值得关注的信号是 **RL 训练效率的系统性突破**：从 GRPO 的&quot;陈旧悬崖&quot;分析到弱到强迁移的 Allspark，再到细粒度优势重分配，这些工作共同指向一个趋势——RL 正在从&quot;能训&quot;走向&quot;训得起、训得稳&quot;，这对计算资源受限的能源系统调度 RL 研究尤为关键。同时，Vermont 虚拟电厂与华为&quot;算电协同&quot;分别从电网侧和数据中心侧印证了储能调度与算力-电力联合优化正在成为产业刚需，建议重点关注 VPP 聚合调度与数据中心负荷灵活性这两个交叉方向。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-29">AI 每日简报 · 2026-09-29 周二</span>
-    <button class="cbtn" data-copy="t-2026-09-29">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-29.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-29.mp3" download="2026-09-29.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-29">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-29">AI 每日简报 · 2026-09-29 周二
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· AI 算力扩张引发气候科技界分裂：TechCrunch 报道 Climate Week 上 AI 数据中心能耗议题引发气候科技创始人与投资人的严重分歧，部分人认为 AI 是加速脱碳的工具，另一部分人视其为新的碳排放源。
-  来源：https://techcrunch.com/2026/09/28/the-ai-boom-took-over-climate-week-and-not-everyone-is-happy-about-it/
-· 华为重新定义 AIDC 基础设施：算电协同成下一站：量子位报道华为在 HC 大会上提出 AI 数据中心基础设施新范式，核心方向为&quot;算电协同&quot;，即计算负载与电力供给的联合调度优化。
-  来源：https://www.qbitai.com/2026/09/498787.html
-· ARGUS：气候政策因果评估的 AI 审计管线：研究者提出 ARGUS，一个结构化语言模型管线，用于审计气候政策双重差分（DID）研究中识别假设的证据支撑，在 11 维假设-推论-证据框架下自动评估并在证据不足时弃权。
-  来源：https://huggingface.co/papers/2609.30867
-
-🧠 强化学习前沿 (RL for Energy)
-· VLA-Precision：视觉-语言-动作模型的非对称协同引导在线 RL：该工作针对预训练 VLA 模型在精密操作任务中的不可靠性，提出非对称协同引导框架，解决价值信号不可靠导致策略漂移和大型 VLA 推理开销限制吞吐量两大瓶颈。
-  来源：https://huggingface.co/papers/2609.04355
-· D-JEPA：决策对齐的潜在世界模型：研究者发现潜在世界模型存在&quot;决策局部预测鸿沟&quot;——预测更接近目标的候选动作可能实际执行效果更差，提出 D-JEPA 从候选未来中学习决策相关关系来对齐潜在距离与实际执行成功率。
-  来源：https://huggingface.co/papers/2609.24749
-· LLM 强化学习中的训练-推理不匹配校正：该研究系统分析 RLVR 中推理引擎与训练引擎对同一 token 赋予不同概率的问题，提出校准重要性采样（CIS），基于 logit 位移特征进行策略更新校正。
-  来源：https://huggingface.co/papers/2609.32444
-
-📐 AI4PDE 最新进展
-· 扩散模型增强摄影测量数字表面模型：研究者提出基于 Stable Diffusion 改进的条件扩散模型，同时以摄影测量 DSM 和 Pléiades 卫星影像为条件，精化大规模数字表面模型中的噪声、异常值和空洞。
-  来源：https://huggingface.co/papers/2609.31199
-· NVIDIA Warp 与 MjWarp 加速机器人仿真与学习工作流：HuggingFace 博客发布教程，介绍如何利用 NVIDIA Warp（GPU 加速的可微分仿真框架）和 MjWarp 加速机器人仿真与学习工作流。
-  来源：https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp
-
-🔧 凸优化与能源系统
-· Block Sparse Attention 的对数线性复杂度方法：研究者提出 PISA，采用金字塔 Top-K 选择策略的块稀疏注意力机制，将块选择从二次复杂度降至对数线性，逐步缩小候选块范围。
-  来源：https://huggingface.co/papers/2609.31093
-
-💻 开源项目与代码
-· paperclipai/paperclip：用于工作场景中管理 AI Agent 的开源应用，今日 GitHub Trending 新增 3,197 star。
-  来源：https://github.com/paperclipai/paperclip
-· vectorize-io/hindsight：具备学习能力的 Agent 记忆系统，今日 GitHub Trending 新增 4,561 star。
-  来源：https://github.com/vectorize-io/hindsight
-· mvschwarz/openrig：多智能体框架，将 Claude Code 和 Codex 作为统一系统协同运行，今日新增 734 star。
-  来源：https://github.com/mvschwarz/openrig
-
-💡 今日观察
-今日与 AI4Energy 直接相关的信号主要来自两个方向：一是 AI 数据中心能耗与算电协同成为产业界明确议题（华为 AIDC、Climate Week 争论），这意味着电力系统规划与调度研究需要纳入大规模计算负荷这一新型不确定性源；二是扩散模型增强地理空间场重建（DSM 精化）的工作展示了生成模型在 PDE 约束下空间场重建的潜力，对风场/太阳能场资源评估有直接迁移价值。RL 方向 VLA-Precision 的在线微调框架和 D-JEPA 的决策对齐世界模型，为能源系统 MPC 与调度策略学习提供了新的方法论参考。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
