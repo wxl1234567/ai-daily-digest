@@ -36,6 +36,60 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-15">AI 每日简报 · 2026-10-15 周四</span>
+    <button class="cbtn" data-copy="t-2026-10-15">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-15.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-15.mp3" download="2026-10-15.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-15">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-15">AI 每日简报 · 2026-10-15 周四
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 微软推出机器学习天气预报新工具：微软研究院发布新方法，可在 2-6 周时间尺度上显著提升天气预报精度，突破传统物理模型和现有 AI 模型的可靠性瓶颈。
+  来源：https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft
+· HiRO-ACEv2：以极低成本模拟 3km 分辨率极端天气：Allen AI 发布 HiRO-ACEv2，通过层次化建模在 3 公里分辨率下高效模拟极端天气事件，大幅降低计算成本。
+  来源：https://huggingface.co/blog/allenai/hiro-acev2
+· Scimplify 融资 2500 万美元，用 AI 挑战中国关键材料主导地位：Scimplify 利用 AI 优化关键材料供应链，年化营收达 2 亿美元，正计划拓展美国市场。
+  来源：https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/
+
+🧠 强化学习前沿 (RL for Energy)
+· 阿里 Qwen 推出 QwenGyre：面向超长时域 Agent 的弹性强化学习框架：Qwen 团队发布 QwenGyre，一种在线弹性 RL 系统，通过未经修改的黑盒 harness 训练编码 Agent，支持运行数小时、处理近 100 万 token 的 rollout。
+  来源：https://www.marktechpost.com/2026/10/12/alibaba-qwen-introduces-qwengyre-elastic-reinforcement-learning-rl-for-xlong-horizon-agents/
+· ACCRUE：机器人基础模型的持续 Off-Policy 强化学习：提出 ACCRUE 方法，在 VLA 模型上实现持续 RL 后训练，兼顾新任务高效学习与旧行为保持，解决灾难性遗忘问题。
+  来源：https://huggingface.co/papers/2610.18596
+· LongR：通过稠密效用奖励的强化学习释放长上下文推理能力：提出 LongR 方法，用稠密效用奖励替代稀疏结果奖励，提升 LLM 在长对话理解和结构化数据分析中的推理能力。
+  来源：https://huggingface.co/papers/2602.05758
+· Tev：以稠密进度奖励扩展长时域 Agent 环境：提出 Tev 框架，通过稠密进度奖励解决长时域 Agent 训练中奖励稀疏和验证困难的问题，支持数小时至数天的自主任务。
+  来源：https://arxiv.org/abs/2610.18868v1
+· Enabling Token-wise Importance Sampling in Off-Policy RLVR with Proximal KL Regularization：证明在覆盖性和局部表达能力条件下，全未来 KL 信用使精确近端优化器成为更新的唯一稳态策略，支持 off-policy 数据的高效利用。
+  来源：https://huggingface.co/papers/2610.18738
+
+📐 AI4PDE 最新进展
+· Data Free Training of Diffusion Models for Lattice Field Theories：证明扩散模型可以仅从自身生成的样本训练，无需目标分布样本，解决了格点场论中采样平衡场构型的计算瓶颈。
+  来源：https://arxiv.org/abs/2610.18863v1
+
+🔧 凸优化与能源系统
+· Meta Rebalancer：任务放置与优化教程：MarkTechPost 发布教程，介绍 Meta 的 Rebalancer 分配求解器，使用 C++ 核心和 Python 绑定，支持数据中心任务放置、机架约束管理和目标优先级优化，可与 HiGHS 精确求解器对比。
+  来源：https://www.marktechpost.com/2026/10/13/how-to-use-metas-rebalancer-for-task-placement-optimization/
+
+💻 开源项目与代码
+· rea：用 Agent 逆向工程一切：支持从应用行为到原生二进制的全面逆向工程，今日新增 41,034 star。
+  来源：https://github.com/morluto/rea
+· scientific-agent-skills：将 AI Agent 转变为 AI Scientist：提供 177 个经过验证的科学技能和 100+ 科学数据库，覆盖生物、化学、医药和药物发现，被 250,000+ 科学家使用。
+  来源：https://github.com/K-Dense-AI/scientific-agent-skills
+
+💡 今日观察
+今日值得关注的信号是**长时域强化学习**在 Agent 训练中的集中突破——QwenGyre、Tev、LongR、ACCRUE 四项工作从弹性框架、稠密奖励设计、长上下文推理和持续学习四个维度推进了 RL 的边界。这些方法对能源系统中长时间尺度的调度决策、储能优化和多阶段规划具有直接的迁移价值，尤其是稠密进度奖励的设计思路值得能源 RL 研究者深入借鉴。此外，微软和 Allen AI 在中期天气预报上的进展，为新能源功率预测提供了更可靠的气象输入基础。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-14">AI 每日简报 · 2026-10-14 周三</span>
     <button class="cbtn" data-copy="t-2026-10-14">📋 复制标题</button>
   </div>
@@ -756,74 +810,6 @@
 
 💡 今日观察
 今日 AI 资讯以通用大模型发布（Gemini 4 Argon、GPT-6.1 Sol）和 Agent 安全为主，与 AI4Energy、AI4PDE、能源凸优化直接相关的内容极为稀缺。值得注意的信号是：on-policy distillation 的 scaling 规律研究（HuggingFace Papers）和粒子输运方差分解（arXiv）分别从 RL 训练策略和 PDE 数值方法两个方向提供了可迁移至能源领域的方法论工具。建议能源 AI 研究者关注 OPD 跨规模迁移规律，这可能对多区域能源调度 Agent 的蒸馏训练有直接借鉴意义。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-09-30">AI 每日简报 · 2026-09-30 周三</span>
-    <button class="cbtn" data-copy="t-2026-09-30">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-09-30.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-09-30.mp3" download="2026-09-30.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-09-30">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-09-30">AI 每日简报 · 2026-09-30 周三
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Vermont 用家庭电池替代调峰电厂：BBC 报道佛蒙特州通过虚拟电厂（VPP）将分散的家庭储能聚合，在风暴期间维持供电，验证了分布式储能作为电网灵活性资源的可行性。
-  来源：https://www.bbc.com/future/article/20260928-a-virtual-power-plant-hidden-in-vermont-homes-is-keeping-the-lights-on-during-storms
-· 华为重新定义 AIDC 基础设施：算电协同：华为在 HC 大会提出 AI 数据中心基础设施的下一站是&quot;算电协同&quot;，即算力负载与电力供给的联合优化。
-  来源：https://www.qbitai.com/2026/09/498787.html
-· JudgeCast：经验驱动的协变量判断用于时间序列预测：提出基于经验反馈的协变量使用策略，在多协变量共同作用时利用历史预测误差学习如何正确使用协变量。
-  来源：https://arxiv.org/abs/2609.36966v1
-· Fused Ultrametric Gromov-Wasserstein 用于多阶段随机规划场景树生成：结合最优传输理论中的两种距离，同时满足场景树对不确定性过程的逼近精度与非预期性约束。
-  来源：https://arxiv.org/abs/2609.36963v1
-· DeepH-GW：深度学习预测 GW 准粒子哈密顿量：从原子结构直接预测有效 GW 准粒子哈密顿量，绕过昂贵的第一性原理 GW 计算。
-  来源：https://arxiv.org/abs/2609.36962v1
-
-🧠 强化学习前沿 (RL for Energy)
-· Playing to Par：用 RL 求解可证明最优的四边形块分解：训练 RL 智能体构建达到离散 Gauss-Bonnet 下界的全四边形网格分解，将拓扑约束与学习策略结合。
-  来源：https://huggingface.co/papers/2609.32146
-· Cool the Sampler, Not the Learner：采样温度移动重要性校正 GRPO 的陈旧悬崖：发现在重要性校正 GRPO 中存在&quot;陈旧悬崖&quot;现象，通过调节采样温度而非更新规则来延展采样器刷新周期。
-  来源：https://arxiv.org/abs/2609.36953v1
-· Groupwise Agentic Grading and Advantage Redistribution for Code Agent RL：针对 GRPO 在代码智能体中给所有通过测试的轨迹分配相同优势的问题，提出分组评分与优势重分配机制。
-  来源：https://huggingface.co/papers/2609.32577
-· AI Night-Scientist：用 RL 强化科学构思中的智能体创造力：提出智能体框架，通过 RL 训练模型在结构化&quot;日科学&quot;与松散&quot;夜科学&quot;之间切换，突破 LLM 低熵偏置导致的同质化输出。
-  来源：https://huggingface.co/papers/2609.35706
-· Allspark：弱到强迁移的交替思维链：让小模型学到的推理能力迁移到更大模型，训练时无需大模型 rollout，大幅降低 RL 实验成本。
-  来源：https://huggingface.co/papers/2609.32913
-
-📐 AI4PDE 最新进展
-· VideoPhysEdit：基于刚体物理场景重建的物理反事实视频编辑：提出物理反事实视频编辑任务，在给定源视频和物理干预的条件下生成符合物理规律的运动与交互结果。
-  来源：https://huggingface.co/papers/2609.35134
-· Scalable Diffusion SBI for Compositional Inference under Simulator Misspecification：针对模拟器与观测数据不匹配的情形，提出扩散式模拟推断的采样与微调方法，支持设计条件下的组合推断。
-  来源：https://arxiv.org/abs/2609.36950v1
-
-🔧 凸优化与能源系统
-· VStress：重复验证器的相关性感知审计与自适应预算分配：提出可审计的重放契约与相关性感知分配策略，估计未查询验证器的条件边际信息并按成本归一化。
-  来源：https://arxiv.org/abs/2609.36958v1
-
-💻 开源项目与代码
-· NVIDIA/OpenShell：面向自主 AI 智能体的安全私有运行时，今日新增 990 star。
-  来源：https://github.com/NVIDIA/OpenShell
-· Google Research RRSI：智能体自我改进 Harness 而不 Overfit：开源框架让 LLM 智能体在权重冻结下重写自身 prompt、工具与记忆，加入泄漏批评器、噪声下限、成本规则与剪枝。
-  来源：https://www.marktechpost.com/2026/09/29/google-research-open-sources-rrsi-ai-agents-that-improve-their-own-harness-without-overfitting/
-· Liquid AI d1：零输出 Token 的校准概率决策模型：面向结构化选择而非文本生成，输入上下文与类型化问题，单次调用返回固定结果集上的校准概率。
-  来源：https://www.marktechpost.com/2026/09/29/liquid-ai-releases-d1-a-decision-model-that-returns-calibrated-probabilities-with-zero-output-tokens/
-· NVIDIA Kumo Tabular：为表格预测设定新的精度-效率前沿。
-  来源：https://huggingface.co/blog/nvidia/kumo-tabular
-· mvschwarz/openrig：多智能体 harness，将 Claude Code 与 Codex 作为一个系统协同运行，今日新增 737 star。
-  来源：https://github.com/mvschwarz/openrig
-· VectifyAI/PageIndex：面向无向量、基于推理的 RAG 文档索引，今日新增 835 star。
-  来源：https://github.com/VectifyAI/PageIndex
-
-💡 今日观察
-今天最值得关注的信号是 **RL 训练效率的系统性突破**：从 GRPO 的&quot;陈旧悬崖&quot;分析到弱到强迁移的 Allspark，再到细粒度优势重分配，这些工作共同指向一个趋势——RL 正在从&quot;能训&quot;走向&quot;训得起、训得稳&quot;，这对计算资源受限的能源系统调度 RL 研究尤为关键。同时，Vermont 虚拟电厂与华为&quot;算电协同&quot;分别从电网侧和数据中心侧印证了储能调度与算力-电力联合优化正在成为产业刚需，建议重点关注 VPP 聚合调度与数据中心负荷灵活性这两个交叉方向。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
