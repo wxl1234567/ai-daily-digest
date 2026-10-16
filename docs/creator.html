@@ -36,6 +36,50 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-16">AI 每日简报 · 2026-10-16 周五</span>
+    <button class="cbtn" data-copy="t-2026-10-16">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-16.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-16.mp3" download="2026-10-16.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-16">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-16">AI 每日简报 · 2026-10-16 周五
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+🧠 强化学习前沿 (RL for Energy)
+· PreciseCoder: 超越单元测试奖励的忠实可泛化调试：该研究揭示仅依赖单元测试的 RL 奖励会导致模型在调试时产生更多编辑和幻觉 bug，提出融合语义验证局部信号的训练算法 PreciseCoder。
+  来源：https://huggingface.co/papers/2610.18755
+· VASPO: 基于特权价值估计的自蒸馏方法：在 PPO 框架内整合特权自教师信号与 GRPO 更新方向，利用位置动态互补性提升推理模型训练效率。
+  来源：https://huggingface.co/papers/2610.20516
+· Co-Evolving Acting and Forecasting for Language Agents：提出联合训练语言智能体的行动与预测能力，利用中间步骤监督信号解决长时域 rollout 成本高的问题。
+  来源：https://arxiv.org/abs/2610.20597
+· The Thinking Leakage in Reinforcement Learning for LLMs：揭示混合推理模型在 NO-THINK 模式下 RL 训练的性能提升主要来自&quot;思维泄漏&quot;，即部分激活了原始 THINK 模式能力而非学习新推理行为。
+  来源：https://huggingface.co/papers/2610.14270
+
+📐 AI4PDE 最新进展
+· Self-Conditioning Enables Deep Sequential Reasoning in Flow Matching：从电路复杂度角度证明 Flow Matching 迭代采样器并非天然对应多步推理，提出自条件化方法实现深度序列推理。
+  来源：https://huggingface.co/papers/2610.19628
+· LLM-to-Flow Distillation: 将自然语言目标蒸馏至科学生成器：研究如何将 LLM 的高层科学推理能力与领域特定的 Flow/Diffusion 生成器对齐，实现从自然语言发现目标到有效样本生成的桥接。
+  来源：https://huggingface.co/papers/2610.17246
+· HiRO-ACEv2: 3公里分辨率极端天气模拟：Allen AI 发布 HiRO-ACEv2，以极低成本实现 3km 分辨率极端天气模拟。
+  来源：https://huggingface.co/blog/allenai/hiro-acev2
+
+💻 开源项目与代码
+· K-Dense-AI/scientific-agent-skills：将任意 AI 智能体转化为 AI Scientist 的技能库，包含 177 个经验证的技能和 100+ 科学数据库，覆盖生物、化学、医药和药物发现领域。
+  来源：https://github.com/K-Dense-AI/scientific-agent-skills
+· SwarmRSI: 通过进化科学智能体集群实现递归自我改进：提出科学智能体集群的递归自我改进框架，通过整合不同研究方向的证据和实现来指导后续实验。
+  来源：https://huggingface.co/papers/2610.20431
+
+💡 今日观察
+今日 AI 领域与能源交叉方向的内容较为稀缺，但 RL 训练方法论方面有多篇高质量论文值得关注——特别是 PreciseCoder 关于奖励塑形和 VASPO 关于 PPO 改进的工作，其核心思路对能源系统 RL 调度策略的训练与评估具有直接的方法论迁移价值。此外，Allen AI 的 HiRO-ACEv2 高分辨率天气模拟工作直接服务于新能源功率预测场景，建议持续跟踪其后续在风电场/光伏电站的落地应用。整体来看，今日缺乏凸优化与能源系统直接结合的新进展，建议关注后续 NeurIPS 2026 相关论文的放出。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-15">AI 每日简报 · 2026-10-15 周四</span>
     <button class="cbtn" data-copy="t-2026-10-15">📋 复制标题</button>
   </div>
@@ -768,48 +812,6 @@
 
 💡 今日观察
 今日最值得能源交叉研究者关注的信号是**决策模型（Decision Model）的密集发布**：Cloudflare Clef、AWS Strands Decider 2B、以及r/LocalLLaMA上Jeff-Qwen3.5-0.8B等轻量决策模型，都在将LLM从&quot;生成文本&quot;推向&quot;返回类型化概率&quot;。这一范式与能源系统中的调度决策、储能充放电策略、电力市场竞价等场景高度契合——能源决策本质上就是在不确定性下输出概率化动作。此外，NVIDIA Kumo Tabular的零训练表格预测能力值得负荷预测与电价预测研究者立即测试，其&quot;单次前向传播预测新行&quot;的特性可能显著降低能源时序预测的工程门槛。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-01">AI 每日简报 · 2026-10-01 周四</span>
-    <button class="cbtn" data-copy="t-2026-10-01">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-01.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-01.mp3" download="2026-10-01.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-01">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-01">AI 每日简报 · 2026-10-01 周四
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-🧠 强化学习前沿 (RL for Energy)
-· Scaling Properties of Same-Family On-Policy Distillation：研究 on-policy distillation (OPD) 在弱到强、同基座、强到弱三种师生设置下的 scaling 规律，发现早期训练统一呈现&quot;有效迁移&quot;阶段。
-  来源：https://huggingface.co/papers/2609.32722
-· Scaffolding Minds: Optimizing Latent Visual Target Representations for Multimodal Reasoning：指出 latent reasoning 两阶段训练范式的局限，提出优化隐空间视觉目标表征以提升多模态推理。
-  来源：https://huggingface.co/papers/2608.19669
-
-📐 AI4PDE 最新进展
-· A Variance-Decomposition Formula for Direct and Adjoint Monte Carlo Particle Transport Problems：为蒙特卡洛粒子输运问题建立方差分解公式，将模拟方差表达为粒子输运过程中的&quot;方差贡献&quot;之和。
-  来源：https://arxiv.org/abs/2609.39210v1
-
-🔧 凸优化与能源系统
-· Minimax Additive Regression under Unknown Dependent Designs：研究 $[0,1]^d$ 上非乘积随机设计下的加性回归极小极大率，允许维度随样本量增长，建立与维度无关的相容性界。
-  来源：https://arxiv.org/abs/2609.39212v1
-
-💻 开源项目与代码
-· NVIDIA/OpenShell：NVIDIA 开源面向自主 AI Agent 的安全私有运行时环境。
-  来源：https://github.com/NVIDIA/OpenShell
-· mvschwarz/openrig：多 Agent 编排框架，将 Claude Code 与 Codex 作为统一系统协同运行。
-  来源：https://github.com/mvschwarz/openrig
-· colbymchenry/codegraph：预索引代码知识图谱，代码变更时自动同步，支持 Claude Code、Codex、Gemini 等，100% 本地运行。
-  来源：https://github.com/colbymchenry/codegraph
-
-💡 今日观察
-今日 AI 资讯以通用大模型发布（Gemini 4 Argon、GPT-6.1 Sol）和 Agent 安全为主，与 AI4Energy、AI4PDE、能源凸优化直接相关的内容极为稀缺。值得注意的信号是：on-policy distillation 的 scaling 规律研究（HuggingFace Papers）和粒子输运方差分解（arXiv）分别从 RL 训练策略和 PDE 数值方法两个方向提供了可迁移至能源领域的方法论工具。建议能源 AI 研究者关注 OPD 跨规模迁移规律，这可能对多区域能源调度 Agent 的蒸馏训练有直接借鉴意义。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
