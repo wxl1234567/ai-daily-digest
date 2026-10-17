@@ -36,6 +36,58 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-17">AI 每日简报 · 2026-10-17 周六</span>
+    <button class="cbtn" data-copy="t-2026-10-17">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-17.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-17.mp3" download="2026-10-17.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-17">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-17">AI 每日简报 · 2026-10-17 周六
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Simulation App Speeds Up Electric Truck Battery Design：COMSOL 仿真应用加速电动卡车电池设计，通过多物理场建模优化电池热管理与结构设计。
+  来源：https://spectrum.ieee.org/electric-truck-battery-design-simulation
+· Why harnesses matter for energy (and token) efficiency：NeuralWatt 探讨 AI 推理中框架（harness）设计对能耗和 token 效率的影响，提出优化推理管线可显著降低能耗。
+  来源：https://neuralwatt.com/news/why-harnesses-matter-for-energy-efficiency
+· HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost：Allen AI 发布 HiRO-ACEv2，以极低成本实现 3km 分辨率极端天气模拟，对新能源功率预测的气象输入有直接价值。
+  来源：https://huggingface.co/blog/allenai/hiro-acev2
+
+🧠 强化学习前沿 (RL for Energy)
+· MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training：MAI-Gym 提供跨移动端、桌面和 Web 环境的统一 GUI Agent 评估与在线 RL 训练平台，共享 rollout 管线确保可复现性。
+  来源：https://huggingface.co/papers/2610.20939
+· SERO: Learning from Executable Oracle Continuations for Long-Horizon Agentic RL：SERO 利用可执行 Oracle 延续来监督长时域 Agent RL，解决稀疏奖励下策略难以探索到有效行为的问题。
+  来源：https://huggingface.co/papers/2610.19397
+· Beyond Policy Rollouts: Embedding-Space Directional Exploration with Anchored Noise for LLM RLVR：提出嵌入空间定向探索方法，通过锚定噪声增强 RLVR 训练中 rollout 组的奖励方差，提升组相对优势信号质量。
+  来源：https://huggingface.co/papers/2610.16105
+
+📐 AI4PDE 最新进展
+· PathFM: Fast Generative Forecasting of Multivariate Trajectories：PathFM 基于 flow matching 的多变量轨迹生成预测模型，可建模未来轨迹的依赖结构，对累积需求、峰值负荷等轨迹相关量有直接应用。
+  来源：https://huggingface.co/papers/2610.22358
+· SoftCache: Adaptive Step Size Caching for Diffusion Transformers：SoftCache 提出自适应步长缓存策略加速扩散 Transformer 推理，通过连续缓存信号替代硬阈值切换，显著降低生成成本。
+  来源：https://arxiv.org/abs/2610.22369v1
+
+🔧 凸优化与能源系统
+· Hybrid Reasoning Agents：Stanford、Together AI、UIUC 和 Meta 联合提出混合推理 Agent，大部分推理在隐空间完成，仅在需要工具调用时使用文本，测试中得分提高约 10%、token 减少一半、速度翻倍。
+  来源：https://www.reddit.com/r/LocalLLaMA/comments/1x7a8i8/new_paper_from_stanford_together_ai_uiuc_and_meta/
+
+💻 开源项目与代码
+· K-Dense-AI/scientific-agent-skills：面向科学研究的 Agent Skills 库，包含 177 个经验证的技能和 100+ 科学数据库，覆盖生物、化学、医药等领域，兼容主流 Agent 框架。
+  来源：https://github.com/K-Dense-AI/scientific-agent-skills
+· xerj-org/xerj：XERJ 提供 AI 数据搜索的自动索引能力，一条命令即可索引代码、文档、日志和 PDF，token 消耗比 grep 少 40 倍，兼容 Elasticsearch。
+  来源：https://github.com/xerj-org/xerj
+
+💡 今日观察
+今天最值得能源 AI 研究者关注的信号来自 **PathFM** 的轨迹级生成预测框架——它明确针对峰值负荷和累积需求等轨迹依赖量建模，弥补了传统边际分位数预测的不足，这对电力系统调度和储能优化有直接方法论价值。此外，Allen AI 的 **HiRO-ACEv2** 以极低成本实现 3km 分辨率极端天气模拟，为新能源功率预测提供了更高性价比的气象输入方案。整体来看，今日 AI4Energy 相关内容偏少，但轨迹预测与高分辨率气象模拟两条线索值得持续跟踪。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-16">AI 每日简报 · 2026-10-16 周五</span>
     <button class="cbtn" data-copy="t-2026-10-16">📋 复制标题</button>
   </div>
@@ -748,70 +800,6 @@
 
 💡 今日观察
 今日最值得关注的信号是 AI 基础设施的能源约束正从技术问题升级为政策与社会博弈——Oracle 数据中心因电力审批延期、Amazon 公开警告社区，表明电网接入已成为 AI 扩张的硬瓶颈。与此同时，NVIDIA Kumo Tabular 与多个决策模型（Strands Decider、Cloudflare Clef）的发布，为能源领域的表格预测与实时决策提供了即用型基础模型，值得在负荷预测和边缘控制场景中快速验证。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-02">AI 每日简报 · 2026-10-02 周五</span>
-    <button class="cbtn" data-copy="t-2026-10-02">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-02.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-02.mp3" download="2026-10-02.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-02">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-02">AI 每日简报 · 2026-10-02 周五
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Google首颗先进芯片入轨，太空数据中心路线图曝光：Google将自研AI芯片送入轨道，并测算SpaceX Starship需发射约1800次才能让太空数据中心具备可行性。
-  来源：https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/
-· OpenAI与Synopsys联合打造芯片设计专用模型GPT-Synopsys：该模型目标是像资深工程师一样操作EDA工具并自主优化芯片设计，已与半导体客户开展早期测试。
-  来源：https://the-decoder.com/openai-and-synopsys-team-up-to-build-an-ai-model-that-designs-chips-like-a-seasoned-engineer/
-· Meta将AI数据中心归类为&quot;试验性项目&quot;规避数十亿美元联邦税：2025年一年即节省39亿美元，其自家会计师也认为该策略存在法律风险。
-  来源：https://the-decoder.com/meta-dodges-billions-in-us-taxes-by-calling-its-ai-data-centers-experiments/
-· Kevin O'Leary犹他州9GW AI数据中心项目调查：The Verge深度调查其40000英亩、9GW级AI园区计划引发的社区反弹。
-  来源：https://www.theverge.com/podcast/1002851/utah-ai-data-center-stratos-kevin-oleary-investigation-backlash
-
-🧠 强化学习前沿 (RL for Energy)
-· Cloudflare发布Clef与Clef-flash开放权重决策模型：返回类型化概率而非文本，兼容Jev-API，支持图像输入，在Workers AI上中位延迟分别为209.3ms与38.8ms。
-  来源：https://www.marktechpost.com/2026/10/01/cloudflare-releases-clef-and-clef-flash/ / https://blog.cloudflare.com/clef-decision-models/
-· 亚马逊Strand Labs发布Strands Decider 2B决策模型：决策模型赛道持续升温，AWS加入Jev类模型的竞争。
-  来源：https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/
-· TERRA：地形感知的肌肉骨骼运动重定向与控制：端到端流水线用RL实现复杂地形上的肌肉驱动运动控制，突破此前仅限平地的限制。
-  来源：https://huggingface.co/papers/2609.38653
-· Rubric Rewards from Item Response Theory：用项目反应理论将评分准则的判定组合为标量奖励，替代简单加和，使RL奖励信号更能区分rollout质量。
-  来源：https://huggingface.co/papers/2609.35646
-· Label-free Steering：将测试时强化学习压缩到仅偏置子空间：仅优化约10万偏置参数，用多数投票伪标签作为奖励，实现无标签测试时自适应。
-  来源：https://huggingface.co/papers/2609.18587
-
-📐 AI4PDE 最新进展
-· Learning Chaos Without Seeing Chaos：自回归Transformer的全局动力学外推：仅用局部观测训练的小型自回归Transformer，能恢复非线性动力系统的全局组织行为。
-  来源：https://huggingface.co/papers/2609.38814
-· NVIDIA Physis-Lang：自演化物理语言让Cosmos 3在物理基准上超越Veo 3.1：NVIDIA、MIT与牛津团队提出将物理语言作为可优化的共享表示，修正视频世界模型中的物理违规。
-  来源：https://www.marktechpost.com/2026/09/30/nvidia-researchers-introduce-physis-lang-self-evolving-physical-language-that-lifts-cosmos-3-past-veo-3-1-on-physics-benchmarks/
-· Google DeepMind发布SynthID Bio：AI生成蛋白质水印：在保持生物功能的前提下对AI生成蛋白质进行水印标记的概念验证。
-  来源：https://deepmind.google/blog/introducing-synthid-bio/
-
-🔧 凸优化与能源系统
-· NVIDIA Kumo Tabular：开放表格基础模型，单次前向传播预测新行：无需训练、无需调参、无需特征工程，直接以标注行为上下文预测新样本。
-  来源：https://www.marktechpost.com/2026/09/30/nvidia-releases-kumo-tabular/ / https://huggingface.co/blog/nvidia/kumo-tabular
-· OpenAI与Synopsys合作推进芯片设计自动化：GPT-Synopsys旨在自主优化芯片设计流程，凸优化在EDA布局布线中的核心地位使其与能源芯片设计直接相关。
-  来源：https://the-decoder.com/openai-and-synopsys-team-up-to-build-an-ai-model-that-designs-chips-like-a-seasoned-engineer/
-
-💻 开源项目与代码
-· NVIDIA/OpenShell：面向自主AI agent的安全私有运行时，今日+2456 star。
-  来源：https://github.com/NVIDIA/OpenShell
-· tile-ai/tilelang：面向高性能GPU/CPU/加速器kernel开发的领域特定语言，今日+163 star。
-  来源：https://github.com/tile-ai/tilelang
-· Google Research Kauldron：JAX训练库编码指南：konfig将实验转为纯字典、kontext通过字符串路径连接组件、ktyping强制运行时形状检查。
-  来源：https://www.marktechpost.com/2026/10/01/a-coding-guide-to-google-researchs-kauldron-configs-that-are-plain-data-components-wired-by-string-and-a-jax-trainer-you-can-read-end-to-end/
-
-💡 今日观察
-今日最值得能源交叉研究者关注的信号是**决策模型（Decision Model）的密集发布**：Cloudflare Clef、AWS Strands Decider 2B、以及r/LocalLLaMA上Jeff-Qwen3.5-0.8B等轻量决策模型，都在将LLM从&quot;生成文本&quot;推向&quot;返回类型化概率&quot;。这一范式与能源系统中的调度决策、储能充放电策略、电力市场竞价等场景高度契合——能源决策本质上就是在不确定性下输出概率化动作。此外，NVIDIA Kumo Tabular的零训练表格预测能力值得负荷预测与电价预测研究者立即测试，其&quot;单次前向传播预测新行&quot;的特性可能显著降低能源时序预测的工程门槛。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
