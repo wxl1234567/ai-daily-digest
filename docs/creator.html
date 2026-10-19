@@ -36,6 +36,58 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-19">AI 每日简报 · 2026-10-19 周一</span>
+    <button class="cbtn" data-copy="t-2026-10-19">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-19.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-19.mp3" download="2026-10-19.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-19">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-19">AI 每日简报 · 2026-10-19 周一
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· PathFM：多变量轨迹的快速生成式预测：提出基于 flow matching 的轨迹级预测模型，显式建模未来轨迹的联合依赖结构，而非仅预测边际分位数。
+  来源：https://huggingface.co/papers/2610.22358
+· HiRO-ACEv2：以极低成本实现 3km 分辨率极端天气模拟：Allen AI 发布高分辨率极端天气模拟模型，大幅降低计算成本。
+  来源：https://huggingface.co/blog/allenai/hiro-acev2
+· 电动卡车电池设计仿真应用提速：COMSOL 相关报道介绍仿真应用如何加速电动卡车电池设计流程。
+  来源：https://spectrum.ieee.org/electric-truck-battery-design-simulation
+
+🧠 强化学习前沿 (RL for Energy)
+· SERO：用可执行 Oracle 续接训练长程智能体 RL：利用 oracle 控制的未来轨迹作为监督信号，突破 on-policy rollout 覆盖不足的瓶颈。
+  来源：https://huggingface.co/papers/2610.19397
+· MAI-Gym：跨移动端与桌面端的 GUI Agent 评估与在线 RL 训练一体化平台：统一评估、数据采集与在线 RL 训练的开源平台。
+  来源：https://huggingface.co/papers/2610.20939
+· Beyond Policy Rollouts：嵌入空间定向探索与锚定噪声用于 LLM RLVR：在嵌入空间引入定向扰动，提升组内奖励方差与优势信号。
+  来源：https://huggingface.co/papers/2610.16105
+
+📐 AI4PDE 最新进展
+· Gen4P：视频生成器即 4D 感知器：将预训练视频生成器改造为前馈 4D 几何与运动恢复器，单次编码即可预测 4D 属性。
+  来源：https://huggingface.co/papers/2610.22371
+· OneWM：统一因果训练下世界模型与动作建模能否互益：在共享视频-动作架构中同时建模前向动力学与策略学习。
+  来源：https://huggingface.co/papers/2610.21095
+
+🔧 凸优化与能源系统
+· NVIDIA 结构化数据模型：零训练表格预测：统一 PyTorch 接口封装 TabICLv2、KumoTabular 等表格基础模型，通过上下文学习直接预测。
+  来源：https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models/
+
+💻 开源项目与代码
+· Google 开源 Harness2：递归式 Agent Harness 框架：Apache-2.0 框架，在测试时重写 agent harness，单步精炼即让 GLM-5 在 WorkBuddy-Bench 提升 11.5 分且无需权重更新。
+  来源：https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework/
+· Perplexity 开源 SPACE：Firecracker MicroVM Agent 沙箱：为每个 agent 任务分配独立 microVM，凭证与出站流量在 VM 外受控，Apache 2.0。
+  来源：https://www.marktechpost.com/2026/10/16/perplexity-open-sources-space-firecracker-microvm-sandbox-ai-agents/
+
+💡 今日观察
+今日信号最清晰的是**轨迹级概率预测**（PathFM）与**动力学-控制联合建模**（OneWM）：前者直接对应电力系统中峰荷、累积电量等依赖联合分布的决策量，后者为&quot;世界模型 + 策略&quot;在能源控制中的落地提供了统一因果训练框架。与此同时，零训练表格基础模型（NVIDIA SDM）值得关注——能源系统大量结构化数据场景可能因此绕开昂贵的领域预训练。RL 侧则集中在长程信用分配与环境基础设施，这正是储能调度、多能互补等长程决策问题的痛点所在。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-18">AI 每日简报 · 2026-10-18 周日</span>
     <button class="cbtn" data-copy="t-2026-10-18">📋 复制标题</button>
   </div>
@@ -770,26 +822,6 @@
 
 💡 今日观察
 今天最值得关注的信号是**数据中心能源约束正在从技术问题升级为政策与公众议题**——谷歌数据中心水电数据泄露、农村数据中心税收减免、Nvidia Shield TV 因 AI 内存需求涨价 100 美元，三条新闻共同指向一个趋势：AI 算力扩张的能源与硬件成本正在成为行业硬约束。此外，HuggingFace 上涌现的多个世界模型记忆架构论文（LOCI、Honeycomb、Latent-Foresight）值得 AI4PDE 方向的研究者关注，其时空表征方法有望迁移至物理场预测与仿真加速。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-04">AI 每日简报 · 2026-10-04 周日</span>
-    <button class="cbtn" data-copy="t-2026-10-04">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-04.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-04.mp3" download="2026-10-04.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-04">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-04">AI 每日简报 · 2026-10-04 周日
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-💡 今日观察
-今日收集到的全部资讯均集中在通用 AI 领域（OpenAI 安全团队离职、Meta Muse 开源硬件、Gemini 4 发布、Agent 框架与编码工具等），未出现与 AI4Energy、强化学习能源调度、AI 求解 PDE 或凸优化能源系统直接相关的高质量内容。对于能源交叉研究者而言，今日无值得追踪的新信号，建议关注后续 arXiv 能源专题及 NeurIPS/ICML 能源相关 workshop 的更新。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
