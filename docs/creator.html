@@ -36,6 +36,56 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-20">AI 每日简报 · 2026-10-20 周二</span>
+    <button class="cbtn" data-copy="t-2026-10-20">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-20.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-20.mp3" download="2026-10-20.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-20">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-20">AI 每日简报 · 2026-10-20 周二
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Mistral 发布 Timestral 时间序列基础模型族（5M–209M），209M 版本在 GIFT-Eval、TIME、fev-bench 零样本榜单超越 Google TimesFM-3，且可在 CPU 上运行：时间序列预测基础模型迎来新的开源强基线。
+  来源：https://www.marktechpost.com/2026/10/18/mistral-timestral-time-series-foundation-model/
+· AI 驱动灾害响应与流离失所监测论文发布，综述 AI 在气候适应、可再生能源控制与设计、卫星影像贫困预测等人道任务中的应用：系统梳理 AI 在气候与能源交叉场景的落地路径。
+  来源：https://huggingface.co/papers/2610.21482
+· 报道指出美国化石燃料基础设施建设量创十年新高、可再生能源增速放缓，同时数据中心/工厂/电动车推动电力需求以十余年最快速度攀升：供需两侧同时施压电网。
+  来源：https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report
+
+🧠 强化学习前沿 (RL for Energy)
+· Lean4AgenticRL 提出带可验证多级过程奖励的智能体强化学习框架，在工具调用级与工作流阶段级引入细粒度奖励，替代纯结果奖励：过程奖励建模对长程决策任务训练效率显著提升。
+  来源：https://huggingface.co/papers/2610.22448
+· FC-SWE 提出失败条件化 RL（Failure-Conditioned RL），复用验证器反馈对长程软件工程智能体做 GRPO 训练：将失败轨迹转化为训练信号。
+  来源：https://huggingface.co/papers/2610.07898
+· GlobeBench 发布文本世界模型基准，含 5 大领域 19 项仿真技能共 1,632 个任务，评估模型对 RL 环境状态转移的预测能力：为基于世界模型的 RL 提供标准化评测。
+  来源：https://huggingface.co/papers/2610.22708
+
+📐 AI4PDE 最新进展
+· REASON 提出面向结构化优化网络的分层残差解释分析框架，借鉴 System 1/System 2 双环机制，在分布偏移与扰动下识别并利用额外信息：将优化网络的可解释性与鲁棒性统一建模。
+  来源：https://huggingface.co/papers/2610.19378
+
+🔧 凸优化与能源系统
+· LiveMACE 发布 LiveMACEBench，以实时金融市场为自然演化测试床，对持久化 LLM 智能体做过程感知评估，统一 Tool Use 与 Persistent Memory 条件：强调闭环交互下的过程而非结果评估。
+  来源：https://huggingface.co/papers/2610.09872
+
+💻 开源项目与代码
+· NVIDIA 以 Apache 2.0 完全开源 Run:ai GPU 编排平台，含 KAI Scheduler、CUDA 13.4 GPU 分片、配额管理与本地 Kind 开发环境：GPU 集群调度走向完全开源。
+  来源：https://www.marktechpost.com/2026/10/18/nvidia-runai-open-source-gpu-orchestration-kubernetes/
+· Kronos 金融市​​场语言基础模型登上 GitHub Trending（今日 +363 star）：面向金融时序的领域基础模型开源。
+  来源：https://github.com/shiyu-coder/Kronos
+
+💡 今日观察
+今日最值得能源交叉研究者关注的是 Mistral Timestral 这类**时间序列基础模型**的成熟——209M 参数即可在零样本预测榜单超越 TimesFM-3 且可 CPU 推理，意味着负荷与新能源功率预测的&quot;基础模型+微调&quot;范式门槛正在快速下降。与此同时，Lean4AgenticRL 与 FC-SWE 代表的**多级过程奖励与失败条件化 RL**，为储能调度、电力市场竞价这类长程序贯决策提供了更样本高效的训练路径。基础设施层面，NVIDIA 开源 Run:ai 则降低了能源 AI 团队自建 GPU 集群调度的成本。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-19">AI 每日简报 · 2026-10-19 周一</span>
     <button class="cbtn" data-copy="t-2026-10-19">📋 复制标题</button>
   </div>
@@ -764,64 +814,6 @@
 
 💡 今日观察
 今天最值得能源交叉研究者关注的信号是 **CVaR 策略评估与自改进 RL 泛化**两条线：Tail-Influence Sampling 为极端风险下的调度策略评估提供了预算最优的统计工具，而 Google 的 RRSI 直指自博弈策略在未见场景上的过拟合问题——这两者恰好是新能源高渗透率下电网调度最核心的两个痛点（尾部风险 + 分布外泛化）。此外，MinkowskiPE 与 JEPA-TTT 分别从位置编码和测试时适配两个角度强化了时空动力学建模，对风光出力预测与热传导仿真均有方法论参考价值。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-05">AI 每日简报 · 2026-10-05 周一</span>
-    <button class="cbtn" data-copy="t-2026-10-05">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-05.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-05.mp3" download="2026-10-05.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-05">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-05">AI 每日简报 · 2026-10-05 周一
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 谷歌数据中心水电消耗因脱敏不当被曝光：林肯市谷歌数据中心的用水与用电数据因文件脱敏处理失误而被公开，引发社区对数据中心资源消耗的广泛讨论（HN 217 分、324 条评论）。
-  来源：https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/
-· 美国农村数据中心获联邦重大税收减免：根据 One Big Beautiful Bill Act，农村地区数据中心项目自明年起可享受大幅税收优惠，但部分超大规模厂商似乎并不急于申领。
-  来源：https://www.wired.com/story/rural-data-centers-are-in-for-a-big-federal-tax-break/
-· NASA 与 IBM 发布开源月球基础模型：基于 17 年月球勘测轨道器数据（近 200 万个 tile bundle）训练，显著降低极地冰沉积预测误差，是首批面向月球科学的开源 AI 模型之一。
-  来源：https://the-decoder.com/nasa-and-ibms-open-source-lunar-model-turns-17-years-of-orbiter-data-into-a-foundation-for-lunar-science/
-
-🧠 强化学习前沿 (RL for Energy)
-· CorrGRPO：多奖励学习中的相关性归一化 GRPO：针对 GRPO 在多奖励场景下奖励协方差影响优势估计的问题，提出相关性归一化的改进方法，理论分析了方差与优势的关系。
-  来源：https://huggingface.co/papers/2609.36820
-· X-Tree：为高效 Agent 泛化而 Token 化可复用经验：将多步 Agent 训练中反复出现的子过程从扁平动作流中提取为层级结构，使稀缺轨迹的利用更充分，提升泛化能力。
-  来源：https://huggingface.co/papers/2609.32993
-· JevSpawn：通过组合动作空间实现自适应 Agent 推理：将 Jev 风格快速概率预测与自然语言指令连接，构建组合策略，解决有限域需预先指定的限制，支持自主任务求解。
-  来源：https://huggingface.co/papers/2610.00437
-
-📐 AI4PDE 最新进展
-· LOCI：面向流式世界模型的空间线性记忆：提出混合空间记忆架构，同时保留键值缓存（视觉细节）与循环记忆（紧凑历史），解决视频世界模型中长时序场景一致性与检索问题。
-  来源：https://huggingface.co/papers/2609.40222
-· Latent-Foresight：端到端学习可预测表征用于隐世界模型：摒弃两阶段流水线（先压缩 VFM 特征再训练预测器），端到端学习可预测的隐空间表征，提升未来场景演化预测能力。
-  来源：https://huggingface.co/papers/2610.01942
-· Honeycomb：视频世界模型的常量尺寸场景记忆：提出 HexMemory 低秩表示，用固定大小的六个空间与时空平面存储场景特征，解决长时序生成中空间记忆随生成过程累积膨胀的问题。
-  来源：https://huggingface.co/papers/2609.37690
-
-🔧 凸优化与能源系统
-· BootLoops 开源工具支持 AI 模型执行精确科学计算：哈佛物理学家 Matthew Schwartz 使用该工具配合 Claude，三个月内跨 18 个领域产出 36 篇手稿，但结果往往需人类专家介入才具科学价值。
-  来源：https://the-decoder.com/open-source-bootloops-harness-supports-ai-models-in-performing-precise-scientific-calculations/
-· 决策 AI 模型解析：TypeSafe Jev 与开源竞品对比：决策 AI 模型以校准概率回答类型化问题而非生成文本，Jev 每百万输入 token 仅 $0.042，响应时间 70-500ms，并与 Fastino GLiDE、GLiNER2.5-Decide 等开源方案对比。
-  来源：https://www.marktechpost.com/2026/10/02/decision-ai-models-explained-typesafe-jev-vs-fastino-glide-gliner2-5-decide-and-open-source-competitors/
-
-💻 开源项目与代码
-· antirez/ds4 — DeepSeek 4 Flash 与 PRO 本地推理引擎：支持 Metal、CUDA 和 ROCm 的 DeepSeek 4 本地推理引擎，由 Redis 作者 antirez 开发（今日 +211 star）。
-  来源：https://github.com/antirez/ds4
-· thedotmack/claude-mem — 跨会话持久化上下文：捕获 Agent 会话中的所有操作，用 AI 压缩后注入未来会话，支持 Claude Code、Codex、Gemini 等多种 Agent（今日 +628 star）。
-  来源：https://github.com/thedotmack/claude-mem
-· earthtojake/text-to-cad — 为 Agent 赋予 CAD 超能力：让 AI Agent 能够通过文本生成 CAD 模型（今日 +83 star）。
-  来源：https://github.com/earthtojake/text-to-cad
-
-💡 今日观察
-今天最值得关注的信号是**数据中心能源约束正在从技术问题升级为政策与公众议题**——谷歌数据中心水电数据泄露、农村数据中心税收减免、Nvidia Shield TV 因 AI 内存需求涨价 100 美元，三条新闻共同指向一个趋势：AI 算力扩张的能源与硬件成本正在成为行业硬约束。此外，HuggingFace 上涌现的多个世界模型记忆架构论文（LOCI、Honeycomb、Latent-Foresight）值得 AI4PDE 方向的研究者关注，其时空表征方法有望迁移至物理场预测与仿真加速。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
