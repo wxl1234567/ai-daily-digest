@@ -36,6 +36,38 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-21">AI 每日简报 · 2026-10-21 周三</span>
+    <button class="cbtn" data-copy="t-2026-10-21">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-21.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-21.mp3" download="2026-10-21.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-21">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-21">AI 每日简报 · 2026-10-21 周三
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Mistral 发布 Timestral 时间序列基础模型系列，209M 版本零样本超越 Google TimesFM-3：参数规模 5M–209M，209M 版本在 GIFT-Eval、TIME、fev-bench 零样本评测中领先，并可在 CPU 上运行。
+  来源：https://www.marktechpost.com/2026/10/18/mistral-timestral-time-series-foundation-model/
+· The Verge 报道美国化石燃料基础设施建设回暖、数据中心推高电力需求：报告显示美国在建化石燃料设施为十年来最多，可再生能源增速放缓，数据中心、工厂与电动车共同拉动用电需求加速上升。
+  来源：https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report
+
+💻 开源项目与代码
+· Kronos：面向金融市场&quot;语言&quot;的基础模型开源项目登榜 GitHub Trending：单日新增 733 star，将金融时序建模为可学习的&quot;语言&quot;。
+  来源：https://github.com/shiyu-coder/Kronos
+· DeepSeek 开源 DeepInfer 推理框架（Apache 2.0）：基于 vLLM，面向 NVIDIA SM100 与华为 Ascend 950 NPU，官方称可显著降低推理算力成本与能耗。
+  来源：https://www.marktechpost.com/2026/10/20/deepseek-deepinfer-open-source-inference-framework/
+
+💡 今日观察
+今日与 AI4Energy 直接相关的内容稀少，唯一值得能源研究者跟进的是 Mistral Timestral 这类轻量时序基础模型——它在零样本设定下超越 TimesFM-3 且可在 CPU 运行，对负荷与新能源功率预测的落地门槛极低。另一信号是数据中心用电需求加速增长正被主流媒体纳入能源基础设施叙事，这为&quot;AI 算力—电力系统&quot;耦合建模提供了明确的现实议题。RL、AI4PDE 与凸优化方向今日无符合标准的高质量新内容，故不纳入。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-20">AI 每日简报 · 2026-10-20 周二</span>
     <button class="cbtn" data-copy="t-2026-10-20">📋 复制标题</button>
   </div>
@@ -766,54 +798,6 @@
 
 💡 今日观察
 今天最值得能源交叉研究者注意的是时序基础模型的&quot;反事实能力缺陷&quot;——TimesFM-2.5、TabPFN-TS 等在被用于受迫工程系统时表现出 memoryless 特征，这对把 TSFM 直接套用到电网 what-if 分析是一个明确警示信号。同时 JEPA-Anything 把世界模型从单领域推向 7 个领域的通用配方，为能源物理场代理建模提供了可迁移的架构思路。RL 侧 LoGRA 的低秩梯度压缩则直接降低了能源调度大模型 RL 微调的显存门槛，值得跟踪。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-06">AI 每日简报 · 2026-10-06 周二</span>
-    <button class="cbtn" data-copy="t-2026-10-06">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-06.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-06.mp3" download="2026-10-06.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-06">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-06">AI 每日简报 · 2026-10-06 周二
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Global Solar Atlas：全球光伏潜力可视化平台：World Bank 与 Solargis 联合维护的全球太阳能资源数据库，提供逐点 GHI/DNI/PVOUT 等栅格数据与交互式地图。
-  来源：https://globalsolaratlas.info/
-· Opus 5.5 智能体自主发现两种室温磁性半导体候选材料：AI agent 在材料筛选流程中自主完成候选生成与验证，找到两种室温磁性半导体。
-  来源：https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors
-
-🧠 强化学习前沿 (RL for Energy)
-· Tail-Influence Sampling for CVaR Policy Evaluation：提出 tail influence 指标，为可分别查询的条件分布分配固定评估预算，以最准确估计策略的 CVaR 下尾风险。
-  来源：https://huggingface.co/papers/2609.38096
-· Cantina 发布 apex-flash-1：面向漏洞研究的 RL 微调开源模型：基于 GLM-5.3-Flash 的强化学习微调，在 60 个 held-out bug 任务中解决 40 个，MIT 许可。
-  来源：https://www.marktechpost.com/2026/10/04/can-an-open-model-do-security-research-cantinas-apex-flash-1-solves-40-of-60-held-out-bug-tasks/
-· Google 提出 RRSI：防止自改进智能体记忆测试任务：通过正则化抑制自改进 agent 对测试任务的记忆，在未见基准上提升最多 4.7 分，token 用量减少约 30%。
-  来源：https://the-decoder.com/google-researchers-find-a-way-to-keep-self-improving-ai-agents-from-memorizing-their-tests/
-
-📐 AI4PDE 最新进展
-· MinkowskiPE：面向时空感知的 Minkowski 位置编码：提出结合灵活学习与显式时空耦合先验的位置编码方案，用于跨尺度物理智能建模。
-  来源：https://huggingface.co/papers/2609.33804
-· JEPA-TTT：潜空间世界模型的持续测试时训练：在测试时对预训练世界模型的潜动态预测器进行自监督在线适配，视觉编码器与奖励头保持冻结。
-  来源：https://huggingface.co/papers/2610.00722
-
-💻 开源项目与代码
-· llama.cpp v0.6.0：支持 Qwen4Exp 的 MTP 投机解码：llama.cpp 发布 v0.6.0，新增多 token 预测（MTP）投机解码等特性。
-  来源：https://www.reddit.com/r/LocalLLaMA/comments/1wyh03u/llamacpp_v060_released_with_mtp_speculative/
-· Agens Volundr 32B Preview：混合架构，仅 18/72 层保留 KV Cache：香港小团队 Blockway 发布自研混合架构模型，通过大幅缩减 KV Cache 层数降低长上下文显存占用，Apache-2.0 许可。
-  来源：https://www.reddit.com/r/LocalLLaMA/comments/1wy7wn0/agens_volundr_32b_preview_our_small_teams_first/
-· TinyDecide：10M 参数的微型决策模型：仅 10M 参数、约 6MB，可在浏览器、Node.js、Rust 甚至 ESP32 上运行。
-  来源：https://www.reddit.com/r/LocalLLaMA/comments/1wybi2y/smallest_jevlike_model/
-
-💡 今日观察
-今天最值得能源交叉研究者关注的信号是 **CVaR 策略评估与自改进 RL 泛化**两条线：Tail-Influence Sampling 为极端风险下的调度策略评估提供了预算最优的统计工具，而 Google 的 RRSI 直指自博弈策略在未见场景上的过拟合问题——这两者恰好是新能源高渗透率下电网调度最核心的两个痛点（尾部风险 + 分布外泛化）。此外，MinkowskiPE 与 JEPA-TTT 分别从位置编码和测试时适配两个角度强化了时空动力学建模，对风光出力预测与热传导仿真均有方法论参考价值。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>

@@ -15,6 +15,27 @@
     <image><url>https://jimmuji.github.io/ai-daily-digest/podcast-cover.png</url><title>AI 每日简报</title><link>https://jimmuji.github.io/ai-daily-digest/</link></image>
     <itunes:owner><itunes:name>AI Daily Digest</itunes:name></itunes:owner>
     <item>
+      <title>AI 每日简报 · 2026-10-21 周三</title>
+      <description>早上好，今天是 2026 年 10 月 21 日，欢迎收听今天的 AI 行业日报。今天最值得能源方向的朋友留意的，是 Mistral 扔出来的一颗轻量级炸弹，另外还有一条关于数据中心吃电的主流媒体信号，咱们一条条聊。
+先说 Mistral。他们发布了 Timestral 系列时间序列基础模型，参数规模从 500 万到 2 亿零 900 万不等，其中最亮眼的 2 亿零 900 万版本，在 GIFT-Eval、TIME 和 fev-bench 这三个零样本评测里都跑到了前面，直接超过了 Google 的 TimesFM-3。更关键的是，这个模型能在 CPU 上跑。这意味着什么？对做电力负荷预测、风电光伏功率预测的人来说，落地门槛一下子低了很多，不用堆 GPU 集群，也能把时序基础模型用起来，迁移成本非常友好。
+再看一条宏观层面的消息。The Verge 报道说，美国化石燃料基础设施建设正在回暖，在建的化石燃料设施数量是十年来最多的，与此同时可再生能源的增速在放缓。背后推手是谁？数据中心、工厂和电动车，一起把用电需求往上顶。这条新闻本身不是技术突破，但它给做 AI 算力和电力耦合建模、电网容量规划的研究者提供了一个很明确的现实背景，数据中心负荷增长这件事，已经正式进入主流媒体的能源叙事里了。
+开源这边有两个项目值得扫一眼。一个是 Kronos，冲上了 GitHub Trending，单日新增 733 个 star。它的思路挺有意思，把金融时序当成一种可学习的语言来建模，这种时序 token 化的范式，其实可以借鉴到电价和负荷序列的建模上。另一个是 DeepSeek 开源的 DeepInfer 推理框架，Apache 2.0 协议，基于 vLLM，面向 NVIDIA 的 SM100 和华为的 Ascend 950 NPU，官方说能显著降低推理的算力成本和能耗。对要把能源 AI 模型部署到实际场景的团队来说，这是个实打实的降本工具。
+好，进入今天的观察。今天跟 AI 加能源直接相关的内容其实不多，真正值得能源研究者跟进的，就是 Mistral 的 Timestral 这类轻量时序基础模型，零样本超过 TimesFM-3，还能在 CPU 上跑，负荷和新能源功率预测的落地门槛被压得很低。另一个信号是数据中心用电需求的加速增长，正在被主流媒体纳入能源基础设施的讨论，这给 AI 算力与电力系统的耦合建模提供了一个清晰的现实议题。至于强化学习、AI 求解偏微分方程和凸优化这几个方向，今天没有符合标准的高质量新内容，就不占大家时间了。
+以上就是今天的全部内容，通勤路上注意安全，我们明天见。</description>
+      <itunes:summary>早上好，今天是 2026 年 10 月 21 日，欢迎收听今天的 AI 行业日报。今天最值得能源方向的朋友留意的，是 Mistral 扔出来的一颗轻量级炸弹，另外还有一条关于数据中心吃电的主流媒体信号，咱们一条条聊。
+先说 Mistral。他们发布了 Timestral 系列时间序列基础模型，参数规模从 500 万到 2 亿零 900 万不等，其中最亮眼的 2 亿零 900 万版本，在 GIFT-Eval、TIME 和 fev-bench 这三个零样本评测里都跑到了前面，直接超过了 Google 的 TimesFM-3。更关键的是，这个模型能在 CPU 上跑。这意味着什么？对做电力负荷预测、风电光伏功率预测的人来说，落地门槛一下子低了很多，不用堆 GPU 集群，也能把时序基础模型用起来，迁移成本非常友好。
+再看一条宏观层面的消息。The Verge 报道说，美国化石燃料基础设施建设正在回暖，在建的化石燃料设施数量是十年来最多的，与此同时可再生能源的增速在放缓。背后推手是谁？数据中心、工厂和电动车，一起把用电需求往上顶。这条新闻本身不是技术突破，但它给做 AI 算力和电力耦合建模、电网容量规划的研究者提供了一个很明确的现实背景，数据中心负荷增长这件事，已经正式进入主流媒体的能源叙事里了。
+开源这边有两个项目值得扫一眼。一个是 Kronos，冲上了 GitHub Trending，单日新增 733 个 star。它的思路挺有意思，把金融时序当成一种可学习的语言来建模，这种时序 token 化的范式，其实可以借鉴到电价和负荷序列的建模上。另一个是 DeepSeek 开源的 DeepInfer 推理框架，Apache 2.0 协议，基于 vLLM，面向 NVIDIA 的 SM100 和华为的 Ascend 950 NPU，官方说能显著降低推理的算力成本和能耗。对要把能源 AI 模型部署到实际场景的团队来说，这是个实打实的降本工具。
+好，进入今天的观察。今天跟 AI 加能源直接相关的内容其实不多，真正值得能源研究者跟进的，就是 Mistral 的 Timestral 这类轻量时序基础模型，零样本超过 TimesFM-3，还能在 CPU 上跑，负荷和新能源功率预测的落地门槛被压得很低。另一个信号是数据中心用电需求的加速增长，正在被主流媒体纳入能源基础设施的讨论，这给 AI 算力与电力系统的耦合建模提供了一个清晰的现实议题。至于强化学习、AI 求解偏微分方程和凸优化这几个方向，今天没有符合标准的高质量新内容，就不占大家时间了。
+以上就是今天的全部内容，通勤路上注意安全，我们明天见。</itunes:summary>
+      <enclosure url="https://jimmuji.github.io/ai-daily-digest/audio/2026-10-21.mp3" length="1096992" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-10-21.mp3</guid>
+      <pubDate>Wed, 21 Oct 2026 08:00:00 +0800</pubDate>
+      <itunes:duration>03:02</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
+    </item>
+    <item>
       <title>AI 每日简报 · 2026-10-20 周二</title>
       <description>早上好，今天是 2026 年 10 月 20 日，欢迎收听今天的 AI 日报。先说说今天最值得留意的看点：Mistral 给时间序列预测带来一个新的开源强基线，强化学习这边则有两项工作把训练信号做得更细、更省样本，另外 NVIDIA 把 GPU 编排平台完全开源了。这些对做能源和电力系统的朋友都挺有参考价值，我们一个个聊。
 先看 Mistral。他们发布了一个叫 Timestral 的时间序列基础模型族，参数量从五百万到两亿零九百万不等。重点是这个两亿零九百万的版本，在 GIFT-Eval、TIME 和 fev-bench 三个零样本榜单上都超过了 Google 的 TimesFM-3，而且还能直接在 CPU 上跑。这意味着什么？做负荷预测、新能源功率预测的团队，可以直接拿它当零样本基线，门槛一下就降下来了。
@@ -352,27 +373,6 @@ AI for PDE 方面，今天有一篇关于全息超导体反演的工作，通过
       <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-10-07.mp3</guid>
       <pubDate>Wed, 07 Oct 2026 08:00:00 +0800</pubDate>
       <itunes:duration>05:22</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
-    </item>
-    <item>
-      <title>AI 每日简报 · 2026-10-06 周二</title>
-      <description>早上好，今天是 2026 年 10 月 6 日，星期二。今天这期节目，我们聊两条主线：一是 AI 在能源材料和极端风险评估上的新进展，二是几个让模型跑得更轻、更稳的开源动作。如果你关注新能源调度和边缘部署，今天的内容值得听完。
-先看 AI 加能源这块。World Bank 和 Solargis 联合维护的 Global Solar Atlas 又值得拿出来说一句，它提供逐点的 GHI、DNI、PVOUT 等栅格数据和交互式地图，可以直接当作光伏预测和选址模型的基准数据源，做发电潜力评估、电站选址都用得上。更让人眼前一亮的是 Opus 5.5 智能体，它在材料筛选流程里自主完成候选生成和验证，找到了两种室温磁性半导体。这件事的意义不只在材料本身，而在于这套自主科学发现的范式，可以迁移到储能材料和催化剂的筛选上。
-接下来是强化学习前沿，今天有三条。第一条，Tail-Influence Sampling for CVaR Policy Evaluation，提出用 tail influence 指标，为可分别查询的条件分布分配固定的评估预算，从而最准确地估计策略的 CVaR 下尾风险。说白了，就是在极端风险约束下做策略评估，这直接对应电力系统的安全调度。第二条，Cantina 发布了 apex-flash-1，这是基于 GLM-5.3-Flash 做强化学习微调的开源模型，在六十个留出的漏洞任务里解决了四十个，用的是 MIT 许可。它说明 RL 微调在专业领域已经能达到可用水平，这套方法论可以迁移到能源专用模型的训练上。第三条来自 Google，叫 RRSI，通过正则化抑制自改进智能体对测试任务的记忆，在没见过的基准上最多提升 4.7 分，同时 token 用量减少大约三成。它解决的是自博弈里的过拟合问题，对电网调度策略跨场景迁移非常关键。
-再看 AI 加偏微分方程的两条进展。MinkowskiPE 提出了一种面向时空感知的 Minkowski 位置编码，把灵活学习和显式的时空耦合先验结合起来，为流体力学、热传导这类时空耦合方程的神经算子建模提供了新的归纳偏置思路。JEPA-TTT 则是在测试时对预训练世界模型的潜动态预测器做自监督在线适配，视觉编码器和奖励头保持冻结。它针对的是动力学漂移下的在线适配，正好对应风电和光伏出力的非平稳性。
-最后是开源项目。llama.cpp 发布 v0.6.0，新增了支持 Qwen4Exp 的多 token 预测投机解码，对边缘设备本地推理是实打实的加速，变电站和风电场的现场部署都能受益。香港小团队 Blockway 发布了 Agens Volundr 32B Preview，混合架构，七十二层里只有十八层保留 KV Cache，大幅降低长上下文显存占用，Apache 2.0 许可，这个思路对负荷曲线、气象序列这类长时序数据建模有直接借鉴。还有一个 TinyDecide，只有一千万参数、大约六兆，能在浏览器、Node.js、Rust 甚至 ESP32 上跑，超轻量决策模型很适合智能电表和分布式控制器这类嵌入式能源设备。
-今日观察。今天最值得能源交叉研究者关注的，是 CVaR 策略评估和自改进 RL 泛化这两条线。Tail-Influence Sampling 给极端风险下的调度策略评估提供了预算最优的统计工具，而 Google 的 RRSI 直指自博弈策略在未见场景上的过拟合，这两者恰好对应新能源高渗透率下电网调度最核心的两个痛点：尾部风险和分布外泛化。另外，MinkowskiPE 和 JEPA-TTT 分别从位置编码和测试时适配两个角度强化了时空动力学建模，对风光出力预测和热传导仿真都有方法论上的参考价值。好，今天就聊到这儿，我们明天见。</description>
-      <itunes:summary>早上好，今天是 2026 年 10 月 6 日，星期二。今天这期节目，我们聊两条主线：一是 AI 在能源材料和极端风险评估上的新进展，二是几个让模型跑得更轻、更稳的开源动作。如果你关注新能源调度和边缘部署，今天的内容值得听完。
-先看 AI 加能源这块。World Bank 和 Solargis 联合维护的 Global Solar Atlas 又值得拿出来说一句，它提供逐点的 GHI、DNI、PVOUT 等栅格数据和交互式地图，可以直接当作光伏预测和选址模型的基准数据源，做发电潜力评估、电站选址都用得上。更让人眼前一亮的是 Opus 5.5 智能体，它在材料筛选流程里自主完成候选生成和验证，找到了两种室温磁性半导体。这件事的意义不只在材料本身，而在于这套自主科学发现的范式，可以迁移到储能材料和催化剂的筛选上。
-接下来是强化学习前沿，今天有三条。第一条，Tail-Influence Sampling for CVaR Policy Evaluation，提出用 tail influence 指标，为可分别查询的条件分布分配固定的评估预算，从而最准确地估计策略的 CVaR 下尾风险。说白了，就是在极端风险约束下做策略评估，这直接对应电力系统的安全调度。第二条，Cantina 发布了 apex-flash-1，这是基于 GLM-5.3-Flash 做强化学习微调的开源模型，在六十个留出的漏洞任务里解决了四十个，用的是 MIT 许可。它说明 RL 微调在专业领域已经能达到可用水平，这套方法论可以迁移到能源专用模型的训练上。第三条来自 Google，叫 RRSI，通过正则化抑制自改进智能体对测试任务的记忆，在没见过的基准上最多提升 4.7 分，同时 token 用量减少大约三成。它解决的是自博弈里的过拟合问题，对电网调度策略跨场景迁移非常关键。
-再看 AI 加偏微分方程的两条进展。MinkowskiPE 提出了一种面向时空感知的 Minkowski 位置编码，把灵活学习和显式的时空耦合先验结合起来，为流体力学、热传导这类时空耦合方程的神经算子建模提供了新的归纳偏置思路。JEPA-TTT 则是在测试时对预训练世界模型的潜动态预测器做自监督在线适配，视觉编码器和奖励头保持冻结。它针对的是动力学漂移下的在线适配，正好对应风电和光伏出力的非平稳性。
-最后是开源项目。llama.cpp 发布 v0.6.0，新增了支持 Qwen4Exp 的多 token 预测投机解码，对边缘设备本地推理是实打实的加速，变电站和风电场的现场部署都能受益。香港小团队 Blockway 发布了 Agens Volundr 32B Preview，混合架构，七十二层里只有十八层保留 KV Cache，大幅降低长上下文显存占用，Apache 2.0 许可，这个思路对负荷曲线、气象序列这类长时序数据建模有直接借鉴。还有一个 TinyDecide，只有一千万参数、大约六兆，能在浏览器、Node.js、Rust 甚至 ESP32 上跑，超轻量决策模型很适合智能电表和分布式控制器这类嵌入式能源设备。
-今日观察。今天最值得能源交叉研究者关注的，是 CVaR 策略评估和自改进 RL 泛化这两条线。Tail-Influence Sampling 给极端风险下的调度策略评估提供了预算最优的统计工具，而 Google 的 RRSI 直指自博弈策略在未见场景上的过拟合，这两者恰好对应新能源高渗透率下电网调度最核心的两个痛点：尾部风险和分布外泛化。另外，MinkowskiPE 和 JEPA-TTT 分别从位置编码和测试时适配两个角度强化了时空动力学建模，对风光出力预测和热传导仿真都有方法论上的参考价值。好，今天就聊到这儿，我们明天见。</itunes:summary>
-      <enclosure url="https://jimmuji.github.io/ai-daily-digest/audio/2026-10-06.mp3" length="1600416" type="audio/mpeg"/>
-      <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-10-06.mp3</guid>
-      <pubDate>Tue, 06 Oct 2026 08:00:00 +0800</pubDate>
-      <itunes:duration>04:26</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
     </item>
