@@ -36,6 +36,58 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-22">AI 每日简报 · 2026-10-22 周四</span>
+    <button class="cbtn" data-copy="t-2026-10-22">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-22.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-22.mp3" download="2026-10-22.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-22">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-22">AI 每日简报 · 2026-10-22 周四
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Texas 数据中心扩张或抹去数十年空气质量改善成果：报告指出德州新建与规划中的数据中心用电激增，若以天然气供电将导致空气污染回升至 2000 年代水平。
+  来源：https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report
+· Nvidia DSX Pod 将 AI 数据中心部署周期从 6 个月压缩至 14 天：Nvidia 推出集装箱式预组装数据中心方案，并在柏林 GTC 上将其定位为欧洲 AI 基础设施补短板的关键。
+  来源：https://the-decoder.com/nvidias-dsx-pod-could-cut-ai-data-center-setup-from-six-months-to-as-little-as-14-days/
+· 欧洲数据中心扩张与气候目标冲突：德国将数据中心余热接入居民供暖的计划搁浅，欧洲政策制定者在 AI 雄心与气候目标之间权衡。
+  来源：https://www.wired.com/story/europe-data-centers-climate-change/
+
+🧠 强化学习前沿 (RL for Energy)
+· Self-Credit：面向长程智能体 RL 的组内重标定信用分配：该方法从稀疏结果奖励中通过自生成引用摘要构造稠密监督信号，缓解长程任务信用分配难题。
+  来源：https://huggingface.co/papers/2610.28388
+· HarnessAdapt-RL：训练整个智能体而非仅策略模型：在 RL 过程中同步自适应调整智能体的执行框架（harness），由冻结教师生成任务级技能与交互修复策略。
+  来源：https://huggingface.co/papers/2610.28069
+
+📐 AI4PDE 最新进展
+· Mistral 与 Nvidia 合作以 physics AI 加速工业设计与工程仿真：双方联手用 AI 加速工程仿真与工业产品设计流程。
+  来源：https://the-decoder.com/mistral-and-nvidia-want-to-speed-up-industrial-design-with-physics-ai/
+· PhysLDM：面向高保真变形体仿真的潜空间扩散模型：用紧凑时空潜表示对高分辨率三维体网格做长程预测，规避自回归误差累积。
+  来源：https://huggingface.co/papers/2610.07609
+· Planning under Noise with Neural Operators：提出 PUN 神经算子，在 screened-Poisson 随机最优控制框架下学习噪声感知价值场，实现未知几何中的规划。
+  来源：https://arxiv.org/abs/2610.28623v1
+
+🔧 凸优化与能源系统
+· ATEST：面向 LLM 推理的自适应资源感知测试时扩展：实测 GPU 负载升高时同一查询能耗可增至 4.1 倍，据此在采样收益与当前 GPU 成本间做联合权衡。
+  来源：https://huggingface.co/papers/2610.25519
+
+💻 开源项目与代码
+· Kronos：金融市场语言的基础模型：面向金融时序的基础模型开源项目，单日新增 575 star。
+  来源：https://github.com/shiyu-coder/Kronos
+· vLLM：高吞吐低显存 LLM 推理与服务引擎：持续高热的高性能推理引擎，单日新增 441 star。
+  来源：https://github.com/vllm-project/vllm
+
+💡 今日观察
+今日最清晰的信号是「AI 算力的能源外部性」正从边缘话题变成主流叙事：德州空气质量、欧洲余热回收、DSX Pod 模块化供电三条新闻从排放、供热、配电三个角度指向同一问题——数据中心负荷建模与需求侧灵活性将成为 AI4Energy 的高频场景。方法论侧，稀疏奖励下的信用分配（Self-Credit）与神经算子+随机最优控制（PUN）值得关注，前者契合多时段储能调度，后者契合含噪物理系统控制。此外，Mistral×Nvidia 的 physics AI 合作表明工业级 PDE 仿真加速已进入商业落地阶段。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-21">AI 每日简报 · 2026-10-21 周三</span>
     <button class="cbtn" data-copy="t-2026-10-21">📋 复制标题</button>
   </div>
@@ -744,60 +796,6 @@
 
 💡 今日观察
 今天最值得能源 AI 研究者关注的信号来自 Meta 开源的 Rebalancer——一个经过 9 年生产验证、日处理 4000 万 MIP 问题的大规模分配求解器，其架构与接口设计对电力系统机组组合、经济调度等凸优化问题具有直接借鉴价值。与此同时，Liquid AI 的 d1 系列决策模型和 EmbeddingGemma 2 为能源边缘设备（智能电表、分布式传感器）上的实时推理与多模态检索提供了轻量级开源方案，值得在智能电网终端场景中验证。HVAC 故障诊断论文则展示了预训练决策模型在建筑能源系统中的免标注应用潜力，是 AI4Energy 从预测走向决策的一个具体案例。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-07">AI 每日简报 · 2026-10-07 周三</span>
-    <button class="cbtn" data-copy="t-2026-10-07">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-07.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-07.mp3" download="2026-10-07.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-07">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-07">AI 每日简报 · 2026-10-07 周三
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Attenuated in-context identification in time-series foundation models：研究发现 Chronos-2、TimesFM-2.5、TabPFN-TS 等时序基础模型在工程受迫系统上的 in-context 因果识别能力严重衰减，并通过合成受迫系统微调实现修复。
-  来源：https://arxiv.org/abs/2610.08118v1
-· SEER: Self-Evolving Event Reasoning and Retrieval for Time Series Forecasting：提出闭环框架，用事件推理与检索增强来弥补纯数值历史在结构性突变预测上的不足。
-  来源：https://huggingface.co/papers/2610.04109
-· GeoCR / GeoSET：遥感去云与 SAR-to-EO 通用基础模型：GeoCR 统一多光谱/单多时相去云，GeoSET 构建首个 SAR-to-EO 翻译通用模型。
-  来源：https://huggingface.co/papers/2609.32510 / https://huggingface.co/papers/2609.37496
-
-🧠 强化学习前沿 (RL for Energy)
-· LoGRA: Scaling LLM Reinforcement Learning with Low-Rank Gradient Sketches：用低秩梯度草图压缩 RL 后训练内存，同时保留有效学习信号与高效策略同步。
-  来源：https://huggingface.co/papers/2610.06647
-· iADD: Improving Alignment and Diversity in Diffusion Policy Optimization：从理论上证明仅对后段时间步更新可改善 DDPO 类方法的对齐-多样性权衡。
-  来源：https://huggingface.co/papers/2610.01789
-· Partially Observable Zero-shot coordination by Predicting Intention of Partner (PIP)：用 Joint-view VAE 从双方局部观测中蒸馏伙伴意图表征，解决部分可观测下的零样本协作。
-  来源：https://arxiv.org/abs/2610.08142v1
-
-📐 AI4PDE 最新进展
-· JEPA-Anything: Beyond Domain-Specific World Models：把 JEPA 的单一隐目标拆成 4 个正交因子并各自配预测器，在 7 个领域 10 项动力学任务上全面超过基线，Interventional Pong 干预误差降低 34.8%。
-  来源：https://www.marktechpost.com/2026/10/05/beyond-domain-specific-world-models-jepa-anything-uses-1-recipe-for-7-fields/ / https://the-decoder.com/researchers-stretch-lecuns-jepa-ai-into-a-universal-world-model-that-works-from-physics-to-biology/
-· HLA-WM: Hybrid Linear Attention for Long-Horizon Video World Models：识别出 Gated DeltaNet 的长程遗忘问题，用混合线性注意力在长时程 rollout 中保持场景一致性。
-  来源：https://huggingface.co/papers/2610.05739
-
-🔧 凸优化与能源系统
-· The Numerical Linear Algebra of Large Language Models：系统综述数值线性代数在大模型中的角色，涵盖特征值问题、矩阵分解等经典工具与现代架构的交叉。
-  来源：https://huggingface.co/papers/2610.04631
-· Efficient Searches for Low-Energy Structures in Clusters with Thousands of Particles (Thomson Problem)：提出用对称种子配置初始化并在相邻规模间传播信息的低能耗结构搜索算法。
-  来源：https://arxiv.org/abs/2610.08122v1
-
-💻 开源项目与代码
-· deepseek-ai/DeepGEMM：GPU 上干净高效的 BLAS kernel 库，今日 +199 star。
-  来源：https://github.com/deepseek-ai/DeepGEMM
-· thedotmack/claude-mem：跨会话持久上下文，自动压缩并回注 agent 会话历史，兼容 Claude Code、Codex、Gemini 等。
-  来源：https://github.com/thedotmack/claude-mem
-
-💡 今日观察
-今天最值得能源交叉研究者注意的是时序基础模型的&quot;反事实能力缺陷&quot;——TimesFM-2.5、TabPFN-TS 等在被用于受迫工程系统时表现出 memoryless 特征，这对把 TSFM 直接套用到电网 what-if 分析是一个明确警示信号。同时 JEPA-Anything 把世界模型从单领域推向 7 个领域的通用配方，为能源物理场代理建模提供了可迁移的架构思路。RL 侧 LoGRA 的低秩梯度压缩则直接降低了能源调度大模型 RL 微调的显存门槛，值得跟踪。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
