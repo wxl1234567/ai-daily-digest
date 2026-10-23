@@ -36,6 +36,56 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-23">AI 每日简报 · 2026-10-23 周五</span>
+    <button class="cbtn" data-copy="t-2026-10-23">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-23.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-23.mp3" download="2026-10-23.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-23">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-23">AI 每日简报 · 2026-10-23 周五
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· IBM Granite 时间序列模型集成预测方法开源发布：IBM Research 在 Hugging Face 发布基于 Granite 时间序列模型的集成预测（ensemble forecasting）方法，提供可直接复用的概率预测流程。
+  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
+· OlmoEarth v1.3 发布全球尺度地表嵌入模型：Allen AI 更新 OlmoEarth 至 v1.3，提供覆盖全球的 SOTA 地球观测嵌入表示。
+  来源：https://huggingface.co/blog/allenai/olmoearth-v1-3
+· Google DeepMind 发布全球森林类型精细制图：将地表每 10 米网格分类为不同森林类型，构建全球森林类型地图。
+  来源：https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
+
+🧠 强化学习前沿 (RL for Energy)
+· Perplexity 与 NVIDIA 提出 JOLT 联合师生强化学习方法：单一模型同时充当教师与学生进行 on-policy 后训练，在 MATH 上以 6.5 倍更少训练 token 达到 GRPO 精度。
+  来源：https://www.marktechpost.com/2026/10/21/perplexity-jolt-joint-on-policy-learning-teaching/
+· 微软 ThinkingBox：将数据库评分转化为 RL 奖励训练 Agent：把数据库查询评分机制设计为强化学习奖励信号，用于后训练智能体。
+  来源：https://huggingface.co/blog/microsoft/thinkingbox-training
+· LongZero：从零数据强化 LLM 长上下文推理：提出无需人工标注或外部语料的 RL 方法，模型自行生成可验证的长上下文训练数据。
+  来源：https://arxiv.org/abs/2610.30132v1
+
+📐 AI4PDE 最新进展
+· PhysiCalWorld：面向世界模型的上下文物理标定：通过上下文推断质量分布、关节阻尼、表面摩擦等物理属性，抑制新场景下的预测漂移。
+  来源：https://arxiv.org/abs/2610.30125v1
+· Rethinking Video Autoencoders for Interactive World Models：指出世界模型复用的视频自编码器为离线生成设计，不匹配交互式仿真的延迟与压缩需求，并提出重构思路。
+  来源：https://arxiv.org/abs/2610.30129v1
+
+🔧 凸优化与能源系统
+· ℓ∞ 压缩映射的拟多项式时间算法：给出任意 d 维 ℓ∞ 范数非扩张映射 ε-近似不动点的算法，时间复杂度为 log(1/ε)^{O(log²d)}，并推出简单随机博弈可拟多项式时间求解。
+  来源：https://arxiv.org/abs/2610.30122v1
+
+💻 开源项目与代码
+· NVIDIA Nsight Python：从 Python 直接剖析 GPU Kernel：开源接口支持在 Python 代码中剖析 GPU kernel、分析硬件指标与缓存/频率控制。
+  来源：https://www.marktechpost.com/2026/10/21/nvidia-nsight-python-tutorial-how-to-profile-gpu-kernels/
+
+💡 今日观察
+今日信号集中在&quot;物理先验 + 世界模型&quot;与&quot;可验证奖励 RL&quot;两条主线：PhysiCalWorld 的物理属性上下文标定、视频自编码器重构讨论，都指向用数据驱动模型逼近 PDE 仿真；而 JOLT、ThinkingBox、LongZero 则共同显示 RL 后训练正从&quot;堆数据&quot;转向&quot;提样本效率与奖励设计&quot;。对能源交叉研究者而言，把能源系统仿真器（如潮流、热网）嵌入可验证奖励回路，是值得尝试的低成本切入点。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-22">AI 每日简报 · 2026-10-22 周四</span>
     <button class="cbtn" data-copy="t-2026-10-22">📋 复制标题</button>
   </div>
@@ -744,58 +794,6 @@
 
 💡 今日观察
 今天最值得能源 AI 研究者关注的信号有两个：一是 **Meta Rebalancer** 的开源——这是一个经过 9 年工业级验证的大规模 MIP 求解框架，其架构和工程实践对电力系统机组组合、经济调度等经典凸优化问题具有直接参考价值；二是 **NVIDIA PivotOPD** 和 **Q-Learning with Scalar Adjoint Matching** 代表了 RL 在连续控制和多轮决策中的前沿进展，这些方法论的突破将加速强化学习在储能调度、电网实时控制等能源场景中的落地。此外，美国核电站引入 AI 助手和 DOE 参与 18 亿美元 AI 科学计划，表明能源行业对 AI 的采纳正在从边缘试点走向核心系统。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-08">AI 每日简报 · 2026-10-08 周四</span>
-    <button class="cbtn" data-copy="t-2026-10-08">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-08.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-08.mp3" download="2026-10-08.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-08">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-08">AI 每日简报 · 2026-10-08 周四
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Where Can a Decision Model Diagnose HVAC Faults?：研究评估预训练决策模型（返回每个候选答案概率）在 HVAC 故障诊断中的表现，分析推理需求、物理表征与分布偏移下的鲁棒性。
-  来源：https://arxiv.org/abs/2610.09937v1
-· Learning Traffic Flow Dynamics with Stochastic Physics-Informed Neural Cellular Automata：提出随机物理信息神经细胞自动机，从数据中学习交通流局部转移规则，同时保持物理约束，复现宏观交通现象。
-  来源：https://arxiv.org/abs/2610.09946v1
-· TimeBraid: Unifying Time Series and Language for Understanding and Forecasting：通过交错全局残差注意力层对齐预训练语言模型与时间序列基础模型，继承指令跟随与零样本预测能力。
-  来源：https://huggingface.co/papers/2609.29792
-· Zuckerberg's Biohub leads a $1.8 billion push to build AI models that predict cell behavior：Biohub 协调 18 亿美元计划训练预测细胞行为的 AI 模型，Meta、Google DeepMind、Isomorphic Labs 及美国能源部（DOE）参与资助数据、实验设备与算力。
-  来源：https://the-decoder.com/zuckerbergs-biohub-leads-a-1-8-billion-push-to-build-ai-models-that-predict-cell-behavior/
-
-🧠 强化学习前沿 (RL for Energy)
-· Many Ways to Succeed: Diversity-Driven RL Fine-Tuning for VLA Generalization：分析发现 RL 微调会全局收缩行为但多样化成功轨迹，扩大潜在任务有效解空间覆盖，提出多样性驱动 RL 微调提升 VLA 泛化。
-  来源：https://arxiv.org/abs/2610.09943v1
-· Structuring MoE Expert Selection for Agentic Reinforcement Learning：研究 MoE 模型中专家选择与智能体后训练的关系，发现专家路由在智能体轨迹中呈现与任务对齐的专门化结构。
-  来源：https://huggingface.co/papers/2610.07332
-· JumpStart Your Policy Learning with Lessons from 160,000 Training Runs：基于 16 万次训练运行的大规模实证研究，系统调查离线强化学习与模仿学习中报告选择、超参调优和数据集属性对结论的影响。
-  来源：https://huggingface.co/papers/2609.13730
-
-📐 AI4PDE 最新进展
-· Fast holographic inversion of superconducting domes：提出新的全息超导体训练方法，将标量质量 M 的反演时间从数天缩短至约十分钟到一小时，通过解析梯度替代有限差分。
-  来源：https://arxiv.org/abs/2610.09938v1
-
-🔧 凸优化与能源系统
-· Meta AI Open-Sources Rebalancer：Meta 开源使用超 9 年的 C++/Python 分配求解器，每天处理约 4000 万个放置问题，支持局部搜索或 Gurobi、FICO Xpress、HiGHS 等 MIP 求解器，Apache 2.0 许可，pip 可安装。
-  来源：https://www.marktechpost.com/2026/10/06/meta-ai-open-sources-rebalancer-a-c-assignment-solver-that-runs-about-40-million-placement-problems-a-day/
-
-💻 开源项目与代码
-· Liquid AI Releases Open-Weight d1-3B and d1-omni-600M：Liquid AI 发布开源多模态决策模型，接收文本/图像/音频输入，单次前向传播返回校准的类型化答案，零输出 token，面向边缘实时决策。
-  来源：https://www.marktechpost.com/2026/10/07/liquid-ai-releases-open-weight-d1-3b-and-d1-omni-600m-multimodal-decision-models-with-zero-output-tokens/
-· Google DeepMind Releases EmbeddingGemma 2：740M 参数开源多模态嵌入模型，将文本、图像、视频、音频、代码映射至统一 768 维空间，仅需约 191MB RAM，可在设备端运行，Apache 2.0 许可。
-  来源：https://www.marktechpost.com/2026/10/06/google-deepmind-releases-embeddinggemma-2-a-740m-open-multimodal-embedding-model-built-on-gemma-4/
-
-💡 今日观察
-今天最值得能源 AI 研究者关注的信号来自 Meta 开源的 Rebalancer——一个经过 9 年生产验证、日处理 4000 万 MIP 问题的大规模分配求解器，其架构与接口设计对电力系统机组组合、经济调度等凸优化问题具有直接借鉴价值。与此同时，Liquid AI 的 d1 系列决策模型和 EmbeddingGemma 2 为能源边缘设备（智能电表、分布式传感器）上的实时推理与多模态检索提供了轻量级开源方案，值得在智能电网终端场景中验证。HVAC 故障诊断论文则展示了预训练决策模型在建筑能源系统中的免标注应用潜力，是 AI4Energy 从预测走向决策的一个具体案例。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
