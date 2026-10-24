@@ -36,6 +36,54 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-24">AI 每日简报 · 2026-10-24 周六</span>
+    <button class="cbtn" data-copy="t-2026-10-24">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-24.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-24.mp3" download="2026-10-24.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-24">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-24">AI 每日简报 · 2026-10-24 周六
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google 付费让用户少用电，为数据中心腾出电力容量：Google 推出需求响应计划，向主动削减用电的用户付费，从而把释放出的电力容量调配给其数据中心使用。
+  来源：https://www.computerworld.com/article/4239858/google-will-pay-people-to-use-less-electricity-so-its-data-centers-can-use-more.html
+· NVIDIA 发布 DSX Pod 插电式数据中心，瞄准欧洲 AI 基础设施缺口：在 GTC 柏林上，黄仁勋发布即插即用型数据中心方案，作为欧洲 AI 算力基建的核心抓手。
+  来源：https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/
+
+🧠 强化学习前沿 (RL for Energy)
+· JOLT：Perplexity 与 NVIDIA 提出师生联合强化学习方法：单一模型同时充当 teacher 与 student 做 on-policy 训练，在 MATH 上以 6.5 倍更少 token 达到 GRPO 同等精度。
+  来源：https://www.marktechpost.com/2026/10/21/perplexity-jolt-joint-on-policy-learning-teaching/
+· METTA：面向元强化学习的记忆增强测试时自适应：将快速自适应阶段分解，用记忆机制替代 transformer 的二次复杂度轨迹检索。
+  来源：https://arxiv.org/abs/2610.31656v1
+
+📐 AI4PDE 最新进展
+· 从随机特征到全可训练网络的相变现象：量化部分可训练网络的逼近界相变规律，并在训练误差中观察到类似行为。
+  来源：https://arxiv.org/abs/2610.31663v1
+
+🔧 凸优化与能源系统
+· OpenAI 发布 Decisions API，提供快速低成本决策能力：面向应用提供聚焦、低成本的决策接口，与决策模型竞争升温。
+  来源：https://openai.com/index/decisions-api
+· 蚂蚁数科发布决策模型 LingDT-Decision-1.0：国产决策模型，宣称准确率超过微软与 Jev 等决策模型。
+  来源：https://www.qbitai.com/2026/10/504879.html
+
+💻 开源项目与代码
+· IBM Granite 时序模型集成预测教程：Hugging Face 发布基于 IBM Granite 时间序列模型的集成预测方法。
+  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
+· NVIDIA Kumo Relational：无需训练的关系数据学习：在关系数据上无需训练即超越监督 ML，直接对结构化表格做推理。
+  来源：https://huggingface.co/blog/nvidia/kumo-relational
+
+💡 今日观察
+今天最明确的能源信号来自 Google 的&quot;付费让电&quot;计划：AI 数据中心的用电需求正倒逼需求响应与电力市场机制创新，这是 AI4Energy 中&quot;算力—电力&quot;耦合研究的重要现实样本。同时，JOLT 与 METTA 等 RL 训练效率工作，为能源调度这类高成本策略学习提供了降本路径；而 Granite 时序集成与 Kumo 关系模型则直接可作为负荷预测的可用基线。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-23">AI 每日简报 · 2026-10-23 周五</span>
     <button class="cbtn" data-copy="t-2026-10-23">📋 复制标题</button>
   </div>
@@ -732,68 +780,6 @@
 
 💡 今日观察
 今天最值得能源 AI 研究者关注的信号有两个：一是 Anthropic 的 Cyber Mission 计划明确将电网和水务系统纳入 AI 安全防护范围，标志着 AI 在能源关键基础设施中的角色从&quot;优化工具&quot;扩展到&quot;安全守护者&quot;；二是 OpenAI 的 Navier-Stokes 证明被曝代码翻译错误，提醒我们在将 AI 用于能源领域核心 PDE（流体、传热）求解时，必须建立严格的验证管线。此外，Hebero 的大规模并行 RL 基准和 NVIDIA PivotOPD 的错误恢复机制，为多能源系统协同调度中的 RL 应用提供了可直接借鉴的方法论。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-09">AI 每日简报 · 2026-10-09 周五</span>
-    <button class="cbtn" data-copy="t-2026-10-09">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-09.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-09.mp3" download="2026-10-09.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-09">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-09">AI 每日简报 · 2026-10-09 周五
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 美国核电站舰队正在全面引入 AI 助手：IEEE Spectrum 报道称，尽管核工业历来高度保守，但美国核电站正在将 AI 助手引入控制室，以应对反应堆运行的极端复杂性。
-  来源：https://spectrum.ieee.org/ai-assistants-nuclear-power-plant
-· 吉利智充技术正式发布，重塑全球补能新标杆：吉利发布智充技术，计划 2027 年底实现&quot;县县通&quot;充电网络覆盖，AI 在充电调度与补能优化中扮演核心角色。
-  来源：https://www.qbitai.com/2026/10/501956.html
-· Zuckerberg 的 Biohub 牵头 18 亿美元计划训练预测细胞行为的 AI 模型：Meta、Google DeepMind、Isomorphic Labs 和美国能源部（DOE）共同资助数据、实验室设备和算力，首个数据集预计一年内就绪。
-  来源：https://the-decoder.com/zuckerbergs-biohub-leads-a-1-8-billion-push-to-build-ai-models-that-predict-cell-behavior/
-
-🧠 强化学习前沿 (RL for Energy)
-· JetBrains 发布 Mellum2.1：12B MoE 开源编码 Agent 模型：Apache 2.0 许可的 12B 混合专家思考模型，激活参数 2.5B，通过在真实代码仓库中进行强化学习（RL），SWE-bench Verified 分数从 2.0 跃升至 47.0。
-  来源：https://www.marktechpost.com/2026/10/08/jetbrains-releases-mellum2-1-a-12b-moe-open-model-for-coding-agents/
-· NVIDIA 提出 PivotOPD：教多轮 AI Agent 从关键错误中恢复：NVIDIA 研究者提出 on-policy 蒸馏方法 PivotOPD，训练多轮 LLM Agent 避免早期关键错误并从中恢复，在 3 个 Agent 基准上对 13 个基线取得最佳平均成绩。
-  来源：https://www.marktechpost.com/2026/10/08/nvidia-pivotopd-teaches-multi-turn-ai-agents-to-recover-from-pivotal-mistakes/
-· Q-Learning with Scalar Adjoint Matching：该论文提出标量伴随匹配方法，解决流策略（flow policy）在多步生成动作时难以用 off-policy RL 微调的问题。
-  来源：https://huggingface.co/papers/2610.10437
-· Can Jev be Your Q or Policy in Reinforcement Learning?：研究新型决策模型 Jev 在 RL 中作为 Q 函数或策略的可行性，Jev 单次前向传播即返回校准的类型化答案，无需逐 token 生成。
-  来源：https://arxiv.org/abs/2610.11692v1
-· Self-Retrospection Distillation：将事后经验转化为先见之明：该研究提出方法让 Agent 从 hindsight 经验中学习&quot;事前应该预见什么&quot;，解决 group-relative RL 中奖励信号消失的问题。
-  来源：https://huggingface.co/papers/2610.08077
-
-📐 AI4PDE 最新进展
-· TIDES：选择性状态空间模型中的隐式时间感知：该论文提出 TIDES，解决 Mamba 等选择性 SSM 在处理不规则时间序列时无法感知物理时间间隔的问题，使其原生支持不规则时间戳。
-  来源：https://huggingface.co/papers/2605.09742
-· RoboJEPA：扩展机器人潜在世界模型：基于 JEPA 架构的世界模型，在 12 种机器人形态的大规模数据集上训练，展示了世界模型能力随模型规模、数据和算力的扩展规律。
-  来源：https://huggingface.co/papers/2610.10515
-
-🔧 凸优化与能源系统
-· Meta AI 开源 Rebalancer：每天运行约 4000 万个分配问题的 C++ 求解器：Meta 开源了已使用超过 9 年的 C++/Python 库，支持局部搜索和 MIP 求解器（Gurobi、FICO Xpress、HiGHS），每天处理约 4000 万个分片、服务器和流量分配问题，Apache 2.0 许可，可 pip 安装。
-  来源：https://www.marktechpost.com/2026/10/06/meta-ai-open-sources-rebalancer-a-c-assignment-solver-that-runs-about-40-million-placement-problems-a-day/
-· Matching the Lower Bounds: Stochastic Contracting Cubic Newton and Its Optimal Acceleration：提出随机收缩三次牛顿法，在梯度和 Hessian 仅有随机估计的条件下达到最优收敛率，并给出最优加速方案。
-  来源：https://arxiv.org/abs/2610.11693v1
-· Spatiotemporal Response Decay for Near-Optimal Distributed LQR via System Level Synthesis：利用 System Level Synthesis 为网络化 LQR 问题界定信息传播距离和保留时间，证明在局部耦合系统下最优响应满足指数衰减。
-  来源：https://arxiv.org/abs/2610.11699v1
-
-💻 开源项目与代码
-· Meta AI 开源 Rebalancer：C++/Python 大规模分配求解器，日处理 4000 万问题，支持 Gurobi/HiGHS 等 MIP 求解器，Apache 2.0。
-  来源：https://www.marktechpost.com/2026/10/06/meta-ai-open-sources-rebalancer-a-c-assignment-solver-that-runs-about-40-million-placement-problems-a-day/
-· Liquid AI 发布开源 d1-3B 和 d1-omni-600M：零输出 token 的多模态决策模型：d1-3B 可读文本和图像，d1-omni-600M 可读文本+图像或文本+音频，两者均不生成文本，单次前向传播返回校准的类型化答案，零输出 token。
-  来源：https://www.marktechpost.com/2026/10/07/liquid-ai-releases-open-weight-d1-3b-and-d1-omni-600m-multimodal-decision-models-with-zero-output-tokens/
-· Google DeepMind 发布 EmbeddingGemma 2：740M 开源多模态嵌入模型：基于 Gemma 4 构建，将 5 种输入类型映射到统一的 768 维空间，Apache 2.0 许可。
-  来源：https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/
-
-💡 今日观察
-今天最值得能源 AI 研究者关注的信号有两个：一是 **Meta Rebalancer** 的开源——这是一个经过 9 年工业级验证的大规模 MIP 求解框架，其架构和工程实践对电力系统机组组合、经济调度等经典凸优化问题具有直接参考价值；二是 **NVIDIA PivotOPD** 和 **Q-Learning with Scalar Adjoint Matching** 代表了 RL 在连续控制和多轮决策中的前沿进展，这些方法论的突破将加速强化学习在储能调度、电网实时控制等能源场景中的落地。此外，美国核电站引入 AI 助手和 DOE 参与 18 亿美元 AI 科学计划，表明能源行业对 AI 的采纳正在从边缘试点走向核心系统。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
