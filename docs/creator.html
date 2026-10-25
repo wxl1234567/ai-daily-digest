@@ -36,6 +36,52 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-25">AI 每日简报 · 2026-10-25 周日</span>
+    <button class="cbtn" data-copy="t-2026-10-25">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-25.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-25.mp3" download="2026-10-25.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-25">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-25">AI 每日简报 · 2026-10-25 周日
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· IBM Granite 时序模型集成预测方法发布：Hugging Face 官方博客介绍如何用 IBM Granite 系列时序基础模型做集成预测（ensemble forecasting），给出可复现的工程流程。
+  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
+· 尼日利亚太阳能板成为婚礼新礼物：彭博报道尼日利亚家庭将光伏组件列入婚礼登记清单，反映分布式光伏在缺电市场的渗透加速。
+  来源：https://www.bloomberg.com/news/features/2026-10-23/nigeria-embraces-solar-energy-as-panels-become-popular-on-wedding-registries
+
+🧠 强化学习前沿 (RL for Energy)
+· ThinkingBox：把数据库评分转化为 RL 奖励：微软在 Hugging Face 博客介绍用可验证的数据库评测信号构造 RL 奖励，对 Agent 做后训练。
+  来源：https://huggingface.co/blog/microsoft/thinkingbox-training
+
+📐 AI4PDE 最新进展
+· HyperDrone：百万帧级仿真到现实迁移：提出高速四旋翼仿真器，批量渲染比现有 SOTA 快 20 倍以上，全部在 GPU 上运行。
+  来源：https://huggingface.co/papers/2610.28950
+
+🔧 凸优化与能源系统
+· Liquid Clustering 湖仓布局策略基准测试：InfoQ 中文发布湖仓布局策略基准，比较不同聚簇方案在查询性能与成本上的权衡。
+  来源：https://www.infoq.cn/article/lkefSu7SjjIHL1Fmk0Pv?utm_source=rss&amp;utm_medium=article
+
+💻 开源项目与代码
+· NVIDIA OpenShell：面向自主 AI Agent 的安全私有运行时，单日新增 896 star。
+  来源：https://github.com/NVIDIA/OpenShell
+· Anthropic 开源 sandbox-runtime (srt)：Claude Code 背后的 OS 级沙箱，基于 macOS Seatbelt 与 Linux bubblewrap，无需容器即可限制文件与网络访问。
+  来源：https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox/
+· Google Cloud Agent Compute Engine：为每个 AI Agent 分配独立硬件隔离 microVM，内部不含凭证。
+  来源：https://www.marktechpost.com/2026/10/22/google-cloud-agent-compute-engine-microvm-ai-agents/
+
+💡 今日观察
+今天没有直接的 AI4Energy 顶刊论文或 RL-for-Energy 新作，但两条基础设施信号值得注意：一是 IBM Granite 时序基础模型的集成预测工程化，二是 Agent 安全沙箱（OpenShell、srt、Agent Compute Engine）密集发布。对能源研究者而言，前者是负荷/新能源预测的直接工具，后者意味着把 RL 调度 Agent 从仿真推进到真实系统时，隔离与可审计性正成为可复用的标准组件。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-24">AI 每日简报 · 2026-10-24 周六</span>
     <button class="cbtn" data-copy="t-2026-10-24">📋 复制标题</button>
   </div>
@@ -720,66 +766,6 @@
 
 💡 今日观察
 今日最值得关注的信号是 **AI 决策模型（Decision Model）赛道的集体爆发**——Microsoft Decision-1、OpenAI Decisions API、Nace Drex 1.5、LiquidAI open-d1 在同一天密集发布，标志着 AI 从&quot;生成文本&quot;向&quot;输出结构化决策&quot;的范式转变。对能源研究者而言，这类返回校准概率的决策评分模型天然适配机组组合、经济调度等离散优化场景，有望替代传统求解器中的启发式规则。此外，Anthropic 的 Cyber Mission 计划直接覆盖电网和水务基础设施安全，提示 AI4Energy 的安全维度正在从模型安全扩展到物理基础设施安全。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-10">AI 每日简报 · 2026-10-10 周六</span>
-    <button class="cbtn" data-copy="t-2026-10-10">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-10.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-10.mp3" download="2026-10-10.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-10">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-10">AI 每日简报 · 2026-10-10 周六
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 美国核电站群全面引入 AI 辅助系统：IEEE Spectrum 报道，美国核电行业正将 AI 助手引入反应堆控制室，用于管理操作复杂性。
-  来源：https://spectrum.ieee.org/ai-assistants-nuclear-power-plant
-· Anthropic 推出 &quot;Cyber Mission&quot; 计划保护电网与水务系统：Anthropic 联合 CrowdStrike、Palo Alto Networks 等合作伙伴，为关键基础设施（电网、水务）提供网络安全防护，并推出免费开源漏洞扫描器 OSS Scanner，预期准确率超 90%。
-  来源：https://the-decoder.com/anthropic-launches-a-free-ai-scanner-for-open-source-projects/
-· Anthropic Claude Science 完成首张全天空紫外图谱：Johns Hopkins 天体物理学家 Brice Ménard 使用 Claude Science 的 AI agent 自动下载多空间任务数据、校准并填补缺失区域，首次绘制完整紫外天空图，预测偏差约 10%。
-  来源：https://the-decoder.com/anthropics-claude-science-creates-the-first-complete-ultraviolet-map-of-the-sky/
-
-🧠 强化学习前沿 (RL for Energy)
-· GPU 并行异构多任务强化学习基准 Hebero 发布：基于 Isaac Lab 的 GPU 并行基准，支持单一策略在 40 个异构操作任务上联合训练与评估，验证了增加每任务并行副本数可提升固定预算下的成功率。
-  来源：https://huggingface.co/papers/2606.03335
-· Dex-One2Many：从单次人类演示学习灵巧操作：结合 RL 的泛化能力与单视频示教的先验引导，解决高维探索中的协同问题，实现初始位姿、目标位姿和抓取方式的广泛泛化。
-  来源：https://arxiv.org/abs/2610.12470v1
-· 大规模 RL 机器人控制中的探索瓶颈与平衡数据策略：研究表明多样化模拟器重置结合大规模并行仿真可缓解 per-task 工程先验依赖，但探索瓶颈仍是关键制约。
-  来源：https://arxiv.org/abs/2610.12465v1
-· NVIDIA PivotOPD：教多轮 Agent 从关键错误中恢复：提出 on-policy 蒸馏方法训练多轮 LLM agent 避免早期关键错误并从中恢复，在 3 个 agent 基准上超越 13 个基线。
-  来源：https://www.marktechpost.com/2026/10/08/nvidia-pivotopd-teaches-multi-turn-ai-agents-to-recover-from-pivotal-mistakes/
-
-📐 AI4PDE 最新进展
-· OpenAI 的 Navier-Stokes 证明被曝数学到代码翻译错误：New Scientist 报道，OpenAI 声称的 Navier-Stokes 方程相关数学证明在转化为代码时出现翻译错误，引发数学界对 AI 生成证明可靠性的广泛质疑。
-  来源：https://www.newscientist.com/article/2592824-openai-mistranslated-mathematics-into-code-for-its-navier-stokes-proof/
-· 用物理注意力偏置预测缆绳动力学：针对可变形线性物体（DLO），提出引入弧长与欧氏距离的双距离物理注意力偏置，解决接触区域误差累积问题，提升长时推演稳定性。
-  来源：https://huggingface.co/papers/2610.11975
-· 扩散与自回归统一框架 &quot;The Lattice of Transition Laws&quot;：将扩散、自回归及混合模型统一为转移定律格，可在固定步数下预测解码调度性能，为生成模型在物理场仿真中的应用提供理论工具。
-  来源：https://huggingface.co/papers/2610.11216
-
-🔧 凸优化与能源系统
-· Architect 推出 Liquid Inference：LLM 推理实时拍卖机制：基于实时拍卖的 LLM 路由器，供应商对每个请求竞价，买方支付满足约束的最低报价，实现了推理资源的市场化分配。
-  来源：https://www.marktechpost.com/2026/10/08/architect-launches-liquid-inference-a-real-time-auction-for-llm-inference/
-· Agentic 黑箱优化基准：LLM Agent 用于 BBO 的系统评估：首个系统性评估 LLM agent 在黑箱优化中表现的基准，整合任务语义、计算工具与反馈驱动决策，解决现有研究配置不统一的问题。
-  来源：https://huggingface.co/papers/2610.12183
-
-💻 开源项目与代码
-· Google AI Edge 开源 ML Drift：GPU 加速端侧 AI 推理引擎：Apache 2.0 许可的跨平台端侧 GPU 计算引擎，抽象 OpenGL ES、OpenCL、Metal、WebGPU 底层差异，支持实时交互式 ML 推理。
-  来源：https://github.com/google-ai-edge/ml-drift / https://www.reddit.com/r/LocalLLaMA/comments/1x1owzm/github_googleaiedgemldrift_gpuaccelerated_aiml/
-· LiteLLM：统一 100+ LLM API 的轻量网关：Rust 核心 + Python SDK，支持 OpenAI/Anthropic/Bedrock/vLLM 等 100+ API 统一调用，内置成本追踪、护栏、负载均衡与日志。
-  来源：https://github.com/BerriAI/litellm
-· 阿里开源 open-code-review：混合架构代码审查工具：确定性管线 + LLM Agent 混合架构，内置多语言安全规则集（NPE、线程安全、XSS、SQL 注入），支持行级精确评论，经阿里大规模实战验证。
-  来源：https://github.com/alibaba/open-code-review
-
-💡 今日观察
-今天最值得能源 AI 研究者关注的信号有两个：一是 Anthropic 的 Cyber Mission 计划明确将电网和水务系统纳入 AI 安全防护范围，标志着 AI 在能源关键基础设施中的角色从&quot;优化工具&quot;扩展到&quot;安全守护者&quot;；二是 OpenAI 的 Navier-Stokes 证明被曝代码翻译错误，提醒我们在将 AI 用于能源领域核心 PDE（流体、传热）求解时，必须建立严格的验证管线。此外，Hebero 的大规模并行 RL 基准和 NVIDIA PivotOPD 的错误恢复机制，为多能源系统协同调度中的 RL 应用提供了可直接借鉴的方法论。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
