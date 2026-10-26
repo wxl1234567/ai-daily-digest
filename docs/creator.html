@@ -36,6 +36,42 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-26">AI 每日简报 · 2026-10-26 周一</span>
+    <button class="cbtn" data-copy="t-2026-10-26">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-26.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-26.mp3" download="2026-10-26.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-26">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-26">AI 每日简报 · 2026-10-26 周一
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· IBM Granite 时间序列模型集成预测：Hugging Face 发布 IBM Research 的 Granite 时间序列模型集成预测教程，展示如何用多个预训练时序基础模型做集成预测。
+  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
+
+🧠 强化学习前沿 (RL for Energy)
+· ThinkingBox：把数据库评分转化为 RL 奖励：微软在 Hugging Face 发布博客，介绍用数据库任务评分构造 RL 奖励信号，对 Agent 进行后训练。
+  来源：https://huggingface.co/blog/microsoft/thinkingbox-training
+
+📐 AI4PDE 最新进展
+· HyperDrone：百万帧每秒的仿真到现实迁移：提出极快的四旋翼仿真器，批量渲染比现有 SOTA 快 20 倍以上，全部在 GPU 上运行，支持 RGB/深度渲染。
+  来源：https://huggingface.co/papers/2610.28950
+
+💻 开源项目与代码
+· TradingAgents：多智能体 LLM 金融交易框架：开源的多智能体 LLM 交易框架，今日 GitHub 新增 381 star。
+  来源：https://github.com/TauricResearch/TradingAgents
+
+💡 今日观察
+今日资讯中真正命中 AI4Energy / RL / AI4PDE / 凸优化四条主线的内容极少，绝大多数为通用 AI 商业与产品新闻，已按标准剔除。唯一与能源研究者直接相关的是 IBM Granite 时序基础模型集成预测，值得跟进其在负荷与新能源功率预测上的迁移表现；此外微软的 RL 奖励构造与 HyperDrone 高速仿真管线，分别是 RL for Energy 与 AI4PDE 方向上可借鉴的方法论信号。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-25">AI 每日简报 · 2026-10-25 周日</span>
     <button class="cbtn" data-copy="t-2026-10-25">📋 复制标题</button>
   </div>
@@ -712,60 +748,6 @@
 
 💡 今日观察
 今天最显著的信号是**数据中心能源约束正在成为 AI 产业的核心瓶颈**：德州要求数据中心排队并网、Firmus 撤回 IPO，均指向算力扩张与电网容量之间的结构性矛盾。与此同时，GPU 并行异构多任务 RL 框架（Hebero）和智能体黑箱优化基准（Agentic BBO）为能源系统调度与参数优化提供了可直接迁移的方法论工具。建议关注 AI 数据中心并网政策对能源市场定价与容量规划的连锁影响。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-11">AI 每日简报 · 2026-10-11 周日</span>
-    <button class="cbtn" data-copy="t-2026-10-11">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-11.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-11.mp3" download="2026-10-11.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-11">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-11">AI 每日简报 · 2026-10-11 周日
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 美国核电站群全面引入 AI 辅助运营：IEEE Spectrum 报道，尽管核能行业历来极度保守，但美国核电站正大规模部署 AI 助手以应对反应堆操作的复杂性。
-  来源：https://spectrum.ieee.org/ai-assistants-nuclear-power-plant
-· Anthropic 推出 &quot;Cyber Mission&quot; 免费扫描关键基础设施：该计划联合 CrowdStrike、Palo Alto Networks 等合作伙伴保护电网和水务系统免受网络攻击，并提供免费 AI 扫描器自动检测开源项目漏洞，准确率超 90%。
-  来源：https://the-decoder.com/anthropic-launches-a-free-ai-scanner-for-open-source-projects/
-
-🧠 强化学习前沿 (RL for Energy)
-· 小米披露 MiMo-V2.6 规模化强化学习路线：单次 RL 后训练烧掉 260 万美元、每步消耗 37 亿 Token，展示了大规模 RL 训练的工程极限与成本结构。
-  来源：https://www.infoq.cn/article/gNdWoDM8ygkAjXfsLaBK
-· GPU 并行异构多任务强化学习框架 Hebero 发布：基于 Isaac Lab 的 GPU 并行基准，支持 40 个异构操作任务的联合训练与评估，扩展实验表明增加并行副本可提升固定预算下的成功率。
-  来源：https://huggingface.co/papers/2606.03335
-· RLVR 训练动力学几何结构被揭示：研究者通过可训练向量操控发现 RLVR 在激活空间中存在低维有效流形，并揭示两个几何性质：有效流形容量与增益可复现性。
-  来源：https://huggingface.co/papers/2609.34344
-
-📐 AI4PDE 最新进展
-· 物理注意力偏置预测线缆动力学：针对可变形线性物体（DLO）的学习仿真器，提出物理注意力偏置方法，利用线缆的弧长距离与欧氏距离两种成对距离来改善接触点预测与长程稳定性。
-  来源：https://huggingface.co/papers/2610.11975
-· 扩散与自回归模型的统一格点理论：该论文将扩散、自回归及混合模型统一描述为&quot;转移律格点&quot;，提出在固定解码步数下预测解码调度性能的理论框架。
-  来源：https://huggingface.co/papers/2610.11216
-
-🔧 凸优化与能源系统
-· Microsoft Decision-1 决策评分模型发布：基于 Qwen3.5-9B 后训练，返回每个固定选项的校准概率而非生成文本，在 36 个基准上达到 83.5% 准确率、85ms 延迟，适用于路由、分类、验证和 Agent 控制。
-  来源：https://www.marktechpost.com/2026/10/09/microsoft-ai-releases-microsoft-decision-1-a-qwen3-5-9b-decision-scoring-model/
-· OpenAI Decisions API 公测：10 倍速类型化答案：在 GPT-6 Luna 上运行，返回类型化概率、选择和评分，比 Responses API 快约 10 倍，每百万输入 Token 仅 $0.10 且无输出费用。
-  来源：https://www.marktechpost.com/2026/10/09/openai-decisions-api-hits-public-beta-with-10x-faster-typed-answers/
-
-💻 开源项目与代码
-· Nace AI 开源 Drex 1.5 决策模型：9B 参数决策模型，单次前向传播返回每个选项的概率，在 Decision Index 0.3.1 上得分 58.08，支持 128K Token 上下文。
-  来源：https://www.marktechpost.com/2026/10/09/nace-ai-open-sources-drex-1-5-a-9b-decision-model-that-scores-options-not-text/
-· LiquidAI 开源多模态边缘决策模型 open-d1：面向边缘设备的多模态决策模型，支持在资源受限环境下进行高效推理。
-  来源：https://huggingface.co/blog/LiquidAI/open-d1
-· embeddinggemma 2 开源多模态嵌入模型：Google DeepMind 发布，将文本、图像、音频和视频映射到统一空间，支持跨模态检索。
-  来源：https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/
-
-💡 今日观察
-今日最值得关注的信号是 **AI 决策模型（Decision Model）赛道的集体爆发**——Microsoft Decision-1、OpenAI Decisions API、Nace Drex 1.5、LiquidAI open-d1 在同一天密集发布，标志着 AI 从&quot;生成文本&quot;向&quot;输出结构化决策&quot;的范式转变。对能源研究者而言，这类返回校准概率的决策评分模型天然适配机组组合、经济调度等离散优化场景，有望替代传统求解器中的启发式规则。此外，Anthropic 的 Cyber Mission 计划直接覆盖电网和水务基础设施安全，提示 AI4Energy 的安全维度正在从模型安全扩展到物理基础设施安全。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
