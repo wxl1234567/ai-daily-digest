@@ -36,6 +36,64 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-27">AI 每日简报 · 2026-10-27 周二</span>
+    <button class="cbtn" data-copy="t-2026-10-27">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-27.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-27.mp3" download="2026-10-27.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-27">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-27">AI 每日简报 · 2026-10-27 周二
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Anthropic S-1 文件揭示 AI 数据中心的天然气依赖：Anthropic 在 IPO 招股书中承认，数据中心正日益依赖天然气供电，并指出&quot;争夺电力供应和具备充足电力容量的数据中心选址的竞争十分激烈&quot;。
+  来源：https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk
+· OpenAI 公布数学、计算机科学与物理领域三项&quot;重大发现&quot;并开放学术合作机制：OpenAI 分享了在 Kakeya 猜想、指数时间假设（ETH）和量子色动力学（QCD）上的模型结果，并引入外部专家&quot;shepherd&quot;机制引导结果验证。
+  来源：https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics / https://openai.com/index/building-scientific-understanding-with-academic-communities
+· IBM Granite 时间序列模型集成预测方法发布：Hugging Face 发布基于 IBM Granite 时间序列基础模型的集成预测（ensemble forecasting）实践指南。
+  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
+· DISC：面向时间序列数据集的领域集成相似度代价：提出一种在模型适配前评估源域-目标域可迁移性的相似度度量，避免对每对候选数据集做穷举评估。
+  来源：https://huggingface.co/papers/2610.31288
+
+🧠 强化学习前沿 (RL for Energy)
+· DiscoDemo：用 RL 作为数据生成器发现高效多样的机器人示范：将 RL 不视为可部署控制器，而是用于生成覆盖多种成功模式的示范数据，以提升下游视觉-运动模仿学习的覆盖度。
+  来源：https://huggingface.co/papers/2610.32093
+· FSPO：函数空间时序自蒸馏的策略优化：提出单策略框架 Function-Space Policy Optimization，用反馈引导的自教师提供更密集的 token 级监督，缓解教师随学生演化导致的目标不稳定问题。
+  来源：https://huggingface.co/papers/2610.19687
+· MultiAgent-OPD：分层多智能体系统的端到端在线策略蒸馏训练：结合 on-policy distillation 与 RL 联合训练 Leader 与子智能体，解决最终答案对子智能体反馈间接的问题。
+  来源：https://huggingface.co/papers/2610.23234
+
+📐 AI4PDE 最新进展
+· 正交群下微分神经正切核（DNTK）的对称性分析：针对过参数化 PINN 的训练动力学，推导无限宽 DNTK 在正交群下的对称性，覆盖两层与深层网络及有无偏置的全部激活函数。
+  来源：https://arxiv.org/abs/2610.34023v1
+· LLM2Cert：用 LLM 结合 SMT/Lean 验证合成 Lyapunov 函数与 barrier certificate：针对非线性高维系统，用 LLM 生成候选证书并由 SMT/Lean 严格验证，突破数值求解器的保守性与可扩展性瓶颈。
+  来源：https://huggingface.co/papers/2610.30524
+· PaperFormalizer：作者在环的研究论文 Lean 自动形式化流水线：从 LaTeX 源出发构建陈述依赖图，逐条审计忠实性与正确性，再形式化并证明，帮助作者发现证明与假设中的缺口。
+  来源：https://huggingface.co/papers/2610.31810
+
+🔧 凸优化与能源系统
+· 纤维丛上的路径跟踪框架求解变分不等式：将一般连续映射、多面体域上的 VI 转化为单纯形上的光滑 VI，并在&quot;不动点丛&quot;几何结构上构造具全局渐近收敛保证的通用算法。
+  来源：https://huggingface.co/papers/2606.00778
+· 乘积单纯形域上的不动点丛方法求解博弈均衡：将不动点丛框架从单纯形域扩展到乘积单纯形域，直接用于一般和博弈的 Nash 均衡计算，构造复合纤维丛结构。
+  来源：https://huggingface.co/papers/2609.16158
+
+💻 开源项目与代码
+· TradingAgents：多智能体 LLM 金融交易框架：（今日 +1,395 star）：开源多智能体 LLM 交易框架，展示多角色协作决策的工程范式。
+  来源：https://github.com/TauricResearch/TradingAgents
+· NVIDIA Flora：开源机器人数据引擎，视频标注成本降至 1/125：基于三个微调 Qwen3.5 模型，将一小时机器人视频标注成本从 88 美元降至 72 美分，质量略优，是 GR00T 模型训练的数据引擎。
+  来源：https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra / https://huggingface.co/papers/2610.31779
+
+💡 今日观察
+今天最值得能源交叉研究者关注的信号有两个：一是 Anthropic S-1 首次将&quot;数据中心天然气依赖与电力供应竞争&quot;写入公开风险披露，意味着 AI 算力负荷正从工程问题升级为电力系统规划与碳核算的正式变量；二是凸优化方向连续出现两篇关于变分不等式与 Nash 均衡的全局收敛算法（纤维丛路径跟踪），这类带收敛保证的通用框架恰好契合电力市场均衡与多主体博弈建模的长期痛点，值得追踪其在 OPF 与市场出清中的落地。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-26">AI 每日简报 · 2026-10-26 周一</span>
     <button class="cbtn" data-copy="t-2026-10-26">📋 复制标题</button>
   </div>
@@ -694,60 +752,6 @@
 
 💡 今日观察
 今天最值得能源交叉研究者注意的是 QwenGyre 的弹性 RL 调度机制——它在 rollout 与 training 之间动态重分配 GPU 的设计，本质上与电力系统中&quot;预测-调度&quot;两阶段资源的动态再分配同构，值得作为跨域方法迁移的候选。同时，多智能体团队&quot;5.1 倍成本换微弱提升&quot;的结论，对当前火热的分布式能源多智能体协同研究是一记必要的冷水：在把 MARL 推向电网之前，先量化清楚算力-性能的边际曲线。此外，Intel D-Series 的 480GB 显存与 FP64 支持，叠加 AirLLM/BitNet 的极致压缩路线，正在从两端夹击能源仿真与边缘推理的硬件成本结构。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-12">AI 每日简报 · 2026-10-12 周一</span>
-    <button class="cbtn" data-copy="t-2026-10-12">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-12.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-12.mp3" download="2026-10-12.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-12">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-12">AI 每日简报 · 2026-10-12 周一
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Google 全球数据中心布局公开：Google 上线数据中心全球分布页面，展示其算力基础设施的地理布局与扩张路径。
-  来源：https://datacenters.google/locations/
-· 德州要求数据中心排队等待接入：a16z 分析德州为何对数据中心并网设置等待机制，反映电网容量约束与审批瓶颈。
-  来源：https://a16z.com/why-texas-is-making-data-centers-wait/
-· Firmus 因 AI 估值担忧撤回 IPO：Nvidia 支持的数据中心公司 Firmus 在 AI 估值担忧加深背景下取消 IPO。
-  来源：https://www.bbc.com/news/articles/ck9dzpw4ll8po
-
-🧠 强化学习前沿 (RL for Energy)
-· GPU 并行异构多任务强化学习框架 Hebero：基于 Isaac Lab 的 GPU 并行基准，支持单一策略在 40 个异构机器人操作任务上联合训练与评估。
-  来源：https://huggingface.co/papers/2606.03335
-· RLVR 几何结构通过可训练向量揭示：研究用向量引导识别 RL 可验证奖励训练中激活空间的低维有效流形，揭示两个几何性质。
-  来源：https://huggingface.co/papers/2609.34344
-· 小米 MiMo-V2.6 规模化强化学习路线披露：单次 RL 后训练消耗 260 万美元、每步 37 亿 Token，展示大规模 RL 训练的成本结构。
-  来源：https://www.infoq.cn/article/gNdWoDM8ygkAjXfsLaBK
-
-📐 AI4PDE 最新进展
-· 物理注意力偏置预测线缆动力学：针对可变形线性物体（如线缆）的学习模拟器，引入物理注意力偏置处理自接触与地面接触，提升长时程稳定性。
-  来源：https://huggingface.co/papers/2610.11975
-· 扩散与自回归统一格架理论：研究提出扩散、AR 及混合模型的统一描述框架，可预测固定步数下解码调度性能。
-  来源：https://huggingface.co/papers/2610.11216
-
-🔧 凸优化与能源系统
-· 智能体黑箱优化基准 Agentic BBO：系统评估 LLM 智能体在昂贵目标函数黑箱优化中的表现，整合任务语义、计算工具与反馈决策。
-  来源：https://huggingface.co/papers/2610.12183
-
-💻 开源项目与代码
-· AirLLM：单张 4GB GPU 推理 70B 模型：通过分层推理技术实现大模型在极低显存下的推理，今日获 548 star。
-  来源：https://github.com/lyogavin/airllm
-· rea：智能体逆向工程工具：支持从应用行为到原生二进制的智能体逆向工程，单日新增 25,599 star。
-  来源：https://github.com/morluto/rea
-· diagram-design：面向代码智能体的图表设计工具：为 Claude Code、Codex 等提供 44 种图表类型的自包含 HTML+SVG 设计。
-  来源：https://github.com/cathrynlavery/diagram-design
-
-💡 今日观察
-今天最显著的信号是**数据中心能源约束正在成为 AI 产业的核心瓶颈**：德州要求数据中心排队并网、Firmus 撤回 IPO，均指向算力扩张与电网容量之间的结构性矛盾。与此同时，GPU 并行异构多任务 RL 框架（Hebero）和智能体黑箱优化基准（Agentic BBO）为能源系统调度与参数优化提供了可直接迁移的方法论工具。建议关注 AI 数据中心并网政策对能源市场定价与容量规划的连锁影响。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
