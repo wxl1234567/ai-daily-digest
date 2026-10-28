@@ -15,6 +15,29 @@
     <image><url>https://jimmuji.github.io/ai-daily-digest/podcast-cover.png</url><title>AI 每日简报</title><link>https://jimmuji.github.io/ai-daily-digest/</link></image>
     <itunes:owner><itunes:name>AI Daily Digest</itunes:name></itunes:owner>
     <item>
+      <title>AI 每日简报 · 2026-10-28 周三</title>
+      <description>早上好，今天是2026年10月28日，欢迎收听今天的AI行业日报。今天咱们的看点很集中，一句话概括：AI的算力胃口正在把电力问题推到台前，同时强化学习和优化方法也在往能源调度上靠。咱们分几块聊。
+先说能源和算力这一块，今天有几条信号凑到了一起。TechCrunch有篇报道说，美国数据中心的用电负荷激增，正在倒逼电网现代化，业内反而觉得这是件好事，因为它在催生新的电网技术机会。说白了，数据中心负荷已经成了电网规划和灵活性研究里绕不开的新变量。更有意思的是Anthropic的IPO文件，S-1里直接承认，数据中心越来越依赖天然气供电，电力供应的竞争相当激烈。这可是产业级的证据，把AI算力和电力紧紧绑在了一起，对做负荷建模和碳排放核算的人来说，是很实在的现实约束。
+方法层面，今天有两条技术线值得优先关注。一条是微软提出的ThinkingBox，思路是把可验证的数据库评分直接当作强化学习的奖励信号，用来对agent做后训练。这种可验证奖励的范式，很可能迁移到调度和潮流求解的RL训练里。另一条是arXiv上的一篇工作，用高斯过程Bandit来求解带约束的黑箱杠杆优化，针对的是共享预算下离散权重分配的问题，有延迟、有噪声、还有聚合反馈和操作约束。这个场景其实和预算分配、资源调度里的约束序贯决策非常对应，做能源分配优化的朋友可以留意一下。
+预测这块，Hugging Face发布了基于IBM Granite时间序列模型的集成预测方法，时序基础模型可以直接迁移到负荷预测和新能源功率预测上，算是个顺手的工具。
+开源项目今天有两个亮点。一个是UC Berkeley的LEANN，把六千万块的RAG索引从两百零一GB压缩到了六GB，做法是存剪枝图、查询时再重算embedding，在百分之九十召回率下只用四GB就达到了HNSW的精度。这对能源领域的文献库和运行数据检索来说，是低成本的基础设施。另一个是清华开源的AKV，面向LLM Agent的KV Cache工程服务，基于SGLang，用丢弃和重排KV cache来替代摘要历史，在四个agent benchmark上平均降本百分之二十七点七，长时程能源调度Agent的推理成本优化可以借上力。
+最后还有一条人才动态，Meta AI负责评估与强化学习的Rohit Patel在干了八年之后离职创业，后续方向是否涉及能源，值得跟一跟。
+今日观察。今天和能源直接相关的信号，基本都集中在AI算力的电力侧：数据中心负荷和天然气依赖，被主流媒体和IPO文件同时摆上了台面，给负荷建模和碳核算提供了新的现实约束。方法上，可验证奖励的强化学习和带约束的高斯过程Bandit，是最贴近能源调度和资源分配的两条技术线，建议优先跟进它们的可迁移性。好，今天就聊到这儿，我们明天见。</description>
+      <itunes:summary>早上好，今天是2026年10月28日，欢迎收听今天的AI行业日报。今天咱们的看点很集中，一句话概括：AI的算力胃口正在把电力问题推到台前，同时强化学习和优化方法也在往能源调度上靠。咱们分几块聊。
+先说能源和算力这一块，今天有几条信号凑到了一起。TechCrunch有篇报道说，美国数据中心的用电负荷激增，正在倒逼电网现代化，业内反而觉得这是件好事，因为它在催生新的电网技术机会。说白了，数据中心负荷已经成了电网规划和灵活性研究里绕不开的新变量。更有意思的是Anthropic的IPO文件，S-1里直接承认，数据中心越来越依赖天然气供电，电力供应的竞争相当激烈。这可是产业级的证据，把AI算力和电力紧紧绑在了一起，对做负荷建模和碳排放核算的人来说，是很实在的现实约束。
+方法层面，今天有两条技术线值得优先关注。一条是微软提出的ThinkingBox，思路是把可验证的数据库评分直接当作强化学习的奖励信号，用来对agent做后训练。这种可验证奖励的范式，很可能迁移到调度和潮流求解的RL训练里。另一条是arXiv上的一篇工作，用高斯过程Bandit来求解带约束的黑箱杠杆优化，针对的是共享预算下离散权重分配的问题，有延迟、有噪声、还有聚合反馈和操作约束。这个场景其实和预算分配、资源调度里的约束序贯决策非常对应，做能源分配优化的朋友可以留意一下。
+预测这块，Hugging Face发布了基于IBM Granite时间序列模型的集成预测方法，时序基础模型可以直接迁移到负荷预测和新能源功率预测上，算是个顺手的工具。
+开源项目今天有两个亮点。一个是UC Berkeley的LEANN，把六千万块的RAG索引从两百零一GB压缩到了六GB，做法是存剪枝图、查询时再重算embedding，在百分之九十召回率下只用四GB就达到了HNSW的精度。这对能源领域的文献库和运行数据检索来说，是低成本的基础设施。另一个是清华开源的AKV，面向LLM Agent的KV Cache工程服务，基于SGLang，用丢弃和重排KV cache来替代摘要历史，在四个agent benchmark上平均降本百分之二十七点七，长时程能源调度Agent的推理成本优化可以借上力。
+最后还有一条人才动态，Meta AI负责评估与强化学习的Rohit Patel在干了八年之后离职创业，后续方向是否涉及能源，值得跟一跟。
+今日观察。今天和能源直接相关的信号，基本都集中在AI算力的电力侧：数据中心负荷和天然气依赖，被主流媒体和IPO文件同时摆上了台面，给负荷建模和碳核算提供了新的现实约束。方法上，可验证奖励的强化学习和带约束的高斯过程Bandit，是最贴近能源调度和资源分配的两条技术线，建议优先跟进它们的可迁移性。好，今天就聊到这儿，我们明天见。</itunes:summary>
+      <enclosure url="https://jimmuji.github.io/ai-daily-digest/audio/2026-10-28.mp3" length="1260576" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-10-28.mp3</guid>
+      <pubDate>Wed, 28 Oct 2026 08:00:00 +0800</pubDate>
+      <itunes:duration>03:30</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
+    </item>
+    <item>
       <title>AI 每日简报 · 2026-10-27 周二</title>
       <description>各位听众朋友好，欢迎收听今天的 AI 行业日报，今天是 2026 年 10 月 27 日，星期二。今天的关键词，我想用两个词来概括，一个是电力，一个是收敛。一边是 AI 算力开始把电力供应写进公开的风险披露，另一边是优化理论在博弈均衡上拿出了带全局收敛保证的新框架。咱们一个一个聊。
 先说最值得关注的一条。Anthropic 在它的 IPO 招股书里，也就是 S-1 文件里，明确承认数据中心正越来越依赖天然气供电，还直言争夺电力供应、争夺具备充足电力容量的数据中心选址，竞争已经十分激烈。这句话分量不轻，它意味着 AI 算力负荷正在从工程问题，升级成电力系统规划和碳核算里的一个正式变量。做负荷预测和供电规划的朋友，这个新增的不确定性来源，值得放进模型里。
@@ -349,16 +372,6 @@ LiquidAI 发布了 LFM2.5-24B-A2B，总共 240 亿参数，但只有 20 亿活�
       <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-10-14.mp3</guid>
       <pubDate>Wed, 14 Oct 2026 08:00:00 +0800</pubDate>
       <itunes:duration>03:47</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
-    </item>
-    <item>
-      <title>AI 每日简报 · 2026-10-13 周二</title>
-      <description>今天最值得能源交叉研究者注意的是 QwenGyre 的弹性 RL 调度机制——它在 rollout 与 training 之间动态重分配 GPU 的设计，本质上与电力系统中&quot;预测-调度&quot;两阶段资源的动态再分配同构，值得作为跨域方法迁移的候选。同时，多智能体团队&quot;5.1 倍成本换微弱提升&quot;的结论，对当前火热的分布式能源多智能体协同研究是一记必要的冷水：在把 MARL 推向电网之前，先量化清楚算力-性能的边际曲线。此外，Intel D-Series 的 480GB 显存与 FP64 支持，叠加 AirLLM/BitNet 的极致压缩路线，正在从两端夹击能源仿真与边缘推理的硬件成本结构。</description>
-      <itunes:summary>今天最值得能源交叉研究者注意的是 QwenGyre 的弹性 RL 调度机制——它在 rollout 与 training 之间动态重分配 GPU 的设计，本质上与电力系统中&quot;预测-调度&quot;两阶段资源的动态再分配同构，值得作为跨域方法迁移的候选。同时，多智能体团队&quot;5.1 倍成本换微弱提升&quot;的结论，对当前火热的分布式能源多智能体协同研究是一记必要的冷水：在把 MARL 推向电网之前，先量化清楚算力-性能的边际曲线。此外，Intel D-Series 的 480GB 显存与 FP64 支持，叠加 AirLLM/BitNet 的极致压缩路线，正在从两端夹击能源仿真与边缘推理的硬件成本结构。</itunes:summary>
-      <enclosure url="https://jimmuji.github.io/ai-daily-digest/audio/2026-10-13.mp3" length="0" type="audio/mpeg"/>
-      <guid isPermaLink="true">https://jimmuji.github.io/ai-daily-digest/audio/2026-10-13.mp3</guid>
-      <pubDate>Tue, 13 Oct 2026 08:00:00 +0800</pubDate>
       <itunes:explicit>no</itunes:explicit>
       <itunes:image href="https://jimmuji.github.io/ai-daily-digest/podcast-cover.png"/>
     </item>
