@@ -36,6 +36,60 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-29">AI 每日简报 · 2026-10-29 周四</span>
+    <button class="cbtn" data-copy="t-2026-10-29">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-29.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-29.mp3" download="2026-10-29.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-29">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-29">AI 每日简报 · 2026-10-29 周四
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 达卯科技以&quot;能源大脑&quot;定义算电协同：在 CPE 2026 上，达卯科技定位为能源与算力的&quot;搭桥人&quot;，用 AI 能源大脑破解绿电直连项目落地僵局。
+  来源：https://www.qbitai.com/2026/10/505687.html
+· Timestral 发布四个概率预测时间序列基础模型：5M–209M 参数四档模型，在 GIFT-Eval、TIME、fev-bench 上全面刷新 SOTA，核心是解耦预测时域（DHF）。
+  来源：https://huggingface.co/papers/2610.37585
+· IBM Granite 时间序列模型集成预测：Hugging Face 发布基于 IBM Granite 时间序列模型的 ensemble forecasting 实践。
+  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
+
+🧠 强化学习前沿 (RL for Energy)
+· AlphaBet：面向 LLM 事件预测智能体的强化学习：将证据检索纳入 RL 学习回路，训练单一 LLM 策略在多个预测时点搜索、推理并输出概率。
+  来源：https://huggingface.co/papers/2610.22684
+· Outcome RL 究竟买到了什么：完成率、可靠性，而非能力边界：在固定 token 预算下拆解 20 个 RL 模型的 pass@1 增益为&quot;完成/可靠性/新知识&quot;三部分。
+  来源：https://huggingface.co/papers/2610.34894
+· SARL：面向检索增强 LLM 搜索状态感知的自评估强化学习：让搜索智能体识别&quot;已知什么、还缺什么&quot;，减少幻觉推理与过早终止。
+  来源：https://huggingface.co/papers/2610.30435
+· 多尺度策略优化 (MPO) 用于长程 LLM 智能体：以 turn 为锚点做优势估计与重要性采样，解决 token 级与回合级信用分配错位。
+  来源：https://huggingface.co/papers/2610.35013
+
+📐 AI4PDE 最新进展
+· KPPax：可微动力学 ODE 预处理器，面向大气化学机器学习：从 KPP 机制语言生成 JAX 可微、JIT 编译、可向量化的化学求解代码，速率律用稀疏运算求值。
+  来源：https://arxiv.org/abs/2610.37655
+· LLM 能否通过自由探索发现隐藏物理定律？：提出 LongChang 框架，构建物理定律被篡改的仿真世界，测试 LLM 能否自主发现异常并实验验证。
+  来源：https://arxiv.org/abs/2610.37649
+
+🔧 凸优化与能源系统
+· Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops：证明在逐实体坐标系自由下，共享无环的关系无法交互，唯一 gauge 不变评分由 Wilson 环给出。
+  来源：https://arxiv.org/abs/2610.37656
+
+💻 开源项目与代码
+· obra/superpowers：可用的智能体技能框架与开发方法论：提供 agentic skills 框架与软件开发方法论，今日 +1,095 star。
+  来源：https://github.com/obra/superpowers
+· nightly-labs/openbot：本地优先的持久化 AI 团队工作台：支持 Codex/Claude/Grok 分工作区运行、任务队列、浏览器控制与 agent 间协作。
+  来源：https://github.com/nightly-labs/openbot
+
+💡 今日观察
+今日与能源直接相关的内容稀少，最值得关注的信号是 Timestral 这类**概率预测基础模型**开始系统性刷新时序 benchmark——这类骨干一旦在负荷/新能源出力上做领域适配，很可能成为能源预测的新基线。其次是 KPPax 所代表的&quot;可微物理求解器 + JAX&quot;路线，正在把 AI4PDE 从通用流体/传热推向大气化学等能源环境耦合场景。RL 侧的高质量工作集中在**长程信用分配与训练收益归因**，这正是能源调度智能体从 demo 走向可复现实验的关键瓶颈。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-28">AI 每日简报 · 2026-10-28 周三</span>
     <button class="cbtn" data-copy="t-2026-10-28">📋 复制标题</button>
   </div>
@@ -698,46 +752,6 @@
 
 💡 今日观察
 今日值得关注的信号是**长时域强化学习**在 Agent 训练中的集中突破——QwenGyre、Tev、LongR、ACCRUE 四项工作从弹性框架、稠密奖励设计、长上下文推理和持续学习四个维度推进了 RL 的边界。这些方法对能源系统中长时间尺度的调度决策、储能优化和多阶段规划具有直接的迁移价值，尤其是稠密进度奖励的设计思路值得能源 RL 研究者深入借鉴。此外，微软和 Allen AI 在中期天气预报上的进展，为新能源功率预测提供了更可靠的气象输入基础。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-14">AI 每日简报 · 2026-10-14 周三</span>
-    <button class="cbtn" data-copy="t-2026-10-14">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-14.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-14.mp3" download="2026-10-14.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-14">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-14">AI 每日简报 · 2026-10-14 周三
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-🧠 强化学习前沿 (RL for Energy)
-· QwenGyre: Elastic RL for XLong-Horizon Agents：阿里巴巴 Qwen 团队提出 QwenGyre，一种弹性强化学习框架，专为极长时程 agent 训练设计，支持单次 rollout 运行数小时、处理近 100 万 token。
-  来源：https://www.marktechpost.com/2026/10/12/alibaba-qwen-introduces-qwengyre-elastic-reinforcement-learning-rl-for-xlong-horizon-agents/
-· PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic RL：提出特权表征在线策略自蒸馏方法，解决 RL agent 训练中技能信号传播不足的问题，在 WebShop 上将成功率从 42.2% 提升至 56.2%。
-  来源：https://huggingface.co/papers/2609.36642
-· Prospective Hindsight: Self-Calibrating RL via Prediction-Reality Gaps：提出&quot;前瞻性后见&quot;训练原则，利用 agent 行动前预测与行动后评估之间的差距作为自校准信号，增强长时程 RL 训练。
-  来源：https://huggingface.co/papers/2610.02740
-
-🔧 凸优化与能源系统
-· Meta Rebalancer: 任务放置与优化求解器：Meta 开源 Rebalancer 分配求解器，提供 C++ 核心与 Python 绑定，支持数据中心构建、跨机架任务放置、约束与目标优先级管理，并可与 HiGHS 精确求解器对比。
-  来源：https://www.marktechpost.com/2026/10/13/how-to-use-metas-rebalancer-for-task-placement-optimization/
-
-💻 开源项目与代码
-· AirLLM：支持在单张 4GB GPU 上推理 2.8T 参数大模型，通过分层加载实现极低显存推理。
-  来源：https://github.com/lyogavin/airllm
-· LFM2.5-24B-A2B：LiquidAI 发布 24B 参数推理模型，仅 2B 活跃参数，专为设备端快速私有 agent 设计，在 agent 与工具使用任务上可媲美 Qwen3.6-35B-A3B。
-  来源：https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b
-· context-mode：面向 AI 编码 agent 的上下文窗口优化工具，通过沙箱化工具输出实现 98% 缩减，持久化会话记忆，并通过 MCP + hooks 在 17 个平台上执行路由。
-  来源：https://github.com/mksglu/context-mode
-
-💡 今日观察
-今天 AI 领域被 Gemini 4 Argon 和 Meta Muse Wonder 两大前沿模型发布占据，但与能源交叉方向直接相关的内容极为稀少。唯一值得能源研究者注意的是 Meta Rebalancer 求解器——其任务分配优化框架与经济调度问题在数学结构上高度同构，值得深入借鉴。此外，QwenGyre 的弹性 RL 长时程训练框架和 PR-OPD 的 on-policy 自蒸馏方法，为能源系统中的多时段决策与策略学习提供了可迁移的方法论工具。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
