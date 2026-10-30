@@ -36,6 +36,58 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-30">AI 每日简报 · 2026-10-30 周五</span>
+    <button class="cbtn" data-copy="t-2026-10-30">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-30.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-30.mp3" download="2026-10-30.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-30">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-30">AI 每日简报 · 2026-10-30 周五
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· LOB-Impact Benchmark: 生成式限价订单簿模型中的涌现市场冲击：该研究揭示神经 LOB 生成器会自然涌现市场冲击机制，并提出评估生成流反事实响应的方法，弥补了现有指标仅做分布比对的缺陷。
+  来源：https://huggingface.co/papers/2610.27100
+· AlphaBet: 面向 LLM 事件预测智能体的强化学习框架：训练单一 LLM 策略在多个预测时点上自主检索证据、推理并输出概率，将证据获取纳入学习闭环。
+  来源：https://huggingface.co/papers/2610.22684
+· OmniSpectra: 通用光谱表示学习基础模型：提出波长原生的连续坐标掩码自编码器，避免破坏性重采样，解决跨仪器光谱表示学习的坐标错配问题。
+  来源：https://huggingface.co/papers/2601.15351
+
+🧠 强化学习前沿 (RL for Energy)
+· What Outcome RL Buys: Finishing, Reliability, Rarely Reach：在固定 token 预算下对比 20 个 RL 模型，将 pass@1 增益分解为“完成度/可靠性/新知识”三部分，指出 outcome RL 主要买到的是完成与稳定而非新能力。
+  来源：https://huggingface.co/papers/2610.34894
+· Multiscale Policy Optimization (MPO): 长程 LLM 智能体的多尺度策略优化：发现 critic 值主要在“轮次”尺度变化，提出多尺度优势估计与轮级重要性采样，对齐信用分配与策略更新。
+  来源：https://huggingface.co/papers/2610.35013
+· Self-Assessment RL (SARL): 检索增强 LLM 的搜索状态感知：让搜索智能体学会识别“已获得什么、还缺什么”，减少幻觉推理与过早终止检索。
+  来源：https://huggingface.co/papers/2610.30435
+· Prime Intellect 发布 Prime Mega MoE：可训练融合 MoE kernel：为 DeepSeek 融合 Mega MoE kernel 补上反向传播，使 kernel 可训练，Qwen3 MoE 训练步速最高提升 34%，前向 3.11 倍加速。
+  来源：https://www.marktechpost.com/2026/10/29/prime-intellect-prime-mega-moe-fused-moe-kernel-training/
+
+📐 AI4PDE 最新进展
+· Sub-monolayer tracking of molecular states at buried interfaces（ML 优化光学模型 + RSoXS）：用机器学习优化的光学模型解析偏振共振软 X 射线散射，首次定量分辨埋藏界面的亚单层分子态。
+  来源：https://huggingface.co/papers/2610.31924
+
+🔧 凸优化与能源系统
+· TAO: 面向 LLM 智能体服务的工具感知联合调度：将 GPU 上的模型推理与分布式 CPU 上的外部工具调用联合调度，把工具返回就绪性纳入服务评估，替代启发式准入与放置策略。
+  来源：https://huggingface.co/papers/2610.37230
+
+💻 开源项目与代码
+· Baseten joey-1：2B 决策模型，输出校准概率而非文本：20ms P50 延迟、每百万输入 token 仅 $0.01，面向决策场景而非生成。
+  来源：https://www.marktechpost.com/2026/10/29/baseten-joey-1-2b-decision-model/
+· Infini-AI-Lab Hermit：开源智能体外挂适配框架：Apache-2.0 许可，从任务反馈中训练指令、技能、记忆与工具的外层，不改动智能体模型与 harness。
+  来源：https://www.marktechpost.com/2026/10/29/infini-ai-lab-hermit-harness-adapter-framework/
+
+💡 今日观察
+今天最值得注意的信号是“仿真可信度”正成为交易智能体研究的前沿：LOB-Impact 指出生成式市场模型必须校准对智能体自身订单的反事实响应，这对电力市场与碳市场仿真器设计是直接警示。同时，Outcome RL 的增益分解研究提示能源调度 RL 的收益可能主要来自“完成与稳定”，而非策略真正学到新物理规律，评估时需警惕。AI4PDE 方向今日偏弱，仅有一条 ML 反演散射模型的能源材料交叉工作值得跟进。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-29">AI 每日简报 · 2026-10-29 周四</span>
     <button class="cbtn" data-copy="t-2026-10-29">📋 复制标题</button>
   </div>
@@ -698,60 +750,6 @@
 
 💡 今日观察
 今日 AI 领域与能源交叉方向的内容较为稀缺，但 RL 训练方法论方面有多篇高质量论文值得关注——特别是 PreciseCoder 关于奖励塑形和 VASPO 关于 PPO 改进的工作，其核心思路对能源系统 RL 调度策略的训练与评估具有直接的方法论迁移价值。此外，Allen AI 的 HiRO-ACEv2 高分辨率天气模拟工作直接服务于新能源功率预测场景，建议持续跟踪其后续在风电场/光伏电站的落地应用。整体来看，今日缺乏凸优化与能源系统直接结合的新进展，建议关注后续 NeurIPS 2026 相关论文的放出。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-15">AI 每日简报 · 2026-10-15 周四</span>
-    <button class="cbtn" data-copy="t-2026-10-15">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-15.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-15.mp3" download="2026-10-15.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-15">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-15">AI 每日简报 · 2026-10-15 周四
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 微软推出机器学习天气预报新工具：微软研究院发布新方法，可在 2-6 周时间尺度上显著提升天气预报精度，突破传统物理模型和现有 AI 模型的可靠性瓶颈。
-  来源：https://www.theverge.com/science/1011127/ai-weather-forecast-microsoft
-· HiRO-ACEv2：以极低成本模拟 3km 分辨率极端天气：Allen AI 发布 HiRO-ACEv2，通过层次化建模在 3 公里分辨率下高效模拟极端天气事件，大幅降低计算成本。
-  来源：https://huggingface.co/blog/allenai/hiro-acev2
-· Scimplify 融资 2500 万美元，用 AI 挑战中国关键材料主导地位：Scimplify 利用 AI 优化关键材料供应链，年化营收达 2 亿美元，正计划拓展美国市场。
-  来源：https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/
-
-🧠 强化学习前沿 (RL for Energy)
-· 阿里 Qwen 推出 QwenGyre：面向超长时域 Agent 的弹性强化学习框架：Qwen 团队发布 QwenGyre，一种在线弹性 RL 系统，通过未经修改的黑盒 harness 训练编码 Agent，支持运行数小时、处理近 100 万 token 的 rollout。
-  来源：https://www.marktechpost.com/2026/10/12/alibaba-qwen-introduces-qwengyre-elastic-reinforcement-learning-rl-for-xlong-horizon-agents/
-· ACCRUE：机器人基础模型的持续 Off-Policy 强化学习：提出 ACCRUE 方法，在 VLA 模型上实现持续 RL 后训练，兼顾新任务高效学习与旧行为保持，解决灾难性遗忘问题。
-  来源：https://huggingface.co/papers/2610.18596
-· LongR：通过稠密效用奖励的强化学习释放长上下文推理能力：提出 LongR 方法，用稠密效用奖励替代稀疏结果奖励，提升 LLM 在长对话理解和结构化数据分析中的推理能力。
-  来源：https://huggingface.co/papers/2602.05758
-· Tev：以稠密进度奖励扩展长时域 Agent 环境：提出 Tev 框架，通过稠密进度奖励解决长时域 Agent 训练中奖励稀疏和验证困难的问题，支持数小时至数天的自主任务。
-  来源：https://arxiv.org/abs/2610.18868v1
-· Enabling Token-wise Importance Sampling in Off-Policy RLVR with Proximal KL Regularization：证明在覆盖性和局部表达能力条件下，全未来 KL 信用使精确近端优化器成为更新的唯一稳态策略，支持 off-policy 数据的高效利用。
-  来源：https://huggingface.co/papers/2610.18738
-
-📐 AI4PDE 最新进展
-· Data Free Training of Diffusion Models for Lattice Field Theories：证明扩散模型可以仅从自身生成的样本训练，无需目标分布样本，解决了格点场论中采样平衡场构型的计算瓶颈。
-  来源：https://arxiv.org/abs/2610.18863v1
-
-🔧 凸优化与能源系统
-· Meta Rebalancer：任务放置与优化教程：MarkTechPost 发布教程，介绍 Meta 的 Rebalancer 分配求解器，使用 C++ 核心和 Python 绑定，支持数据中心任务放置、机架约束管理和目标优先级优化，可与 HiGHS 精确求解器对比。
-  来源：https://www.marktechpost.com/2026/10/13/how-to-use-metas-rebalancer-for-task-placement-optimization/
-
-💻 开源项目与代码
-· rea：用 Agent 逆向工程一切：支持从应用行为到原生二进制的全面逆向工程，今日新增 41,034 star。
-  来源：https://github.com/morluto/rea
-· scientific-agent-skills：将 AI Agent 转变为 AI Scientist：提供 177 个经过验证的科学技能和 100+ 科学数据库，覆盖生物、化学、医药和药物发现，被 250,000+ 科学家使用。
-  来源：https://github.com/K-Dense-AI/scientific-agent-skills
-
-💡 今日观察
-今日值得关注的信号是**长时域强化学习**在 Agent 训练中的集中突破——QwenGyre、Tev、LongR、ACCRUE 四项工作从弹性框架、稠密奖励设计、长上下文推理和持续学习四个维度推进了 RL 的边界。这些方法对能源系统中长时间尺度的调度决策、储能优化和多阶段规划具有直接的迁移价值，尤其是稠密进度奖励的设计思路值得能源 RL 研究者深入借鉴。此外，微软和 Allen AI 在中期天气预报上的进展，为新能源功率预测提供了更可靠的气象输入基础。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
