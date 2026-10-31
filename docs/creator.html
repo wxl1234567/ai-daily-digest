@@ -36,6 +36,46 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-10-31">AI 每日简报 · 2026-10-31 周六</span>
+    <button class="cbtn" data-copy="t-2026-10-31">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-10-31.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-10-31.mp3" download="2026-10-31.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-10-31">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-31">AI 每日简报 · 2026-10-31 周六
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Gemini 4 Carbon：面向碳相关任务的下一代前沿模型：Google DeepMind 发布 Gemini 4 Carbon，命名直指碳管理方向。
+  来源：https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/
+· 极端天气到农业后果的智能体预测（WxCrop）：首个结合物理可解释气象指数与因果分析的智能体，可预测作物损失。
+  来源：https://arxiv.org/abs/2610.40641v1
+
+🧠 强化学习前沿 (RL for Energy)
+· 单一算法训练基础模型（Unified Training）：将预训练、SFT、RL 统一为基于似然的单一训练目标，把各阶段 RL 目标推导为对模型自生成目标分布的最大似然拟合。
+  来源：https://huggingface.co/papers/2610.40564
+· 在线稠密强化学习用于实时 iOS 应用 UI 导航：在真实设备上在线训练导航智能体，避免离线 RL 的轨迹记忆与脆弱性。
+  来源：https://huggingface.co/papers/2610.39264
+
+📐 AI4PDE 最新进展
+· world2vec：通过潜动力学学习机理世界模型：无需奖励信号，直接从观测与动作学习忠实复现真实系统的潜动力学，参数量比 Dreamer 少一个数量级以上。
+  来源：https://arxiv.org/abs/2610.40637v1
+
+🔧 凸优化与能源系统
+· 围绕学习密度模型的自适应场景生成用于 KL-DRO：针对 KL 散度球仅含经验记录重加权、无法覆盖记录外实现的问题，提出在学习密度模型周围自适应生成场景。
+  来源：https://arxiv.org/abs/2610.40644v1
+
+💡 今日观察
+今日信号集中在&quot;潜动力学世界模型&quot;与&quot;分布鲁棒优化&quot;两条线：world2vec 的机理化潜动力学为能源系统建模提供了可解释的新范式，而 KL-DRO 场景生成方法直接触及可再生能源不确定性建模的核心痛点。值得注意的是，今日原始资讯中纯 AI4Energy/RL-for-Energy 的专门论文极少，多数能源相关价值需从通用方法（统一 RL 训练、DRO）中迁移挖掘——这提示能源交叉研究者应主动跟踪通用 ML 方法论文，而非仅依赖能源垂类来源。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-10-30">AI 每日简报 · 2026-10-30 周五</span>
     <button class="cbtn" data-copy="t-2026-10-30">📋 复制标题</button>
   </div>
@@ -706,50 +746,6 @@
 
 💡 今日观察
 今天最值得能源 AI 研究者关注的信号来自 **PathFM** 的轨迹级生成预测框架——它明确针对峰值负荷和累积需求等轨迹依赖量建模，弥补了传统边际分位数预测的不足，这对电力系统调度和储能优化有直接方法论价值。此外，Allen AI 的 **HiRO-ACEv2** 以极低成本实现 3km 分辨率极端天气模拟，为新能源功率预测提供了更高性价比的气象输入方案。整体来看，今日 AI4Energy 相关内容偏少，但轨迹预测与高分辨率气象模拟两条线索值得持续跟踪。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-16">AI 每日简报 · 2026-10-16 周五</span>
-    <button class="cbtn" data-copy="t-2026-10-16">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-16.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-16.mp3" download="2026-10-16.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-16">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-16">AI 每日简报 · 2026-10-16 周五
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-🧠 强化学习前沿 (RL for Energy)
-· PreciseCoder: 超越单元测试奖励的忠实可泛化调试：该研究揭示仅依赖单元测试的 RL 奖励会导致模型在调试时产生更多编辑和幻觉 bug，提出融合语义验证局部信号的训练算法 PreciseCoder。
-  来源：https://huggingface.co/papers/2610.18755
-· VASPO: 基于特权价值估计的自蒸馏方法：在 PPO 框架内整合特权自教师信号与 GRPO 更新方向，利用位置动态互补性提升推理模型训练效率。
-  来源：https://huggingface.co/papers/2610.20516
-· Co-Evolving Acting and Forecasting for Language Agents：提出联合训练语言智能体的行动与预测能力，利用中间步骤监督信号解决长时域 rollout 成本高的问题。
-  来源：https://arxiv.org/abs/2610.20597
-· The Thinking Leakage in Reinforcement Learning for LLMs：揭示混合推理模型在 NO-THINK 模式下 RL 训练的性能提升主要来自&quot;思维泄漏&quot;，即部分激活了原始 THINK 模式能力而非学习新推理行为。
-  来源：https://huggingface.co/papers/2610.14270
-
-📐 AI4PDE 最新进展
-· Self-Conditioning Enables Deep Sequential Reasoning in Flow Matching：从电路复杂度角度证明 Flow Matching 迭代采样器并非天然对应多步推理，提出自条件化方法实现深度序列推理。
-  来源：https://huggingface.co/papers/2610.19628
-· LLM-to-Flow Distillation: 将自然语言目标蒸馏至科学生成器：研究如何将 LLM 的高层科学推理能力与领域特定的 Flow/Diffusion 生成器对齐，实现从自然语言发现目标到有效样本生成的桥接。
-  来源：https://huggingface.co/papers/2610.17246
-· HiRO-ACEv2: 3公里分辨率极端天气模拟：Allen AI 发布 HiRO-ACEv2，以极低成本实现 3km 分辨率极端天气模拟。
-  来源：https://huggingface.co/blog/allenai/hiro-acev2
-
-💻 开源项目与代码
-· K-Dense-AI/scientific-agent-skills：将任意 AI 智能体转化为 AI Scientist 的技能库，包含 177 个经验证的技能和 100+ 科学数据库，覆盖生物、化学、医药和药物发现领域。
-  来源：https://github.com/K-Dense-AI/scientific-agent-skills
-· SwarmRSI: 通过进化科学智能体集群实现递归自我改进：提出科学智能体集群的递归自我改进框架，通过整合不同研究方向的证据和实现来指导后续实验。
-  来源：https://huggingface.co/papers/2610.20431
-
-💡 今日观察
-今日 AI 领域与能源交叉方向的内容较为稀缺，但 RL 训练方法论方面有多篇高质量论文值得关注——特别是 PreciseCoder 关于奖励塑形和 VASPO 关于 PPO 改进的工作，其核心思路对能源系统 RL 调度策略的训练与评估具有直接的方法论迁移价值。此外，Allen AI 的 HiRO-ACEv2 高分辨率天气模拟工作直接服务于新能源功率预测场景，建议持续跟踪其后续在风电场/光伏电站的落地应用。整体来看，今日缺乏凸优化与能源系统直接结合的新进展，建议关注后续 NeurIPS 2026 相关论文的放出。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
