@@ -36,6 +36,46 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-04">AI 每日简报 · 2026-11-04 周三</span>
+    <button class="cbtn" data-copy="t-2026-11-04">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-04.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-04.mp3" download="2026-11-04.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-04">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-04">AI 每日简报 · 2026-11-04 周三
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· OpenAI 启动 Grid Protectors Program，与电力公司合作保障电网可靠性：OpenAI 宣布将与公用事业公司合作，帮助未来的算力园区在接入电网时支撑可靠性，并保护居民电价。
+  来源：https://openai.com/index/grid-protectors-program
+· 数据中心因并网等待过久转向退役喷气发动机供电：由于接入电网和新涡轮机需等待数年，数据中心建设者开始使用退役喷气发动机作为替代发电方案，效率更低且更不环保。
+  来源：https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/
+· Gemini 4 Carbon：DeepMind 新一代前沿模型：Google DeepMind 发布名为 “Carbon” 的新一代前沿模型。
+  来源：https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/
+
+🧠 强化学习前沿 (RL for Energy)
+· 弱可观测图 Bandit 的近线性时间 Follow-the-Perturbed-Leader：论文提出面向有向弱可观测反馈图的 FTPL 策略，结合强制探索、条件几何重采样与自适应学习率，实现 near-linear 期望时间复杂度与 best-of-both-worlds 遗憾保证。
+  来源：https://arxiv.org/abs/2611.04307v1
+
+🔧 凸优化与能源系统
+· 数据驱动策略的风险有多大？基于 CVaR 的风险分解：论文用条件风险价值（CVaR）量化数据驱动策略在训练样本、策略随机化与未来结果上的风险，并将风险来源分离，给出相对遗憾分析。
+  来源：https://arxiv.org/abs/2611.04292v1
+
+💻 开源项目与代码
+· colibri：面向前沿 MoE 模型的分层推理引擎：C 语言实现的分层推理引擎，将热专家放 GPU（CUDA/Vulkan）、温专家放内存、冷专家从 NVMe 流式加载，可在现有硬件上运行大 MoE 模型。
+  来源：https://github.com/JustVugg/colibri
+
+💡 今日观察
+今日最明确的 AI4Energy 信号来自 OpenAI 的 Grid Protectors Program 与数据中心“喷气发动机供电”新闻——AI 算力已成为电网规划与可靠性研究中不可忽视的新负荷变量。与此同时，arXiv 上关于 CVaR 风险分解与弱可观测图 bandit 的工作，为能源系统中的风险约束调度与在线决策提供了可直接迁移的理论工具。整体而言，今日缺少直接的能源顶刊 AI 论文，AI4PDE 方向无高质量新内容。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-03">AI 每日简报 · 2026-11-03 周二</span>
     <button class="cbtn" data-copy="t-2026-11-03">📋 复制标题</button>
   </div>
@@ -706,56 +746,6 @@
 
 💡 今日观察
 今日与 AI4Energy 直接相关的内容稀少，唯一值得能源研究者跟进的是 Mistral Timestral 这类轻量时序基础模型——它在零样本设定下超越 TimesFM-3 且可在 CPU 运行，对负荷与新能源功率预测的落地门槛极低。另一信号是数据中心用电需求加速增长正被主流媒体纳入能源基础设施叙事，这为&quot;AI 算力—电力系统&quot;耦合建模提供了明确的现实议题。RL、AI4PDE 与凸优化方向今日无符合标准的高质量新内容，故不纳入。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-20">AI 每日简报 · 2026-10-20 周二</span>
-    <button class="cbtn" data-copy="t-2026-10-20">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-20.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-20.mp3" download="2026-10-20.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-20">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-20">AI 每日简报 · 2026-10-20 周二
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Mistral 发布 Timestral 时间序列基础模型族（5M–209M），209M 版本在 GIFT-Eval、TIME、fev-bench 零样本榜单超越 Google TimesFM-3，且可在 CPU 上运行：时间序列预测基础模型迎来新的开源强基线。
-  来源：https://www.marktechpost.com/2026/10/18/mistral-timestral-time-series-foundation-model/
-· AI 驱动灾害响应与流离失所监测论文发布，综述 AI 在气候适应、可再生能源控制与设计、卫星影像贫困预测等人道任务中的应用：系统梳理 AI 在气候与能源交叉场景的落地路径。
-  来源：https://huggingface.co/papers/2610.21482
-· 报道指出美国化石燃料基础设施建设量创十年新高、可再生能源增速放缓，同时数据中心/工厂/电动车推动电力需求以十余年最快速度攀升：供需两侧同时施压电网。
-  来源：https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report
-
-🧠 强化学习前沿 (RL for Energy)
-· Lean4AgenticRL 提出带可验证多级过程奖励的智能体强化学习框架，在工具调用级与工作流阶段级引入细粒度奖励，替代纯结果奖励：过程奖励建模对长程决策任务训练效率显著提升。
-  来源：https://huggingface.co/papers/2610.22448
-· FC-SWE 提出失败条件化 RL（Failure-Conditioned RL），复用验证器反馈对长程软件工程智能体做 GRPO 训练：将失败轨迹转化为训练信号。
-  来源：https://huggingface.co/papers/2610.07898
-· GlobeBench 发布文本世界模型基准，含 5 大领域 19 项仿真技能共 1,632 个任务，评估模型对 RL 环境状态转移的预测能力：为基于世界模型的 RL 提供标准化评测。
-  来源：https://huggingface.co/papers/2610.22708
-
-📐 AI4PDE 最新进展
-· REASON 提出面向结构化优化网络的分层残差解释分析框架，借鉴 System 1/System 2 双环机制，在分布偏移与扰动下识别并利用额外信息：将优化网络的可解释性与鲁棒性统一建模。
-  来源：https://huggingface.co/papers/2610.19378
-
-🔧 凸优化与能源系统
-· LiveMACE 发布 LiveMACEBench，以实时金融市场为自然演化测试床，对持久化 LLM 智能体做过程感知评估，统一 Tool Use 与 Persistent Memory 条件：强调闭环交互下的过程而非结果评估。
-  来源：https://huggingface.co/papers/2610.09872
-
-💻 开源项目与代码
-· NVIDIA 以 Apache 2.0 完全开源 Run:ai GPU 编排平台，含 KAI Scheduler、CUDA 13.4 GPU 分片、配额管理与本地 Kind 开发环境：GPU 集群调度走向完全开源。
-  来源：https://www.marktechpost.com/2026/10/18/nvidia-runai-open-source-gpu-orchestration-kubernetes/
-· Kronos 金融市​​场语言基础模型登上 GitHub Trending（今日 +363 star）：面向金融时序的领域基础模型开源。
-  来源：https://github.com/shiyu-coder/Kronos
-
-💡 今日观察
-今日最值得能源交叉研究者关注的是 Mistral Timestral 这类**时间序列基础模型**的成熟——209M 参数即可在零样本预测榜单超越 TimesFM-3 且可 CPU 推理，意味着负荷与新能源功率预测的&quot;基础模型+微调&quot;范式门槛正在快速下降。与此同时，Lean4AgenticRL 与 FC-SWE 代表的**多级过程奖励与失败条件化 RL**，为储能调度、电力市场竞价这类长程序贯决策提供了更样本高效的训练路径。基础设施层面，NVIDIA 开源 Run:ai 则降低了能源 AI 团队自建 GPU 集群调度的成本。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
