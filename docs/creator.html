@@ -36,6 +36,58 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-05">AI 每日简报 · 2026-11-05 周四</span>
+    <button class="cbtn" data-copy="t-2026-11-05">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-05.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-05.mp3" download="2026-11-05.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-05">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-05">AI 每日简报 · 2026-11-05 周四
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· AI 数据中心在 2026 中期选举中遭遇全面挫败：多个州选民否决数据中心相关议案，76% 的受访选民对数据中心持负面态度，AI 基础设施扩张面临更严格的审批环境。
+  来源：https://www.theverge.com/policy/1026365/data-centers-midterms-results
+· 高通手机业务下滑约 20%，全面押注 AI 数据中心：高通 Q4 财报显示手机业务承压，宣布与 Amazon、Meta 合作进军 AI 数据中心芯片市场，推出 150W、128GB、548GB/s 的 Cloud AI 100 Ultra 加速卡。
+  来源：https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers / https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra
+
+🧠 强化学习前沿 (RL for Energy)
+· Axion 1.0-35B：三阶段训练的开源 Agent 基础模型：仅用两轮轻量 SFT 加 RL 训练，无需 mid-training、DPO 或 on-policy distillation，即获得强 agentic 能力。
+  来源：https://www.reddit.com/r/LocalLLaMA/comments/1xnjiu4/axion10axion1035b_hugging_face/
+· 细粒度信用分配何时有效、何时有害：多模态 Agentic RL 研究：以视频编辑为测试床，系统分析长程规划与延迟反馈下细粒度 credit assignment 的作用边界。
+  来源：https://huggingface.co/papers/2610.35497
+· 对抗性推测推理提升长程 Agent 表现：发现 speculative decoding 在长程 agent 任务中引入的数值噪声会累积，提出对抗式推测推理框架改善验证质量。
+  来源：https://huggingface.co/papers/2611.05345
+
+📐 AI4PDE 最新进展
+· Deep Principle 发布 Hydrogen-1.0：753B 开源科学发现模型：基于 GLM-5.3 后训练，面向化学、材料科学与生命科学，MIT 许可开源，在 FrontierScience-Research 基准上超过 GPT-6-Astra。
+  来源：https://www.marktechpost.com/2026/11/02/deep-principle-hydrogen-1-0-open-weight-scientific-model/
+· OpenAI：GPT-6 Astra 一周内从零设计硬件设备：从外壳、电路板到固件全流程由模型完成，但制造公差处理仍需多轮迭代修正。
+  来源：https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/
+
+🔧 凸优化与能源系统
+· Google DeepMind 与英国政府合作加速规划决策：用 AI 缩短规划评估时间，涉及大规模空间与资源约束下的决策流程优化。
+  来源：https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/
+
+💻 开源项目与代码
+· NVIDIA/auto-ontology：基于语义图的确定性查询推理层：为 LLM 与 agent 工作流提供可解释的图推理层，支持确定性查询生成与上下文检索。
+  来源：https://github.com/NVIDIA/auto-ontology
+· Anthropic FlashProve：zkSNARK 可验证推理原型：Apache 2.0 开源，可在单张 H100 上以 110 tokens/s 证明 Llama 4 Maverick 的响应来自承诺权重，证明大小 19MB。
+  来源：https://www.marktechpost.com/2026/11/03/anthropic-flashprove-provable-inference-zksnark/
+· NVIDIA DGX Spark 上 MoE 推理三项优化，吞吐提升 42.5%：针对 124B Ling-3.0-flash，GSM8K 解码吞吐提升 42.5%，精度无损。
+  来源：https://www.marktechpost.com/2026/11/03/nvidia-dgx-spark-moe-inference-ling-3-0-flash/
+
+💡 今日观察
+今天最显著的信号是 AI 基础设施的**能源与社会约束正在收紧**——数据中心在中期选举中全面受挫，叠加高通等厂商转向数据中心算力，说明&quot;AI 电力需求&quot;已成为能源系统规划不可忽视的变量。与此同时，FlashProve 这类可验证推理与 Hydrogen-1.0 科学大模型的出现，为能源交易审计与电化学材料发现提供了新的工具链方向。RL 侧则聚焦长程 agent 的信用分配与推理可靠性，这与多步能源调度问题的结构高度契合。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-04">AI 每日简报 · 2026-11-04 周三</span>
     <button class="cbtn" data-copy="t-2026-11-04">📋 复制标题</button>
   </div>
@@ -714,38 +766,6 @@
 
 💡 今日观察
 今日最清晰的信号是「AI 算力的能源外部性」正从边缘话题变成主流叙事：德州空气质量、欧洲余热回收、DSX Pod 模块化供电三条新闻从排放、供热、配电三个角度指向同一问题——数据中心负荷建模与需求侧灵活性将成为 AI4Energy 的高频场景。方法论侧，稀疏奖励下的信用分配（Self-Credit）与神经算子+随机最优控制（PUN）值得关注，前者契合多时段储能调度，后者契合含噪物理系统控制。此外，Mistral×Nvidia 的 physics AI 合作表明工业级 PDE 仿真加速已进入商业落地阶段。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-21">AI 每日简报 · 2026-10-21 周三</span>
-    <button class="cbtn" data-copy="t-2026-10-21">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-21.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-21.mp3" download="2026-10-21.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-21">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-21">AI 每日简报 · 2026-10-21 周三
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Mistral 发布 Timestral 时间序列基础模型系列，209M 版本零样本超越 Google TimesFM-3：参数规模 5M–209M，209M 版本在 GIFT-Eval、TIME、fev-bench 零样本评测中领先，并可在 CPU 上运行。
-  来源：https://www.marktechpost.com/2026/10/18/mistral-timestral-time-series-foundation-model/
-· The Verge 报道美国化石燃料基础设施建设回暖、数据中心推高电力需求：报告显示美国在建化石燃料设施为十年来最多，可再生能源增速放缓，数据中心、工厂与电动车共同拉动用电需求加速上升。
-  来源：https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report
-
-💻 开源项目与代码
-· Kronos：面向金融市场&quot;语言&quot;的基础模型开源项目登榜 GitHub Trending：单日新增 733 star，将金融时序建模为可学习的&quot;语言&quot;。
-  来源：https://github.com/shiyu-coder/Kronos
-· DeepSeek 开源 DeepInfer 推理框架（Apache 2.0）：基于 vLLM，面向 NVIDIA SM100 与华为 Ascend 950 NPU，官方称可显著降低推理算力成本与能耗。
-  来源：https://www.marktechpost.com/2026/10/20/deepseek-deepinfer-open-source-inference-framework/
-
-💡 今日观察
-今日与 AI4Energy 直接相关的内容稀少，唯一值得能源研究者跟进的是 Mistral Timestral 这类轻量时序基础模型——它在零样本设定下超越 TimesFM-3 且可在 CPU 运行，对负荷与新能源功率预测的落地门槛极低。另一信号是数据中心用电需求加速增长正被主流媒体纳入能源基础设施叙事，这为&quot;AI 算力—电力系统&quot;耦合建模提供了明确的现实议题。RL、AI4PDE 与凸优化方向今日无符合标准的高质量新内容，故不纳入。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
