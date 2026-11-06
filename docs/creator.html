@@ -36,6 +36,60 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-06">AI 每日简报 · 2026-11-06 周五</span>
+    <button class="cbtn" data-copy="t-2026-11-06">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-06.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-06.mp3" download="2026-11-06.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-06">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-06">AI 每日简报 · 2026-11-06 周五
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 两阶段残差学习实现太阳辐照预测的校准不确定性：提出两阶段残差方法，在点预测基础上单独建模残差分布，显著改善长时程太阳辐照概率预测的校准性。
+  来源：https://arxiv.org/abs/2611.07444v1
+· LLM 推理能耗的 SIMPLE 定律：从计算与访存复杂度推导闭式表达式，刻画 token 级能耗沿序列非线性增长，摆脱逐模型拟合。
+  来源：https://huggingface.co/papers/2611.03330
+· Halley：光互连 AI 数据中心网络的预测控制平面：针对光学网络四层（激光器到交换机）固定策略的缺陷，提出预测式控制以缓解相关失效导致的可用性上限。
+  来源：https://huggingface.co/papers/2611.04408
+· 非对称分布式电压调节提升 DER 利用率：基于并网点电压、逆变器容量与有功出力设计分布式电压控制，兼顾欠压与过压场景。
+  来源：https://arxiv.org/abs/2611.07412v1
+· Koopman 生成算子用于高效概率时序预测：结合 Koopman 算子的结构化动力学与生成式不确定性建模，避免扩散采样的迭代开销。
+  来源：https://huggingface.co/papers/2611.04760
+
+🧠 强化学习前沿 (RL for Energy)
+· 多轮强化学习究竟改善了 LLM Agent 的什么？：通过 Pass@(K,T) 分解表明，轨迹级 RL 收益集中于错误恢复与长程能力，依赖足够的交互轮次预算，而非单步决策质量。
+  来源：https://huggingface.co/papers/2611.06483
+· Turns Matter：基于轮次级信用的流式视频 RL：提出 TurnWise，用轮次级 GRPO 替代轨迹级共享优势，缓解早期成功后的冗余响应与失败后的放弃行为。
+  来源：https://huggingface.co/papers/2611.06728
+· DRAP：面向 Physical AI 的动力学风险自适应可塑性：无回放的持续学习方法，从样本级动作梯度估计张量历史重要性，抑制闭环轨迹中的误差累积。
+  来源：https://huggingface.co/papers/2611.05029
+
+📐 AI4PDE 最新进展
+· 截断 BPTT 诱导双侧梯度 turnpike 性质：证明截断反向传播在缺失过去与未来信息时产生两类边界效应，并解耦梯度平均区间与时间上下文。
+  来源：https://arxiv.org/abs/2611.07415v1
+· 等变表示中的谱对称指纹：利用等变表示奇异值谱作为结构对称性的统一指纹，将秩约束从表达瓶颈转化为可利用特征。
+  来源：https://arxiv.org/abs/2611.07410v1
+
+🔧 凸优化与能源系统
+· 基于控制屏障函数的安全输出调节流用于约束优化：将约束优化表述为带状态约束的输出调节问题，用 PI 反馈驱动等式残差归零、CBF 保证不等式约束。
+  来源：https://arxiv.org/abs/2611.07436v1
+
+💻 开源项目与代码
+· NVIDIA/auto-ontology：构建语义图推理层的 Python 框架，支持确定性查询生成与可解释 AI 工作流，单日 +2,679 star。
+  来源：https://github.com/NVIDIA/auto-ontology
+
+💡 今日观察
+今日最明确的信号是&quot;能耗-算力&quot;耦合正在被理论化：SIMPLE 定律给出 token 级能耗闭式表达，Halley 把光网络可靠性纳入可用性分析，这意味着 AI 基础设施本身正成为能源系统建模对象。同时，概率预测侧出现两条互补路线——残差校准与 Koopman 生成算子，均值得在光伏/负荷预测任务上复现对比。RL 方面，轮次级信用分配与动力学风险可塑性对多智能体能源调度具有直接迁移价值。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-05">AI 每日简报 · 2026-11-05 周四</span>
     <button class="cbtn" data-copy="t-2026-11-05">📋 复制标题</button>
   </div>
@@ -714,58 +768,6 @@
 
 💡 今日观察
 今日信号集中在&quot;物理先验 + 世界模型&quot;与&quot;可验证奖励 RL&quot;两条主线：PhysiCalWorld 的物理属性上下文标定、视频自编码器重构讨论，都指向用数据驱动模型逼近 PDE 仿真；而 JOLT、ThinkingBox、LongZero 则共同显示 RL 后训练正从&quot;堆数据&quot;转向&quot;提样本效率与奖励设计&quot;。对能源交叉研究者而言，把能源系统仿真器（如潮流、热网）嵌入可验证奖励回路，是值得尝试的低成本切入点。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-22">AI 每日简报 · 2026-10-22 周四</span>
-    <button class="cbtn" data-copy="t-2026-10-22">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-22.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-22.mp3" download="2026-10-22.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-22">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-22">AI 每日简报 · 2026-10-22 周四
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Texas 数据中心扩张或抹去数十年空气质量改善成果：报告指出德州新建与规划中的数据中心用电激增，若以天然气供电将导致空气污染回升至 2000 年代水平。
-  来源：https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report
-· Nvidia DSX Pod 将 AI 数据中心部署周期从 6 个月压缩至 14 天：Nvidia 推出集装箱式预组装数据中心方案，并在柏林 GTC 上将其定位为欧洲 AI 基础设施补短板的关键。
-  来源：https://the-decoder.com/nvidias-dsx-pod-could-cut-ai-data-center-setup-from-six-months-to-as-little-as-14-days/
-· 欧洲数据中心扩张与气候目标冲突：德国将数据中心余热接入居民供暖的计划搁浅，欧洲政策制定者在 AI 雄心与气候目标之间权衡。
-  来源：https://www.wired.com/story/europe-data-centers-climate-change/
-
-🧠 强化学习前沿 (RL for Energy)
-· Self-Credit：面向长程智能体 RL 的组内重标定信用分配：该方法从稀疏结果奖励中通过自生成引用摘要构造稠密监督信号，缓解长程任务信用分配难题。
-  来源：https://huggingface.co/papers/2610.28388
-· HarnessAdapt-RL：训练整个智能体而非仅策略模型：在 RL 过程中同步自适应调整智能体的执行框架（harness），由冻结教师生成任务级技能与交互修复策略。
-  来源：https://huggingface.co/papers/2610.28069
-
-📐 AI4PDE 最新进展
-· Mistral 与 Nvidia 合作以 physics AI 加速工业设计与工程仿真：双方联手用 AI 加速工程仿真与工业产品设计流程。
-  来源：https://the-decoder.com/mistral-and-nvidia-want-to-speed-up-industrial-design-with-physics-ai/
-· PhysLDM：面向高保真变形体仿真的潜空间扩散模型：用紧凑时空潜表示对高分辨率三维体网格做长程预测，规避自回归误差累积。
-  来源：https://huggingface.co/papers/2610.07609
-· Planning under Noise with Neural Operators：提出 PUN 神经算子，在 screened-Poisson 随机最优控制框架下学习噪声感知价值场，实现未知几何中的规划。
-  来源：https://arxiv.org/abs/2610.28623v1
-
-🔧 凸优化与能源系统
-· ATEST：面向 LLM 推理的自适应资源感知测试时扩展：实测 GPU 负载升高时同一查询能耗可增至 4.1 倍，据此在采样收益与当前 GPU 成本间做联合权衡。
-  来源：https://huggingface.co/papers/2610.25519
-
-💻 开源项目与代码
-· Kronos：金融市场语言的基础模型：面向金融时序的基础模型开源项目，单日新增 575 star。
-  来源：https://github.com/shiyu-coder/Kronos
-· vLLM：高吞吐低显存 LLM 推理与服务引擎：持续高热的高性能推理引擎，单日新增 441 star。
-  来源：https://github.com/vllm-project/vllm
-
-💡 今日观察
-今日最清晰的信号是「AI 算力的能源外部性」正从边缘话题变成主流叙事：德州空气质量、欧洲余热回收、DSX Pod 模块化供电三条新闻从排放、供热、配电三个角度指向同一问题——数据中心负荷建模与需求侧灵活性将成为 AI4Energy 的高频场景。方法论侧，稀疏奖励下的信用分配（Self-Credit）与神经算子+随机最优控制（PUN）值得关注，前者契合多时段储能调度，后者契合含噪物理系统控制。此外，Mistral×Nvidia 的 physics AI 合作表明工业级 PDE 仿真加速已进入商业落地阶段。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
