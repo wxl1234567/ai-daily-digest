@@ -36,6 +36,54 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-07">AI 每日简报 · 2026-11-07 周六</span>
+    <button class="cbtn" data-copy="t-2026-11-07">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-07.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-07.mp3" download="2026-11-07.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-07">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-07">AI 每日简报 · 2026-11-07 周六
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 数据中心电池调度的联合电价-负荷预测（Polynomial Diffusion Models）：提出用多项式扩散模型（PDM）同时预测实时电价与数据中心负荷，并利用其闭式条件期望将预测直接嵌入 BESS 实时充放电调度，实现高价卖出、低价买入的套利。
+  来源：https://arxiv.org/abs/2611.08470v1
+· AI 数据中心成为能源与电网政治议题（The Verge 专题）：The Verge 汇总数据中心扩张引发的电网负荷、电价上涨与社区反对争议；中期选举中 41 项数据中心相关公投有 40 项通过限制性措施，OpenAI 随后承诺不再用 NDA 约束地方官员。
+  来源：https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy
+· Crusoe 将怀俄明受阻数据中心项目出售给 Google：该交易凸显超大规模 AI 数据中心在选址、供电与建设上的现实阻力，是 AI 算力—能源耦合风险的直接案例。
+  来源：https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/
+
+🧠 强化学习前沿 (RL for Energy)
+· SwarmEvolve：潜在空间多智能体群体进化搜索：用每轮数百个低成本 agent 在潜空间中推理而非解码长文本 CoT，显著加速 LLM 引导的进化式程序搜索与优化，保持种群多样性。
+  来源：https://huggingface.co/papers/2611.08483
+· Harness-S：从兄弟执行框架学习可泛化 Agent 训练：针对执行框架（harness）演化的局部性、互补性与非平稳性，选择性用兄弟框架补救失败案例并将能力蒸馏回单一策略。
+  来源：https://huggingface.co/papers/2611.04277
+
+📐 AI4PDE 最新进展
+· SLA：通过持续预训练扩展空间-语言-动作模型：将 3D 空间理解作为可迁移的基础模型能力，通过持续预训练从更广泛的机器人经验中学习空间监督，而非仅在任务适配阶段引入。
+  来源：https://huggingface.co/papers/2611.08373
+· VFlash：Flash 基元解码实现快速视觉规划：针对自回归 VLM 逐坐标 token 生成轨迹代价高的问题，利用已知结构实现点、框、轨迹基元的快速解码，用于机器人与自动驾驶的物理 AI 任务。
+  来源：https://huggingface.co/papers/2611.08449
+
+🔧 凸优化与能源系统
+· Bures-Wasserstein 空间上的加速近端梯度法（BW-FISTA）：将一类高斯测度上的复合优化问题提升到仿射传输映射的欧氏空间，用加速近端梯度求解，达到 minimax 最优目标精度。
+  来源：https://arxiv.org/abs/2611.08468v1
+
+💻 开源项目与代码
+· NVIDIA/auto-ontology（今日 +2,015 star）：构建于数据之上的语义图推理层 Python 框架，支持确定性查询生成、更优上下文检索与可解释 AI，面向 LLM 与 agent 工作流。
+  来源：https://github.com/NVIDIA/auto-ontology
+
+💡 今日观察
+今日唯一直接命中 AI4Energy 的硬核论文是「PDM 联合电价-负荷预测 + 数据中心 BESS 调度」，其&quot;预测闭式期望直接进入优化&quot;的范式值得储能与电力市场研究者精读。与此同时，数据中心用电已成为电网规划与政治博弈的核心变量，算力—电力耦合正从工程问题升级为系统性问题。凸优化侧 Bures-Wasserstein 加速近端梯度法为分布鲁棒能源规划提供了新的几何工具，值得关注其在最优潮流与鲁棒调度中的落地。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-06">AI 每日简报 · 2026-11-06 周五</span>
     <button class="cbtn" data-copy="t-2026-11-06">📋 复制标题</button>
   </div>
@@ -718,56 +766,6 @@
 
 💡 今日观察
 今天最明确的能源信号来自 Google 的&quot;付费让电&quot;计划：AI 数据中心的用电需求正倒逼需求响应与电力市场机制创新，这是 AI4Energy 中&quot;算力—电力&quot;耦合研究的重要现实样本。同时，JOLT 与 METTA 等 RL 训练效率工作，为能源调度这类高成本策略学习提供了降本路径；而 Granite 时序集成与 Kumo 关系模型则直接可作为负荷预测的可用基线。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-23">AI 每日简报 · 2026-10-23 周五</span>
-    <button class="cbtn" data-copy="t-2026-10-23">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-23.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-23.mp3" download="2026-10-23.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-23">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-23">AI 每日简报 · 2026-10-23 周五
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· IBM Granite 时间序列模型集成预测方法开源发布：IBM Research 在 Hugging Face 发布基于 Granite 时间序列模型的集成预测（ensemble forecasting）方法，提供可直接复用的概率预测流程。
-  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
-· OlmoEarth v1.3 发布全球尺度地表嵌入模型：Allen AI 更新 OlmoEarth 至 v1.3，提供覆盖全球的 SOTA 地球观测嵌入表示。
-  来源：https://huggingface.co/blog/allenai/olmoearth-v1-3
-· Google DeepMind 发布全球森林类型精细制图：将地表每 10 米网格分类为不同森林类型，构建全球森林类型地图。
-  来源：https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/
-
-🧠 强化学习前沿 (RL for Energy)
-· Perplexity 与 NVIDIA 提出 JOLT 联合师生强化学习方法：单一模型同时充当教师与学生进行 on-policy 后训练，在 MATH 上以 6.5 倍更少训练 token 达到 GRPO 精度。
-  来源：https://www.marktechpost.com/2026/10/21/perplexity-jolt-joint-on-policy-learning-teaching/
-· 微软 ThinkingBox：将数据库评分转化为 RL 奖励训练 Agent：把数据库查询评分机制设计为强化学习奖励信号，用于后训练智能体。
-  来源：https://huggingface.co/blog/microsoft/thinkingbox-training
-· LongZero：从零数据强化 LLM 长上下文推理：提出无需人工标注或外部语料的 RL 方法，模型自行生成可验证的长上下文训练数据。
-  来源：https://arxiv.org/abs/2610.30132v1
-
-📐 AI4PDE 最新进展
-· PhysiCalWorld：面向世界模型的上下文物理标定：通过上下文推断质量分布、关节阻尼、表面摩擦等物理属性，抑制新场景下的预测漂移。
-  来源：https://arxiv.org/abs/2610.30125v1
-· Rethinking Video Autoencoders for Interactive World Models：指出世界模型复用的视频自编码器为离线生成设计，不匹配交互式仿真的延迟与压缩需求，并提出重构思路。
-  来源：https://arxiv.org/abs/2610.30129v1
-
-🔧 凸优化与能源系统
-· ℓ∞ 压缩映射的拟多项式时间算法：给出任意 d 维 ℓ∞ 范数非扩张映射 ε-近似不动点的算法，时间复杂度为 log(1/ε)^{O(log²d)}，并推出简单随机博弈可拟多项式时间求解。
-  来源：https://arxiv.org/abs/2610.30122v1
-
-💻 开源项目与代码
-· NVIDIA Nsight Python：从 Python 直接剖析 GPU Kernel：开源接口支持在 Python 代码中剖析 GPU kernel、分析硬件指标与缓存/频率控制。
-  来源：https://www.marktechpost.com/2026/10/21/nvidia-nsight-python-tutorial-how-to-profile-gpu-kernels/
-
-💡 今日观察
-今日信号集中在&quot;物理先验 + 世界模型&quot;与&quot;可验证奖励 RL&quot;两条主线：PhysiCalWorld 的物理属性上下文标定、视频自编码器重构讨论，都指向用数据驱动模型逼近 PDE 仿真；而 JOLT、ThinkingBox、LongZero 则共同显示 RL 后训练正从&quot;堆数据&quot;转向&quot;提样本效率与奖励设计&quot;。对能源交叉研究者而言，把能源系统仿真器（如潮流、热网）嵌入可验证奖励回路，是值得尝试的低成本切入点。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
