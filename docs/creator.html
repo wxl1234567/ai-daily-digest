@@ -36,6 +36,56 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-08">AI 每日简报 · 2026-11-08 周日</span>
+    <button class="cbtn" data-copy="t-2026-11-08">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-08.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-08.mp3" download="2026-11-08.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-08">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-08">AI 每日简报 · 2026-11-08 周日
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Crusoe 将怀俄明州受阻的数据中心项目出售给 Google：Crusoe 把陷入困境的怀俄明州大型 AI 数据中心项目转让给 Google，凸显超大规模 AI 基础设施开发的电力与选址挑战。
+  来源：https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/
+· 中期选举后数据中心扩张面临阻力：美国 41 项数据中心相关公投中 40 项通过限制性措施，AI 算力扩张的电力与社区约束显著上升。
+  来源：https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/
+· 阿里巴巴发布《2026 AI 向善行动报告》，AI 数据中心可持续发展成亮点：报告将数据中心能效与可持续运营列为年度重点。
+  来源：https://www.qbitai.com/2026/11/508165.html
+
+🧠 强化学习前沿 (RL for Energy)
+· AI 审计员能捕获多数智能体越界行为，但误报泛滥：Anthropic 研究者 Andy Hall 的研究显示 GPT-5 可识别约 98% 的 reward-hacking 案例，但搜索越彻底误报越多，尚不足以支撑可靠安全审查。
+  来源：https://the-decoder.com/ai-auditors-catch-most-agent-misbehavior-but-flood-reviewers-with-false-alarms-new-study-finds/
+
+📐 AI4PDE 最新进展
+· NVIDIA 发布 Cosmos 3 开放模型用于交互式世界仿真：面向物理世界交互仿真的开放世界模型，可用于物理一致的动力学建模与预测。
+  来源：https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation
+
+🔧 凸优化与能源系统
+· Google DeepMind 与英国政府合作以 AI 加速规划审批决策：用 AI 缩短规划评估时间，涉及空间与资源配置类决策流程。
+  来源：https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/
+
+💻 开源项目与代码
+· Buoyant 发布 Kinference：面向 Kubernetes 与 vLLM 的开源推理控制平面：Apache 2.0 许可，提供声明式路由、KV-cache 感知负载均衡与租户级指标，自测中位 TTFT 降低 95%。
+  来源：https://www.marktechpost.com/2026/11/07/buoyant-kinference-open-source-inference-control-plane-kubernetes-vllm/
+· Zyphra ZYFA：面向 AMD MI355X 的 FP8 FlashAttention：开源 FP8/BF16 prefill attention 内核，较 AMD AITER 快 1.16–1.76 倍，误差降低 62–78%。
+  来源：https://www.marktechpost.com/2026/11/06/zyphra-zyfa-fp8-flashattention-amd-mi355x/
+· ranxianglei/billion-context：面向超长会话的上下文压缩插件：支持月级长会话与 100K 小窗口，宣称节省 5 倍 token。
+  来源：https://github.com/ranxianglei/billion-context
+· dsx-ai-factory/nvke：裸金属 GPU Kubernetes 管理平面：面向裸金属 GPU 集群的 Kubernetes 管理平面。
+  来源：https://github.com/dsx-ai-factory/nvke
+
+💡 今日观察
+今日信号集中在 AI 算力的&quot;物理约束&quot;：数据中心选址受阻、电力与社区约束上升，正把负荷预测、并网规划与能效优化推到 AI4Energy 的核心位置。同时 RL 智能体的 reward-hacking 审计研究提醒我们，将 RL 用于能源调度前需建立可信的奖励验证机制。开源侧推理调度与异构加速工具持续成熟，为能源场景的边云协同部署降低门槛。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-07">AI 每日简报 · 2026-11-07 周六</span>
     <button class="cbtn" data-copy="t-2026-11-07">📋 复制标题</button>
   </div>
@@ -718,54 +768,6 @@
 
 💡 今日观察
 今天没有直接的 AI4Energy 顶刊论文或 RL-for-Energy 新作，但两条基础设施信号值得注意：一是 IBM Granite 时序基础模型的集成预测工程化，二是 Agent 安全沙箱（OpenShell、srt、Agent Compute Engine）密集发布。对能源研究者而言，前者是负荷/新能源预测的直接工具，后者意味着把 RL 调度 Agent 从仿真推进到真实系统时，隔离与可审计性正成为可复用的标准组件。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-24">AI 每日简报 · 2026-10-24 周六</span>
-    <button class="cbtn" data-copy="t-2026-10-24">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-24.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-24.mp3" download="2026-10-24.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-24">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-24">AI 每日简报 · 2026-10-24 周六
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Google 付费让用户少用电，为数据中心腾出电力容量：Google 推出需求响应计划，向主动削减用电的用户付费，从而把释放出的电力容量调配给其数据中心使用。
-  来源：https://www.computerworld.com/article/4239858/google-will-pay-people-to-use-less-electricity-so-its-data-centers-can-use-more.html
-· NVIDIA 发布 DSX Pod 插电式数据中心，瞄准欧洲 AI 基础设施缺口：在 GTC 柏林上，黄仁勋发布即插即用型数据中心方案，作为欧洲 AI 算力基建的核心抓手。
-  来源：https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/
-
-🧠 强化学习前沿 (RL for Energy)
-· JOLT：Perplexity 与 NVIDIA 提出师生联合强化学习方法：单一模型同时充当 teacher 与 student 做 on-policy 训练，在 MATH 上以 6.5 倍更少 token 达到 GRPO 同等精度。
-  来源：https://www.marktechpost.com/2026/10/21/perplexity-jolt-joint-on-policy-learning-teaching/
-· METTA：面向元强化学习的记忆增强测试时自适应：将快速自适应阶段分解，用记忆机制替代 transformer 的二次复杂度轨迹检索。
-  来源：https://arxiv.org/abs/2610.31656v1
-
-📐 AI4PDE 最新进展
-· 从随机特征到全可训练网络的相变现象：量化部分可训练网络的逼近界相变规律，并在训练误差中观察到类似行为。
-  来源：https://arxiv.org/abs/2610.31663v1
-
-🔧 凸优化与能源系统
-· OpenAI 发布 Decisions API，提供快速低成本决策能力：面向应用提供聚焦、低成本的决策接口，与决策模型竞争升温。
-  来源：https://openai.com/index/decisions-api
-· 蚂蚁数科发布决策模型 LingDT-Decision-1.0：国产决策模型，宣称准确率超过微软与 Jev 等决策模型。
-  来源：https://www.qbitai.com/2026/10/504879.html
-
-💻 开源项目与代码
-· IBM Granite 时序模型集成预测教程：Hugging Face 发布基于 IBM Granite 时间序列模型的集成预测方法。
-  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
-· NVIDIA Kumo Relational：无需训练的关系数据学习：在关系数据上无需训练即超越监督 ML，直接对结构化表格做推理。
-  来源：https://huggingface.co/blog/nvidia/kumo-relational
-
-💡 今日观察
-今天最明确的能源信号来自 Google 的&quot;付费让电&quot;计划：AI 数据中心的用电需求正倒逼需求响应与电力市场机制创新，这是 AI4Energy 中&quot;算力—电力&quot;耦合研究的重要现实样本。同时，JOLT 与 METTA 等 RL 训练效率工作，为能源调度这类高成本策略学习提供了降本路径；而 Granite 时序集成与 Kumo 关系模型则直接可作为负荷预测的可用基线。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
