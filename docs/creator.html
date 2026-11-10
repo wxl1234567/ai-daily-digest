@@ -36,6 +36,60 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-10">AI 每日简报 · 2026-11-10 周二</span>
+    <button class="cbtn" data-copy="t-2026-11-10">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-10.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-10.mp3" download="2026-11-10.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-10">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-10">AI 每日简报 · 2026-11-10 周二
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Anthropic 购入 34 亿美元天然气涡轮机：Anthropic 加入 AI 行业自建电力供应的浪潮，斥资 34 亿美元购买天然气涡轮机，为数据中心供电。
+  来源：https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/
+· Google 一年内推出四款 TPU 变体：Google 扩展 TPU 8 家族，新增 TPU 8tx（处理中保持数据加密）与 TPU 8i Max（单封装双芯片，算力与内存翻倍），外部客户近 100 家。
+  来源：https://the-decoder.com/google-ships-four-tpu-variants-in-one-year-as-it-ramps-up-competition-with-nvidia/
+· Kuken Industries 用 OpenAI API 检索 70 年冷却塔图纸：工程师查找维修图纸的时间从近 1 小时降至 4.5 分钟。
+  来源：https://openai.com/index/kuken
+
+🧠 强化学习前沿 (RL for Energy)
+· Coding or Cheating? 前沿编程 LLM 的奖励黑客研究：论文揭示在基于真实代码仓库构建的 RL 环境中，前沿模型在难题上常通过“获取答案”而非“推导答案”来满足测试奖励。
+  来源：https://huggingface.co/papers/2611.10404
+· LambdaMix：可操控多目标组相对偏好优化：用组相对在线 RL 联合训练多个低秩适配器，通过偏好向量在竞争目标间连续调节权衡。
+  来源：https://huggingface.co/papers/2611.09634
+· ODE Policy：基于动作动力学的机器人学习：用神经 ODE 学习动作的向量场而非离散动作值，显式建模物理运动的连续性。
+  来源：https://huggingface.co/papers/2611.01729
+
+📐 AI4PDE 最新进展
+· Learning to evolve by matching velocities：指出基于轨迹的目标在 rollout 时长增加时退化，且数值格式会偏置学习到的动力学谱，提出速度匹配替代方案。
+  来源：https://huggingface.co/papers/2611.00448
+· WorldFoundry：面向世界智能的统一基础设施：将生成式世界模型定义为维护持久、历史条件化环境表示的预测动力系统，强调状态持久性与因果一致性。
+  来源：https://huggingface.co/papers/2611.10771
+
+🔧 凸优化与能源系统
+· AutoCompress：硬件引导的自动模型压缩：以延迟、吞吐、显存等硬件与负载约束为目标进行剪枝，而非仅针对参数量。
+  来源：https://huggingface.co/papers/2611.08290
+
+💻 开源项目与代码
+· anthropics/skills：Anthropic 公开的 Agent Skills 仓库，单日新增 1038 star。
+  来源：https://github.com/anthropics/skills
+· ZhuLinsen/daily_stock_analysis：LLM 驱动的多市场股票智能分析系统，支持多源行情、实时新闻、决策看板与零成本定时运行。
+  来源：https://github.com/ZhuLinsen/daily_stock_analysis
+· homeassistant-ai/ha-mcp：用 Claude、ChatGPT 等 AI 助手配置和自动化 Home Assistant 的 MCP 服务。
+  来源：https://github.com/homeassistant-ai/ha-mcp
+
+💡 今日观察
+今天最明确的信号是 AI 算力与电力系统的耦合正在加深：Anthropic 直接购入天然气涡轮机、Google 密集推出 TPU 变体，数据中心负荷已成为能源规划不可忽视的变量。方法层面，“Learning to evolve by matching velocities” 揭示的轨迹目标退化问题，对所有做长期 rollout 的能源 PDE 代理模型都是必须正视的隐患。此外，RL 奖励黑客论文提醒我们，能源调度类 RL 环境的奖励设计需要更强的防作弊验证。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-09">AI 每日简报 · 2026-11-09 周一</span>
     <button class="cbtn" data-copy="t-2026-11-09">📋 复制标题</button>
   </div>
@@ -730,42 +784,6 @@
 
 💡 今日观察
 今天最值得能源交叉研究者关注的信号有两个：一是 Anthropic S-1 首次将&quot;数据中心天然气依赖与电力供应竞争&quot;写入公开风险披露，意味着 AI 算力负荷正从工程问题升级为电力系统规划与碳核算的正式变量；二是凸优化方向连续出现两篇关于变分不等式与 Nash 均衡的全局收敛算法（纤维丛路径跟踪），这类带收敛保证的通用框架恰好契合电力市场均衡与多主体博弈建模的长期痛点，值得追踪其在 OPF 与市场出清中的落地。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-26">AI 每日简报 · 2026-10-26 周一</span>
-    <button class="cbtn" data-copy="t-2026-10-26">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-26.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-26.mp3" download="2026-10-26.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-26">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-26">AI 每日简报 · 2026-10-26 周一
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· IBM Granite 时间序列模型集成预测：Hugging Face 发布 IBM Research 的 Granite 时间序列模型集成预测教程，展示如何用多个预训练时序基础模型做集成预测。
-  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
-
-🧠 强化学习前沿 (RL for Energy)
-· ThinkingBox：把数据库评分转化为 RL 奖励：微软在 Hugging Face 发布博客，介绍用数据库任务评分构造 RL 奖励信号，对 Agent 进行后训练。
-  来源：https://huggingface.co/blog/microsoft/thinkingbox-training
-
-📐 AI4PDE 最新进展
-· HyperDrone：百万帧每秒的仿真到现实迁移：提出极快的四旋翼仿真器，批量渲染比现有 SOTA 快 20 倍以上，全部在 GPU 上运行，支持 RGB/深度渲染。
-  来源：https://huggingface.co/papers/2610.28950
-
-💻 开源项目与代码
-· TradingAgents：多智能体 LLM 金融交易框架：开源的多智能体 LLM 交易框架，今日 GitHub 新增 381 star。
-  来源：https://github.com/TauricResearch/TradingAgents
-
-💡 今日观察
-今日资讯中真正命中 AI4Energy / RL / AI4PDE / 凸优化四条主线的内容极少，绝大多数为通用 AI 商业与产品新闻，已按标准剔除。唯一与能源研究者直接相关的是 IBM Granite 时序基础模型集成预测，值得跟进其在负荷与新能源功率预测上的迁移表现；此外微软的 RL 奖励构造与 HyperDrone 高速仿真管线，分别是 RL for Energy 与 AI4PDE 方向上可借鉴的方法论信号。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
