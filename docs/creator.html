@@ -36,6 +36,50 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-11">AI 每日简报 · 2026-11-11 周三</span>
+    <button class="cbtn" data-copy="t-2026-11-11">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-11.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-11.mp3" download="2026-11-11.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-11">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-11">AI 每日简报 · 2026-11-11 周三
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 达卯科技与浦东环保能源达成战略合作，启动&quot;黎明智算中心算电协同平台&quot;：将 AI 算力负荷与区域能源系统协同调度，推动东部城市型智算中心向 E-AIDC（能源-AI 数据中心）演进。
+  来源：https://www.qbitai.com/2026/11/508985.html
+
+🧠 强化学习前沿 (RL for Energy)
+· Adaptive Quantization Preserves Fast Rates for TD Learning over Rate-Limited Channels：研究通信受限信道下带线性函数逼近的 TD 学习策略评估，证明自适应量化可保持统计收敛速率。
+  来源：https://arxiv.org/abs/2611.12878v1
+· Deletion Tuning：仅置零 &lt;0.05% 权重即可匹配全量微调：在 RLVR、SFT、on-policy 蒸馏三种后训练范式下，学习 Transformer 门投影上的二值掩码，效果等同全量微调。
+  来源：https://www.reddit.com/r/LocalLLaMA/comments/1xswmb7/the_surprising_effectiveness_of_deleting_weights/
+
+📐 AI4PDE 最新进展
+· Kolmogorov-Chapman Maps：无轨迹学习模拟分子动力学：将多步 SDE 数值积分摊销为单次神经网络前向，直接从 Kolmogorov-Chapman 方程学习转移映射，避免百万级序列步。
+  来源：https://arxiv.org/abs/2611.12880v1
+
+🔧 凸优化与能源系统
+· Meta FAIR 发布 e-means，以 1/10 epoch 超越 k-means：基于指数滑动平均的小批量 k-means 优化，1.4–2.6 epoch 即达 Lloyd 算法 25 epoch 损失，GPU 加速 10–45 倍，已并入 FAISS 1.16.0。
+  来源：https://www.marktechpost.com/2026/11/10/meta-fair-e-means-k-means-faiss/
+
+💻 开源项目与代码
+· homeassistant-ai/ha-mcp：为 Home Assistant 提供 MCP 接口，可用 Claude、ChatGPT 等 AI 助手配置与自动化家庭能源设备。
+  来源：https://github.com/homeassistant-ai/ha-mcp
+· ranxianglei/billion-context：上下文压缩插件，支持月级长会话（十亿 token），100K 窗口即可运行，节省约 5 倍 token。
+  来源：https://github.com/ranxianglei/billion-context
+
+💡 今日观察
+今天与能源直接相关的信号集中在&quot;算电协同&quot;与&quot;分布式 RL 通信约束&quot;两端：前者是 AI 负荷成为电网可调度资源的产业落地，后者为多智能体能源管理提供了收敛性理论支撑。同时 e-means 这类高效聚类与 SDE 加速方法，为负荷场景削减和能源 PDE 长时仿真提供了可复用的通用工具，值得纳入方法库。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-10">AI 每日简报 · 2026-11-10 周二</span>
     <button class="cbtn" data-copy="t-2026-11-10">📋 复制标题</button>
   </div>
@@ -726,64 +770,6 @@
 
 💡 今日观察
 今日与能源直接相关的信号集中在“AI 算力的电力侧”：数据中心负荷与天然气依赖被主流媒体和 IPO 文件同时摆上台面，为负荷建模与碳核算提供了新的现实约束。方法层面，可验证奖励 RL 与带约束 GP bandit 是最贴近能源调度/分配的两条技术线，值得优先跟进其可迁移性。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-27">AI 每日简报 · 2026-10-27 周二</span>
-    <button class="cbtn" data-copy="t-2026-10-27">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-27.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-27.mp3" download="2026-10-27.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-27">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-27">AI 每日简报 · 2026-10-27 周二
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Anthropic S-1 文件揭示 AI 数据中心的天然气依赖：Anthropic 在 IPO 招股书中承认，数据中心正日益依赖天然气供电，并指出&quot;争夺电力供应和具备充足电力容量的数据中心选址的竞争十分激烈&quot;。
-  来源：https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk
-· OpenAI 公布数学、计算机科学与物理领域三项&quot;重大发现&quot;并开放学术合作机制：OpenAI 分享了在 Kakeya 猜想、指数时间假设（ETH）和量子色动力学（QCD）上的模型结果，并引入外部专家&quot;shepherd&quot;机制引导结果验证。
-  来源：https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics / https://openai.com/index/building-scientific-understanding-with-academic-communities
-· IBM Granite 时间序列模型集成预测方法发布：Hugging Face 发布基于 IBM Granite 时间序列基础模型的集成预测（ensemble forecasting）实践指南。
-  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
-· DISC：面向时间序列数据集的领域集成相似度代价：提出一种在模型适配前评估源域-目标域可迁移性的相似度度量，避免对每对候选数据集做穷举评估。
-  来源：https://huggingface.co/papers/2610.31288
-
-🧠 强化学习前沿 (RL for Energy)
-· DiscoDemo：用 RL 作为数据生成器发现高效多样的机器人示范：将 RL 不视为可部署控制器，而是用于生成覆盖多种成功模式的示范数据，以提升下游视觉-运动模仿学习的覆盖度。
-  来源：https://huggingface.co/papers/2610.32093
-· FSPO：函数空间时序自蒸馏的策略优化：提出单策略框架 Function-Space Policy Optimization，用反馈引导的自教师提供更密集的 token 级监督，缓解教师随学生演化导致的目标不稳定问题。
-  来源：https://huggingface.co/papers/2610.19687
-· MultiAgent-OPD：分层多智能体系统的端到端在线策略蒸馏训练：结合 on-policy distillation 与 RL 联合训练 Leader 与子智能体，解决最终答案对子智能体反馈间接的问题。
-  来源：https://huggingface.co/papers/2610.23234
-
-📐 AI4PDE 最新进展
-· 正交群下微分神经正切核（DNTK）的对称性分析：针对过参数化 PINN 的训练动力学，推导无限宽 DNTK 在正交群下的对称性，覆盖两层与深层网络及有无偏置的全部激活函数。
-  来源：https://arxiv.org/abs/2610.34023v1
-· LLM2Cert：用 LLM 结合 SMT/Lean 验证合成 Lyapunov 函数与 barrier certificate：针对非线性高维系统，用 LLM 生成候选证书并由 SMT/Lean 严格验证，突破数值求解器的保守性与可扩展性瓶颈。
-  来源：https://huggingface.co/papers/2610.30524
-· PaperFormalizer：作者在环的研究论文 Lean 自动形式化流水线：从 LaTeX 源出发构建陈述依赖图，逐条审计忠实性与正确性，再形式化并证明，帮助作者发现证明与假设中的缺口。
-  来源：https://huggingface.co/papers/2610.31810
-
-🔧 凸优化与能源系统
-· 纤维丛上的路径跟踪框架求解变分不等式：将一般连续映射、多面体域上的 VI 转化为单纯形上的光滑 VI，并在&quot;不动点丛&quot;几何结构上构造具全局渐近收敛保证的通用算法。
-  来源：https://huggingface.co/papers/2606.00778
-· 乘积单纯形域上的不动点丛方法求解博弈均衡：将不动点丛框架从单纯形域扩展到乘积单纯形域，直接用于一般和博弈的 Nash 均衡计算，构造复合纤维丛结构。
-  来源：https://huggingface.co/papers/2609.16158
-
-💻 开源项目与代码
-· TradingAgents：多智能体 LLM 金融交易框架：（今日 +1,395 star）：开源多智能体 LLM 交易框架，展示多角色协作决策的工程范式。
-  来源：https://github.com/TauricResearch/TradingAgents
-· NVIDIA Flora：开源机器人数据引擎，视频标注成本降至 1/125：基于三个微调 Qwen3.5 模型，将一小时机器人视频标注成本从 88 美元降至 72 美分，质量略优，是 GR00T 模型训练的数据引擎。
-  来源：https://the-decoder.com/nvidia-open-sources-flora-to-make-robot-video-labeling-125x-cheaper-than-gpt-6-astra / https://huggingface.co/papers/2610.31779
-
-💡 今日观察
-今天最值得能源交叉研究者关注的信号有两个：一是 Anthropic S-1 首次将&quot;数据中心天然气依赖与电力供应竞争&quot;写入公开风险披露，意味着 AI 算力负荷正从工程问题升级为电力系统规划与碳核算的正式变量；二是凸优化方向连续出现两篇关于变分不等式与 Nash 均衡的全局收敛算法（纤维丛路径跟踪），这类带收敛保证的通用框架恰好契合电力市场均衡与多主体博弈建模的长期痛点，值得追踪其在 OPF 与市场出清中的落地。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
