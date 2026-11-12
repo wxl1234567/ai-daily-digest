@@ -36,6 +36,58 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-12">AI 每日简报 · 2026-11-12 周四</span>
+    <button class="cbtn" data-copy="t-2026-11-12">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-12.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-12.mp3" download="2026-11-12.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-12">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-12">AI 每日简报 · 2026-11-12 周四
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 达卯科技与浦东环保能源达成战略合作，黎明智算中心算电协同平台启动：双方围绕智算中心与电力系统协同调度展开合作，推动东部城市型智算中心向 E-AIDC 演进。
+  来源：https://www.qbitai.com/2026/11/508985.html
+· Google DeepMind 计划将 AlphaProof Code 形式化验证方法扩展至电网等关键基础设施：其 AI agent 在四周内为 Signal 加密核心生成超 600 万行 Lean 证明代码，官方表示将把该方法推广到电网和医疗设备等关键系统。
+  来源：https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years/
+
+🧠 强化学习前沿 (RL for Energy)
+· NVIDIA 发布 Alpamayo 2 Edge 自动驾驶模型，采用 RL 训练闭环：该模型输入 6 路摄像头与运动信息，Embedl 已发布边缘硬件优化版本，在 AGX Thor 上比 PyTorch 快 10 倍以上。
+  来源：https://www.reddit.com/r/LocalLLaMA/comments/1xtmeif/open_source_self_driving_is_here/
+· Shortcuts and Boundaries: Verifiable RL Misalignment and Contextual Safety Learning：研究可验证奖励与上下文约束冲突下的 RL 错位（含 reward hacking），并构建可扩展交互环境生成合规策略。
+  来源：https://huggingface.co/papers/2611.12865
+· Are Dense Rewards Worth Their Tokens in GRPO?：系统比较 GRPO 中稠密过程奖励与稀疏结果奖励的收益与 token 成本，指出单批次梯度检验无法反映真实开销。
+  来源：https://huggingface.co/papers/2611.13560
+· Learning to Act with World Models by Valuing What Comes Next：用世界模型预测状态转移对成功概率的影响，缓解稀疏终端奖励下 PPO critic 的信息不足。
+  来源：https://huggingface.co/papers/2611.12200
+
+📐 AI4PDE 最新进展
+· TorchCurves: Differentiable Parametric Curves：PyTorch 库将 B-spline / Legendre 多项式基参数曲线作为可学习原语，支持对输入与系数双向微分。
+  来源：https://huggingface.co/papers/2611.14516
+· Lipschitz-Controlled Flow Matching for Robust Image Restoration (LipsFlower)：为 Flow-from-Y 与观测条件后验采样推导稳定性界，抑制流匹配动力学对小扰动的放大。
+  来源：https://huggingface.co/papers/2611.13995
+
+🔧 凸优化与能源系统
+· Tree-Ising: Repairing Language Models with Bit-Level Ising Edits：将 LLM 权重修复表述为 BF16 权重上的稀疏离散优化问题，用前向统计构造目标以削弱循环方向。
+  来源：https://huggingface.co/papers/2611.14210
+
+💻 开源项目与代码
+· homeassistant-ai/ha-mcp：Home Assistant 的 MCP 服务，让 Claude、ChatGPT 等助手直接配置与自动化家庭能源/设备管理。
+  来源：https://github.com/homeassistant-ai/ha-mcp
+· huawei-csl/MACaQ：华为开源 MXFP4 W4A4 训练后量化方法，逐层独立、在线 block-Hadamard 变换，无需跨层传播。
+  来源：https://github.com/huawei-csl/MACaQ
+
+💡 今日观察
+今天最明确的信号是&quot;AI 方法向能源关键基础设施渗透&quot;：DeepMind 明确要把 AlphaProof Code 的形式化验证扩展到电网，算电协同平台也开始真实落地。与此同时，RL 侧的高质量工作集中在奖励设计与安全性（稀疏奖励、稠密奖励成本、reward hacking），这恰好对应能源调度 RL 从仿真走向部署时最容易被忽视的失败模式。建议重点关注可微参数曲线与流匹配稳定性这类工具，它们为 AI4PDE 在物理场反演中的落地提供了更严谨的数学基础。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-11">AI 每日简报 · 2026-11-11 周三</span>
     <button class="cbtn" data-copy="t-2026-11-11">📋 复制标题</button>
   </div>
@@ -726,50 +778,6 @@
 
 💡 今日观察
 今日与能源直接相关的内容稀少，最值得关注的信号是 Timestral 这类**概率预测基础模型**开始系统性刷新时序 benchmark——这类骨干一旦在负荷/新能源出力上做领域适配，很可能成为能源预测的新基线。其次是 KPPax 所代表的&quot;可微物理求解器 + JAX&quot;路线，正在把 AI4PDE 从通用流体/传热推向大气化学等能源环境耦合场景。RL 侧的高质量工作集中在**长程信用分配与训练收益归因**，这正是能源调度智能体从 demo 走向可复现实验的关键瓶颈。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-28">AI 每日简报 · 2026-10-28 周三</span>
-    <button class="cbtn" data-copy="t-2026-10-28">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-28.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-28.mp3" download="2026-10-28.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-28">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-28">AI 每日简报 · 2026-10-28 周三
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 数据中心热潮推动美国电网创新：AI 数据中心负荷激增倒逼电网现代化，业内认为这正在催生新的电网技术机会。
-  来源：https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/
-· Anthropic IPO 文件暴露 AI 的天然气依赖：S-1 文件承认数据中心日益依赖天然气供电，电力供应竞争“激烈”。
-  来源：https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk
-· IBM Granite 时间序列模型集成预测：Hugging Face 发布基于 Granite 时间序列模型的集成预测方法。
-  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
-
-🧠 强化学习前沿 (RL for Energy)
-· ThinkingBox：把数据库评分转化为 RL 奖励：微软提出用可验证的数据库评分作为奖励信号，对 agent 进行后训练。
-  来源：https://huggingface.co/blog/microsoft/thinkingbox-training
-· Meta AI 评估与 RL 负责人离职创业：Rohit Patel 在 Meta 从事 AI 评估与强化学习八年后离职。
-  来源：https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/
-
-🔧 凸优化与能源系统
-· 高斯过程 Bandit 求解带约束的黑箱杠杆优化：针对共享预算下离散权重分配的延迟、噪声、聚合反馈与操作约束问题，提出 GP bandit 方法。
-  来源：https://arxiv.org/abs/2610.36935v1
-
-💻 开源项目与代码
-· LEANN：将 60M 块 RAG 索引从 201GB 压缩到 6GB：UC Berkeley 开源向量索引，存剪枝图、查询时重算 embedding，90% recall 下用 4GB 达到 HNSW 精度。
-  来源：https://www.marktechpost.com/2026/10/27/leann-vector-index-mlsys-2026/
-· 清华开源 AKV：面向 LLM Agent 的 KV Cache 工程服务：基于 SGLang，通过丢弃/重排 KV cache 替代摘要历史，4 个 agent benchmark 平均降本 27.7%。
-  来源：https://www.marktechpost.com/2026/10/26/tsinghua-akv-kv-cache-engineering-llm-agents/
-
-💡 今日观察
-今日与能源直接相关的信号集中在“AI 算力的电力侧”：数据中心负荷与天然气依赖被主流媒体和 IPO 文件同时摆上台面，为负荷建模与碳核算提供了新的现实约束。方法层面，可验证奖励 RL 与带约束 GP bandit 是最贴近能源调度/分配的两条技术线，值得优先跟进其可迁移性。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
