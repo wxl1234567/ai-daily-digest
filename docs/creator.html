@@ -36,6 +36,46 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-13">AI 每日简报 · 2026-11-13 周五</span>
+    <button class="cbtn" data-copy="t-2026-11-13">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-13.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-13.mp3" download="2026-11-13.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-13">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-13">AI 每日简报 · 2026-11-13 周五
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· TDMOpt：LLM 驱动的输-配-微电网跨层调度框架：提出 LLM 多智能体框架，动态选择建模配置与协调方案，替代固定的跨层调度建模方式。
+  来源：https://arxiv.org/abs/2611.15012v1
+· 数据中心电力需求推高电价，低收入与农村居民承担代价：康奈尔大学研究指出，为满足数据中心用电而进行的电网扩容成本正转嫁给弱势用户群体。
+  来源：https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price
+
+📐 AI4PDE 最新进展
+· FAME-QP：面向实时 MPC 的 GPU 加速二次规划求解器：针对线性模型预测控制中的稠密 QP，融合单/双 kernel 迭代与 CUDA graph 重放，自动校准执行配置。
+  来源：https://huggingface.co/papers/2611.13766
+
+🔧 凸优化与能源系统
+· RPX：规模化验证 AI 生成的 MILP 重构：独立证书检查器，验证原始与重构 MILP 的可行解可互相转换且目标值不劣，保证最优值等价。
+  来源：https://arxiv.org/abs/2611.15035v1
+· 从预测到世界建模：时序基础模型能否恢复因果响应？：系统评估表格与时序基础模型在价格干预效应估计上的表现，发现预测精度不等于因果效应精度。
+  来源：https://arxiv.org/abs/2611.15009v1
+
+💻 开源项目与代码
+· TensorFold：面向 Metal/CUDA/Vulkan 的 LLM 推理引擎：跨三种 GPU 后端的统一推理引擎，适合边缘与异构能源计算设备部署。
+  来源：https://github.com/ashhart/TensorFold
+
+💡 今日观察
+今日与 AI4Energy 直接相关的信号集中在两处：TDMOpt 表明 LLM 多智能体正从&quot;辅助工具&quot;走向&quot;调度建模决策者&quot;，而 RPX 则为这类 AI 生成的优化模型提供了可验证的正确性证书——两者结合指向&quot;可信 AI 优化&quot;闭环。此外，FAME-QP 的 GPU 加速 QP 与时序基础模型的因果性警示，分别从求解效率与建模可靠性两端提醒能源研究者：AI 进入控制与决策层时，速度与可验证性同等重要。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-12">AI 每日简报 · 2026-11-12 周四</span>
     <button class="cbtn" data-copy="t-2026-11-12">📋 复制标题</button>
   </div>
@@ -724,60 +764,6 @@
 
 💡 今日观察
 今天最值得注意的信号是“仿真可信度”正成为交易智能体研究的前沿：LOB-Impact 指出生成式市场模型必须校准对智能体自身订单的反事实响应，这对电力市场与碳市场仿真器设计是直接警示。同时，Outcome RL 的增益分解研究提示能源调度 RL 的收益可能主要来自“完成与稳定”，而非策略真正学到新物理规律，评估时需警惕。AI4PDE 方向今日偏弱，仅有一条 ML 反演散射模型的能源材料交叉工作值得跟进。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-29">AI 每日简报 · 2026-10-29 周四</span>
-    <button class="cbtn" data-copy="t-2026-10-29">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-29.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-29.mp3" download="2026-10-29.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-29">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-29">AI 每日简报 · 2026-10-29 周四
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 达卯科技以&quot;能源大脑&quot;定义算电协同：在 CPE 2026 上，达卯科技定位为能源与算力的&quot;搭桥人&quot;，用 AI 能源大脑破解绿电直连项目落地僵局。
-  来源：https://www.qbitai.com/2026/10/505687.html
-· Timestral 发布四个概率预测时间序列基础模型：5M–209M 参数四档模型，在 GIFT-Eval、TIME、fev-bench 上全面刷新 SOTA，核心是解耦预测时域（DHF）。
-  来源：https://huggingface.co/papers/2610.37585
-· IBM Granite 时间序列模型集成预测：Hugging Face 发布基于 IBM Granite 时间序列模型的 ensemble forecasting 实践。
-  来源：https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1
-
-🧠 强化学习前沿 (RL for Energy)
-· AlphaBet：面向 LLM 事件预测智能体的强化学习：将证据检索纳入 RL 学习回路，训练单一 LLM 策略在多个预测时点搜索、推理并输出概率。
-  来源：https://huggingface.co/papers/2610.22684
-· Outcome RL 究竟买到了什么：完成率、可靠性，而非能力边界：在固定 token 预算下拆解 20 个 RL 模型的 pass@1 增益为&quot;完成/可靠性/新知识&quot;三部分。
-  来源：https://huggingface.co/papers/2610.34894
-· SARL：面向检索增强 LLM 搜索状态感知的自评估强化学习：让搜索智能体识别&quot;已知什么、还缺什么&quot;，减少幻觉推理与过早终止。
-  来源：https://huggingface.co/papers/2610.30435
-· 多尺度策略优化 (MPO) 用于长程 LLM 智能体：以 turn 为锚点做优势估计与重要性采样，解决 token 级与回合级信用分配错位。
-  来源：https://huggingface.co/papers/2610.35013
-
-📐 AI4PDE 最新进展
-· KPPax：可微动力学 ODE 预处理器，面向大气化学机器学习：从 KPP 机制语言生成 JAX 可微、JIT 编译、可向量化的化学求解代码，速率律用稀疏运算求值。
-  来源：https://arxiv.org/abs/2610.37655
-· LLM 能否通过自由探索发现隐藏物理定律？：提出 LongChang 框架，构建物理定律被篡改的仿真世界，测试 LLM 能否自主发现异常并实验验证。
-  来源：https://arxiv.org/abs/2610.37649
-
-🔧 凸优化与能源系统
-· Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops：证明在逐实体坐标系自由下，共享无环的关系无法交互，唯一 gauge 不变评分由 Wilson 环给出。
-  来源：https://arxiv.org/abs/2610.37656
-
-💻 开源项目与代码
-· obra/superpowers：可用的智能体技能框架与开发方法论：提供 agentic skills 框架与软件开发方法论，今日 +1,095 star。
-  来源：https://github.com/obra/superpowers
-· nightly-labs/openbot：本地优先的持久化 AI 团队工作台：支持 Codex/Claude/Grok 分工作区运行、任务队列、浏览器控制与 agent 间协作。
-  来源：https://github.com/nightly-labs/openbot
-
-💡 今日观察
-今日与能源直接相关的内容稀少，最值得关注的信号是 Timestral 这类**概率预测基础模型**开始系统性刷新时序 benchmark——这类骨干一旦在负荷/新能源出力上做领域适配，很可能成为能源预测的新基线。其次是 KPPax 所代表的&quot;可微物理求解器 + JAX&quot;路线，正在把 AI4PDE 从通用流体/传热推向大气化学等能源环境耦合场景。RL 侧的高质量工作集中在**长程信用分配与训练收益归因**，这正是能源调度智能体从 demo 走向可复现实验的关键瓶颈。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
