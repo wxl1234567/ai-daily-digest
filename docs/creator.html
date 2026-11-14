@@ -36,6 +36,50 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-14">AI 每日简报 · 2026-11-14 周六</span>
+    <button class="cbtn" data-copy="t-2026-11-14">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-14.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-14.mp3" download="2026-11-14.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-14">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-14">AI 每日简报 · 2026-11-14 周六
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google DeepMind 开放 AI 天气模型底层数据集：DeepMind 公开了支撑其 AI 天气预报模型的基础降水与地球静止卫星数据集，用于更清晰地观测地球。
+  来源：https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/
+· TurtLES：大规模湍流 3D 神经 PDE 代理模型基准：发布 14TB 三维湍流圆柱尾迹数据集（400 条轨迹 × 400 时间步，每帧 3–11 百万点），覆盖几何与雷诺数变化，用于加速 CFD 的机器学习代理模型评测。
+  来源：https://huggingface.co/papers/2611.09567
+
+🧠 强化学习前沿 (RL for Energy)
+· 内部化投资授权：神经符号 RL 用于组合配置：提出神经符号 RL 方法，将投资政策声明中的资产配置约束（含市场状态条件）内化到策略中，实现满足约束的组合优化。
+  来源：https://arxiv.org/abs/2611.17329v1
+· 经验传递强化学习用于递归自我改进：提出 Experience-Handoff RL，将智能体 trial 过程中产生的细粒度环境信息（如错误日志）提炼为可传递的经验工件，供后续 rollout 复用。
+  来源：https://huggingface.co/papers/2611.16409
+· Actor、Judge 还是 Teacher？理解长时序智能体中的决策模型：系统比较决策模型作为 actor、judge、teacher 三种角色的表现，探究&quot;行动差&quot;的决策模型能否&quot;教得好&quot;，并用于 RL 策略教学。
+  来源：https://huggingface.co/papers/2611.17167
+
+📐 AI4PDE 最新进展
+· PhysLoop：利用 LLM 物理感知自我改进视频生成模型：构建统一框架，借助 LLM 的物理知识为视频生成模型提供细粒度物理监督，改善物理动态与因果一致性。
+  来源：https://huggingface.co/papers/2611.16748
+· K2V：面向物理合理视频生成的生成式关键帧：将物理推理任务从扩散过程重新分配到由语言模型驱动的关键帧生成模块，缓解视频扩散模型的物理误差。
+  来源：https://arxiv.org/abs/2611.17324v1
+
+💻 开源项目与代码
+· Google 开源 TPU Sync：TPU 的 KV Cache 传输库：开源 C++ 库，可在 TPU HBM、主机 DRAM、存储与网络间迁移 KV cache 与权重，在 235B–480B MoE 模型上报告 KV 传输延迟降低 90% 以上。
+  来源：https://www.marktechpost.com/2026/11/13/google-tpu-sync-kv-cache-transfer-library/
+
+💡 今日观察
+今日与 AI4Energy 直接相关的高质量信号集中在两处：DeepMind 开放 AI 天气模型底层数据集，以及 TurtLES 这一 14TB 级湍流 PDE 代理基准，二者共同指向&quot;能源气象预测 + 流体仿真&quot;这一 AI4PDE/AI4Energy 交叉的核心基础设施正在被夯实。RL 侧则以约束满足型（神经符号）与经验复用型方法为代表，值得关注其在电力市场合规调度与长时序储能控制中的迁移潜力。整体而言，通用大模型新闻占据绝大多数版面，能源交叉研究需主动从 arXiv/HF Papers 与实验室官博中挖掘。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-13">AI 每日简报 · 2026-11-13 周五</span>
     <button class="cbtn" data-copy="t-2026-11-13">📋 复制标题</button>
   </div>
@@ -712,58 +756,6 @@
 
 💡 今日观察
 今日信号集中在&quot;潜动力学世界模型&quot;与&quot;分布鲁棒优化&quot;两条线：world2vec 的机理化潜动力学为能源系统建模提供了可解释的新范式，而 KL-DRO 场景生成方法直接触及可再生能源不确定性建模的核心痛点。值得注意的是，今日原始资讯中纯 AI4Energy/RL-for-Energy 的专门论文极少，多数能源相关价值需从通用方法（统一 RL 训练、DRO）中迁移挖掘——这提示能源交叉研究者应主动跟踪通用 ML 方法论文，而非仅依赖能源垂类来源。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-30">AI 每日简报 · 2026-10-30 周五</span>
-    <button class="cbtn" data-copy="t-2026-10-30">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-30.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-30.mp3" download="2026-10-30.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-30">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-30">AI 每日简报 · 2026-10-30 周五
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· LOB-Impact Benchmark: 生成式限价订单簿模型中的涌现市场冲击：该研究揭示神经 LOB 生成器会自然涌现市场冲击机制，并提出评估生成流反事实响应的方法，弥补了现有指标仅做分布比对的缺陷。
-  来源：https://huggingface.co/papers/2610.27100
-· AlphaBet: 面向 LLM 事件预测智能体的强化学习框架：训练单一 LLM 策略在多个预测时点上自主检索证据、推理并输出概率，将证据获取纳入学习闭环。
-  来源：https://huggingface.co/papers/2610.22684
-· OmniSpectra: 通用光谱表示学习基础模型：提出波长原生的连续坐标掩码自编码器，避免破坏性重采样，解决跨仪器光谱表示学习的坐标错配问题。
-  来源：https://huggingface.co/papers/2601.15351
-
-🧠 强化学习前沿 (RL for Energy)
-· What Outcome RL Buys: Finishing, Reliability, Rarely Reach：在固定 token 预算下对比 20 个 RL 模型，将 pass@1 增益分解为“完成度/可靠性/新知识”三部分，指出 outcome RL 主要买到的是完成与稳定而非新能力。
-  来源：https://huggingface.co/papers/2610.34894
-· Multiscale Policy Optimization (MPO): 长程 LLM 智能体的多尺度策略优化：发现 critic 值主要在“轮次”尺度变化，提出多尺度优势估计与轮级重要性采样，对齐信用分配与策略更新。
-  来源：https://huggingface.co/papers/2610.35013
-· Self-Assessment RL (SARL): 检索增强 LLM 的搜索状态感知：让搜索智能体学会识别“已获得什么、还缺什么”，减少幻觉推理与过早终止检索。
-  来源：https://huggingface.co/papers/2610.30435
-· Prime Intellect 发布 Prime Mega MoE：可训练融合 MoE kernel：为 DeepSeek 融合 Mega MoE kernel 补上反向传播，使 kernel 可训练，Qwen3 MoE 训练步速最高提升 34%，前向 3.11 倍加速。
-  来源：https://www.marktechpost.com/2026/10/29/prime-intellect-prime-mega-moe-fused-moe-kernel-training/
-
-📐 AI4PDE 最新进展
-· Sub-monolayer tracking of molecular states at buried interfaces（ML 优化光学模型 + RSoXS）：用机器学习优化的光学模型解析偏振共振软 X 射线散射，首次定量分辨埋藏界面的亚单层分子态。
-  来源：https://huggingface.co/papers/2610.31924
-
-🔧 凸优化与能源系统
-· TAO: 面向 LLM 智能体服务的工具感知联合调度：将 GPU 上的模型推理与分布式 CPU 上的外部工具调用联合调度，把工具返回就绪性纳入服务评估，替代启发式准入与放置策略。
-  来源：https://huggingface.co/papers/2610.37230
-
-💻 开源项目与代码
-· Baseten joey-1：2B 决策模型，输出校准概率而非文本：20ms P50 延迟、每百万输入 token 仅 $0.01，面向决策场景而非生成。
-  来源：https://www.marktechpost.com/2026/10/29/baseten-joey-1-2b-decision-model/
-· Infini-AI-Lab Hermit：开源智能体外挂适配框架：Apache-2.0 许可，从任务反馈中训练指令、技能、记忆与工具的外层，不改动智能体模型与 harness。
-  来源：https://www.marktechpost.com/2026/10/29/infini-ai-lab-hermit-harness-adapter-framework/
-
-💡 今日观察
-今天最值得注意的信号是“仿真可信度”正成为交易智能体研究的前沿：LOB-Impact 指出生成式市场模型必须校准对智能体自身订单的反事实响应，这对电力市场与碳市场仿真器设计是直接警示。同时，Outcome RL 的增益分解研究提示能源调度 RL 的收益可能主要来自“完成与稳定”，而非策略真正学到新物理规律，评估时需警惕。AI4PDE 方向今日偏弱，仅有一条 ML 反演散射模型的能源材料交叉工作值得跟进。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
