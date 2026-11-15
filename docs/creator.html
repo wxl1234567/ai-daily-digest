@@ -36,6 +36,56 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-15">AI 每日简报 · 2026-11-15 周日</span>
+    <button class="cbtn" data-copy="t-2026-11-15">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-15.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-15.mp3" download="2026-11-15.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-15">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-15">AI 每日简报 · 2026-11-15 周日
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google DeepMind 开放 AI 气象模型背后的数据集：DeepMind 公开了其 AI 天气预报模型所使用的基础降水与地球同步卫星数据集，供社区复现与改进。
+  来源：https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/
+· 联想提出“绿电进 Token 出”词元工厂：联想发布以绿电驱动的大规模推理工厂方案，宣称年产 2000 万亿 Token、成本下降 70%。
+  来源：https://www.qbitai.com/2026/11/510094.html
+
+🧠 强化学习前沿 (RL for Energy)
+· Experience-Handoff RL for Recursive Self-Improvement：提出将 agent 试错中获得的细粒度环境信息（如错误日志）打包为可交接的经验产物，用于后续 rollout 的强化学习。
+  来源：https://huggingface.co/papers/2611.16409
+· Actor, Judge, or Teacher? 长程 agent 中的决策模型：系统比较决策模型作为 actor、judge、teacher 三种角色的价值，发现“行动差”的模型仍可能是好老师。
+  来源：https://huggingface.co/papers/2611.17167
+
+📐 AI4PDE 最新进展
+· TurtLES：湍流 3D 神经 PDE 代理模型大规模基准：发布 14TB、400 条轨迹的三维湍流圆柱尾迹数据集（隐式大涡模拟），覆盖几何与雷诺数变化。
+  来源：https://huggingface.co/papers/2611.09567
+· PhysLoop：借 LLM 物理知识自改进视频生成模型：构建统一框架，用 LLM 的物理常识为视频生成模型提供细粒度物理监督与纠错对。
+  来源：https://huggingface.co/papers/2611.16748
+
+🔧 凸优化与能源系统
+· Factored One-sided Adam-Moment (FOAM)：可扩展 SOAP 变体：以单边因子化 Adam 矩近似 SOAP 的二阶信息，在保持接近 AdamW 开销的同时获得二阶优化收益。
+  来源：https://huggingface.co/papers/2611.16905
+· Learning the Task or Learning the Verifier?：指出具身自改进基准中存在“准则暴露”问题，验证器评分可能偏离真实任务完成度。
+  来源：https://huggingface.co/papers/2611.08318
+
+💻 开源项目与代码
+· Google 开源 TPU Sync：C++ 库，实现 TPU HBM、主机 DRAM、存储与网络间 KV cache 与权重的迁移，MoE 模型 KV 传输延迟降低 90%+。
+  来源：https://www.marktechpost.com/2026/11/13/google-tpu-sync-kv-cache-transfer-library/
+· datasette-cluster-map 0.19 发布：老牌 Datasette 地图插件更新，示例直接展示加州 PG&amp;E 旗下电厂分布地图。
+  来源：https://simonwillison.net/2026/Nov/13/datasette-cluster-map/
+
+💡 今日观察
+今天最明确的能源交叉信号来自 DeepMind 开放 AI 气象模型数据集与 TurtLES 湍流 PDE 基准——前者直接支撑新能源功率预测，后者为风机/换热等湍流仿真代理模型提供首个真实非定常基准。RL 侧“经验交接”与“决策模型作教师”两条工作，为能源调度 agent 的长期在线学习与奖励建模提供了可迁移的方法论。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-14">AI 每日简报 · 2026-11-14 周六</span>
     <button class="cbtn" data-copy="t-2026-11-14">📋 复制标题</button>
   </div>
@@ -716,46 +766,6 @@
 
 💡 今日观察
 今天最明确的信号是&quot;能源约束正在反向塑造 AI 基础设施&quot;：数据中心用电可能抵消 15 年气候进展、星载 TPU 受 1 kW 供电限制只能间歇开机，这些都在把算力部署问题变成能源调度问题。方法层面，&quot;统一训练&quot;把 RL 与似然训练合流、JEPA 表示定理的证明，为能源多物理场基础模型提供了更干净的理论底座；而冻结信息集的金融评测设计，值得直接移植到电价与碳价预测的评估协议中。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-10-31">AI 每日简报 · 2026-10-31 周六</span>
-    <button class="cbtn" data-copy="t-2026-10-31">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-10-31.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-10-31.mp3" download="2026-10-31.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-10-31">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-10-31">AI 每日简报 · 2026-10-31 周六
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Gemini 4 Carbon：面向碳相关任务的下一代前沿模型：Google DeepMind 发布 Gemini 4 Carbon，命名直指碳管理方向。
-  来源：https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/
-· 极端天气到农业后果的智能体预测（WxCrop）：首个结合物理可解释气象指数与因果分析的智能体，可预测作物损失。
-  来源：https://arxiv.org/abs/2610.40641v1
-
-🧠 强化学习前沿 (RL for Energy)
-· 单一算法训练基础模型（Unified Training）：将预训练、SFT、RL 统一为基于似然的单一训练目标，把各阶段 RL 目标推导为对模型自生成目标分布的最大似然拟合。
-  来源：https://huggingface.co/papers/2610.40564
-· 在线稠密强化学习用于实时 iOS 应用 UI 导航：在真实设备上在线训练导航智能体，避免离线 RL 的轨迹记忆与脆弱性。
-  来源：https://huggingface.co/papers/2610.39264
-
-📐 AI4PDE 最新进展
-· world2vec：通过潜动力学学习机理世界模型：无需奖励信号，直接从观测与动作学习忠实复现真实系统的潜动力学，参数量比 Dreamer 少一个数量级以上。
-  来源：https://arxiv.org/abs/2610.40637v1
-
-🔧 凸优化与能源系统
-· 围绕学习密度模型的自适应场景生成用于 KL-DRO：针对 KL 散度球仅含经验记录重加权、无法覆盖记录外实现的问题，提出在学习密度模型周围自适应生成场景。
-  来源：https://arxiv.org/abs/2610.40644v1
-
-💡 今日观察
-今日信号集中在&quot;潜动力学世界模型&quot;与&quot;分布鲁棒优化&quot;两条线：world2vec 的机理化潜动力学为能源系统建模提供了可解释的新范式，而 KL-DRO 场景生成方法直接触及可再生能源不确定性建模的核心痛点。值得注意的是，今日原始资讯中纯 AI4Energy/RL-for-Energy 的专门论文极少，多数能源相关价值需从通用方法（统一 RL 训练、DRO）中迁移挖掘——这提示能源交叉研究者应主动跟踪通用 ML 方法论文，而非仅依赖能源垂类来源。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
