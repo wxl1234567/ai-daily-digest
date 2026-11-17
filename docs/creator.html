@@ -36,6 +36,52 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-17">AI 每日简报 · 2026-11-17 周二</span>
+    <button class="cbtn" data-copy="t-2026-11-17">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-17.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-17.mp3" download="2026-11-17.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-17">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-17">AI 每日简报 · 2026-11-17 周二
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· DySENSE：用卫星影像生成城市级动态时空能耗数据：提出基于卫星影像的生成式框架，合成细粒度、月对齐的城市动态能耗与碳排数据，弥补现有研究&quot;只预测不生成、数据稀缺&quot;的缺口。
+  来源：https://huggingface.co/papers/2611.17878
+· 电网罕见二次过载的反事实筛查：电磁暂态仿真的随机代理模型：用线性随机摆动方程构建电磁暂态仿真的代理模型，筛查单相接地故障单极跳闸重合闸后远端线路/变压器的持续性过载。
+  来源：https://arxiv.org/abs/2611.20212
+· 美国数据中心耗电量已超中等国家：发表于 Nature Sustainability 的研究显示，美国超大规模数据中心仍以化石能源为主，总耗电量超过许多国家，温室气体排放可观。
+  来源：https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard
+· Constellation Energy：不担心民主党放缓数据中心建设：美国最大核电站运营商在Q3财报电话会上表示，对数据中心开发放缓的政治风险&quot;并不担忧&quot;。
+  来源：https://www.theverge.com/science/1034694/nuclear-energy-constellation-earnings-data-centers-democrats
+
+🧠 强化学习前沿 (RL for Energy)
+· Hark Handoff²：经延迟惩罚RL学习动作批处理的计算机使用智能体：Hark Pro 内置的 computer-use agent 平均提速2倍，在478个内部web任务上完成率82%，其动作批处理能力通过延迟惩罚强化学习习得。
+  来源：https://www.marktechpost.com/2026/11/16/hark-handoff-2-computer-use-agent-2x-faster/
+· 通过凸共轭匹配学习优势函数代理：提出用凸共轭匹配从纯策略学习结果中恢复优势函数，使下游系统能计算偏离最优动作的代价（如增减订货量、应对临时折扣、满足共享容量约束）。
+  来源：https://arxiv.org/abs/2611.20199
+
+🔧 凸优化与能源系统
+· DeePC 的可行性证书：集合不变性方法：将 DeePC 解写成隐式 ReLU 网络，直接从 Hankel 矩阵给出其可行集的多面体投影、显式分段仿射控制律与精确线性模型。
+  来源：https://arxiv.org/abs/2611.20220
+
+💻 开源项目与代码
+· NVIDIA/SkillEvaluator：多层级AI agent技能与插件评估框架，含质量门禁、语义重叠检测、合成评估数据集生成与实时agent行为评估（今日+873 star）。
+  来源：https://github.com/NVIDIA/SkillEvaluator
+· google-research/paper-orchestra：多智能体框架，用于自动化AI研究论文写作（今日+313 star）。
+  来源：https://github.com/google-research/paper-orchestra
+
+💡 今日观察
+今天最明确的信号来自能源侧而非算法侧：数据中心能耗已被主流媒体当作&quot;国家级用电体&quot;讨论，Nature Sustainability 的核算与核电运营商的表态共同说明，AI算力的电力需求正在成为电力系统规划必须内生化的一类负荷。方法层面，DeePC 可行性证书与优势函数凸共轭学习两条工作都指向&quot;可验证、可解释的优化/控制&quot;，这与能源系统对安全约束的刚性需求高度契合，值得优先精读。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-16">AI 每日简报 · 2026-11-16 周一</span>
     <button class="cbtn" data-copy="t-2026-11-16">📋 复制标题</button>
   </div>
@@ -704,62 +750,6 @@
 
 💡 今日观察
 今天最强的信号是&quot;算力负荷正在被重新定义为电网资源&quot;：OpenAI 的 Grid Protectors Program 把 1,000 MW 的可释放容量写进了电网可靠性叙事，这意味着数据中心不再只是被动的大负荷，而可能成为需求响应与容量市场的参与者——这对负荷灵活性建模、随机优化调度和电力市场机制设计都是新的建模对象。方法层面，单步流匹配/单步去噪（GLOW-FM、OSWAM）持续压缩迭代采样成本，是 PDE 代理模型走向实时闭环控制的关键方向。此外 TSFLab 提醒我们：时间序列预测领域代码复现率仅约 20%，自动化基准工作台对能源预测研究的可信对比具有现实价值。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-11-02">AI 每日简报 · 2026-11-02 周一</span>
-    <button class="cbtn" data-copy="t-2026-11-02">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-11-02.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-11-02.mp3" download="2026-11-02.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-11-02">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-02">AI 每日简报 · 2026-11-02 周一
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 算力的尽头是电力？从第一性原理看 AI 基础设施：文章从第一性原理出发，指出 AI 竞争的下半场本质是电力与制造的系统工程，算力扩张正把电力供给推向瓶颈。
-  来源：https://www.36kr.com/p/4050946312967297
-· 拟建数据中心日耗能相当于 23 颗广岛原子弹：报道披露某拟建 AI 数据中心的日能耗规模，引发对超大规模算力设施电力与环境外部性的争议。
-  来源：https://www.cbc.ca/lite/story/9.7403677
-· 法官允许 NAACP 就 xAI 数据中心污染提起诉讼：法院裁定 NAACP 针对 xAI 数据中心违反《清洁空气法》的诉讼可继续推进。
-  来源：https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/
-· Agent 改写算力账本，CPU 不再是 AI 服务器的配角？：报道指出 AI 算力投入逻辑正从单纯采购加速卡转向配置均衡的算力机柜，CPU 角色被重新评估。
-  来源：https://www.36kr.com/p/4050845605156482
-
-🧠 强化学习前沿 (RL for Energy)
-· Training Foundation Models with a Single Algorithm：论文证明预训练、SFT 与 RL 可统一为对模型自生成目标分布的极大似然拟合，提出&quot;统一训练&quot;框架。
-  来源：https://huggingface.co/papers/2610.40564
-· Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live iOS Apps：提出在线稠密 RL 框架，直接在真实环境中训练小而快的导航智能体，克服离线 RL 的轨迹记忆与脆弱性问题。
-  来源：https://huggingface.co/papers/2610.39264
-· A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement：提出自适应任务刷新机制，让模型判断何时当前经验已失效并引入新经验，替代依赖自一致性的监督构造。
-  来源：https://huggingface.co/papers/2610.38568
-
-📐 AI4PDE 最新进展
-· 清华姚期智团队新作：代数世界模型，让 AI 像牛顿一样思考：团队提出代数世界模型，使 AI 能从观测中归纳代数结构并进行类物理定律的推理。
-  来源：https://www.qbitai.com/2026/11/507031.html
-· Genie 4: A new generation of world simulation：DeepMind 发布新一代世界模型 Genie 4，宣称在实时仿真真实感上取得突破。
-  来源：https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/
-· L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory：用隐式 3D 高斯记忆替代随时间增长的显式记忆，实现实时长时程一致的世界生成。
-  来源：https://huggingface.co/papers/2610.40614
-
-🔧 凸优化与能源系统
-· Your Benchmark Is an Empirical Measure Over Difficulty：论文提出基准本质上是难度上的经验测度，形式化了&quot;测度失配&quot;与&quot;覆盖缺口&quot;两类评估失效模式。
-  来源：https://huggingface.co/papers/2610.29927
-
-💻 开源项目与代码
-· Kronos: A Foundation Model for the Language of Financial Markets：开源面向金融市场&quot;语言&quot;的基础模型，日增 630 star。
-  来源：https://github.com/shiyu-coder/Kronos
-· kornia/kornia：几何计算机视觉库，面向空间 AI，持续维护。
-  来源：https://github.com/kornia/kornia
-
-💡 今日观察
-今天最清晰的信号是&quot;算力—电力&quot;耦合正从工程问题升级为政策与司法问题：数据中心能耗、排放诉讼与机柜级功耗结构同时进入公共议程，为 AI4Energy 提供了真实的极端负荷与外部性研究场景。学术侧，&quot;统一训练&quot;框架把预训练到 RL 收敛到单一似然目标，值得关注其对能源调度策略端到端训练的潜在简化价值；而基准的&quot;难度测度&quot;视角则提醒我们，能源优化基准的设计本身需要统计严谨性。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
