@@ -36,6 +36,56 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-19">AI 每日简报 · 2026-11-19 周四</span>
+    <button class="cbtn" data-copy="t-2026-11-19">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-19.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-19.mp3" download="2026-11-19.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-19">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-19">AI 每日简报 · 2026-11-19 周四
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 美国最大数据中心过半电力来自天然气与煤炭：哈佛大学发表于 Nature Sustainability 的研究显示，美国 403 个超大规模数据中心在 2024 年 5 月至 2025 年 4 月间排放约 2570 万吨 CO2，超过丹麦全国排放量，且规划中还有 2000 个新设施。
+  来源：https://the-decoder.com/more-than-half-the-electricity-feeding-americas-largest-data-centers-comes-from-gas-and-coal/
+
+🧠 强化学习前沿 (RL for Energy)
+· Qwen3.8-27B-pi-adapted LoRA 适配器将编码成功率从 39% 提升至 65%：Hugging Face 发布 Apache-2.0 许可的 LoRA 适配器，使用强化学习针对 pi 编码智能体训练，SWE-bench Pro hard-51 pass@1 从 39.2% 升至 64.7%，Terminal-Bench 2.1 从 39.5% 升至 55.8%。
+  来源：https://www.marktechpost.com/2026/11/18/hugging-face-qwen3-8-27b-pi-adapted-lora/
+· SID AI 发布 SID-2 智能体搜索模型，Swarm 模式达 0.720 NDCG：SID-2 用强化学习训练，单智能体 3.11 秒达 0.585 NDCG，12 智能体 Swarm 达 0.720 NDCG，超过 GPT-6 Astra。
+  来源：https://www.marktechpost.com/2026/11/17/sid-ai-sid-2-agentic-search-swarm/
+
+📐 AI4PDE 最新进展
+· AnisoFlow：学习各向异性预测目标用于流模型：提出各向异性流模型（AnisoFlow），用完全可学习的预测目标替代固定目标（速度/噪声/干净数据），在联合学习基下为每个方向分配独立非负权重，通过闭式映射恢复。
+  来源：https://huggingface.co/papers/2611.17767
+· 无需解码器解码：扩散 Transformer 直接像素预测：提出 DWD 方法，让微调后的扩散 Transformer 通过线性头直接输出像素，将去噪头与像素预测头角色分离，去除潜空间扩散对解码器的依赖。
+  来源：https://huggingface.co/papers/2611.22287
+· 仿真器误设定下的过度自信：SPEED+ 仿真到现实基准的方向鲁棒性：针对轨道视觉导航系统几乎只能依赖合成图像训练的问题，研究仿真器辐射度误差导致的过度自信，在 SPEED+ 基准上提出方向鲁棒性方法。
+  来源：https://huggingface.co/papers/2611.20321
+
+🔧 凸优化与能源系统
+· CONGA：编译高斯纤维几何用于结构化贝叶斯推断：针对结构化贝叶斯模型中大潜变量块在给定少量参数下呈高斯条件分布的结构，构造精确仿射映射（对称 Brenier 与三角 Knothe-Rosenblatt 映射）分离标准正态块与非高斯核心，用于后验推断传输。
+  来源：https://huggingface.co/papers/2611.20995
+
+💻 开源项目与代码
+· google-research/paper-orchestra：多智能体框架用于自动化 AI 研究论文写作，今日 +1,524 star。
+  来源：https://github.com/google-research/paper-orchestra
+· NVIDIA/SkillEvaluator：多层框架评估 AI 智能体技能与插件，含质量门控、语义重叠检测、合成评估数据集生成与实时智能体行为评估，今日 +312 star。
+  来源：https://github.com/NVIDIA/SkillEvaluator
+· HKUDS/CLI-Anything：让所有软件成为智能体原生可调用，配套 CLI-Hub，今日 +389 star。
+  来源：https://github.com/HKUDS/CLI-Anything
+
+💡 今日观察
+今天最值得注意的信号是&quot;数据中心用电—碳排放&quot;研究进入 Nature 子刊，AI 基础设施自身的能源足迹正成为可量化的研究对象，这为 AI4Energy 提供了&quot;AI 反哺能源建模&quot;的新闭环场景。与此同时，RL 微调小模型（Qwen3.8 LoRA）与多智能体 Swarm 搜索的进展，提示能源多区域协同调度可借鉴&quot;小模型 + RL + 多智能体&quot;的低成本路线。PDE 侧则聚焦于生成模型训练目标与解码效率，对物理场代理建模的工程化落地有直接意义。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-18">AI 每日简报 · 2026-11-18 周三</span>
     <button class="cbtn" data-copy="t-2026-11-18">📋 复制标题</button>
   </div>
@@ -703,46 +753,6 @@
 
 💡 今日观察
 今天最显著的信号是 AI 基础设施的**能源与社会约束正在收紧**——数据中心在中期选举中全面受挫，叠加高通等厂商转向数据中心算力，说明&quot;AI 电力需求&quot;已成为能源系统规划不可忽视的变量。与此同时，FlashProve 这类可验证推理与 Hydrogen-1.0 科学大模型的出现，为能源交易审计与电化学材料发现提供了新的工具链方向。RL 侧则聚焦长程 agent 的信用分配与推理可靠性，这与多步能源调度问题的结构高度契合。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-11-04">AI 每日简报 · 2026-11-04 周三</span>
-    <button class="cbtn" data-copy="t-2026-11-04">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-11-04.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-11-04.mp3" download="2026-11-04.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-11-04">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-04">AI 每日简报 · 2026-11-04 周三
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· OpenAI 启动 Grid Protectors Program，与电力公司合作保障电网可靠性：OpenAI 宣布将与公用事业公司合作，帮助未来的算力园区在接入电网时支撑可靠性，并保护居民电价。
-  来源：https://openai.com/index/grid-protectors-program
-· 数据中心因并网等待过久转向退役喷气发动机供电：由于接入电网和新涡轮机需等待数年，数据中心建设者开始使用退役喷气发动机作为替代发电方案，效率更低且更不环保。
-  来源：https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/
-· Gemini 4 Carbon：DeepMind 新一代前沿模型：Google DeepMind 发布名为 “Carbon” 的新一代前沿模型。
-  来源：https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/
-
-🧠 强化学习前沿 (RL for Energy)
-· 弱可观测图 Bandit 的近线性时间 Follow-the-Perturbed-Leader：论文提出面向有向弱可观测反馈图的 FTPL 策略，结合强制探索、条件几何重采样与自适应学习率，实现 near-linear 期望时间复杂度与 best-of-both-worlds 遗憾保证。
-  来源：https://arxiv.org/abs/2611.04307v1
-
-🔧 凸优化与能源系统
-· 数据驱动策略的风险有多大？基于 CVaR 的风险分解：论文用条件风险价值（CVaR）量化数据驱动策略在训练样本、策略随机化与未来结果上的风险，并将风险来源分离，给出相对遗憾分析。
-  来源：https://arxiv.org/abs/2611.04292v1
-
-💻 开源项目与代码
-· colibri：面向前沿 MoE 模型的分层推理引擎：C 语言实现的分层推理引擎，将热专家放 GPU（CUDA/Vulkan）、温专家放内存、冷专家从 NVMe 流式加载，可在现有硬件上运行大 MoE 模型。
-  来源：https://github.com/JustVugg/colibri
-
-💡 今日观察
-今日最明确的 AI4Energy 信号来自 OpenAI 的 Grid Protectors Program 与数据中心“喷气发动机供电”新闻——AI 算力已成为电网规划与可靠性研究中不可忽视的新负荷变量。与此同时，arXiv 上关于 CVaR 风险分解与弱可观测图 bandit 的工作，为能源系统中的风险约束调度与在线决策提供了可直接迁移的理论工具。整体而言，今日缺少直接的能源顶刊 AI 论文，AI4PDE 方向无高质量新内容。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
