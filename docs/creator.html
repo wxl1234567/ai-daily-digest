@@ -36,6 +36,46 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-20">AI 每日简报 · 2026-11-20 周五</span>
+    <button class="cbtn" data-copy="t-2026-11-20">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-20.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-20.mp3" download="2026-11-20.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-20">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-20">AI 每日简报 · 2026-11-20 周五
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· 基于物理的 HVAC 数字孪生拓扑规范的四级可执行验证协议：研究提出一套四级可执行验证协议，用于评估 LLM 生成的 HVAC 数字孪生物理拓扑规范，能够拒绝&quot;仿真收敛但物理错误&quot;的模型。
+  来源：https://arxiv.org/abs/2611.25471v1
+· 分布式可再生资源分配的精确集中最优性：提出 DRRA 框架，针对多智能体网络中资源可用量内生依赖于上一轮效用生成的情形，设计全分布式两阶段内-外动力学实现原始-对偶分配与资源再生。
+  来源：https://arxiv.org/abs/2611.25490v1
+
+🧠 强化学习前沿 (RL for Energy)
+· Replay, Don't Resample：长时程 RL 专家的离策略整合：论文指出多教师在线策略蒸馏（MOPD）整合成本高昂，主张复用 RL 专家已产生的带采样概率的 rollout 进行离策略整合，避免重复采样与环境漂移。
+  来源：https://huggingface.co/papers/2611.24059
+· PIPETTE：面向鲁棒 LLM 智能体的提示注入紫队测试：利用 RL 自动生成高攻击成功率的间接提示注入攻击，用于在对抗训练前加固智能体。
+  来源：https://huggingface.co/papers/2611.24362
+
+📐 AI4PDE 最新进展
+· Koopman 提升用于非线性系统的线性加密控制：LQR 与 MPC 应用：提出 HEK-Control，通过 Koopman 提升将非线性被控对象映射到加密线性计算，使同态加密下的线性控制器（LQR/MPC）可应用于非线性系统。
+  来源：https://arxiv.org/abs/2611.25494v1
+
+💻 开源项目与代码
+· openvinotoolkit/openvino：OpenVINO 开源工具包，用于优化和部署 AI 推理，今日 +246 star。
+  来源：https://github.com/openvinotoolkit/openvino
+
+💡 今日观察
+今天与能源交叉方向最直接的信号来自 arXiv：LLM 自动生成 HVAC 数字孪生的&quot;可验证性&quot;问题被正式提出，说明 AI4Energy 正从&quot;能生成&quot;走向&quot;可证伪&quot;，这对能源数字孪生的工程落地是必要一步。同时，Koopman 提升 + 同态加密控制的组合，为隐私敏感场景（如第三方云托管的电网 MPC）提供了理论与算法雏形。RL 侧则聚焦于降低多专家整合成本与智能体安全，二者都与未来多能源场景的规模化调度直接相关。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-19">AI 每日简报 · 2026-11-19 周四</span>
     <button class="cbtn" data-copy="t-2026-11-19">📋 复制标题</button>
   </div>
@@ -701,58 +741,6 @@
 
 💡 今日观察
 今日最明确的信号是&quot;能耗-算力&quot;耦合正在被理论化：SIMPLE 定律给出 token 级能耗闭式表达，Halley 把光网络可靠性纳入可用性分析，这意味着 AI 基础设施本身正成为能源系统建模对象。同时，概率预测侧出现两条互补路线——残差校准与 Koopman 生成算子，均值得在光伏/负荷预测任务上复现对比。RL 方面，轮次级信用分配与动力学风险可塑性对多智能体能源调度具有直接迁移价值。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-11-05">AI 每日简报 · 2026-11-05 周四</span>
-    <button class="cbtn" data-copy="t-2026-11-05">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-11-05.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-11-05.mp3" download="2026-11-05.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-11-05">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-05">AI 每日简报 · 2026-11-05 周四
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· AI 数据中心在 2026 中期选举中遭遇全面挫败：多个州选民否决数据中心相关议案，76% 的受访选民对数据中心持负面态度，AI 基础设施扩张面临更严格的审批环境。
-  来源：https://www.theverge.com/policy/1026365/data-centers-midterms-results
-· 高通手机业务下滑约 20%，全面押注 AI 数据中心：高通 Q4 财报显示手机业务承压，宣布与 Amazon、Meta 合作进军 AI 数据中心芯片市场，推出 150W、128GB、548GB/s 的 Cloud AI 100 Ultra 加速卡。
-  来源：https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers / https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra
-
-🧠 强化学习前沿 (RL for Energy)
-· Axion 1.0-35B：三阶段训练的开源 Agent 基础模型：仅用两轮轻量 SFT 加 RL 训练，无需 mid-training、DPO 或 on-policy distillation，即获得强 agentic 能力。
-  来源：https://www.reddit.com/r/LocalLLaMA/comments/1xnjiu4/axion10axion1035b_hugging_face/
-· 细粒度信用分配何时有效、何时有害：多模态 Agentic RL 研究：以视频编辑为测试床，系统分析长程规划与延迟反馈下细粒度 credit assignment 的作用边界。
-  来源：https://huggingface.co/papers/2610.35497
-· 对抗性推测推理提升长程 Agent 表现：发现 speculative decoding 在长程 agent 任务中引入的数值噪声会累积，提出对抗式推测推理框架改善验证质量。
-  来源：https://huggingface.co/papers/2611.05345
-
-📐 AI4PDE 最新进展
-· Deep Principle 发布 Hydrogen-1.0：753B 开源科学发现模型：基于 GLM-5.3 后训练，面向化学、材料科学与生命科学，MIT 许可开源，在 FrontierScience-Research 基准上超过 GPT-6-Astra。
-  来源：https://www.marktechpost.com/2026/11/02/deep-principle-hydrogen-1-0-open-weight-scientific-model/
-· OpenAI：GPT-6 Astra 一周内从零设计硬件设备：从外壳、电路板到固件全流程由模型完成，但制造公差处理仍需多轮迭代修正。
-  来源：https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/
-
-🔧 凸优化与能源系统
-· Google DeepMind 与英国政府合作加速规划决策：用 AI 缩短规划评估时间，涉及大规模空间与资源约束下的决策流程优化。
-  来源：https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/
-
-💻 开源项目与代码
-· NVIDIA/auto-ontology：基于语义图的确定性查询推理层：为 LLM 与 agent 工作流提供可解释的图推理层，支持确定性查询生成与上下文检索。
-  来源：https://github.com/NVIDIA/auto-ontology
-· Anthropic FlashProve：zkSNARK 可验证推理原型：Apache 2.0 开源，可在单张 H100 上以 110 tokens/s 证明 Llama 4 Maverick 的响应来自承诺权重，证明大小 19MB。
-  来源：https://www.marktechpost.com/2026/11/03/anthropic-flashprove-provable-inference-zksnark/
-· NVIDIA DGX Spark 上 MoE 推理三项优化，吞吐提升 42.5%：针对 124B Ling-3.0-flash，GSM8K 解码吞吐提升 42.5%，精度无损。
-  来源：https://www.marktechpost.com/2026/11/03/nvidia-dgx-spark-moe-inference-ling-3-0-flash/
-
-💡 今日观察
-今天最显著的信号是 AI 基础设施的**能源与社会约束正在收紧**——数据中心在中期选举中全面受挫，叠加高通等厂商转向数据中心算力，说明&quot;AI 电力需求&quot;已成为能源系统规划不可忽视的变量。与此同时，FlashProve 这类可验证推理与 Hydrogen-1.0 科学大模型的出现，为能源交易审计与电化学材料发现提供了新的工具链方向。RL 侧则聚焦长程 agent 的信用分配与推理可靠性，这与多步能源调度问题的结构高度契合。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
