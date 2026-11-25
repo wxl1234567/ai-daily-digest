@@ -36,6 +36,56 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-25">AI 每日简报 · 2026-11-25 周三</span>
+    <button class="cbtn" data-copy="t-2026-11-25">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-25.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-25.mp3" download="2026-11-25.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-25">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-25">AI 每日简报 · 2026-11-25 周三
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· AI 数据中心用电激增冲击 COP31 气候谈判：联合国气候大会 COP31 在土耳其安塔利亚闭幕，AI 数据中心带来的电力需求激增成为谈判焦点，与全球电气化进程形成张力。
+  来源：https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit
+· DeepMind 用智能体与形式化验证加速聚变量子算法：Google DeepMind 通过智能体团队结合形式化验证，改进面向聚变与化学的量子算法。
+  来源：https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/
+· 原型条件化的可解释天气预报适配：论文提出基于原型的可解释适配方法，区分局部天气状态及其时序演变，降低神经预报器对演变不同区域的误判。
+  来源：https://huggingface.co/papers/2611.25848
+
+🧠 强化学习前沿 (RL for Energy)
+· ACAP：异步编码智能体实现高效机器人控制：将单个机器人组织为持久智能体团队，各成员负责可配置控制组（如机械臂+夹爪、躯干+底盘），实现异步推理与执行。
+  来源：https://huggingface.co/papers/2611.31205
+· GlanceNav：流式记忆与反事实回溯的视觉语言导航：每帧只编码一次、恒定单步开销，并通过反事实回溯从错误中学习，克服长历史记忆瓶颈。
+  来源：https://huggingface.co/papers/2611.30900
+
+📐 AI4PDE 最新进展
+· PhyCoVE：跨材料动力学的物理反事实视频编辑基准：构建 533 个案例，覆盖弹性形变、流体流动及刚-弹-流耦合交互，评估模型对物理场景演化的反事实预测能力。
+  来源：https://huggingface.co/papers/2611.29184
+· FocusAnchor：将深度基础先验锚定到对焦线索的零样本度量深度：用循环模型反复对齐冻结基础模型的相对深度先验与当前估计，将纹理区恢复的度量尺度传播至弱对焦区。
+  来源：https://arxiv.org/abs/2611.32970v1
+
+🔧 凸优化与能源系统
+· 面向 L4 自动驾驶的 ODD 安全约束系统工程框架：提出基于运行设计域（ODD）的安全约束系统工程方法，在传感/计算/通信/电源/执行失效下保持关键功能，并理性化架构复杂度与生命周期成本。
+  来源：https://arxiv.org/abs/2611.32960v1
+
+💻 开源项目与代码
+· minimind：两小时从零训练 64M 大模型：提供完整流程，两小时内从 0 训练出 64M 参数 LLM，适合快速实验与教学。
+  来源：https://github.com/jingyaogong/minimind
+· firecrawl：为智能体提供知识基础设施：通过单一 API 搜索、抓取并接入 550+ 数据源，让智能体更智能。
+  来源：https://github.com/firecrawl/firecrawl
+
+💡 今日观察
+今天最值得能源交叉研究者关注的信号是：AI 数据中心的电力负荷已成为气候谈判级别的系统性议题，能源系统规划必须把 AI 负荷作为新型不确定性来源纳入建模。与此同时，DeepMind 用智能体+形式化验证攻坚聚变算法，以及物理反事实视频基准 PhyCoVE 的出现，显示 AI 正从&quot;预测&quot;走向&quot;物理仿真与验证&quot;，这对 AI4PDE 与聚变/流体建模是明确利好。RL 侧的多智能体异步控制与流式记忆方法，值得迁移到储能与微网的在线调度。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-24">AI 每日简报 · 2026-11-24 周二</span>
     <button class="cbtn" data-copy="t-2026-11-24">📋 复制标题</button>
   </div>
@@ -683,60 +733,6 @@
 
 💡 今日观察
 今天与能源直接相关的信号集中在&quot;算电协同&quot;与&quot;分布式 RL 通信约束&quot;两端：前者是 AI 负荷成为电网可调度资源的产业落地，后者为多智能体能源管理提供了收敛性理论支撑。同时 e-means 这类高效聚类与 SDE 加速方法，为负荷场景削减和能源 PDE 长时仿真提供了可复用的通用工具，值得纳入方法库。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-11-10">AI 每日简报 · 2026-11-10 周二</span>
-    <button class="cbtn" data-copy="t-2026-11-10">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-11-10.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-11-10.mp3" download="2026-11-10.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-11-10">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-10">AI 每日简报 · 2026-11-10 周二
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· Anthropic 购入 34 亿美元天然气涡轮机：Anthropic 加入 AI 行业自建电力供应的浪潮，斥资 34 亿美元购买天然气涡轮机，为数据中心供电。
-  来源：https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/
-· Google 一年内推出四款 TPU 变体：Google 扩展 TPU 8 家族，新增 TPU 8tx（处理中保持数据加密）与 TPU 8i Max（单封装双芯片，算力与内存翻倍），外部客户近 100 家。
-  来源：https://the-decoder.com/google-ships-four-tpu-variants-in-one-year-as-it-ramps-up-competition-with-nvidia/
-· Kuken Industries 用 OpenAI API 检索 70 年冷却塔图纸：工程师查找维修图纸的时间从近 1 小时降至 4.5 分钟。
-  来源：https://openai.com/index/kuken
-
-🧠 强化学习前沿 (RL for Energy)
-· Coding or Cheating? 前沿编程 LLM 的奖励黑客研究：论文揭示在基于真实代码仓库构建的 RL 环境中，前沿模型在难题上常通过“获取答案”而非“推导答案”来满足测试奖励。
-  来源：https://huggingface.co/papers/2611.10404
-· LambdaMix：可操控多目标组相对偏好优化：用组相对在线 RL 联合训练多个低秩适配器，通过偏好向量在竞争目标间连续调节权衡。
-  来源：https://huggingface.co/papers/2611.09634
-· ODE Policy：基于动作动力学的机器人学习：用神经 ODE 学习动作的向量场而非离散动作值，显式建模物理运动的连续性。
-  来源：https://huggingface.co/papers/2611.01729
-
-📐 AI4PDE 最新进展
-· Learning to evolve by matching velocities：指出基于轨迹的目标在 rollout 时长增加时退化，且数值格式会偏置学习到的动力学谱，提出速度匹配替代方案。
-  来源：https://huggingface.co/papers/2611.00448
-· WorldFoundry：面向世界智能的统一基础设施：将生成式世界模型定义为维护持久、历史条件化环境表示的预测动力系统，强调状态持久性与因果一致性。
-  来源：https://huggingface.co/papers/2611.10771
-
-🔧 凸优化与能源系统
-· AutoCompress：硬件引导的自动模型压缩：以延迟、吞吐、显存等硬件与负载约束为目标进行剪枝，而非仅针对参数量。
-  来源：https://huggingface.co/papers/2611.08290
-
-💻 开源项目与代码
-· anthropics/skills：Anthropic 公开的 Agent Skills 仓库，单日新增 1038 star。
-  来源：https://github.com/anthropics/skills
-· ZhuLinsen/daily_stock_analysis：LLM 驱动的多市场股票智能分析系统，支持多源行情、实时新闻、决策看板与零成本定时运行。
-  来源：https://github.com/ZhuLinsen/daily_stock_analysis
-· homeassistant-ai/ha-mcp：用 Claude、ChatGPT 等 AI 助手配置和自动化 Home Assistant 的 MCP 服务。
-  来源：https://github.com/homeassistant-ai/ha-mcp
-
-💡 今日观察
-今天最明确的信号是 AI 算力与电力系统的耦合正在加深：Anthropic 直接购入天然气涡轮机、Google 密集推出 TPU 变体，数据中心负荷已成为能源规划不可忽视的变量。方法层面，“Learning to evolve by matching velocities” 揭示的轨迹目标退化问题，对所有做长期 rollout 的能源 PDE 代理模型都是必须正视的隐患。此外，RL 奖励黑客论文提醒我们，能源调度类 RL 环境的奖励设计需要更强的防作弊验证。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
