@@ -36,6 +36,56 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-27">AI 每日简报 · 2026-11-27 周五</span>
+    <button class="cbtn" data-copy="t-2026-11-27">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-27.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-27.mp3" download="2026-11-27.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-27">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-27">AI 每日简报 · 2026-11-27 周五
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google DeepMind 用 Agent 团队与形式化验证加速聚变与化学量子算法：DeepMind 发布基于多智能体协作和形式化验证的方法，自动发现并验证面向聚变与化学模拟的更快量子算法。
+  来源：https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/
+· AI 原生自编码器通信的频谱自适应迁移学习：论文研究端到端物理层自编码器在信道模型训练-测试失配下的敏感性，并提出迁移学习实现频谱自适应。
+  来源：https://arxiv.org/abs/2611.34942v1
+
+🧠 强化学习前沿 (RL for Energy)
+· CARE-3D：面向具身 3D 场景证据推理的强化学习：提出基于 RL 的具身智能体，优化证据获取策略而非模仿监督轨迹，提升 3D 场景中基于证据的推理能力。
+  来源：https://huggingface.co/papers/2611.29969
+· Look Back：基于反事实世界模型的强化学习：提出反事实世界模型，通过对已观测轨迹施加替代动作来预测结果，缓解复杂随机环境中世界模型预测能力不足的问题。
+  来源：https://huggingface.co/papers/2611.29259
+· SPLICE：将学习器条件选项拼接进长程 Agent RL：针对长程任务中&quot;全失败组&quot;导致无梯度的问题，在线从当前策略失败轨迹构造局部训练目标，避免依赖强模型完整解。
+  来源：https://huggingface.co/papers/2611.34777
+· ByteDance Seed 开源 Laminar 异步 RL 后训练框架：解耦 rollout、训练与权重同步，将 Qwen3-Coder-30B-A3B 在 SWE-bench Verified 提升至 52.2%。
+  来源：https://www.marktechpost.com/2026/11/24/bytedance-seed-laminar-async-rl-post-training-framework/
+
+📐 AI4PDE 最新进展
+· Wired：湍流预测难题获众包数据与机器学习助力：被称为&quot;经典物理最后难题&quot;的飞机湍流预测，正借助 TB 级众包数据与新的 ML 方法取得突破。
+  来源：https://www.wired.com/story/airplane-turbulence-is-extremely-hard-to-predict-and-avoid/
+
+🔧 凸优化与能源系统
+· OpenAI 宣称解决矩阵数学问题：TLDR AI 报道 OpenAI 在矩阵运算数学问题上取得进展，涉及数值线性代数基础算法。
+  来源：https://tldr.tech/ai/2026-11-25
+
+💻 开源项目与代码
+· HKUDS/CLI-Anything：让所有软件&quot;Agent 原生&quot;化的 CLI-Hub 框架，今日 +746 star。
+  来源：https://github.com/HKUDS/CLI-Anything
+· openvinotoolkit/openvino：开源 AI 推理优化与部署工具包，今日 +176 star。
+  来源：https://github.com/openvinotoolkit/openvino
+
+💡 今日观察
+今日信号集中在&quot;RL 训练基础设施&quot;与&quot;科学计算算法发现&quot;两条线：DeepMind 用 Agent+形式化验证发现聚变/化学量子算法，标志 AI4Science 正从求解已知方程走向发现新算法，这对能源系统优化算法自动设计有直接启发。同时 SPLICE、Laminar 等长程与异步 RL 框架密集出现，说明稀疏奖励、长程决策的训练瓶颈正被系统性攻克——这正是多阶段储能调度与多智能体能源管理的核心痛点。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-26">AI 每日简报 · 2026-11-26 周四</span>
     <button class="cbtn" data-copy="t-2026-11-26">📋 复制标题</button>
   </div>
@@ -681,58 +731,6 @@
 
 💡 今日观察
 今日与 AI4Energy 直接相关的信号集中在两处：TDMOpt 表明 LLM 多智能体正从&quot;辅助工具&quot;走向&quot;调度建模决策者&quot;，而 RPX 则为这类 AI 生成的优化模型提供了可验证的正确性证书——两者结合指向&quot;可信 AI 优化&quot;闭环。此外，FAME-QP 的 GPU 加速 QP 与时序基础模型的因果性警示，分别从求解效率与建模可靠性两端提醒能源研究者：AI 进入控制与决策层时，速度与可验证性同等重要。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-11-12">AI 每日简报 · 2026-11-12 周四</span>
-    <button class="cbtn" data-copy="t-2026-11-12">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-11-12.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-11-12.mp3" download="2026-11-12.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-11-12">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-12">AI 每日简报 · 2026-11-12 周四
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· 达卯科技与浦东环保能源达成战略合作，黎明智算中心算电协同平台启动：双方围绕智算中心与电力系统协同调度展开合作，推动东部城市型智算中心向 E-AIDC 演进。
-  来源：https://www.qbitai.com/2026/11/508985.html
-· Google DeepMind 计划将 AlphaProof Code 形式化验证方法扩展至电网等关键基础设施：其 AI agent 在四周内为 Signal 加密核心生成超 600 万行 Lean 证明代码，官方表示将把该方法推广到电网和医疗设备等关键系统。
-  来源：https://the-decoder.com/google-deepminds-alphaproof-code-verified-signals-cryptographic-core-in-four-weeks-instead-of-years/
-
-🧠 强化学习前沿 (RL for Energy)
-· NVIDIA 发布 Alpamayo 2 Edge 自动驾驶模型，采用 RL 训练闭环：该模型输入 6 路摄像头与运动信息，Embedl 已发布边缘硬件优化版本，在 AGX Thor 上比 PyTorch 快 10 倍以上。
-  来源：https://www.reddit.com/r/LocalLLaMA/comments/1xtmeif/open_source_self_driving_is_here/
-· Shortcuts and Boundaries: Verifiable RL Misalignment and Contextual Safety Learning：研究可验证奖励与上下文约束冲突下的 RL 错位（含 reward hacking），并构建可扩展交互环境生成合规策略。
-  来源：https://huggingface.co/papers/2611.12865
-· Are Dense Rewards Worth Their Tokens in GRPO?：系统比较 GRPO 中稠密过程奖励与稀疏结果奖励的收益与 token 成本，指出单批次梯度检验无法反映真实开销。
-  来源：https://huggingface.co/papers/2611.13560
-· Learning to Act with World Models by Valuing What Comes Next：用世界模型预测状态转移对成功概率的影响，缓解稀疏终端奖励下 PPO critic 的信息不足。
-  来源：https://huggingface.co/papers/2611.12200
-
-📐 AI4PDE 最新进展
-· TorchCurves: Differentiable Parametric Curves：PyTorch 库将 B-spline / Legendre 多项式基参数曲线作为可学习原语，支持对输入与系数双向微分。
-  来源：https://huggingface.co/papers/2611.14516
-· Lipschitz-Controlled Flow Matching for Robust Image Restoration (LipsFlower)：为 Flow-from-Y 与观测条件后验采样推导稳定性界，抑制流匹配动力学对小扰动的放大。
-  来源：https://huggingface.co/papers/2611.13995
-
-🔧 凸优化与能源系统
-· Tree-Ising: Repairing Language Models with Bit-Level Ising Edits：将 LLM 权重修复表述为 BF16 权重上的稀疏离散优化问题，用前向统计构造目标以削弱循环方向。
-  来源：https://huggingface.co/papers/2611.14210
-
-💻 开源项目与代码
-· homeassistant-ai/ha-mcp：Home Assistant 的 MCP 服务，让 Claude、ChatGPT 等助手直接配置与自动化家庭能源/设备管理。
-  来源：https://github.com/homeassistant-ai/ha-mcp
-· huawei-csl/MACaQ：华为开源 MXFP4 W4A4 训练后量化方法，逐层独立、在线 block-Hadamard 变换，无需跨层传播。
-  来源：https://github.com/huawei-csl/MACaQ
-
-💡 今日观察
-今天最明确的信号是&quot;AI 方法向能源关键基础设施渗透&quot;：DeepMind 明确要把 AlphaProof Code 的形式化验证扩展到电网，算电协同平台也开始真实落地。与此同时，RL 侧的高质量工作集中在奖励设计与安全性（稀疏奖励、稠密奖励成本、reward hacking），这恰好对应能源调度 RL 从仿真走向部署时最容易被忽视的失败模式。建议重点关注可微参数曲线与流匹配稳定性这类工具，它们为 AI4PDE 在物理场反演中的落地提供了更严谨的数学基础。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
