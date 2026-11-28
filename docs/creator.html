@@ -36,6 +36,56 @@
 
 <div class="ep">
   <div class="ep-h">
+    <span class="ep-title" id="t-2026-11-28">AI 每日简报 · 2026-11-28 周六</span>
+    <button class="cbtn" data-copy="t-2026-11-28">📋 复制标题</button>
+  </div>
+  <audio controls preload="none" src="audio/2026-11-28.mp3"></audio>
+  <div class="acts">
+    <a class="cbtn" href="audio/2026-11-28.mp3" download="2026-11-28.mp3">⬇️ 下载音频</a>
+    <button class="cbtn" data-copy="n-2026-11-28">📋 复制 Show Notes</button>
+  </div>
+  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-28">AI 每日简报 · 2026-11-28 周六
+
+🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
+
+⚡ AI4Energy 核心论文与新闻
+· Google DeepMind 用智能体与形式化验证加速聚变/化学量子算法发现：智能体团队结合形式化验证，改进了面向聚变与化学模拟的量子算法。
+  来源：https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/
+· 机器学习大幅提升飞机湍流预测能力：利用 TB 级众包数据与新的机器学习方法，攻克&quot;经典物理最难问题&quot;。
+  来源：https://www.wired.com/story/airplane-turbulence-is-extremely-hard-to-predict-and-avoid/
+· Q.ANT 光子芯片用光波运行 AI 模型以降低能耗：德国公司 Q.ANT 用光执行最重计算，削减 AI 模型能耗。
+  来源：https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light/
+
+🧠 强化学习前沿 (RL for Energy)
+· ByteDance Seed 与港大开源异步 RL 后训练框架 Laminar：将 rollout、训练与权重同步解耦，把 Qwen3-Coder-30B-A3B 在 SWE-bench Verified 上提升至 52.2%。
+  来源：https://www.marktechpost.com/2026/11/24/bytedance-seed-laminar-async-rl-post-training-framework/
+· CARE-3D：面向具身 3D 场景证据推理的强化学习：用 RL 优化中间工具选择的证据支撑，而非模仿固定取证轨迹。
+  来源：https://huggingface.co/papers/2611.29969
+· Look Back：基于反事实世界模型的强化学习：通过对已有轨迹做替代动作变换来预测反事实结果，应对随机环境。
+  来源：https://huggingface.co/papers/2611.29259
+
+📐 AI4PDE 最新进展
+· DAWIN：连续时间时空学习的通用神经元原语：以阻尼原子波积分神经元替换标准层，闭式求解阻尼演化，适配不规则观测。
+  来源：https://huggingface.co/papers/2611.30025
+
+🔧 凸优化与能源系统
+· 3×3 矩阵乘法 rank-23 方案大规模数据集开源：发布 62029 个两两不等价的 rank-23 方案，由梯度下降+交替最小二乘与翻转图搜索获得。
+  来源：https://huggingface.co/papers/2611.31155
+
+💻 开源项目与代码
+· minimind：两小时从零训练 64M 大模型：轻量级从零训练 LLM 的开源教程与代码。
+  来源：https://github.com/jingyaogong/minimind
+· OpenVINO：开源 AI 推理优化与部署工具包：面向推理优化与部署的开源工具。
+  来源：https://github.com/openvinotoolkit/openvino
+
+💡 今日观察
+今日与能源直接相关的高质量内容偏少，但两条信号值得留意：一是 DeepMind 将智能体+形式化验证用于聚变量子算法，显示&quot;AI 智能体辅助科学发现&quot;正切入能源物理核心问题；二是 DAWIN 这类连续时间物理原语的出现，为热传导、流体等能源 PDE 的神经求解提供了新架构方向。RL 侧则集中在训练框架与反事实世界模型，尚未见到直接面向电力调度/市场的落地论文，建议持续跟踪。
+
+———
+完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
+</div>
+<div class="ep">
+  <div class="ep-h">
     <span class="ep-title" id="t-2026-11-27">AI 每日简报 · 2026-11-27 周五</span>
     <button class="cbtn" data-copy="t-2026-11-27">📋 复制标题</button>
   </div>
@@ -691,46 +741,6 @@
 
 💡 今日观察
 今日与 AI4Energy 直接相关的高质量信号集中在两处：DeepMind 开放 AI 天气模型底层数据集，以及 TurtLES 这一 14TB 级湍流 PDE 代理基准，二者共同指向&quot;能源气象预测 + 流体仿真&quot;这一 AI4PDE/AI4Energy 交叉的核心基础设施正在被夯实。RL 侧则以约束满足型（神经符号）与经验复用型方法为代表，值得关注其在电力市场合规调度与长时序储能控制中的迁移潜力。整体而言，通用大模型新闻占据绝大多数版面，能源交叉研究需主动从 arXiv/HF Papers 与实验室官博中挖掘。
-
-———
-完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
-</div>
-<div class="ep">
-  <div class="ep-h">
-    <span class="ep-title" id="t-2026-11-13">AI 每日简报 · 2026-11-13 周五</span>
-    <button class="cbtn" data-copy="t-2026-11-13">📋 复制标题</button>
-  </div>
-  <audio controls preload="none" src="audio/2026-11-13.mp3"></audio>
-  <div class="acts">
-    <a class="cbtn" href="audio/2026-11-13.mp3" download="2026-11-13.mp3">⬇️ 下载音频</a>
-    <button class="cbtn" data-copy="n-2026-11-13">📋 复制 Show Notes</button>
-  </div>
-  <details><summary>预览 Show Notes</summary><pre class="notes" id="n-2026-11-13">AI 每日简报 · 2026-11-13 周五
-
-🎧 每天 5 分钟，用耳朵掌握 AI 领域最新动态。全自动采集 · DeepSeek 智能筛选。
-
-⚡ AI4Energy 核心论文与新闻
-· TDMOpt：LLM 驱动的输-配-微电网跨层调度框架：提出 LLM 多智能体框架，动态选择建模配置与协调方案，替代固定的跨层调度建模方式。
-  来源：https://arxiv.org/abs/2611.15012v1
-· 数据中心电力需求推高电价，低收入与农村居民承担代价：康奈尔大学研究指出，为满足数据中心用电而进行的电网扩容成本正转嫁给弱势用户群体。
-  来源：https://news.cornell.edu/stories/2026/11/data-centers-need-power-lower-income-rural-residents-pay-price
-
-📐 AI4PDE 最新进展
-· FAME-QP：面向实时 MPC 的 GPU 加速二次规划求解器：针对线性模型预测控制中的稠密 QP，融合单/双 kernel 迭代与 CUDA graph 重放，自动校准执行配置。
-  来源：https://huggingface.co/papers/2611.13766
-
-🔧 凸优化与能源系统
-· RPX：规模化验证 AI 生成的 MILP 重构：独立证书检查器，验证原始与重构 MILP 的可行解可互相转换且目标值不劣，保证最优值等价。
-  来源：https://arxiv.org/abs/2611.15035v1
-· 从预测到世界建模：时序基础模型能否恢复因果响应？：系统评估表格与时序基础模型在价格干预效应估计上的表现，发现预测精度不等于因果效应精度。
-  来源：https://arxiv.org/abs/2611.15009v1
-
-💻 开源项目与代码
-· TensorFold：面向 Metal/CUDA/Vulkan 的 LLM 推理引擎：跨三种 GPU 后端的统一推理引擎，适合边缘与异构能源计算设备部署。
-  来源：https://github.com/ashhart/TensorFold
-
-💡 今日观察
-今日与 AI4Energy 直接相关的信号集中在两处：TDMOpt 表明 LLM 多智能体正从&quot;辅助工具&quot;走向&quot;调度建模决策者&quot;，而 RPX 则为这类 AI 生成的优化模型提供了可验证的正确性证书——两者结合指向&quot;可信 AI 优化&quot;闭环。此外，FAME-QP 的 GPU 加速 QP 与时序基础模型的因果性警示，分别从求解效率与建模可靠性两端提醒能源研究者：AI 进入控制与决策层时，速度与可验证性同等重要。
 
 ———
 完整图文与往期：https://jimmuji.github.io/ai-daily-digest/</pre></details>
